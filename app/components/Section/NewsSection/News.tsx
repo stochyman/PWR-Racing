@@ -12,7 +12,7 @@ const News: React.FC<NewsProps> = ({ department }) => {
   const imagePath = `/images/news/news${department}.png`;
 
   return (
-    <div className="relative border-0 m-0 cursor-pointer group overflow-hidden">
+    <div className="relative rounded-3xl border-0 m-0 cursor-pointer group overflow-hidden">
         <Image
         src={imagePath}
         alt={department}
