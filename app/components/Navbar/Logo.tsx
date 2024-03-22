@@ -4,16 +4,24 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
 
-export default function Logo() {
-  const router = useRouter();
 
-  return (
-    <Image
-      alt='Logo'
-      className='hidden md:block cursor-pointer'
-      width='100'
-      height='100'
-      src='/images/logo.png'
-    />
+interface LogoProps {
+  width: number;
+  height: number;
+}
+
+const Logo: React.FC<LogoProps> = ({ width, height }) => {
+  return(
+    <div className=" relative py-7">
+      <Image
+          alt='Logo'
+          height={height}
+          width={width}
+          objectFit='contain'
+          src='/images/logo.png'
+        />
+    </div>
   )
 }
+
+export default Logo;

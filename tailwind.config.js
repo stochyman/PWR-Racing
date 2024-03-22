@@ -6,7 +6,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        customRed: 'rgb(203, 31, 58)',
+        customRedTransparent: 'rgba(203, 31, 58, 0.2)'
+      },
+      fontSize: {
+        '6xl': '6rem',
+      },
+    },
   },
   plugins: [],
 }

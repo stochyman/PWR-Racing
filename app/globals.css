@@ -7,3 +7,42 @@ body,
 :root {
   height: 100%;
 }
+
+::selection {
+  background-color: rgba(203, 31, 58, 0.4); /* Kolor tła zaznaczenia */
+  color: inherit; /* Zachowuje domyślny kolor tekstu */
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.infinite-slider {
+  animation: slide 10s linear infinite;
+}
+.animation-container:hover .infinite-slider {
+  animation-play-state: paused;
+}
+
+
+@media (max-width: 1620px) {
+  .social-responsive {
+    display: none;
+  }
+}
+
+@media (max-width: 1410px) {
+  .nav-responsive {
+    display: none;
+  }
+  .social-responsive {
+    display: flex;
+  }
+  .userMenu-responsive {
+    display: flex;
+  }
+}

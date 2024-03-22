@@ -1,16 +1,35 @@
 'use client';
 
-import Container from "../Container";
+import React, { useState, useEffect } from 'react';
 import Logo from "./Logo";
-import Search from "./Search";
-import UserMenu from "./UserMenu";
+import UserMenu from "./UserMenu/UserMenu";
+import NavigationMenu from "./NavigationMenu";
 
 const Navbar = () => {
+  const [atTop, setAtTop] = useState(true);
+
+  useEffect(() => {
+    // Funkcja do sprawdzenia, czy użytkownik jest na samej górze strony
+    const handleScroll = () => {
+      const position = window.pageYOffset;
+      setAtTop(position === 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="fixed w-full bg-white z-10 shadow-sm">
-      <div className="py-4 border-b-[1px]">
-        <Container>
-          <div className="
+    <header className={`fixed w-full duration-500 transition-all z-20 ${!atTop ? 'bg-black' : ''}`}>
+      <div className="mx-auto
+        xl:px-20
+        md:px-10
+        sm:px-2
+        px-4 ">
+        <div className="
           flex
           flex-row
           items-center
@@ -18,13 +37,14 @@ const Navbar = () => {
           gap-3
           md:gap-0
           ">
-            <Logo/>
-            <Search/>
-            <UserMenu/>
+          <div className="flex">
+            <Logo width={atTop ? 230 : 200} height={180}/>
+            <NavigationMenu/>
           </div>
-        </Container>
+          <UserMenu/>
+        </div>
       </div>
-    </div>
+    </header>
   );
 }
 
