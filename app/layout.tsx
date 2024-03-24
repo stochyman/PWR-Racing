@@ -45,8 +45,8 @@ return (
         <BolidSection/>
         <FSSection/>
         <TeamSection/>
-        <JoinusSection/>
         <HistorySection/>
+        <JoinusSection/>
         <SponsorsSection/>
         <NewsSection/>
         <FooterSection/>

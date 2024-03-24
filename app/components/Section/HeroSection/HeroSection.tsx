@@ -9,7 +9,7 @@ import Title from "../../Title";
 
 const FirstSection = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between h-screen">
+    <div id="home" className="flex flex-col md:flex-row items-center justify-between h-screen">
       <div className="relative w-full h-full flex items-center">
         <BackgroundVideo/>
         <div className="relative z-10">

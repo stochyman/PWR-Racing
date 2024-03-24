@@ -10,7 +10,7 @@ const HistorySection = () => {
   return (
     <div className="">
       <Container>
-        <div className="grid grid-cols-2 gap-10 my-20 mb-8">
+        <div className="grid grid-cols-2 gap-10 my-20">
           <div className=" relative flex justify-center items-center">
             <Image
               className=""
@@ -60,12 +60,12 @@ const HistorySection = () => {
               transition-all
               duration-300
               group">
-              <span className="transition-colors duration-300 relative z-10">
+              <span className="transition-colors duration-300 relative z-10 group-hover:text-customRed">
                 Dowiedz się więcej
                 <div className="absolute left-0 bottom-0 w-0 h-0.5 bg-customRed group-hover:w-full transition-all duration-300 ease-in-out"></div>
               </span>
               <svg
-                className="absolute right-0 bottom-1 transition-all duration-300 ease-in-out rotate-0 group-hover:rotate-90"
+                className="absolute right-0 bottom-1 transition-all duration-300 ease-in-out rotate-0 group-hover:translate-x-4 group-hover:opacity-0"
                 width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="17.2056" cy="17.2056" r="16.7056" stroke="#353535" className="group-hover:stroke-customRed group-hover:stroke-[2px]"/>
                 <path d="M15.7715 14.3379L19.356 17.9224L15.7715 21.5069" stroke="#353535" className="group-hover:stroke-customRed group-hover:stroke-[2px]"/>

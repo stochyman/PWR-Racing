@@ -22,13 +22,13 @@ const SideBar = () => {
 
   return (
     <div className={`${isScrolled ? 'gap-4 bottom-1/2' : 'gap-48 bottom-1/3'} fixed flex flex-col right-0 z-20 transform duration-700`}>
-      <div className={`${isScrolled ? '' : '-rotate-90 translate-x-1/2'}`}>
-        <div className={`w-56 transition-transform duration-300 ease-in-out ${isScrolled ? 'translate-x-3/4 hover:translate-x-1/4' : '-translate-y-1/3'}`}>
+      <div className={`${isScrolled ? '' : '-rotate-90 translate-x-1/2'} duration-300`}>
+        <div className={`w-56 transition-transform duration-1000 ease-in-out ${isScrolled ? 'translate-x-3/4 hover:translate-x-1/4' : '-translate-y-1/3'}`}>
           <Button icon={FaCamera} label="Media" onClick={() => {}} />
         </div>
       </div>
-      <div className={`${isScrolled ? '' : '-rotate-90 translate-x-1/2'}`}>
-        <div className={`w-56 transition-transform duration-300 ease-in-out ${isScrolled ? 'translate-x-3/4 hover:translate-x-1/4' : '-translate-y-1/3'}`}>
+      <div className={`${isScrolled ? '' : '-rotate-90 translate-x-1/2'} duration-300`}>
+        <div className={`w-56 transition-transform duration-1000 ease-in-out ${isScrolled ? 'translate-x-3/4 hover:translate-x-1/4' : '-translate-y-1/3'}`}>
           <Button icon={MdPerson} outline label="Rekrutacja" onClick={() => {}} />
         </div>
       </div>

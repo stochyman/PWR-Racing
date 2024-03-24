@@ -1,7 +1,10 @@
+aktualności - paski napisane w kodzie, kolorystycznie w stylu navbara
+
 nawigacja podstron- dodać
-aktualności - paski napisane w kodzie, kolorystycznie w stylu navbara, oddzielone od siebie okienka wpisów z zaokrąglonymi brzegami
+
 slider z bolidami- to do
 przewijanie sponsorów- dodać
+
 dodać pozostałych platynowych sponsorów na str. główną
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
