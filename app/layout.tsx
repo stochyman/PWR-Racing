@@ -18,6 +18,7 @@ import HistorySection from "./components/Section/HistorySection/HistorySection";
 import SponsorsSection from "./components/Section/SponsorsSection/SponsorsSection";
 import NewsSection from "./components/Section/NewsSection/NewsSection";
 import FooterSection from "./components/Section/FooterSection/FooterSection";
+import ClosestSectionProvider from "./components/Navbar/ClosestSectionContext";
 
 const font = Nunito({ subsets: ['latin']})
 export const metadata: Metadata = {
@@ -34,23 +35,25 @@ return (
   <html lang="en">
     <body className={font.className}>
       {children}
-      <ClientOnly>
-        <ToasterProvider/>
-        <LoginModal/>
-        <RegisterModal/>
-        <Navbar/>
-        <SideBar/>
-        <HeroSection/>
-        <DepartmentsSubsection/>
-        <BolidSection/>
-        <FSSection/>
-        <TeamSection/>
-        <HistorySection/>
-        <JoinusSection/>
-        <SponsorsSection/>
-        <NewsSection/>
-        <FooterSection/>
-      </ClientOnly>
+      <ClosestSectionProvider>
+        <ClientOnly>
+          <ToasterProvider/>
+          <LoginModal/>
+          <RegisterModal/>
+          <Navbar/>
+          <SideBar/>
+          <HeroSection/>
+          <DepartmentsSubsection/>
+          <BolidSection/>
+          <FSSection/>
+          <TeamSection/>
+          <HistorySection/>
+          <JoinusSection/>
+          <SponsorsSection/>
+          <NewsSection/>
+          <FooterSection/>
+        </ClientOnly>
+      </ClosestSectionProvider>
     </body>
   </html>
 );

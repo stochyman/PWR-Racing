@@ -27,7 +27,7 @@ const FooterSection = () => {
   };
 
   return (
-    <div className="relative pt-6">
+    <div id="section-contact" className="relative pt-6">
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/joinus/photo5.jpeg"

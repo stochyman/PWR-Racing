@@ -13,7 +13,7 @@ const sponsors = [
 
 const SponsorsSection = () => {
   return (
-    <div className="bg-neutral-200 relative overflow-hidden flex items-center w-full h-[200px] animation-container">
+    <div id='section-partners' className="bg-neutral-200 relative overflow-hidden flex items-center w-full h-[200px] animation-container">
       <div className="flex gap-8 infinite-slider">
         {sponsors.map((src, index) => (
           <div key={index} className="min-w-max flex-shrink-0 flex items-center">

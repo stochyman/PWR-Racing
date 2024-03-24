@@ -1,7 +1,5 @@
 aktualności - paski napisane w kodzie, kolorystycznie w stylu navbara
 
-nawigacja podstron- dodać
-
 slider z bolidami- to do
 przewijanie sponsorów- dodać
 

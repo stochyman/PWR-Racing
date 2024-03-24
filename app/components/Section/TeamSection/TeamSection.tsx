@@ -8,7 +8,7 @@ import Title from "../../Title";
 
 const TeamSection = () => {
   return (
-    <div className=" relative">
+    <div id="section-team" className=" relative">
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/team/bg.jpeg"

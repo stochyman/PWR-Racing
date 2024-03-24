@@ -7,7 +7,7 @@ import Title from "../../Title";
 
 const JoinusSection = () => {
   return (
-    <div className="relative h-[633px]">
+    <div id="joinus" className="relative h-[633px]">
       <div
         className="absolute inset-0 z-10"
         style={{

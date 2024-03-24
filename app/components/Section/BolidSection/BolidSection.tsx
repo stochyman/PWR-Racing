@@ -20,7 +20,7 @@ const BolidSection = () => {
         />
       </div>
       <Container>
-        <div className="grid grid-cols-2 gap-2">
+        <div id="section-bolid" className="grid grid-cols-2 gap-2">
           <div className="flex justify-center items-center">
             <div className="">
               <Title size="subtitle" color="gray">2022</Title>

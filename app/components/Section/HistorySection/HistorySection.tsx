@@ -8,7 +8,7 @@ import Counter from "./Counter";
 
 const HistorySection = () => {
   return (
-    <div className="">
+    <div id="section-history" className="">
       <Container>
         <div className="grid grid-cols-2 gap-10 my-20">
           <div className=" relative flex justify-center items-center">

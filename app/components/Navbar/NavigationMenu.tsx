@@ -7,13 +7,13 @@ const NavigationMenu = () => {
   return (
     <nav className='nav-responsive ml-16'>
       <ul className="flex space-x-4 h-full">
-        <NavItem href="/">Home</NavItem>
-        <NavItem href="/bolid">Bolid</NavItem>
-        <NavItem href="/team">Zespół</NavItem>
-        <NavItem href="/about">O nas</NavItem>
-        <NavItem href="/partners">Partnerzy</NavItem>
-        <NavItem href="/news">Aktualności</NavItem>
-        <NavItem href="/contact">Kontakt</NavItem>
+        <NavItem to="section-home">Home</NavItem>
+        <NavItem to="section-bolid">Bolid</NavItem>
+        <NavItem to="section-team">Zespół</NavItem>
+        <NavItem to="section-history">O nas</NavItem>
+        <NavItem to="section-partners">Partnerzy</NavItem>
+        <NavItem to="section-news">Aktualności</NavItem>
+        <NavItem to="section-contact">Kontakt</NavItem>
       </ul>
     </nav>
   );

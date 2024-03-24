@@ -8,7 +8,7 @@ import Button from "../../Button";
 
 const NewsSection = () => {
   return (
-    <div className="">
+    <div id="section-news" className="">
       <Container>
         <div className=" pt-12">
           <div className="w-full flex justify-between">
