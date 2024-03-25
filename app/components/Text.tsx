@@ -7,11 +7,11 @@ interface TextProps {
   wide?: boolean;
   bold?: boolean;
   center?: boolean;
-  noblock?: boolean;
+  opacity1?: boolean;
   color?: 'white' | 'black' | 'red' | 'gray';
 }
 
-const Text: React.FC<TextProps> = ({ children, small, medium, wide, bold, center, noblock, color = 'white' }) => {
+const Text: React.FC<TextProps> = ({ children, small, medium, wide, bold, center, opacity1, color = 'white' }) => {
   const colorClass = () => {
     switch (color) {
       case 'black':
@@ -34,10 +34,10 @@ const Text: React.FC<TextProps> = ({ children, small, medium, wide, bold, center
 
   return (
     <h1 className={`
-      text-opacity-70
       font-openSans tracking-tighter
       ${colorClass()}
       ${sizeClass()}
+      ${opacity1 ? 'text-opacity-100' : 'text-opacity-70'}
       ${center ? 'justify-center' : 'text-justify'}
       ${wide ? '' : ''}
       ${bold ? 'font-bold' : 'font-normal'}

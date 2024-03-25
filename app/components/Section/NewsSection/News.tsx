@@ -5,21 +5,31 @@ import Title from "../../Title";
 import Text from "../../Text";
 
 type NewsProps = {
-  department: string;
+  article: string;
+  category: string;
+  title: string;
 };
 
-const News: React.FC<NewsProps> = ({ department }) => {
-  const imagePath = `/images/news/news${department}.png`;
+const News: React.FC<NewsProps> = ({ article, category, title }) => {
+  const imagePath = `/images/news/news${article}.png`;
 
   return (
-    <div className="relative rounded-3xl border-0 m-0 cursor-pointer group overflow-hidden">
-        <Image
+    <div className="relative w-full h-[358px] rounded-3xl border-0 m-0 cursor-pointer group overflow-hidden">
+      <Image
         src={imagePath}
-        alt={department}
-        layout="intrinsic"
-        height={358}
-        width={640}
+        alt={article}
+        layout="fill"
+        objectFit="cover"
+        objectPosition="center center"
       />
+      <div className="absolute inset-0 w-full h-full flex flex-col justify-end">
+        <div className="text-center p-2 rounded-tr-xl w-1/3 bg-customRed">
+          <Title size="subtitle">{category}</Title>
+        </div>
+        <div className="text-center p-2 rounded-bl-3xl rounded-tr-xl w-2/3 bg-white border-2 border-black">
+          <Text opacity1 bold medium center color="black">{title}</Text>
+        </div>
+      </div>
       <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out"></div>
       <div className="absolute scale-x-0 group-hover:scale-x-100 opacity-0 group-hover:opacity-100 flex inset-0 gap-8 flex-col justify-center items-center text-white transition-all duration-300 ease-in-out">
         <Title size="medium">PREMIERA RT13E</Title>

@@ -26,7 +26,6 @@ const NavItem: React.FC<NavItemProps> = ({ to, children }) => {
 
   // Klasy CSS dla Link, zmieniają się w zależności od tego, czy 'to' jest równy 'closestSectionId'
   const linkClassName = `text-lg transition duration-300 h-full flex items-center px-3 group-hover:text-customRed ${to === closestSectionId ? 'text-customRed' : 'text-white'}`;
-  console.log(to)
 
   return (
     <li className="cursor-pointer flex items-center h-full relative group">
