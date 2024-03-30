@@ -29,23 +29,23 @@ export const authOptions: AuthOptions = {
           throw new Error('Invalid credentials');
         }
 
-        const user = await prisma.user.findUnique({
+        const admin = await prisma.admin.findUnique({
           where: {
             email: credentials.email
           }
         });
 
-        if (!user || !user?.hashedPassword) {
+        if (!admin || !admin?.hashedPassword) {
           throw new Error('Invalid credentials')
         }
 
-        const isCorrectPassword = await bcrypt.compare(credentials.password, user.hashedPassword)
+        const isCorrectPassword = await bcrypt.compare(credentials.password, admin.hashedPassword)
 
         if (!isCorrectPassword) {
           throw new Error('Invalid credentials')
         }
 
-        return user;
+        return admin;
       }
     })
   ],

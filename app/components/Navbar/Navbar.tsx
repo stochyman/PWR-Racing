@@ -33,6 +33,12 @@ const Navbar = () => {
     };
   }, [lastScrollY]);
 
+  useEffect(() => {
+    const position = window.pageYOffset;
+    setAtTop(position === 0);
+    setHideNavbar(!(position === 0));
+  }, []);
+
   return (
     <header className={`fixed w-full duration-500 transition-all z-20 ${!atTop ? 'bg-black' : ''} ${hideNavbar ? 'translate-y-[-100%]' : 'translate-y-0'}`}>
       <div className="mx-auto xl:px-20 md:px-10 sm:px-2 px-4">

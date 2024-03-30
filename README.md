@@ -1,8 +1,11 @@
-aktualności - paski napisane w kodzie, kolorystycznie w stylu navbara
+czy robimy animacje do zmiany bolidów? - wjazd i wyjazd
 
-slider z bolidami- to do
+loga sponsorów
+dociete bolidy
+dane o kazdym członku koła
 
-sponsors add, usunąć duplikację, przewijanie w lewo tez nieskonczone
+roblemy z typami w sliderach
+errory z img
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

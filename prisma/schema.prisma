@@ -13,7 +13,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model User {
+model Admin {
   id             String    @id @default(auto()) @map("_id") @db.ObjectId
   name           String?
   email          String?   @unique
@@ -24,14 +24,12 @@ model User {
   updateAt       DateTime  @updatedAt
   favoriteIds    String[]  @db.ObjectId
 
-  accounts     Account[]
-  listing      Listing[]
-  reservations Reservation[]
+  accounts Account[]
 }
 
 model Account {
   id                String  @id @default(auto()) @map("_id") @db.ObjectId
-  userId            String  @db.ObjectId
+  adminId           String  @db.ObjectId
   type              String
   provider          String
   providerAccountId String
@@ -43,38 +41,14 @@ model Account {
   id_token          String? @db.String
   session_state     String?
 
-  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  admin Admin @relation(fields: [adminId], references: [id], onDelete: Cascade)
 
   @@unique([provider, providerAccountId])
 }
 
-model Listing {
-  id            String   @id @default(auto()) @map("_id") @db.ObjectId
-  title         String
-  description   String
-  imageSrc      String
-  createdAt     DateTime @default(now())
-  category      String
-  roomCount     Int
-  bathroom      Int
-  guestCount    Int
-  locationValue String
-  userId        String   @db.ObjectId
-  price         Int
-
-  user         User          @relation(fields: [userId], references: [id], onDelete: Cascade)
-  reservations Reservation[]
-}
-
-model Reservation {
-  id         String   @id @default(auto()) @map("_id") @db.ObjectId
-  userId     String   @db.ObjectId
-  listingId  String   @db.ObjectId
-  startDate  DateTime
-  endDate    DateTime
-  totalPrice Int
-  createdAt  DateTime @default(now())
-
-  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
-  Listing Listing @relation(fields: [listingId], references: [id], onDelete: Cascade)
+model Bolid {
+  id                String @id @default(auto()) @map("_id") @db.ObjectId
+  name              String
+  year              String
+  short_description String
 }

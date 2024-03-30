@@ -39,10 +39,6 @@ const SponsorsSection = () => {
   };
 
   useEffect(() => {
-    // Duplikowanie zawartości dla nieskończonej animacji przewijania
-    const originalContent = containerRef.current.innerHTML;
-    containerRef.current.innerHTML += originalContent;
-
     // Rozpoczęcie animacji przewijania
     animateScroll();
 
@@ -87,11 +83,22 @@ const SponsorsSection = () => {
     onMouseLeave={onMouseLeave}
     onMouseUp={onMouseUp}
     onMouseMove={onMouseMove}
-    className="animation-container relative bg-neutral-200 overflow-hidden flex items-center w-full h-[200px] animation-container"
+    className=" animation-container relative bg-neutral-200 overflow-hidden flex items-center w-full h-[200px] animation-container"
     style={{ overflowX: 'auto', cursor: isDragging ? 'grabbing' : 'grab' }}
   >
     <div className="relative">
-      <div className="flex gap-8">
+      <div className="flex gap-8 select-none">
+        {sponsors.map((src, index) => (
+          <div key={index} className="min-w-max flex-shrink-0 flex items-center">
+            <Image src={src} alt={`Sponsor ${index + 1}`} width={300} height={100} layout="intrinsic" />
+          </div>
+        ))}
+      </div>
+      <div className="absolute top-0 left-0 w-full h-full z-20"></div>
+    </div>
+    {/* Kopia w celu stworzenia iluzji braku przeskoku międzye końcem animacji */}
+    <div className="relative">
+      <div className="flex gap-8 select-none">
         {sponsors.map((src, index) => (
           <div key={index} className="min-w-max flex-shrink-0 flex items-center">
             <Image src={src} alt={`Sponsor ${index + 1}`} width={300} height={100} layout="intrinsic" />

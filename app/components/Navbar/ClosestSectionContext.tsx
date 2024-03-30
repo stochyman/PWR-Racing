@@ -14,7 +14,7 @@ const ClosestSectionProvider: React.FC<ClosestSectionProviderProps> = ({ childre
   useEffect(() => {
     const highlightClosestSection = () => {
       const sections = document.querySelectorAll('[id^="section-"]');
-      let currentClosestSectionId = sessionStorage.getItem('lastClosestSectionId') || '';
+      let currentClosestSectionId = '';
       let maxVisibility = 0;
 
       sections.forEach(section => {
@@ -28,13 +28,13 @@ const ClosestSectionProvider: React.FC<ClosestSectionProviderProps> = ({ childre
           currentClosestSectionId = section.id;
         }
       });
-
       setClosestSectionId(currentClosestSectionId); // Aktualizuj stan za pomocą wyznaczonej najbliższej sekcji
-      sessionStorage.setItem('lastClosestSectionId', currentClosestSectionId); // Zapisz ID najbliższej sekcji w sessionStorage
     };
 
     window.addEventListener('scroll', highlightClosestSection);
-    highlightClosestSection(); // Wywołaj na starcie, aby zainicjować wartość
+    setTimeout(() => {
+      highlightClosestSection();
+    }, 100);
 
     return () => window.removeEventListener('scroll', highlightClosestSection);
   }, []);
