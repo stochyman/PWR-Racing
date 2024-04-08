@@ -3,10 +3,10 @@
 
 const BolidSpecs = () => {
   return (
-  <div className="relative h-40 w-full flex justify-center bg-neutral-700">
-    <div className="absolute bg-neutral-800 z-0 w-64 inset-0"></div>
-    <div className="bg-neutral-800 z-10 flex justify-center items-center pr-8">
-      <h1 className={` text-white text-right font-akiraExpanded text-3xl font-extrabold leading-tight`}>
+  <div className="relative w-full flex justify-center bg-neutral-700">
+    <div className="absolute bg-neutral-800 z-0 w-64 h-46 inset-0"></div>
+    <div className=" bg-neutral-800 z-10 flex justify-center items-center pr-8">
+      <h1 className={` text-white py-12 text-right font-akiraExpanded text-3xl font-extrabold leading-tight`}>
         Specyfikacja <br/> Bolidu
       </h1>
       <svg width="130" height="60" viewBox="0 0 89 38" fill="none" xmlns="http://www.w3.org/2000/svg">

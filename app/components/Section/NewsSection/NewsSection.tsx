@@ -8,7 +8,7 @@ import Button from "../../Button";
 
 const NewsSection = () => {
   return (
-    <div id="section-news" className="">
+    <div id="section-news" className=" flex flex-col">
       <Container>
         <div className=" w-full pt-12">
           <div className="w-full flex justify-between">
@@ -25,7 +25,7 @@ const NewsSection = () => {
               />
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-8 my-10 relative border-none">
+          <div className="grid grid-cols-2 gap-8 my-10 relative border-none w-full">
             <News article='1' category="Współpraca" title="Premiera RT13E"></News>
             <News article='2' category="WSPÓŁPRACA" title="Współpraca z Kafuland"></News>
             <News article='3' category="Współpraca" title="Współpraca z Mitutoyo"></News>

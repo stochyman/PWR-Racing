@@ -16,7 +16,6 @@ const Container: React.FC<ContainerProps> = ({ children, paddingType = 'x' }) =>
     <div
       className={`
         max-w-[2520px]
-        mx-auto
         ${paddingClasses[paddingType]}
         relative flex justify-center items-center h-full
       `}

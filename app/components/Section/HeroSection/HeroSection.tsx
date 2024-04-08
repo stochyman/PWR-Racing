@@ -9,12 +9,12 @@ import Title from "../../Title";
 
 const FirstSection = () => {
   return (
-    <div id="section-home" className="flex flex-col md:flex-row items-center justify-between h-screen">
+    <div id="section-home" className="flex items-center justify-between h-screen">
       <div className="relative w-full h-full flex items-center">
         <BackgroundVideo/>
         <div className="relative z-10">
           <Container>
-            <div className="grid grid-cols-2 gap-40">
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-40">
               <div className="flex justify-center items-center">
                 <div className="">
                   <Title size="subtitle" color="red">POLITECHNIKA WROCŁAWSKA</Title>

@@ -7,9 +7,10 @@ export interface TitleProps {
   size?: 'small' | 'medium' | 'big' | 'bigger' | 'subtitle' | 'normal';
   color?: 'white' | 'black' | 'red' | 'gray';
   hoverColor?: 'white' | 'black' | 'red' | 'gray';
+  cardHover?: boolean;
 }
 
-const Title: React.FC<TitleProps> = ({ children, size = 'normal', color = 'white', hoverColor }) => {
+const Title: React.FC<TitleProps> = ({ children, size = 'normal', color = 'white', hoverColor, cardHover = false }) => {
   const colorClass = useMemo(() => {
     switch (color) {
       case 'black':
@@ -54,8 +55,20 @@ const Title: React.FC<TitleProps> = ({ children, size = 'normal', color = 'white
     }
   }, [size]);
 
+  const hoverSizeClass = useMemo(() => {
+    if (!cardHover) return ''; // Jeśli cardHover nie jest aktywny, nie dodajemy żadnej klasy
+    switch (size) {
+      case 'subtitle':
+        return 'group-hover:text-lg';
+      case 'small':
+        return 'group-hover:text-2xl';
+      default:
+        return '';
+    }
+  }, [size, cardHover]);
+
   return (
-    <h1 className={`whitespace-nowrap font-akiraExpanded font-extrabold ${colorClass} ${sizeClass} leading-tight transition-colors duration-300 ${hoverColorClass}`}>
+    <h1 className={` whitespace-nowrap font-akiraExpanded font-extrabold ${colorClass} ${sizeClass} ${hoverSizeClass} leading-tight transition-colors duration-300 ${hoverColorClass}`}>
       {children}
     </h1>
   );

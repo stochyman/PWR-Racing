@@ -1,11 +1,12 @@
-czy robimy animacje do zmiany bolidów? - wjazd i wyjazd
+<!--? czy robimy animacje do zmiany bolidów? -->
+<!--? stopka hovery? -->
 
-loga sponsorów
-dociete bolidy
-dane o kazdym członku koła
+<!--! loga sponsorów -->
+<!--! dociete bolidy -->
+<!--! dane o kazdym członku koła -->
 
-roblemy z typami w sliderach
-errory z img
+<!--TODO roblemy z typami w sliderach(sprawdzić czy gdzieś indziej też nie ma) -->
+<!--TODO errory z img -->
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
