@@ -6,7 +6,7 @@ import Title from "@/app/components/Title";
 import Text from "@/app/components/Text";
 import ClientSideInteractionComponent from "./serverButton";
 import Slider from "@/app/components/Section/BolidSection/Slider";
-import { useNavigation } from 'next/navigation';
+// import { useNavigation } from 'next/navigation';
 
 interface Iparams {
   teamId?: string;
@@ -51,18 +51,18 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
     });
   });
 
-  const navigation = useNavigation();
+  // const navigation = useNavigation();
 
-  const handleBolidChange = (newBolid) => {
-    navigation.navigate(`/team/${newBolid}`);
-  };
+  // const handleBolidChange = (newBolid) => {
+  //   navigation.navigate(`/team/${newBolid}`);
+  // };
 
   return (
     <div className=" bg-neutral-800">
       <ClientOnly>
         <Container>
           <div className=" mt-32 mb-12">
-            <Slider currentBolid={teamId} onChangeBolid={handleBolidChange}></Slider>
+            {/* <Slider currentBolid={teamId} onChangeBolid={handleBolidChange}></Slider> */}
             <Title color="white">{teamId}</Title>
 
             {/* Renderowanie sekcji dla każdego działu aktualnego bolidu */}
