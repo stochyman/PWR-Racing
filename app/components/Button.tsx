@@ -1,6 +1,7 @@
 'use client';
 
 import { IconType } from "react-icons";
+import { useRouter } from "next/navigation";
 
 interface ButtonProps {
   label: string,
@@ -19,6 +20,7 @@ const Button: React.FC<ButtonProps> = ({
   small,
   icon: Icon,
 }) => {
+  const router = useRouter();
   return (
     <button
       onClick={onClick}

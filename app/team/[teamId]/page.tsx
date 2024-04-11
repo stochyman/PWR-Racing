@@ -4,9 +4,8 @@ import Container from "@/app/components/Container";
 import Image from 'next/image';
 import Title from "@/app/components/Title";
 import Text from "@/app/components/Text";
-import ClientSideInteractionComponent from "./serverButton";
-import Slider from "@/app/components/Section/BolidSection/Slider";
-// import { useNavigation } from 'next/navigation';
+import ClientSideInteractionButton from "./ClientSideInteractionButton";
+import ClientSlider from "./ClientSlider";
 
 interface Iparams {
   teamId?: string;
@@ -37,7 +36,6 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
         if (!membersByDepartment[role.department]) {
           membersByDepartment[role.department] = [];
         }
-        // Szukamy czy już dodaliśmy tego członka
         let departmentMember = membersByDepartment[role.department].find(m => `${m.name} ${m.surname}` === memberFullName);
         if (!departmentMember) {
           departmentMember = {
@@ -51,30 +49,30 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
     });
   });
 
-  // const navigation = useNavigation();
-
-  // const handleBolidChange = (newBolid) => {
-  //   navigation.navigate(`/team/${newBolid}`);
-  // };
+  // Sort departments such that 'management' comes first
+  const sortedDepartments = Object.keys(membersByDepartment).sort((a, b) => {
+    if (a === 'management') return -1;
+    if (b === 'management') return 1;
+    return 0;
+  });
 
   return (
-    <div className=" bg-neutral-800">
-      <ClientOnly>
-        <Container>
-          <div className=" mt-32 mb-12">
-            {/* <Slider currentBolid={teamId} onChangeBolid={handleBolidChange}></Slider> */}
-            <Title color="white">{teamId}</Title>
+    <div className="relative bg-neutral-950 pt-32 pb-12">
+      <div className="relative">
+        <ClientSlider teamId={teamId}/>
 
-            {/* Renderowanie sekcji dla każdego działu aktualnego bolidu */}
-            {Object.entries(membersByDepartment).map(([department, members]) => (
+        {/* Renderowanie sekcji dla każdego działu aktualnego bolidu */}
+        <Container>
+          <div className="pt-10">
+            {sortedDepartments.map((department) => (
               <div key={department} className="">
-                <div className=" flex flex-col items-center my-8">
-                  <div className=" uppercase text-center my-8 p-2 px-20 border-white border-b-2">
-                    <Title color="white">{department}</Title>
+                <div className="flex flex-col items-center my-8">
+                  <div className="uppercase text-center my-8 p-2 px-20 border-white border-b-2">
+                    <Title color="white">{department === 'management' ? teamId : department}</Title>
                   </div>
 
                   <div className="grid grid-cols-4 gap-8">
-                    {members.map((member, index) => (
+                    {membersByDepartment[department].map((member, index) => (
                       <div className="relative group" key={index}>
                         <div className="absolute inset-0 z-0 w-full h-full rounded-full blur-3xl bg-white opacity-10"></div>
 
@@ -116,7 +114,7 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
                             </div>
 
                             <div className="w-full">
-                              <ClientSideInteractionComponent/>
+                              <ClientSideInteractionButton/>
                             </div>
                           </div>
 
@@ -129,7 +127,7 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
             ))}
           </div>
         </Container>
-      </ClientOnly>
+      </div>
     </div>
   );
 };

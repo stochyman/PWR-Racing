@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import ClientOnly from './components/ClientOnly';
 import HeroSection from './components/Section/HeroSection/HeroSection';
 import DepartmentsSubsection from './components/Section/DepartmentsSubsection/DepartmentsSubsection';

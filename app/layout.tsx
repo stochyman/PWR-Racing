@@ -25,8 +25,8 @@ export default function RootLayout({
 return (
   <html lang="pl">
     <body className={font.className}>
-      <ClosestSectionProvider>
-        <ClientOnly>
+      <ClientOnly>
+        <ClosestSectionProvider>
           <ToasterProvider/>
           <LoginModal/>
           <RegisterModal/>
@@ -34,8 +34,8 @@ return (
           <SideBar/>
           {children}
           <FooterSection/>
-        </ClientOnly>
-      </ClosestSectionProvider>
+        </ClosestSectionProvider>
+      </ClientOnly>
     </body>
   </html>
 );

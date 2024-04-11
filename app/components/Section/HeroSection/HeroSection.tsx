@@ -6,9 +6,12 @@ import Container from '../../Container';
 import Text from "../../Text";
 import BackgroundVideo from './BackgroundVideo';
 import Title from "../../Title";
+import ClientOnly from "../../ClientOnly";
 
 const FirstSection = () => {
   return (
+    <ClientOnly>
+
     <div id="section-home" className="flex items-center justify-between h-screen">
       <div className="relative w-full h-full flex items-center">
         <BackgroundVideo/>
@@ -43,6 +46,7 @@ const FirstSection = () => {
         </div>
       </div>
     </div>
+    </ClientOnly>
   );
 };
 

@@ -26,7 +26,7 @@ const News: React.FC<NewsProps> = ({ article, category, title }) => {
         <div className="text-center p-2 rounded-tr-xl w-1/3 bg-customRed">
           <Title size="subtitle">{category}</Title>
         </div>
-        <div className="text-center p-2 rounded-bl-3xl rounded-tr-xl w-2/3 bg-white border-2 border-black">
+        <div className="text-center p-2 rounded-bl-3xl rounded-tr-xl w-2/3 bg-white border-2">
           <Text opacity1 bold medium center color="black">{title}</Text>
         </div>
       </div>

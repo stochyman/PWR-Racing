@@ -1,5 +1,5 @@
-<!--? czy robimy animacje do zmiany bolidów? -->
-<!--? stopka hovery? -->
+<!-- 6353 61,4GB -->
+<!--? czy robimy animacje do zmiany bolidów? - TAK wjazd z lewej lub prawej -->
 
 <!--! loga sponsorów -->
 <!--! dociete bolidy -->
