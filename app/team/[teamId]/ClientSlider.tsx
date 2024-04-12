@@ -14,7 +14,7 @@ const ClientSlider: React.FC<ParamsParamsClientSlider> = ({teamId}) => {
   };
 
   return (
-    <Slider currentBolid={teamId} onChangeBolid={handleRedirect}></Slider>
+    <Slider currentBolid={teamId} darkMode onChangeBolid={handleRedirect}></Slider>
   );
 };
 

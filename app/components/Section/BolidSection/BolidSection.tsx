@@ -8,6 +8,7 @@ import BolidSpecs from "./BolidSpecs";
 import Title from "../../Title";
 import Text from "../../Text";
 import Slider from './Slider';
+import { useRouter } from 'next/navigation';
 
 const BolidSection = () => {
   // Stan dla danych bolidu
@@ -38,6 +39,11 @@ const BolidSection = () => {
     setCurrentBolid(bolidName);
   };
 
+  const router = useRouter();
+  const teamRedirect = (bolid: string) => {
+    router.push(`/team/${bolid}`);
+  };
+
   return (
     <div className='relative flex flex-col'>
       <Slider currentBolid={currentBolid} onChangeBolid={handleChangeBolid} />
@@ -58,7 +64,7 @@ const BolidSection = () => {
                 <Button
                   outline
                   label={`Poznaj zespół ${bolidData.name}`}
-                  onClick={() => {}}
+                  onClick={() => teamRedirect(bolidData.name)}
                 />
               </div>
             </div>

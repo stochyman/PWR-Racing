@@ -8,12 +8,12 @@ const NavigationMenu = () => {
     <nav className='nav-responsive ml-16'>
       <ul className="flex space-x-4 h-full">
         <NavItem to="/">Home</NavItem>
-        <NavItem to="team/RT13e">Bolid</NavItem>
-        <NavItem to="section-team">Zespół</NavItem>
-        <NavItem to="section-history">O nas</NavItem>
-        <NavItem to="section-partners">Partnerzy</NavItem>
-        <NavItem to="section-news">Aktualności</NavItem>
-        <NavItem to="section-contact">Kontakt</NavItem>
+        <NavItem to="/bolid">Bolid</NavItem>
+        <NavItem to="/team">Zespół</NavItem>
+        <NavItem to="/aboutus">O nas</NavItem>
+        <NavItem to="/partners">Partnerzy</NavItem>
+        <NavItem to="/news">Aktualności</NavItem>
+        <NavItem to="/contact">Kontakt</NavItem>
       </ul>
     </nav>
   );
