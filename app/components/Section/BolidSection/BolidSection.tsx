@@ -48,7 +48,7 @@ const BolidSection = () => {
     <div className='relative flex flex-col'>
       <Slider currentBolid={currentBolid} onChangeBolid={handleChangeBolid} />
       <Container>
-        <div id="section-bolid" className="grid grid-cols-2 gap-2">
+        <div className="grid grid-cols-2 gap-12 py-12">
           <div className="flex justify-center items-center">
             <div className="">
               <Title size="subtitle" color="gray">{bolidData.year}</Title>

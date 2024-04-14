@@ -10,8 +10,8 @@ const NewsSection = () => {
   return (
     <div id="section-news" className=" flex flex-col">
       <Container>
-        <div className=" w-full pt-12">
-          <div className="w-full flex justify-between">
+        <div className="w-[70rem] pt-12">
+          <div className=" flex justify-between">
             <Title color="black" >AKTUALNOŚCI</Title>
             <div className="flex gap-4 w-2/5">
               <Button
@@ -25,7 +25,7 @@ const NewsSection = () => {
               />
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-8 my-10 relative border-none w-full">
+          <div className="grid grid-cols-2 gap-8 my-10 relative border-none">
             <News article='1' category="Współpraca" title="Premiera RT13E"></News>
             <News article='2' category="WSPÓŁPRACA" title="Współpraca z Kafuland"></News>
             <News article='3' category="Współpraca" title="Współpraca z Mitutoyo"></News>

@@ -9,7 +9,7 @@ const FSSection = () => {
   return (
     <div className="">
       <Container>
-        <div className="grid grid-cols-2 gap-20 py-20 px-32">
+        <div className="grid grid-cols-2 gap-20 py-20">
           <div className="">
             <Title size="big" color="black">ZAWODY FORMULA STUDENT</Title>
             <div className=" my-6">
