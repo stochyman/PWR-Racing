@@ -1,7 +1,7 @@
 'use client';
 
-import { IconType } from "react-icons";
 import { useRouter } from "next/navigation";
+import { IconType } from "react-icons";
 
 interface ButtonProps {
   label: string,

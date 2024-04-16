@@ -65,4 +65,13 @@ model Bolid {
   name              String @unique
   year              String
   short_description String
+  parts             Part[]
+  acceleration      String
+  mass              String
+  power             String
+}
+
+type Part {
+  partName    String
+  description String
 }

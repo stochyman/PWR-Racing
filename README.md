@@ -1,9 +1,13 @@
 <!-- 6353 61,4GB -->
-<!--? czy robimy animacje do zmiany bolidów? - TAK wjazd z lewej lub prawej -->
 
 <!--! loga sponsorów -->
 <!--! dociete bolidy -->
 <!--! dane o kazdym członku koła -->
+
+<!--TODO czy robimy animacje do zmiany bolidów? - TAK wjazd z lewej lub prawej -->
+<!--TODO odstepy miedzy sekcjami za male-->
+<!--TODO wrzucenie zdjec do bazy i czlonkwo z rolami-->
+<!--TODO przekierowanie dla stron bez podanego bolidu i sprobowac ogarnac jakby ktos wpisal np z malej literki-->
 
 <!--TODO roblemy z typami w sliderach(sprawdzić czy gdzieś indziej też nie ma) -->
 <!--TODO errory z img -->

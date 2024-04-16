@@ -6,6 +6,7 @@ html,
 body,
 :root {
   height: 100%;
+  --container-width: 75rem;
 }
 
 ::selection {
@@ -22,6 +23,26 @@ body,
 /* Ukryj pasek przewijania w Firefox */
 .animation-container {
   scrollbar-width: none;
+}
+
+/* Animacja dla wchodzącego elementu */
+.slide-enter {
+  transform: translateX(100%);
+}
+
+.slide-enter-active {
+  transform: translateX(0);
+  transition: transform 500ms ease-in-out;
+}
+
+/* Animacja dla wychodzącego elementu */
+.slide-exit {
+  transform: translateX(0);
+}
+
+.slide-exit-active {
+  transform: translateX(-100%);
+  transition: transform 500ms ease-in-out;
 }
 
 @media (max-width: 1620px) {

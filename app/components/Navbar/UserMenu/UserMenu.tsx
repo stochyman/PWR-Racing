@@ -8,7 +8,7 @@ import MenuItem from './MenuItem';
 import useRegisterModal from '@/app/hooks/useRegisterModal';
 import useLoginModal from '@/app/hooks/useLoginModal';
 import SocialIcons from './SocialIcons';
-import DoubleButton from '../../DoubleButton';
+import DoubleButton from '../../SecondaryButton';
 
 const UserMenu = () => {
   const registerModal = useRegisterModal();

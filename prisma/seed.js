@@ -1,19 +1,17 @@
-const { PrismaClient } = require('@prisma/client');
+//? npx prisma db seed
+const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 
-//? npx prisma db seed
 async function main() {
-  await prisma.bolid.createMany({
-    data: [
-      {
-        name: "RT09",
-        year: "2018",
-        short_description: "RT09 Najnowszy projekt jest odpowiedzią zespołu na wyzwania i trendy branży automotive. Chcemy projektować rozwiązania i być częścią odbywającej się zmiany. Elektryfikacja i stworzenie systemów autonomicznych w bolidzie jest krokiem milowym w rozwoju zespołu. Pojazd wyposażony został w innowacyjne rozwiązania ze świata motorsportu. Wyróżniają go pełny monocoque, ważący zaledwie 24 kilogramy, autorskie silniki oraz wiązki elektryczne wysokiego i niskiego napięcia. System jazdy autonomicznej pozwala nam na startowanie nie tylko w kategorii elektrycznej, lecz także w kategorii driverless."
-      }
-    ]
+  const updateMany = await prisma.bolid.updateMany({
+    data: {
+      acceleration: "4s",
+      mass: "240 KG",
+      power: "2 x 47 KW",
+    },
   });
 
-  console.log('Dodano bolidy');
+  console.log(`Updated ${updateMany.count} bolids.`);
 }
 
 main()

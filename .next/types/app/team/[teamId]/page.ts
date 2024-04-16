@@ -1,4 +1,4 @@
-// File: C:\Users\dchma\OneDrive\Dokumenty\Websites\racing_website\app\team\[teamId]\page.tsx
+// File: C:\Users\dchma\Documents\Websites\racing_website\app\team\[teamId]\page.tsx
 import * as entry from '../../../../../app/team/[teamId]/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
