@@ -1,25 +1,30 @@
-'use client';
+"use client";
 
 interface ContainerProps {
   children: React.ReactNode;
-  paddingType?: 'r' | 'l' | 'x';
+  paddingType?: "r" | "l" | "x";
 }
 
-const Container: React.FC<ContainerProps> = ({ children, paddingType = 'x' }) => {
+const Container: React.FC<ContainerProps> = ({
+  children,
+  paddingType = "x",
+}) => {
   const paddingClasses = {
-    r: 'mr-[calc((100vw-var(--container-width))/2)]',
-    l: 'ml-[calc((100vw-var(--container-width))/2)]',
-    x: 'mx-auto',
+    r: "mr-[calc((100vw-var(--container-width))/2)]",
+    l: "ml-[calc((100vw-var(--container-width))/2)]",
+    x: "mx-auto",
   };
 
   return (
     <div
-      className={`${paddingClasses[paddingType]} ${paddingType === 'x' ? "max-w-[var(--container-width)] " : ""}relative flex justify-center items-center h-full`}
+      className={`${paddingClasses[paddingType]} ${
+        paddingType === "x" ? "max-w-[var(--container-width)] " : ""
+      }relative flex justify-center items-center h-full`}
     >
       {children}
     </div>
-  )
-}
+  );
+};
 
 export default Container;
 

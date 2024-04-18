@@ -51,10 +51,10 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
     });
   });
 
-  // Sort departments such that 'management' comes first
+  // Sort departments such that 'MNG' comes first
   const sortedDepartments = Object.keys(membersByDepartment).sort((a, b) => {
-    if (a === "management") return -1;
-    if (b === "management") return 1;
+    if (a === "MNG") return -1;
+    if (b === "MNG") return 1;
     return 0;
   });
 
@@ -73,29 +73,27 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
                 }`}
               >
                 <h1 className="text-[15rem] font-extrabold text-white uppercase leading-none">
-                  {department === "management" ? "Team" : department}
+                  {department === "MNG" ? "Team" : department}
                 </h1>
               </div>
               <Container>
                 <div
                   className={`${
-                    department === "management" ? "grid-cols-2" : "grid-cols-1"
+                    department === "MNG" ? "grid-cols-2" : "grid-cols-1"
                   } grid my-8 align-middle justify-center gap-16`}
                 >
                   <div className="">
                     <div className="flex flex-col items-center">
                       <div className="uppercase text-center my-6 p-2 px-20 border-white border-b-2">
                         <Title color="white">
-                          {department === "management" ? teamId : department}
+                          {department === "MNG" ? teamId : department}
                         </Title>
                       </div>
                     </div>
                     <div
                       key={department}
                       className={`${
-                        department === "management"
-                          ? "grid-cols-2"
-                          : "grid-cols-4"
+                        department === "MNG" ? "grid-cols-2" : "grid-cols-4"
                       } grid my-4 gap-6`}
                     >
                       {membersByDepartment[department].map((member, index) => (
@@ -105,11 +103,13 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
                           <div className="relative rounded-xl overflow-hidden bg-black pb-14">
                             <div className="relative">
                               <Image
-                                src="https://storage.googleapis.com/pwr-rt/Pawe%C5%82%20W%C3%B3jcik.jpg"
+                                src={`https://storage.googleapis.com/pwr-rt/${encodeURIComponent(
+                                  member.name
+                                )}%20${encodeURIComponent(member.surname)}.jpg`}
                                 alt={`Zdjęcie ${member.name} ${member.surname}`}
                                 layout="responsive"
                                 width={300} // Używaj rzeczywistych proporcji obrazu
-                                height={400} // Używaj rzeczywistych proporcji obrazu
+                                height={300} // Używaj rzeczywistych proporcji obrazu
                                 objectFit="cover"
                               />
                             </div>
@@ -160,7 +160,7 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
                       ))}
                     </div>
                   </div>
-                  {department === "management" && (
+                  {department === "MNG" && (
                     <div className="flex flex-col justify-center">
                       <div className="relative">
                         <div className=" absolute">

@@ -135,7 +135,7 @@ const FooterSection = () => {
             </div>
           </div>
           <div className="px-12 text-white flex gap-12 mt-4">
-            <Text noblock wide>
+            <Text wide>
               W każdym sezonie tworzymy nowy bolid wyścigowy. Na swoim koncie
               mamy aż dwanaście niepowtarzalnych modeli bolidów spalinowych, z
               czego każdy kolejny jest w stanie z łatwością pokonać poprzedni. W

@@ -15,7 +15,7 @@ const BolidSpecs: React.FC<BolidSpecsProps> = ({
   return (
     <div className="">
       <div
-        className={`${animate} relative w-full flex justify-center bg-neutral-700 transition duration-200 ease-out`}
+        className={`${animate} relative w-[100vw] flex justify-center bg-neutral-700 transition duration-200 ease-out`}
       >
         <div className="absolute bg-neutral-800 z-0 w-64 h-46 inset-0"></div>
         <div className="bg-neutral-800 z-10 flex justify-center items-center pr-8">

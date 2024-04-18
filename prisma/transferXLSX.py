@@ -1,55 +1,35 @@
-import pandas as pd
+import openpyxl
 
-# Load the Excel file
+# Ścieżka do pliku XLSX
 file_path = 'prisma/MEMBERS OF PWR RACING TEAM.xlsx'
-data = pd.read_excel(file_path)
 
-# Dictionary to expand department abbreviations
-department_expansions = {
-    "MNG": "management",
-    "MKT": "marketing",
-    "COMP": "composites",
-    "SOFT": "software",
-    "ELE": "electrical",
-    "MECH": "mechanical",
-    "VP": "vehicle performance",
-    "WORKSHOP": "infrastructure",
-    "DRIVERS": "drivers"
-}
+# Otworzenie pliku Excela
+wb = openpyxl.load_workbook(file_path)
 
-# Dictionary to determine bolid names based on the year
-bolid_names = {
-    "2022/23": "RT13e",
-    "2022/21": "RT12e",
-    "2021/20": "RT11b",
-    "2020/19": "RTX"
-}
+# Wybór aktywnego arkusza
+sheet = wb.active
 
-# List to hold all member data
-members = []
+# Słownik do przechowywania danych
+data_dict = {}
 
-# Process each row in the DataFrame
-for _, row in data.iterrows():
-    name_parts = row[0].split()
-    name = name_parts[0]
-    surname = name_parts[1] if len(name_parts) > 1 else ""
-    print(name, surname)
-    # Prepare the roles list
-    roles = []
-    for col in [4, 6, 7, 8]:
-        if pd.notna(row[col]) and row[col] != "–":
-            role_info = row[col].split()
-            year = role_info[-1].strip("()")  # Extracting the year part
-            role = " ".join(role_info[:-1])  # The role part
+# Iteracja przez wiersze, pomijając dwa pierwsze wiersze
+for row in sheet.iter_rows(min_row=3, max_row=sheet.max_row):
+    name = row[0].value.strip() if row[0].value else None  # Imię i nazwisko
+    department = row[1].value.strip() if row[1].value else 'undefined'  # Departament
+    role = row[2].value.strip() if row[2].value else 'undefined'  # Rola
+    bolidName = 'RT13e'  # Założenie, że wszystkie role odnoszą się do tego samego bolidu
 
-            if year in bolid_names:
-                bolid_name = bolid_names[year]
-                department = department_expansions.get(row['DZIAŁ'], row['DZIAŁ'])  # Default to raw if not in dict
-                roles.append({"department": department, "role": role, "bolidName": bolid_name})
+    if name is not None:
+        if name in data_dict:
+            # Jeżeli osoba jest już w słowniku, dodaj do niej nową rolę
+            data_dict[name]['roles'].append({'department': department, 'role': role, 'bolidName': bolidName})
+        else:
+            # W przeciwnym razie, utwórz nowy wpis dla tej osoby
+            data_dict[name] = {
+                'name': name.split()[0],  # Pierwsze imię
+                'surname': ' '.join(name.split()[1:]),  # Reszta jako nazwisko
+                'roles': [{'department': department, 'role': role, 'bolidName': bolidName}]
+            }
 
-    # Append this member's data to the list
-    members.append({"name": name, "surname": surname, "roles": roles})
-
-# Print the processed data
-for member in members:
-    print(member)
+# Wyświetlenie sformatowanego słownika
+print(data_dict)

@@ -1,40 +1,54 @@
 "use client";
 
+import { usePathname, useRouter } from "next/navigation";
 import React, { useRef, useState } from "react";
 import SliderElement from "./SliderElement";
 
 export interface SliderProps {
   currentBolid: string;
-  onChangeBolid: (newBolid: string) => void;
+  onChangeBolid?: (newBolid: string) => void;
   darkMode?: boolean;
 }
 
 const Slider: React.FC<SliderProps> = ({
   currentBolid = "RT13e",
-  onChangeBolid,
+  onChangeBolid = () => {},
   darkMode = false,
 }) => {
   // Stan dla przeciągania
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
-  // Ref do kontenera, który będzie przewijany
-  const scrollContainerRef = useRef(null);
+  const router = useRouter();
+  const pathname = usePathname();
+  const teamRedirect = (bolid: string) => router.push(`/team/${bolid}`);
+  const bolidRedirect = (bolid: string) => router.push(`/bolid/${bolid}`);
+
+  if (pathname && pathname.startsWith("/team/")) {
+    console.log("test", pathname);
+    onChangeBolid = teamRedirect;
+  } else if (pathname && pathname.startsWith("/bolid/")) {
+    onChangeBolid = bolidRedirect;
+  }
 
   // Rozpoczęcie przeciągania
-  const startDragging = (e) => {
+  const startDragging = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!scrollContainerRef.current) return;
+
     setIsDragging(true);
     setStartX(e.pageX - scrollContainerRef.current.offsetLeft);
     setScrollLeft(scrollContainerRef.current.scrollLeft);
   };
 
   // Przeciąganie
-  const onDrag = (e) => {
-    if (!isDragging) return;
+  const onDrag = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!isDragging || !scrollContainerRef.current) return;
+
     e.preventDefault();
     const x = e.pageX - scrollContainerRef.current.offsetLeft;
-    const walk = x - startX; // Prędkość przewijania, może wymagać dostosowania
+    const walk = x - startX;
     scrollContainerRef.current.scrollLeft = scrollLeft - walk;
   };
 

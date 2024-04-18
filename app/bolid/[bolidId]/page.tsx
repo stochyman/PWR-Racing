@@ -19,12 +19,12 @@ const BolidPage = async ({ params }: { params: Iparams }) => {
 
   return (
     <div className=" pt-32">
-      <BolidSection presetBolid={params.bolidId} />
+      <BolidSection presetBolid={bolidId} />
       <div className="flex overflow-x-auto">
         {[1, 2, 3, 4, 5, 6].map((num) => (
           <div key={num} className="flex-shrink-0 w-[400px]">
             <Image
-              src={`/images/bolid/${params.bolidId}/images/${num}.jpg`}
+              src={`/images/bolid/${bolidId}/images/${num}.jpg`}
               alt={`Bolid ${num}`}
               width={383}
               height={200}
