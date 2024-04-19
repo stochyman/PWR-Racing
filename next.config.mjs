@@ -3,9 +3,8 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'storage.googleapis.com',
-        pathname: '/pwr-rt/*',
+        protocol: "https",
+        hostname: "storage.googleapis.com",
       },
     ],
   },

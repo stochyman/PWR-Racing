@@ -18,13 +18,13 @@ const BolidPage = async ({ params }: { params: Iparams }) => {
   }
 
   return (
-    <div className=" pt-32">
+    <div className="flex flex-col pt-32">
       <BolidSection presetBolid={bolidId} />
       <div className="flex overflow-x-auto">
         {[1, 2, 3, 4, 5, 6].map((num) => (
           <div key={num} className="flex-shrink-0 w-[400px]">
             <Image
-              src={`/images/bolid/${bolidId}/images/${num}.jpg`}
+              src={`/images/bolid/${bolidId}/images/slider/${num}.jpg`}
               alt={`Bolid ${num}`}
               width={383}
               height={200}
@@ -33,11 +33,151 @@ const BolidPage = async ({ params }: { params: Iparams }) => {
           </div>
         ))}
       </div>
+      <div className=" w-full">
+        <Container>
+          <div className="flex flex-col w-full  py-16">
+            <Title size="big" color="black">
+              OSIĄGNIECIA ZA SEZON 2022
+            </Title>
+
+            <div className="flex">
+              <div className="w-full grid grid-cols-3 gap-8 pt-6 h-60">
+                <div className="relative rounded overflow-hidden">
+                  <Image
+                    src="/images/bolid/RT12e/images/zawody/1.jpg"
+                    alt="Zdjęcie 2"
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                  <div className=" absolute inset-0 bg-black opacity-50"></div>
+                  <div className=" absolute inset-0 p-4 flex flex-col justify-between">
+                    <Title size="small">FORMULA STUDENT ALPE ADRIA</Title>
+                    <div className=" flex justify-between items-end">
+                      <div className="">
+                        <div className=" text-xs">
+                          <Text>6th Overall</Text>
+                        </div>
+                        <div className=" text-xs">
+                          <Text>8th Skidpad</Text>
+                        </div>
+                        <div className=" text-xs">
+                          <Text>11th Acceleration</Text>
+                        </div>
+                        <div className=" text-xs">
+                          <Text>2nd Engineering Design</Text>
+                        </div>
+                        <div className=" text-xs">
+                          <Text>4th Business Plan Presentation</Text>
+                        </div>
+                        <div className=" text-xs">
+                          <Text>7th Endurance </Text>
+                        </div>
+                      </div>
+                      <div className="">
+                        <Image
+                          src="/images/bolid/RT12e/images/zawody/logo1.png"
+                          alt="Zdjęcie 1"
+                          width={100}
+                          height={100}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="relative rounded overflow-hidden">
+                  <Image
+                    src="/images/bolid/RT12e/images/zawody/2.jpg"
+                    alt="Zdjęcie 2"
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                  <div className=" absolute inset-0 bg-black opacity-50"></div>
+                  <div className=" absolute inset-0 p-4 flex flex-col justify-between">
+                    <Title size="small">FORMULA STUDENT ALPE ADRIA</Title>
+                    <div className=" flex justify-between items-end">
+                      <div className="">
+                        <div className=" text-xs">
+                          <Text>6th Overall</Text>
+                        </div>
+                        <div className=" text-xs">
+                          <Text>8th Skidpad</Text>
+                        </div>
+                        <div className=" text-xs">
+                          <Text>11th Acceleration</Text>
+                        </div>
+                        <div className=" text-xs">
+                          <Text>2nd Engineering Design</Text>
+                        </div>
+                        <div className=" text-xs">
+                          <Text>4th Business Plan Presentation</Text>
+                        </div>
+                        <div className=" text-xs">
+                          <Text>7th Endurance </Text>
+                        </div>
+                      </div>
+                      <div className="">
+                        <Image
+                          src="/images/bolid/RT12e/images/zawody/logo2.png"
+                          alt="Zdjęcie 1"
+                          width={100}
+                          height={100}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="relative rounded overflow-hidden">
+                  <Image
+                    src="/images/bolid/RT12e/images/zawody/3.jpg"
+                    alt="Zdjęcie 2"
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                  <div className=" absolute inset-0 bg-black opacity-50"></div>
+                  <div className=" absolute inset-0 p-4 flex flex-col justify-between">
+                    <Title size="small">FORMULA STUDENT ALPE ADRIA</Title>
+                    <div className=" flex justify-between items-end">
+                      <div className="">
+                        <div className=" text-xs">
+                          <Text>6th Overall</Text>
+                        </div>
+                        <div className=" text-xs">
+                          <Text>8th Skidpad</Text>
+                        </div>
+                        <div className=" text-xs">
+                          <Text>11th Acceleration</Text>
+                        </div>
+                        <div className=" text-xs">
+                          <Text>2nd Engineering Design</Text>
+                        </div>
+                        <div className=" text-xs">
+                          <Text>4th Business Plan Presentation</Text>
+                        </div>
+                        <div className=" text-xs">
+                          <Text>7th Endurance </Text>
+                        </div>
+                      </div>
+                      <div className="">
+                        <Image
+                          src="/images/bolid/RT12e/images/zawody/logo3.png"
+                          alt="Zdjęcie 1"
+                          width={100}
+                          height={100}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </div>
       <div className="w-full">
         {bolid.parts.map((part, depIndex) => (
           <div
             key={part.id}
-            className={`${depIndex % 2 === 0 ? "bg-white" : "bg-neutral-200"}`}
+            className={`${depIndex % 2 === 0 ? "bg-neutral-200" : "bg-white"}`}
           >
             <Container>
               <div

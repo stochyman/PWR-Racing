@@ -86,18 +86,20 @@ const BolidSection = ({ presetBolid = "RT13e" }) => {
   };
 
   return (
-    <div className="relative flex flex-col w-[200vw] overflow">
-      <Slider
-        currentBolid={currentBolidData.name}
-        onChangeBolid={handleChangeBolid}
-      />
-      <div
-        className={` flex ${sameDirectionShift} ${isAnimating} ${
-          displayRight ? "flex-row-reverse" : "flex-row"
-        }`}
-      >
-        <BolidContent {...currentBolidData} />
-        {previousBolidData && <BolidContent {...previousBolidData} />}
+    <div className=" overflow-hidden">
+      <div className="relative flex flex-col w-[200vw]">
+        <Slider
+          currentBolid={currentBolidData.name}
+          onChangeBolid={handleChangeBolid}
+        />
+        <div
+          className={` flex ${sameDirectionShift} ${isAnimating} ${
+            displayRight ? "flex-row-reverse" : "flex-row"
+          }`}
+        >
+          <BolidContent {...currentBolidData} />
+          {previousBolidData && <BolidContent {...previousBolidData} />}
+        </div>
       </div>
     </div>
   );

@@ -1,602 +1,802 @@
-// node prisma/seedTeamMember.js
 const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 
 async function main() {
-  const teamMembersData = {
-    "Wojciech Moranowicz": {
-      name: "Wojciech",
-      surname: "Moranowicz",
-      roles: [{ department: "MNG", role: "Lider Zespołu", bolidName: "RT13e" }],
-    },
-    "Przemysław Wójcik": {
-      name: "Przemysław",
-      surname: "Wójcik",
+  const teamMembersData = [
+    {
+      name: "wojciech",
+      surname: "moranowicz",
       roles: [
-        { department: "MNG", role: "Lider Techniczny", bolidName: "RT13e" },
+        { department: "management", role: "lider zespołu", bolidName: "RT13e" },
+        {
+          department: "management",
+          role: "konstruktor wiązki przewodów wysokiego napięcia",
+          bolidName: "RT12e",
+        },
       ],
     },
-    "Zuzanna Ignaszak": {
-      name: "Zuzanna",
-      surname: "Ignaszak",
-      roles: [
-        { department: "MKT", role: "Liderka Marketingu", bolidName: "RT13e" },
-      ],
-    },
-    "Karolina Wasiukiewicz": {
-      name: "Karolina",
-      surname: "Wasiukiewicz",
-      roles: [
-        { department: "MKT", role: "Social Media Manager", bolidName: "RT13e" },
-      ],
-    },
-    "Iga Friedrich": {
-      name: "Iga",
-      surname: "Friedrich",
+    {
+      name: "przemysław",
+      surname: "wójcik",
       roles: [
         {
-          department: "MKT",
-          role: "Social Media Manager, Cost & Manufacturing Leader",
+          department: "management",
+          role: "lider techniczny",
+          bolidName: "RT13e",
+        },
+        {
+          department: "management",
+          role: "konstruktor autonomicznego układu hamulcowego",
+          bolidName: "RT12e",
+        },
+        {
+          department: "management",
+          role: "konstruktor automatycznego układu hamulcowego",
+          bolidName: "RT11b",
+        },
+        {
+          department: "management",
+          role: "konstruktor autonomicznego układu kierowniczego",
+          bolidName: "RTX",
+        },
+      ],
+    },
+    {
+      name: "zuzanna",
+      surname: "ignaszak",
+      roles: [
+        {
+          department: "marketing",
+          role: "liderka marketingu",
+          bolidName: "RT13e",
+        },
+        {
+          department: "marketing",
+          role: "marketing associate",
+          bolidName: "RT12e",
+        },
+      ],
+    },
+    {
+      name: "karolina",
+      surname: "wasiukiewicz",
+      roles: [
+        {
+          department: "marketing",
+          role: "social media manager",
           bolidName: "RT13e",
         },
       ],
     },
-    "Mikołaj Wrzeszcz": {
-      name: "Mikołaj",
-      surname: "Wrzeszcz",
-      roles: [{ department: "MKT", role: "Grafik", bolidName: "RT13e" }],
-    },
-    "Łukasz Mika": {
-      name: "Łukasz",
-      surname: "Mika",
-      roles: [{ department: "MKT", role: "Videographer", bolidName: "RT13e" }],
-    },
-    "Karol Cieślawski": {
-      name: "Karol",
-      surname: "Cieślawski",
-      roles: [{ department: "MKT", role: "Fotograf", bolidName: "RT13e" }],
-    },
-    "Patryk Palenga": {
-      name: "Patryk",
-      surname: "Palenga",
+    {
+      name: "iga",
+      surname: "friedrich",
       roles: [
         {
-          department: "MKT",
-          role: "Prezentacja Biznesowa",
+          department: "marketing",
+          role: "social media manager, cost & manufacturing leader",
           bolidName: "RT13e",
         },
       ],
     },
-    "Jakub Kucharski": {
-      name: "Jakub",
-      surname: "Kucharski",
+    {
+      name: "mikołaj",
+      surname: "wrzeszcz",
+      roles: [{ department: "marketing", role: "grafik", bolidName: "RT13e" }],
+    },
+    {
+      name: "łukasz",
+      surname: "mika",
+      roles: [
+        { department: "marketing", role: "videographer", bolidName: "RT13e" },
+      ],
+    },
+    {
+      name: "karol",
+      surname: "cieślawski",
+      roles: [
+        { department: "marketing", role: "fotograf", bolidName: "RT13e" },
+      ],
+    },
+    {
+      name: "patryk",
+      surname: "palenga",
       roles: [
         {
-          department: "MKT",
-          role: "Prezentacja Biznesowa",
+          department: "marketing",
+          role: "prezentacja biznesowa",
           bolidName: "RT13e",
         },
       ],
     },
-    "Hanna Szebesczyk": {
-      name: "Hanna",
-      surname: "Szebesczyk",
+    {
+      name: "jakub",
+      surname: "kucharski",
       roles: [
         {
-          department: "COMP",
-          role: "LIDER DZIAŁU COMPOSITES",
+          department: "marketing",
+          role: "prezentacja biznesowa",
           bolidName: "RT13e",
         },
       ],
     },
-    "Marcin Bawołek": {
-      name: "Marcin",
-      surname: "Bawołek",
+    {
+      name: "hanna",
+      surname: "szebesczyk",
       roles: [
         {
-          department: "COMP",
-          role: "KONSTRUKTOR TYLNEGO SKRZYDŁA",
+          department: "composites",
+          role: "lider działu composites",
+          bolidName: "RT13e",
+        },
+        {
+          department: "composites",
+          role: "ergonomics constructor",
+          bolidName: "RT12e",
+        },
+      ],
+    },
+    {
+      name: "marcin",
+      surname: "bawołek",
+      roles: [
+        {
+          department: "composites",
+          role: "konstruktor tylnego skrzydła",
           bolidName: "RT13e",
         },
       ],
     },
-    "Ewa Glenc": {
-      name: "Ewa",
-      surname: "Glenc",
+    {
+      name: "ewa",
+      surname: "glenc",
       roles: [
         {
-          department: "COMP",
-          role: "KONSTRUKTOR ERGONOMII KIEROWCY",
+          department: "composites",
+          role: "konstruktor ergonomii kierowcy",
           bolidName: "RT13e",
         },
       ],
     },
-    "Aleksander Maciątek": {
-      name: "Aleksander",
-      surname: "Maciątek",
+    {
+      name: "aleksander",
+      surname: "maciątek",
       roles: [
         {
-          department: "COMP",
-          role: "KONSTRUKTOR UKŁADU CHŁODZENIA BATERII",
+          department: "composites",
+          role: "konstruktor układu chłodzenia baterii",
+          bolidName: "RT13e",
+        },
+        {
+          department: "composites",
+          role: "brake ducts constructor",
+          bolidName: "RT12e",
+        },
+      ],
+    },
+    {
+      name: "gabriela",
+      surname: "morel",
+      roles: [
+        {
+          department: "composites",
+          role: "konstruktor insertów i rdzeni",
           bolidName: "RT13e",
         },
       ],
     },
-    "Gabriela Morel": {
-      name: "Gabriela",
-      surname: "Morel",
+    {
+      name: "dawid",
+      surname: "pępkowski",
       roles: [
         {
-          department: "COMP",
-          role: "KONSTRUKTOR INSERTÓW I RDZENI",
+          department: "composites",
+          role: "projektant pozytywów i form",
           bolidName: "RT13e",
         },
       ],
     },
-    "Dawid Pępkowski": {
-      name: "Dawid",
-      surname: "Pępkowski",
+    {
+      name: "michał",
+      surname: "romanowski",
       roles: [
         {
-          department: "COMP",
-          role: "PROJEKTANT POZYTYWÓW I FORM",
+          department: "composites",
+          role: "konstruktor monocoque",
           bolidName: "RT13e",
         },
       ],
     },
-    "Michał Romanowski": {
-      name: "Michał",
-      surname: "Romanowski",
+    {
+      name: "jakub",
+      surname: "ruchała",
       roles: [
         {
-          department: "COMP",
-          role: "KONSTRUKTOR MONOCOQUE",
-          bolidName: "RT13e",
-        },
-        { department: "DRIVERS", role: "undefined", bolidName: "RT13e" },
-      ],
-    },
-    "Jakub Ruchała": {
-      name: "Jakub",
-      surname: "Ruchała",
-      roles: [
-        {
-          department: "COMP",
-          role: "KONSTRUKTOR TYLNEGO SKRZYDŁA",
+          department: "composites",
+          role: "konstruktor tylnego skrzydła",
           bolidName: "RT13e",
         },
       ],
     },
-    "Mateusz Sikorski": {
-      name: "Mateusz",
-      surname: "Sikorski",
+    {
+      name: "mateusz",
+      surname: "sikorski",
       roles: [
         {
-          department: "COMP",
-          role: "KONSTRUKTOR SEKCJI BOCZNYCH",
+          department: "composites",
+          role: "konstruktor sekcji bocznych",
           bolidName: "RT13e",
         },
-        { department: "DRIVERS", role: "undefined", bolidName: "RT13e" },
-      ],
-    },
-    "Adam Strojny": {
-      name: "Adam",
-      surname: "Strojny",
-      roles: [
         {
-          department: "COMP",
-          role: "KONSTRUKTOR SEKCJI BOCZNYCH",
-          bolidName: "RT13e",
+          department: "composites",
+          role: "aero cost leader; mono flap designer",
+          bolidName: "RT12e",
         },
       ],
     },
-    "Miłosz Swół": {
-      name: "Miłosz",
-      surname: "Swół",
+    {
+      name: "adam",
+      surname: "strojny",
       roles: [
         {
-          department: "COMP",
-          role: "KONSTRUKTOR MONOCOQUE",
+          department: "composites",
+          role: "konstruktor sekcji bocznych",
           bolidName: "RT13e",
         },
       ],
     },
-    "Przemysław Szczepański": {
-      name: "Przemysław",
-      surname: "Szczepański",
+    {
+      name: "miłosz",
+      surname: "swół",
       roles: [
         {
-          department: "COMP",
-          role: "KONSTRUKTOR PRZEDNIEGO SKRZYDŁA",
+          department: "composites",
+          role: "konstruktor monocoque",
           bolidName: "RT13e",
         },
       ],
     },
-    "Wojciech Żuberek": {
-      name: "Wojciech",
-      surname: "Żuberek",
+    {
+      name: "przemysław",
+      surname: "szczepański",
       roles: [
         {
-          department: "COMP",
-          role: "KONSTRUKTOR PRZEDNIEGO SKRZYDŁA",
+          department: "composites",
+          role: "konstruktor przedniego skrzydła",
           bolidName: "RT13e",
         },
       ],
     },
-    "Szymon Kosakowski": {
-      name: "Szymon",
-      surname: "Kosakowski",
+    {
+      name: "wojciech",
+      surname: "żuberek",
       roles: [
         {
-          department: "SOFT",
-          role: "LIDER DZIAŁU SOFTWARE",
+          department: "composites",
+          role: "konstruktor przedniego skrzydła",
           bolidName: "RT13e",
         },
       ],
     },
-    "Aleksandra Birut": {
-      name: "Aleksandra",
-      surname: "Birut",
-      roles: [
-        { department: "SOFT", role: "ESTYMACJA RUCHU", bolidName: "RT13e" },
-      ],
-    },
-    "Jakub Drzewiecki": {
-      name: "Jakub",
-      surname: "Drzewiecki",
+    {
+      name: "szymon",
+      surname: "kosakowski",
       roles: [
         {
-          department: "SOFT",
-          role: "PROGRAMISTA SYSTEMU AUTONOMICZNEGO",
+          department: "software",
+          role: "lider działu software",
+          bolidName: "RT13e",
+        },
+        { department: "software", role: "percepcja", bolidName: "RT12e" },
+      ],
+    },
+    {
+      name: "aleksandra",
+      surname: "birut",
+      roles: [
+        { department: "software", role: "estymacja ruchu", bolidName: "RT13e" },
+        { department: "software", role: "motors designer", bolidName: "RT12e" },
+        {
+          department: "software",
+          role: "powertrain member",
+          bolidName: "RT11b",
+        },
+      ],
+    },
+    {
+      name: "jakub",
+      surname: "drzewiecki",
+      roles: [
+        {
+          department: "software",
+          role: "programista systemu autonomicznego",
+          bolidName: "RT13e",
+        },
+        { department: "software", role: "kontrola ruchu", bolidName: "RT12e" },
+      ],
+    },
+    {
+      name: "arkadiusz",
+      surname: "gaweł",
+      roles: [
+        {
+          department: "software",
+          role: "programista telemetrii",
           bolidName: "RT13e",
         },
       ],
     },
-    "Arkadiusz Gaweł": {
-      name: "Arkadiusz",
-      surname: "Gaweł",
+    {
+      name: "łukasz",
+      surname: "michalski",
       roles: [
         {
-          department: "SOFT",
-          role: "PROGRAMISTA TELEMETRII",
+          department: "software",
+          role: "planowanie trasy",
           bolidName: "RT13e",
         },
       ],
     },
-    "Łukasz Michalski": {
-      name: "Łukasz",
-      surname: "Michalski",
-      roles: [
-        { department: "SOFT", role: "PLANOWANIE TRASY", bolidName: "RT13e" },
-      ],
-    },
-    "Franciszek Plisz": {
-      name: "Franciszek",
-      surname: "Plisz",
+    {
+      name: "franciszek",
+      surname: "plisz",
       roles: [
         {
-          department: "SOFT",
-          role: "CZŁONEK DZIAŁU SOFTWARE",
+          department: "software",
+          role: "członek działu software",
           bolidName: "RT13e",
         },
       ],
     },
-    "Wojciech Rymer": {
-      name: "Wojciech",
-      surname: "Rymer",
+    {
+      name: "wojciech",
+      surname: "rymer",
       roles: [
         {
-          department: "SOFT",
-          role: "PROGRAMISTA PERCEPCJI LIDARU",
+          department: "software",
+          role: "programista percepcji lidaru",
+          bolidName: "RT13e",
+        },
+        {
+          department: "software",
+          role: "motion estimation",
+          bolidName: "RT12e",
+        },
+      ],
+    },
+    {
+      name: "maciej",
+      surname: "stachurski",
+      roles: [
+        {
+          department: "software",
+          role: "walidacja danych",
           bolidName: "RT13e",
         },
       ],
     },
-    "Maciej Stachurski": {
-      name: "Maciej",
-      surname: "Stachurski",
-      roles: [
-        { department: "SOFT", role: "WALIDACJA DANYCH", bolidName: "RT13e" },
-      ],
-    },
-    "Maciej Bobak": {
-      name: "Maciej",
-      surname: "Bobak",
+    {
+      name: "maciej",
+      surname: "bobak",
       roles: [
         {
-          department: "ELE",
-          role: "LIDER DZIAŁU ELECTRICAL",
+          department: "electrical",
+          role: "lider działu electrical",
+          bolidName: "RT13e",
+        },
+        {
+          department: "electrical",
+          role: "konstruktor autonomicznego układu sterowania",
+          bolidName: "RT12e",
+        },
+        {
+          department: "electrical",
+          role: "tsal, assi, r2ds",
+          bolidName: "RT11b",
+        },
+        { department: "electrical", role: "analiza danych", bolidName: "RTX" },
+      ],
+    },
+    {
+      name: "michał",
+      surname: "dynak",
+      roles: [
+        {
+          department: "electrical",
+          role: "projektant elektroniki",
           bolidName: "RT13e",
         },
       ],
     },
-    "Michał Dynak": {
-      name: "Michał",
-      surname: "Dynak",
+    {
+      name: "karol",
+      surname: "radosz",
       roles: [
         {
-          department: "ELE",
-          role: "PROJEKTANT ELEKTRONIKI",
+          department: "electrical",
+          role: "konstruktor wiązki wysokiego napięcia",
+          bolidName: "RT13e",
+        },
+        { department: "electrical", role: "high voltage", bolidName: "RT12e" },
+      ],
+    },
+    {
+      name: "antoni",
+      surname: "radzimowski",
+      roles: [
+        {
+          department: "electrical",
+          role: "projektant elektroniki",
           bolidName: "RT13e",
         },
       ],
     },
-    "Karol Radosz": {
-      name: "Karol",
-      surname: "Radosz",
+    {
+      name: "damian",
+      surname: "sazon",
       roles: [
         {
-          department: "ELE",
-          role: "KONSTRUKTOR WIĄZKI WYSOKIEGO NAPIĘCIA",
+          department: "electrical",
+          role: "konstruktor wiązki niskiego napięcia",
           bolidName: "RT13e",
         },
       ],
     },
-    "Antoni Radzimowski": {
-      name: "Antoni",
-      surname: "Radzimowski",
+    {
+      name: "piotr",
+      surname: "siembab",
       roles: [
         {
-          department: "ELE",
-          role: "PROJEKTANT ELEKTRONIKI",
+          department: "electrical",
+          role: "projektant elektroniki",
           bolidName: "RT13e",
         },
       ],
     },
-    "Damian Sazon": {
-      name: "Damian",
-      surname: "Sazon",
+    {
+      name: "kacper",
+      surname: "śliwa",
       roles: [
         {
-          department: "ELE",
-          role: "KONSTRUKTOR WIĄZKI NISKIEGO NAPIĘCIA",
+          department: "electrical",
+          role: "konstruktor baterii wysokiego napięcia",
+          bolidName: "RT13e",
+        },
+        { department: "electrical", role: "bateria", bolidName: "RT12e" },
+      ],
+    },
+    {
+      name: "kacper",
+      surname: "sowiński",
+      roles: [
+        {
+          department: "electrical",
+          role: "konstruktor wiązki niskiego napięcia",
           bolidName: "RT13e",
         },
       ],
     },
-    "Piotr Siembab": {
-      name: "Piotr",
-      surname: "Siembab",
+    {
+      name: "michał",
+      surname: "twardochleb",
       roles: [
         {
-          department: "ELE",
-          role: "PROJEKTANT ELEKTRONIKI",
+          department: "electrical",
+          role: "menadżer projektu baterii wysokiego napięcia",
+          bolidName: "RT13e",
+        },
+        {
+          department: "electrical",
+          role: "ts accumulator",
+          bolidName: "RT12e",
+        },
+        { department: "electrical", role: "etc", bolidName: "RT11b" },
+      ],
+    },
+    {
+      name: "igor",
+      surname: "wawrzyniak",
+      roles: [
+        {
+          department: "mechanical",
+          role: "lider działu mechanical",
           bolidName: "RT13e",
         },
       ],
     },
-    "Kacper Śliwa": {
-      name: "Kacper",
-      surname: "Śliwa",
+    {
+      name: "aleksander",
+      surname: "wieczorek",
       roles: [
         {
-          department: "ELE",
-          role: "KONSTRUKTOR BATERII WYSOKIEGO NAPIĘCIA",
+          department: "mechanical",
+          role: "konstruktor przekładni kierowniczej",
+          bolidName: "RT13e",
+        },
+        {
+          department: "mechanical",
+          role: "przekładnia planerna",
+          bolidName: "RT12e",
+        },
+        {
+          department: "mechanical",
+          role: "powertrain rookie",
+          bolidName: "RT11b",
+        },
+      ],
+    },
+    {
+      name: "bartosz",
+      surname: "sobczak",
+      roles: [
+        {
+          department: "mechanical",
+          role: "konstruktor autonomicznego układu hamulcowego",
           bolidName: "RT13e",
         },
       ],
     },
-    "Kacper Sowiński": {
-      name: "Kacper",
-      surname: "Sowiński",
+    {
+      name: "jakub",
+      surname: "piętowski",
       roles: [
         {
-          department: "ELE",
-          role: "KONSTRUKTOR WIĄZKI NISKIEGO NAPIĘCIA",
+          department: "mechanical",
+          role: "konstruktor autonomicznego układu kierowniczego",
           bolidName: "RT13e",
         },
       ],
     },
-    "Michał Twardochleb": {
-      name: "Michał",
-      surname: "Twardochleb",
+    {
+      name: "jan",
+      surname: "konior",
       roles: [
         {
-          department: "ELE",
-          role: "MENADŻER PROJEKTU BATERII WYSOKIEGO NAPIĘCIA",
+          department: "mechanical",
+          role: "kontruktor pedaliery",
+          bolidName: "RT13e",
+        },
+        { department: "mechanical", role: "pedalbox", bolidName: "RT12e" },
+        {
+          department: "mechanical",
+          role: "pachoł (tak ma wpisane na slacku)",
+          bolidName: "RT11b",
+        },
+      ],
+    },
+    {
+      name: "julian",
+      surname: "wach",
+      roles: [
+        {
+          department: "mechanical",
+          role: "konstruktor arb",
+          bolidName: "RT13e",
+        },
+        {
+          department: "mechanical",
+          role: "arb constructor",
+          bolidName: "RT12e",
+        },
+        {
+          department: "mechanical",
+          role: "vehicle dynamics",
+          bolidName: "RT11b",
+        },
+      ],
+    },
+    {
+      name: "marcin",
+      surname: "posmyk",
+      roles: [
+        {
+          department: "mechanical",
+          role: "konstruktor klatki w monocoque",
           bolidName: "RT13e",
         },
       ],
     },
-    "Igor Wawrzyniak": {
-      name: "Igor",
-      surname: "Wawrzyniak",
+    {
+      name: "michał",
+      surname: "wieczorek",
       roles: [
         {
-          department: "MECH",
-          role: "LIDER DZIAŁU MECHANICAL",
-          bolidName: "RT13e",
-        },
-        { department: "DRIVERS", role: "undefined", bolidName: "RT13e" },
-      ],
-    },
-    "Aleksander Wieczorek": {
-      name: "Aleksander",
-      surname: "Wieczorek",
-      roles: [
-        {
-          department: "MECH",
-          role: "KONSTRUKTOR PRZEKŁADNI KIEROWNICZEJ",
+          department: "mechanical",
+          role: "konstruktor układu hamulcowego",
           bolidName: "RT13e",
         },
       ],
     },
-    "Bartosz Sobczak": {
-      name: "Bartosz",
-      surname: "Sobczak",
+    {
+      name: "patryk",
+      surname: "kołtun",
       roles: [
         {
-          department: "MECH",
-          role: "KONSTRUKTOR AUTONOMICZNEGO UKŁADU HAMULCOWEGO",
+          department: "mechanical",
+          role: "konstruktor monocoque",
           bolidName: "RT13e",
         },
       ],
     },
-    "Jakub Piętowski": {
-      name: "Jakub",
-      surname: "Piętowski",
+    {
+      name: "piotr",
+      surname: "warło",
       roles: [
         {
-          department: "MECH",
-          role: "KONSTRUKTOR AUTONOMICZNEGO UKŁADU KIEROWNICZEGO",
+          department: "mechanical",
+          role: "konstruktor monocoque",
           bolidName: "RT13e",
         },
       ],
     },
-    "Jan Konior": {
-      name: "Jan",
-      surname: "Konior",
+    {
+      name: "maksymilian",
+      surname: "musiał",
       roles: [
         {
-          department: "MECH",
-          role: "KONTRUKTOR PEDALIERY",
+          department: "mechanical",
+          role: "konstruktor wahaczy",
+          bolidName: "RT13e",
+        },
+        {
+          department: "mechanical",
+          role: "wahacze i układ kierowniczy",
+          bolidName: "RT12e",
+        },
+        { department: "mechanical", role: "wahacze", bolidName: "RT11b" },
+      ],
+    },
+    {
+      name: "paweł",
+      surname: "wójcik",
+      roles: [
+        {
+          department: "vehicle performance",
+          role: "lider działu vehicle performance",
+          bolidName: "RT13e",
+        },
+        {
+          department: "vehicle performance",
+          role: "torque vectoring developer",
+          bolidName: "RT12e",
+        },
+      ],
+    },
+    {
+      name: "rafał",
+      surname: "dziki",
+      roles: [
+        {
+          department: "vehicle performance",
+          role: "system sterujący pojazdem",
           bolidName: "RT13e",
         },
       ],
     },
-    "Julian Wach": {
-      name: "Julian",
-      surname: "Wach",
-      roles: [
-        { department: "MECH", role: "KONSTRUKTOR ARB", bolidName: "RT13e" },
-      ],
-    },
-    "Marcin Posmyk": {
-      name: "Marcin",
-      surname: "Posmyk",
+    {
+      name: "bartosz",
+      surname: "gburczyk",
       roles: [
         {
-          department: "MECH",
-          role: "KONSTRUKTOR KLATKI W MONOCOQUE",
+          department: "vehicle performance",
+          role: "analiza danych",
           bolidName: "RT13e",
         },
       ],
     },
-    "Michał Wieczorek": {
-      name: "Michał",
-      surname: "Wieczorek",
+    {
+      name: "paweł",
+      surname: "mordwa",
       roles: [
         {
-          department: "MECH",
-          role: "KONSTRUKTOR UKŁADU HAMULCOWEGO",
+          department: "vehicle performance",
+          role: "system wektorowania momentu obrotowego",
           bolidName: "RT13e",
         },
       ],
     },
-    "Patryk Kołtun": {
-      name: "Patryk",
-      surname: "Kołtun",
+    {
+      name: "jakub",
+      surname: "myszka",
       roles: [
         {
-          department: "MECH",
-          role: "KONSTRUKTOR MONOCOQUE",
+          department: "vehicle performance",
+          role: "dynamika pojazdu",
           bolidName: "RT13e",
         },
       ],
     },
-    "Piotr Warło": {
-      name: "Piotr",
-      surname: "Warło",
+    {
+      name: "dominik",
+      surname: "pachecki",
       roles: [
         {
-          department: "MECH",
-          role: "KONSTRUKTOR MONOCOQUE",
+          department: "vehicle performance",
+          role: "symulowanie opon",
           bolidName: "RT13e",
         },
       ],
     },
-    "Maksymilian Musiał": {
-      name: "Maksymilian",
-      surname: "Musiał",
-      roles: [
-        { department: "MECH", role: "KONSTRUKTOR WAHACZY", bolidName: "RT13e" },
-        {
-          department: "WORKSHOP",
-          role: "KOORDYNATOR DS. INFRASTUKTURY WARSZTATOWEJ",
-          bolidName: "RT13e",
-        },
-        { department: "DRIVERS", role: "undefined", bolidName: "RT13e" },
-      ],
-    },
-    "Paweł Wójcik": {
-      name: "Paweł",
-      surname: "Wójcik",
+    {
+      name: "bartłomiej",
+      surname: "płoszyński",
       roles: [
         {
-          department: "VP",
-          role: "LIDER DZIAŁU VEHICLE PERFORMANCE",
-          bolidName: "RT13e",
-        },
-        { department: "DRIVERS", role: "undefined", bolidName: "RT13e" },
-      ],
-    },
-    "Rafał Dziki": {
-      name: "Rafał",
-      surname: "Dziki",
-      roles: [
-        {
-          department: "VP",
-          role: "SYSTEM STERUJĄCY POJAZDEM",
+          department: "vehicle performance",
+          role: "kinematyka pojazdu",
           bolidName: "RT13e",
         },
       ],
     },
-    "Bartosz Gburczyk": {
-      name: "Bartosz",
-      surname: "Gburczyk",
-      roles: [{ department: "VP", role: "ANALIZA DANYCH", bolidName: "RT13e" }],
-    },
-    "Paweł Mordwa": {
-      name: "Paweł",
-      surname: "Mordwa",
+    {
+      name: "jakub",
+      surname: "stankowski",
       roles: [
         {
-          department: "VP",
-          role: "SYSTEM WEKTOROWANIA MOMENTU OBROTOWEGO",
+          department: "vehicle performance",
+          role: "przyrządy pomiarowe",
           bolidName: "RT13e",
         },
       ],
     },
-    "Jakub Myszka": {
-      name: "Jakub",
-      surname: "Myszka",
-      roles: [
-        { department: "VP", role: "DYNAMIKA POJAZDU", bolidName: "RT13e" },
-      ],
-    },
-    "Dominik Pachecki": {
-      name: "Dominik",
-      surname: "Pachecki",
-      roles: [
-        { department: "VP", role: "SYMULOWANIE OPON", bolidName: "RT13e" },
-      ],
-    },
-    "Bartłomiej Płoszyński": {
-      name: "Bartłomiej",
-      surname: "Płoszyński",
-      roles: [
-        { department: "VP", role: "KINEMATYKA POJAZDU", bolidName: "RT13e" },
-      ],
-    },
-    "Jakub Stankowski": {
-      name: "Jakub",
-      surname: "Stankowski",
-      roles: [
-        { department: "VP", role: "PRZYRZĄDY POMIAROWE", bolidName: "RT13e" },
-      ],
-    },
-    "Krzysztof Gajewski": {
-      name: "Krzysztof",
-      surname: "Gajewski",
+    {
+      name: "maksymilian",
+      surname: "musiał",
       roles: [
         {
-          department: "WORKSHOP",
-          role: "KOORDYNATOR DS. INFRASTUKTURY WARSZTATOWEJ",
+          department: "workshop",
+          role: "koordynator ds. infrastuktury warsztatowej",
           bolidName: "RT13e",
         },
       ],
     },
-  };
+    {
+      name: "krzysztof",
+      surname: "gajewski",
+      roles: [
+        {
+          department: "workshop",
+          role: "koordynator ds. infrastuktury warsztatowej",
+          bolidName: "RT13e",
+        },
+        {
+          department: "workshop",
+          role: "inverter designer",
+          bolidName: "RT12e",
+        },
+        {
+          department: "workshop",
+          role: "cooling system designer",
+          bolidName: "RT11b",
+        },
+      ],
+    },
+    {
+      name: "paweł",
+      surname: "wójcik",
+      roles: [{ department: "drivers", role: "undefined", bolidName: "RT13e" }],
+    },
+    {
+      name: "michał",
+      surname: "romanowski",
+      roles: [{ department: "drivers", role: "undefined", bolidName: "RT13e" }],
+    },
+    {
+      name: "igor",
+      surname: "wawrzyniak",
+      roles: [{ department: "drivers", role: "undefined", bolidName: "RT13e" }],
+    },
+    {
+      name: "maksymilian",
+      surname: "musiał",
+      roles: [{ department: "drivers", role: "undefined", bolidName: "RT13e" }],
+    },
+    {
+      name: "mateusz",
+      surname: "sikorski",
+      roles: [{ department: "drivers", role: "undefined", bolidName: "RT13e" }],
+    },
+  ];
 
   for (const memberData of Object.values(teamMembersData)) {
     await prisma.teamMember.create({
@@ -607,11 +807,7 @@ async function main() {
   console.log("Dodano członków zespołu z rolami");
 }
 
-main()
-  .catch((e) => {
-    console.error(e);
-    process.exit(1);
-  })
-  .finally(async () => {
-    await prisma.$disconnect();
-  });
+main().catch((e) => {
+  console.error(e);
+  process.exit(1);
+}).finally;

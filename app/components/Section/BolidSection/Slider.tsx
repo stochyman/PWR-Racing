@@ -77,6 +77,13 @@ const Slider: React.FC<SliderProps> = ({
         <div className="flex relative gap-24 ml-[calc((100vw-var(--container-width))/2)]">
           <SliderElement
             darkMode={darkMode}
+            date={2024}
+            bolid="RT14e"
+            onClick={onChangeBolid}
+            currentBolid={currentBolid}
+          />
+          <SliderElement
+            darkMode={darkMode}
             date={2023}
             bolid="RT13e"
             onClick={onChangeBolid}
@@ -92,7 +99,7 @@ const Slider: React.FC<SliderProps> = ({
           <SliderElement
             darkMode={darkMode}
             date={2021}
-            bolid="RT11b"
+            bolid="RT11"
             onClick={onChangeBolid}
             currentBolid={currentBolid}
           />
