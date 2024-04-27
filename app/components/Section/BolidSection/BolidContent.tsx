@@ -29,7 +29,7 @@ const BolidContent: React.FC<BolidData> = ({
     router.push(`/team/${bolid}`);
   };
   const bolidRedirect = (bolid: string) => {
-    router.push(`/bolid/${bolid}`);
+    router.push(`/bolid/${bolid}#achievements`);
   };
 
   return (
