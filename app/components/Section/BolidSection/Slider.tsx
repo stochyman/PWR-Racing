@@ -27,7 +27,6 @@ const Slider: React.FC<SliderProps> = ({
   const bolidRedirect = (bolid: string) => router.push(`/bolid/${bolid}`);
 
   if (pathname && pathname.startsWith("/team/")) {
-    console.log("test", pathname);
     onChangeBolid = teamRedirect;
   } else if (pathname && pathname.startsWith("/bolid/")) {
     onChangeBolid = bolidRedirect;
@@ -74,7 +73,7 @@ const Slider: React.FC<SliderProps> = ({
         onMouseLeave={stopDragging}
         onMouseUp={stopDragging}
       >
-        <div className="flex relative gap-24 ml-[calc((100vw-var(--container-width))/2)]">
+        <div className="flex relative gap-12 sm:gap-24 ml-[calc((100vw-var(--container-width))/2)]">
           <SliderElement
             darkMode={darkMode}
             date={2024}
@@ -86,6 +85,13 @@ const Slider: React.FC<SliderProps> = ({
             darkMode={darkMode}
             date={2023}
             bolid="RT13e"
+            onClick={onChangeBolid}
+            currentBolid={currentBolid}
+          />
+          <SliderElement
+            darkMode={darkMode}
+            date={2023}
+            bolid="RT11b"
             onClick={onChangeBolid}
             currentBolid={currentBolid}
           />

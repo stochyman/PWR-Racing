@@ -75,3 +75,18 @@ type Part {
   partName    String
   description String
 }
+
+model News {
+  id                String @id @default(auto()) @map("_id") @db.ObjectId
+  date              DateTime  @default(now())
+  title             String
+  short_description String
+  length_time       Int
+  logo              String
+  main_image        String
+  content           NewsContent[]
+}
+
+type NewsContent {
+  text String
+}

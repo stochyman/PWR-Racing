@@ -10,16 +10,16 @@ const Container: React.FC<ContainerProps> = ({
   paddingType = "x",
 }) => {
   const paddingClasses = {
-    r: "mr-[calc((100vw-var(--container-width))/2)]",
-    l: "ml-[calc((100vw-var(--container-width))/2)]",
-    x: "mx-auto",
+    r: "mr-8 xl:mr-[calc((100vw-var(--container-width))/2)]",
+    l: "ml-8 xl:ml-[calc((100vw-var(--container-width))/2)]",
+    x: "mx-8 xl:mx-auto",
   };
 
   return (
     <div
       className={`${paddingClasses[paddingType]} ${
         paddingType === "x" ? "max-w-[var(--container-width)] " : ""
-      }relative flex justify-center items-center h-full`}
+      }relative flex justify-center lg:items-center h-full`}
     >
       {children}
     </div>

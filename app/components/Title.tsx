@@ -49,17 +49,17 @@ const Title: React.FC<TitleProps> = ({
   const sizeClass = useMemo(() => {
     switch (size) {
       case "small":
-        return "text-xl";
+        return "text-md sm:text-xl";
       case "medium":
-        return "text-2xl";
+        return "text-xl sm:text-2xl";
       case "big":
-        return "text-3xl";
+        return "text-xl sm:text-3xl";
       case "bigger":
-        return "text-6xl";
+        return "text-2xl sm:text-6xl";
       case "subtitle":
         return "text-sm tracking-wider";
       case "normal":
-        return "text-5xl";
+        return "text-3xl sm:text-5xl";
     }
   }, [size]);
 

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Image from "next/image";
 import Title from "../../Title";
@@ -14,7 +14,7 @@ const News: React.FC<NewsProps> = ({ article, category, title }) => {
   const imagePath = `/images/news/news${article}.png`;
 
   return (
-    <div className="relative w-full h-[358px] rounded-3xl border-0 m-0 cursor-pointer group overflow-hidden">
+    <div className="relative w-full h-[358px] rounded-md border-0 m-0 cursor-pointer group overflow-hidden">
       <Image
         src={imagePath}
         alt={article}
@@ -23,11 +23,13 @@ const News: React.FC<NewsProps> = ({ article, category, title }) => {
         objectPosition="center center"
       />
       <div className="absolute inset-0 w-full h-full flex flex-col justify-end">
-        <div className="text-center p-2 rounded-tr-xl w-1/3 bg-customRed">
+        <div className="text-center p-2 rounded-tr-sm w-1/3 bg-customRed">
           <Title size="subtitle">{category}</Title>
         </div>
-        <div className="text-center p-2 rounded-bl-3xl rounded-tr-xl w-2/3 bg-white border-2">
-          <Text opacity1 bold medium center color="black">{title}</Text>
+        <div className="text-center p-2 rounded-bl-md rounded-tr-md w-2/3 bg-black border-black border-2">
+          <Text opacity1 bold medium center color="white">
+            {title}
+          </Text>
         </div>
       </div>
       <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out"></div>

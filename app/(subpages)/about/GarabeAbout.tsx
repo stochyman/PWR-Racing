@@ -22,7 +22,7 @@ const GarageAbout: React.FC = () => {
     <div className="relative bg-white pt-20">
       <Container>
         <div className="w-full">
-          <Title color="black">Garaż</Title>
+          <Title color="black">GARAŻ</Title>
           <div className="grid grid-cols-5 gap-20 mt-8">
             <div className=" col-span-3 flex flex-col gap-8">
               <div className="relative h-2/3">

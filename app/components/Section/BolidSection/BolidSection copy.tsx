@@ -44,10 +44,8 @@ const BolidSection = ({ presetBolid = "RT13e" }) => {
 
     const data = await response.json();
     if (currentBolidData.year < data.year) {
-      console.log("większy");
       setDisplayRight(false);
     } else {
-      console.log("mniejszy");
       setDisplayRight(true);
     }
 

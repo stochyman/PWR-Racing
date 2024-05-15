@@ -35,7 +35,7 @@ const BolidContent: React.FC<BolidData> = ({
   return (
     <div className="relative flex flex-col">
       <Container>
-        <div className="grid grid-cols-2 gap-12 py-12 transition-all ease-out duration-500">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-12 py-4 sm:py-12 transition-all ease-out duration-500">
           <div
             className={`flex justify-center items-center transition-all ease-out duration-500`}
           >
@@ -44,10 +44,10 @@ const BolidContent: React.FC<BolidData> = ({
                 {year}
               </Title>
               <Title color="red">{name}</Title>
-              <div className="my-6">
+              <div className="my-2 sm:my-6">
                 <Text color="gray">{short_description}</Text>
               </div>
-              <div className="flex gap-4 mt-8">
+              <div className="gap-4 mt-8 hidden lg:flex">
                 <Button
                   label="Więcej o bolidzie"
                   onClick={() => bolidRedirect(name)}
@@ -69,6 +69,17 @@ const BolidContent: React.FC<BolidData> = ({
               layout="intrinsic"
               width={700}
               height={300}
+            />
+          </div>
+          <div className="gap-4 flex lg:hidden ">
+            <Button
+              label="Więcej o bolidzie"
+              onClick={() => bolidRedirect(name)}
+            />
+            <Button
+              outline
+              label={`Poznaj zespół ${name}`}
+              onClick={() => teamRedirect(name)}
             />
           </div>
         </div>

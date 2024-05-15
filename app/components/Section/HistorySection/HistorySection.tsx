@@ -16,9 +16,9 @@ const HistorySection: React.FC<HistorySectionProps> = ({ aboutUs }) => {
       <Container>
         <div className="my-28">
           <div className="mb-8">
-            {aboutUs && <Title color="black">Historia Zespołu</Title>}
+            {aboutUs && <Title color="black">HISTORIA ZESPOŁU</Title>}
           </div>
-          <div className="grid grid-cols-2 gap-10 ">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 ">
             <div className=" relative flex justify-center items-center">
               <Image
                 className=""

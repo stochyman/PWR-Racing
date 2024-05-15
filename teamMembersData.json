@@ -1,0 +1,3540 @@
+[
+  {
+    "name": "pawe\u0142",
+    "surname": "w\u00f3jcik",
+    "roles": [
+      {
+        "department": "management",
+        "role": "lider zespo\u0142u",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "vehicle performance",
+        "role": "lider dzia\u0142u vehicle performance",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "drivers",
+        "role": "lider dzia\u0142u vehicle performance",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "vehicle performance",
+        "role": "dynamika pojazdu",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "micha\u0142",
+    "surname": "wieczorek",
+    "roles": [
+      {
+        "department": "management",
+        "role": "lider techniczny zespo\u0142u",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "mechanical",
+        "role": "konstruktor uk\u0142adu hamulcowego",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "suspension",
+        "role": "cz\u0142onek dzia\u0142u zawieszenia",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "karolina",
+    "surname": "wasiukiewicz",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "liderka dzia\u0142u marketing",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "marketing",
+        "role": "social media manager",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "iga",
+    "surname": "friedrich",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "social media associate",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "marketing",
+        "role": "social media manager, cost & manufacturing leader",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "patryk",
+    "surname": "palenga",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "business manager",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "marketing",
+        "role": "prezentacja biznesowa",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "jakub",
+    "surname": "kucharski",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "business manager",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "marketing",
+        "role": "prezentacja biznesowa",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "zuzanna",
+    "surname": "ignaszak",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "project manager",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "marketing",
+        "role": "liderka marketingu",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "zuzanna",
+    "surname": "kochanowska",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "copywriter",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "iga",
+    "surname": "ma\u0142kus",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "social media associate",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "stanis\u0142aw",
+    "surname": "mazurkiewicz",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "fotograf",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "\u0142ukasz",
+    "surname": "chodyna",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "business manager",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "joanna",
+    "surname": "popielewska",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "business manager",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "alicja",
+    "surname": "je\u017cak",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "social media associate",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "jakub",
+    "surname": "rucha\u0142a",
+    "roles": [
+      {
+        "department": "composites",
+        "role": "lider dzia\u0142u composites",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "composites",
+        "role": "konstruktor tylnego skrzyd\u0142a",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "patryk",
+    "surname": "ko\u0142tun",
+    "roles": [
+      {
+        "department": "composites",
+        "role": "monocoque engineer",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "mechanical",
+        "role": "konstruktor monocoque",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "adam",
+    "surname": "strojny",
+    "roles": [
+      {
+        "department": "composites",
+        "role": "ub engineer",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "composites",
+        "role": "konstruktor sekcji bocznych",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "mi\u0142osz",
+    "surname": "sw\u00f3\u0142",
+    "roles": [
+      {
+        "department": "composites",
+        "role": "monocoque engineer",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "composites",
+        "role": "konstruktor monocoque",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "aleksander",
+    "surname": "maci\u0105tek",
+    "roles": [
+      {
+        "department": "composites",
+        "role": "cfd engineer",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "composites",
+        "role": "konstruktor uk\u0142adu ch\u0142odzenia baterii",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "aero",
+        "role": "in\u017cynier aerodynamiki",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "jakub",
+    "surname": "koman",
+    "roles": [
+      {
+        "department": "composites",
+        "role": "rear wing engineer",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "maria",
+    "surname": "kanczewska",
+    "roles": [
+      {
+        "department": "composites",
+        "role": "ergonomics engineer",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "przemys\u0142aw",
+    "surname": "szczepa\u0144ski",
+    "roles": [
+      {
+        "department": "composites",
+        "role": "front wing engineer",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "composites",
+        "role": "konstruktor przedniego skrzyd\u0142a\n",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "aero",
+        "role": "in\u017cynier aerodynamiki",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "ewa",
+    "surname": "glenc",
+    "roles": [
+      {
+        "department": "composites",
+        "role": "ergonomics engineer",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "composites",
+        "role": "konstruktor ergonomii kierowcy",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "wojtek",
+    "surname": "\u017cuberek",
+    "roles": [
+      {
+        "department": "composites",
+        "role": "monocoque ",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "wiktor",
+    "surname": "ku\u017amicki",
+    "roles": [
+      {
+        "department": "composites",
+        "role": "diffuser engineer, konstruktor sekcji bocznych",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "jakub",
+    "surname": "grochowski",
+    "roles": [
+      {
+        "department": "composites",
+        "role": "rims engineer / composite member",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "dominik",
+    "surname": "pachecki",
+    "roles": [
+      {
+        "department": "composites",
+        "role": "wheels/tires",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "vehicle performance",
+        "role": "symulowanie opon",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "nazarii",
+    "surname": "honczarenko",
+    "roles": [
+      {
+        "department": "composites",
+        "role": "rear wing engineer",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "nina",
+    "surname": "janik",
+    "roles": [
+      {
+        "department": "composites",
+        "role": "front wing engineer",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "maciej",
+    "surname": "sikora",
+    "roles": [
+      {
+        "department": "composites",
+        "role": "monocoque engineer",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "miko\u0142aj",
+    "surname": "stojowski",
+    "roles": [
+      {
+        "department": "composites",
+        "role": "ergonomia",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "dawid",
+    "surname": "jamer",
+    "roles": [
+      {
+        "department": "composites",
+        "role": "monocoque engineer",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "jakub",
+    "surname": "drzewiecki",
+    "roles": [
+      {
+        "department": "software",
+        "role": "lider dzia\u0142u software",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "software",
+        "role": "programista systemu autonomicznego",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "autonomous",
+        "role": "programista kontrolera ruchu",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "\u0142ukasz",
+    "surname": "michalski",
+    "roles": [
+      {
+        "department": "software",
+        "role": "path planer",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "software",
+        "role": "planowanie trasy",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "bart\u0142omiej",
+    "surname": "sitnik",
+    "roles": [
+      {
+        "department": "software",
+        "role": "software developer",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "franciszek",
+    "surname": "plisz",
+    "roles": [
+      {
+        "department": "software",
+        "role": "perception developer",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "software",
+        "role": "cz\u0142onek dzia\u0142u software",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "maciej",
+    "surname": "sadowski",
+    "roles": [
+      {
+        "department": "software",
+        "role": "motion estimation, telemetry developer",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "joel",
+    "surname": "kojma",
+    "roles": [
+      {
+        "department": "software",
+        "role": "data validation developer",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "dawid",
+    "surname": "chmal",
+    "roles": [
+      {
+        "department": "software",
+        "role": "website developer",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "kacper",
+    "surname": "synator",
+    "roles": [
+      {
+        "department": "software",
+        "role": "perception fusion developer",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "wiktoria",
+    "surname": "sawicka",
+    "roles": [
+      {
+        "department": "software",
+        "role": "asb software developer",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "kacper",
+    "surname": "sowi\u0144ski",
+    "roles": [
+      {
+        "department": "electrical",
+        "role": "electrical lider",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "electrical",
+        "role": "konstruktor wi\u0105zki niskiego napi\u0119cia",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "kacper",
+    "surname": "\u015bliwa",
+    "roles": [
+      {
+        "department": "electrical",
+        "role": "powertrain engineer",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "electrical",
+        "role": "konstruktor baterii wysokiego napi\u0119cia",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "epowertrain",
+        "role": "cz\u0142onek dzia\u0142u nap\u0119du",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "antoni",
+    "surname": "radzimowski",
+    "roles": [
+      {
+        "department": "electrical",
+        "role": "pdm, sdc designer",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "electrical",
+        "role": "projektant elektroniki",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "rafa\u0142",
+    "surname": "dziki",
+    "roles": [
+      {
+        "department": "electrical",
+        "role": "electronics designer, speedgoat vehicle control system, driver",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "vehicle performance",
+        "role": "system steruj\u0105cy pojazdem",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "maciej",
+    "surname": "bobak",
+    "roles": [
+      {
+        "department": "electrical",
+        "role": "tsal engineer",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "electrical",
+        "role": "lider dzia\u0142u electrical",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "electronics",
+        "role": "projektant autonomicznego uk\u0142adu kierowniczego",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "maciej",
+    "surname": "b\u0119benek",
+    "roles": [
+      {
+        "department": "electrical",
+        "role": "electronics designer",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "krzysztof",
+    "surname": "dolecki",
+    "roles": [
+      {
+        "department": "electrical",
+        "role": "ts accumulator engineer",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "powertrain",
+        "role": "konstruktor ch\u0142odzenia akumulatora",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "aero",
+        "role": "konstruktor pokrywy silnika",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "aleksander",
+    "surname": "dzi\u0105gwa",
+    "roles": [
+      {
+        "department": "electrical",
+        "role": "electronics designer",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "igor",
+    "surname": "wawrzyniak",
+    "roles": [
+      {
+        "department": "mechanical",
+        "role": "mechanical lider",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "mechanical",
+        "role": "lider dzia\u0142u mechanical",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "drivers",
+        "role": "lider dzia\u0142u mechanical",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "suspension",
+        "role": "cz\u0142onek dzia\u0142u zawieszenia",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "jakub",
+    "surname": "pi\u0119towski",
+    "roles": [
+      {
+        "department": "mechanical",
+        "role": "gearbox engineer",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "mechanical",
+        "role": "konstruktor autonomicznego uk\u0142adu kierowniczego",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "bartosz",
+    "surname": "sobczak",
+    "roles": [
+      {
+        "department": "mechanical",
+        "role": "motor case engineer, ru wishbone engineer, inverter case engineer",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "mechanical",
+        "role": "konstruktor autonomicznego uk\u0142adu hamulcowego",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "management",
+        "role": "technical leader",
+        "bolidName": "RT09"
+      },
+      {
+        "department": "suspension",
+        "role": "uprights constructor",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "piotr",
+    "surname": "war\u0142o",
+    "roles": [
+      {
+        "department": "mechanical",
+        "role": "shortcircuit engineer",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "mechanical",
+        "role": "konstruktor monocoque",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "katarzyna",
+    "surname": "pilip",
+    "roles": [
+      {
+        "department": "mechanical",
+        "role": "pedalbox engineer",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "dominik",
+    "surname": "ko\u0142akowski",
+    "roles": [
+      {
+        "department": "mechanical",
+        "role": "brake system engineer",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "igor",
+    "surname": "wla\u017alik",
+    "roles": [
+      {
+        "department": "mechanical",
+        "role": "autonomous steering system",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "kacper",
+    "surname": "zych",
+    "roles": [
+      {
+        "department": "mechanical",
+        "role": "asb engineer",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "kamil",
+    "surname": "terlecki",
+    "roles": [
+      {
+        "department": "mechanical",
+        "role": "steering column engineer",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "kamil",
+    "surname": "wadas",
+    "roles": [
+      {
+        "department": "mechanical",
+        "role": "damper mount engineer",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "maciej",
+    "surname": "cepa",
+    "roles": [
+      {
+        "department": "mechanical",
+        "role": "pushrods engineer",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "maciej",
+    "surname": "piotrowski",
+    "roles": [
+      {
+        "department": "mechanical",
+        "role": "mechanical member",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "szymon",
+    "surname": "szaniawski",
+    "roles": [
+      {
+        "department": "mechanical",
+        "role": "motor case stand, tierods, arb",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "bartek",
+    "surname": "p\u0142oszy\u0144ski",
+    "roles": [
+      {
+        "department": "vehicle performance",
+        "role": "vehicle performance",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "pawe\u0142",
+    "surname": "mordwa",
+    "roles": [
+      {
+        "department": "vehicle performance",
+        "role": "tractive system",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "vehicle performance",
+        "role": "system wektorowania momentu obrotowego",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "jakub",
+    "surname": "myszka",
+    "roles": [
+      {
+        "department": "vehicle performance",
+        "role": "vehicle dynamics",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "vehicle performance",
+        "role": "dynamika pojazdu",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "aleksandra",
+    "surname": "birut",
+    "roles": [
+      {
+        "department": "vehicle performance",
+        "role": "tractive system project manager, sp admin",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "software",
+        "role": "estymacja ruchu",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "epowertrain",
+        "role": "projektantka silnika",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "maksymilian",
+    "surname": "musia\u0142",
+    "roles": [
+      {
+        "department": "vehicle performance",
+        "role": "driver, drivers development",
+        "bolidName": "RT14e"
+      },
+      {
+        "department": "mechanical",
+        "role": "konstruktor wahaczy",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "workshop",
+        "role": "koordynator ds. infrastuktury warsztatowej",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "drivers",
+        "role": "koordynator ds. infrastuktury warsztatowej",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "suspension",
+        "role": "konstruktor wahaczy i uk\u0142adu kierowniczego",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "piotr",
+    "surname": "bieniaszkiewicz",
+    "roles": [
+      {
+        "department": "vehicle performance",
+        "role": "vehicle dynamics",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "hubert",
+    "surname": "antczak",
+    "roles": [
+      {
+        "department": "vehicle performance",
+        "role": "vehicle simulation",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "maksymilian",
+    "surname": "kami\u0144ski",
+    "roles": [
+      {
+        "department": "vehicle performance",
+        "role": "vehicle performance | ac moderator",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "filip",
+    "surname": "ciecha\u0144ski",
+    "roles": [
+      {
+        "department": "vehicle performance",
+        "role": "vdcu developer",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "bedi",
+    "surname": "stankowiec",
+    "roles": [
+      {
+        "department": "workshop",
+        "role": "koordynator ds. infrastuktury warsztatowej_x000d_\n",
+        "bolidName": "RT14e"
+      }
+    ]
+  },
+  {
+    "name": "wojciech",
+    "surname": "moranowicz",
+    "roles": [
+      {
+        "department": "management",
+        "role": "lider zespo\u0142u",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "electronics",
+        "role": "konstruktor wi\u0105zki przewod\u00f3w wysokiego napi\u0119cia",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "przemys\u0142aw",
+    "surname": "w\u00f3jcik",
+    "roles": [
+      {
+        "department": "management",
+        "role": "lider techniczny",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "autonomous",
+        "role": "konstruktor autonomicznego uk\u0142adu hamulcowego",
+        "bolidName": "RT12e"
+      },
+      {
+        "department": "autonomous",
+        "role": "konstruktor autonomicznego uk\u0142adu kierowniczego",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "miko\u0142aj",
+    "surname": "wrzeszcz",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "grafik",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "\u0142ukasz",
+    "surname": "mika",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "videographer",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "karol",
+    "surname": "cie\u015blawski",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "fotograf",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "hanna",
+    "surname": "szebesczyk",
+    "roles": [
+      {
+        "department": "composites",
+        "role": "lider dzia\u0142u composites",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "chassis",
+        "role": "konstruktor ergonomii kierowcy",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "marcin",
+    "surname": "bawo\u0142ek",
+    "roles": [
+      {
+        "department": "composites",
+        "role": "konstruktor tylnego skrzyd\u0142a",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "gabriela",
+    "surname": "morel",
+    "roles": [
+      {
+        "department": "composites",
+        "role": "konstruktor insert\u00f3w i rdzeni",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "dawid",
+    "surname": "p\u0119pkowski",
+    "roles": [
+      {
+        "department": "composites",
+        "role": "projektant pozytyw\u00f3w i form",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "micha\u0142",
+    "surname": "romanowski",
+    "roles": [
+      {
+        "department": "composites",
+        "role": "konstruktor monocoque",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "chassis",
+        "role": "lider dzia\u0142u chassis",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "mateusz",
+    "surname": "sikorski",
+    "roles": [
+      {
+        "department": "composites",
+        "role": "konstruktor sekcji bocznych\n",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "drivers",
+        "role": "konstruktor sekcji bocznych",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "aero",
+        "role": "in\u017cynier aerodynamiki",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "wojciech",
+    "surname": "\u017cuberek",
+    "roles": [
+      {
+        "department": "composites",
+        "role": "konstruktor przedniego skrzyd\u0142a",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "aero",
+        "role": "in\u017cynier aerodynamiki",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "szymon",
+    "surname": "kosakowski",
+    "roles": [
+      {
+        "department": "software",
+        "role": "lider dzia\u0142u software",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "autonomous",
+        "role": "programista system\u00f3w percepcji",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "arkadiusz",
+    "surname": "gawe\u0142",
+    "roles": [
+      {
+        "department": "software",
+        "role": "programista telemetrii",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "electronics",
+        "role": "programista",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "wojciech",
+    "surname": "rymer",
+    "roles": [
+      {
+        "department": "software",
+        "role": "programista percepcji lidaru",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "autonomous",
+        "role": "programista systemu estymacji ruchu",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "maciej",
+    "surname": "stachurski",
+    "roles": [
+      {
+        "department": "software",
+        "role": "walidacja danych",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "micha\u0142",
+    "surname": "dynak",
+    "roles": [
+      {
+        "department": "electrical",
+        "role": "projektant elektroniki",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "karol",
+    "surname": "radosz",
+    "roles": [
+      {
+        "department": "electrical",
+        "role": "konstruktor wi\u0105zki wysokiego napi\u0119cia",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "epowertrain",
+        "role": "cz\u0142onek dzia\u0142u nap\u0119du",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "damian",
+    "surname": "sazon",
+    "roles": [
+      {
+        "department": "electrical",
+        "role": "konstruktor wi\u0105zki niskiego napi\u0119cia",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "piotr",
+    "surname": "siembab",
+    "roles": [
+      {
+        "department": "electrical",
+        "role": "projektant elektroniki",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "micha\u0142",
+    "surname": "twardochleb",
+    "roles": [
+      {
+        "department": "electrical",
+        "role": "menad\u017cer projektu baterii wysokiego napi\u0119cia",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "epowertrain",
+        "role": "konstruktor akumulatora",
+        "bolidName": "RT12e"
+      },
+      {
+        "department": "powertrain",
+        "role": "konstruktor przepustnicy",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "powertrain",
+        "role": "konstruktor przepustnicy",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "aleksander",
+    "surname": "wieczorek",
+    "roles": [
+      {
+        "department": "mechanical",
+        "role": "konstruktor przek\u0142adni kierowniczej",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "epowertrain",
+        "role": "konstruktor przek\u0142adni planetarnej",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "jan",
+    "surname": "konior",
+    "roles": [
+      {
+        "department": "mechanical",
+        "role": "kontruktor pedaliery",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "suspension",
+        "role": "konstruktor pedaliery",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "julian",
+    "surname": "wach",
+    "roles": [
+      {
+        "department": "mechanical",
+        "role": "konstruktor arb",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "suspension",
+        "role": "konstruktor arb",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "marcin",
+    "surname": "posmyk",
+    "roles": [
+      {
+        "department": "mechanical",
+        "role": "konstruktor klatki w monocoque",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "bartosz",
+    "surname": "gburczyk",
+    "roles": [
+      {
+        "department": "vehicle performance",
+        "role": "analiza danych",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "bart\u0142omiej",
+    "surname": "p\u0142oszy\u0144ski",
+    "roles": [
+      {
+        "department": "vehicle performance",
+        "role": "kinematyka pojazdu",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "jakub",
+    "surname": "stankowski",
+    "roles": [
+      {
+        "department": "vehicle performance",
+        "role": "przyrz\u0105dy pomiarowe",
+        "bolidName": "RT13e"
+      }
+    ]
+  },
+  {
+    "name": "krzysztof",
+    "surname": "gajewski",
+    "roles": [
+      {
+        "department": "workshop",
+        "role": "koordynator ds. infrastuktury warsztatowej",
+        "bolidName": "RT13e"
+      },
+      {
+        "department": "powertrain",
+        "role": "analityk silnika",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "rados\u0142aw",
+    "surname": "wr\u00f3bel",
+    "roles": [
+      {
+        "department": "management",
+        "role": "lider zespo\u0142u",
+        "bolidName": "RT12e"
+      },
+      {
+        "department": "suspension",
+        "role": "lider dzia\u0142u zawieszenia",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "suspension",
+        "role": "konstruktor piast i zwrotnic",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "adam",
+    "surname": "twardowski",
+    "roles": [
+      {
+        "department": "management",
+        "role": "lider techniczny",
+        "bolidName": "RT12e"
+      },
+      {
+        "department": "electronics",
+        "role": "specjalista ds. wi\u0105zki elektrycznej",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "electronics",
+        "role": "specjalista ds. wi\u0105zki elektrycznej",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "aleksandra",
+    "surname": "po\u015bpiech",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "liderka dzia\u0142u marketingu",
+        "bolidName": "RT12e"
+      },
+      {
+        "department": "marketing",
+        "role": "lider marketingu / copywriter",
+        "bolidName": "RT11b"
+      }
+    ]
+  },
+  {
+    "name": "\u0142ukasz",
+    "surname": "\u0142\u0119kawski",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "fotograf",
+        "bolidName": "RT12e"
+      },
+      {
+        "department": "marketing",
+        "role": "fotograf",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "marketing",
+        "role": "fotograf",
+        "bolidName": "RTX"
+      }
+    ]
+  },
+  {
+    "name": "micha\u0142",
+    "surname": "\u0142abaz",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "prezentacja biznesowa",
+        "bolidName": "RT12e"
+      },
+      {
+        "department": "marketing",
+        "role": "web designer",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "marketing",
+        "role": "web designer",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "micha\u0142",
+    "surname": "wojs\u0142awski",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "video",
+        "bolidName": "RT12e"
+      },
+      {
+        "department": "marketing",
+        "role": "video",
+        "bolidName": "RT11b"
+      }
+    ]
+  },
+  {
+    "name": "monika",
+    "surname": "b\u0142ach",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "social media",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "szymon",
+    "surname": "choma",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "prezentacja biznesowa",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "mateusz",
+    "surname": "karbowniczek",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "fundraiser",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "zuzanna",
+    "surname": "ignaszek",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "cz\u0142onkini dzia\u0142u marketingu",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "szymon",
+    "surname": "lepak",
+    "roles": [
+      {
+        "department": "epowertrain",
+        "role": "lider dzia\u0142u nap\u0119du",
+        "bolidName": "RT12e"
+      },
+      {
+        "department": "powertrain",
+        "role": "lider dzia\u0142u nap\u0119du",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "powertrain",
+        "role": "konstruktor uk\u0142adu dolotowego",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "kacper",
+    "surname": "markiewicz",
+    "roles": [
+      {
+        "department": "epowertrain",
+        "role": "konstruktor uk\u0142adu ch\u0142odzenia",
+        "bolidName": "RT12e"
+      },
+      {
+        "department": "management",
+        "role": "lider zespo\u0142u",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "powertrain",
+        "role": "in\u017cynier rozwoju silnika",
+        "bolidName": "RT11"
+      },
+      {
+        "department": "powertrain",
+        "role": "konstruktor uk\u0142adu dolotowego",
+        "bolidName": "RTX"
+      },
+      {
+        "department": "powertrain",
+        "role": "konstruktor uk\u0142adu dolotowego",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "jakub",
+    "surname": "szwagierczak",
+    "roles": [
+      {
+        "department": "suspension",
+        "role": "lider dzia\u0142u zawieszenia",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "jaros\u0142aw",
+    "surname": "siwek",
+    "roles": [
+      {
+        "department": "suspension",
+        "role": "konstruktor systemu pushrod",
+        "bolidName": "RT12e"
+      },
+      {
+        "department": "suspension",
+        "role": "konstruktor systemu pushrod",
+        "bolidName": "RT11b"
+      }
+    ]
+  },
+  {
+    "name": "karol",
+    "surname": "suchorabski",
+    "roles": [
+      {
+        "department": "suspension",
+        "role": "konstruktor piast i zwrotnic",
+        "bolidName": "RT12e"
+      },
+      {
+        "department": "suspension",
+        "role": "konstruktor piast i zwrotnic",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "suspension",
+        "role": "konstruktor piast i zwrotnic",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "pawe\u0142",
+    "surname": "braun",
+    "roles": [
+      {
+        "department": "suspension",
+        "role": "cz\u0142onek dzia\u0142u zawieszenia",
+        "bolidName": "RT12e"
+      },
+      {
+        "department": "suspension",
+        "role": "konstruktor uk\u0142adu hamulcowego",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "suspension",
+        "role": "konstruktor uk\u0142adu hamulcowego i pedaliery",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "adam",
+    "surname": "lok\u015b",
+    "roles": [
+      {
+        "department": "chassis",
+        "role": "konstruktor monocoque",
+        "bolidName": "RT12e"
+      },
+      {
+        "department": "chassis",
+        "role": "lider dzia\u0142u chassis",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "chassis",
+        "role": "konstruktor ergonomii kierowcy",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "bartosz",
+    "surname": "pawlik",
+    "roles": [
+      {
+        "department": "chassis",
+        "role": "konstruktor monocoque",
+        "bolidName": "RT12e"
+      },
+      {
+        "department": "chassis",
+        "role": "konstruktor monocoque",
+        "bolidName": "RT11b"
+      }
+    ]
+  },
+  {
+    "name": "szymon",
+    "surname": "kudelski",
+    "roles": [
+      {
+        "department": "chassis",
+        "role": "konstruktor ergonomii kierowcy",
+        "bolidName": "RT12e"
+      },
+      {
+        "department": "chassis",
+        "role": "konstruktor ergonomii",
+        "bolidName": "RT11b"
+      }
+    ]
+  },
+  {
+    "name": "mateusz",
+    "surname": "torski",
+    "roles": [
+      {
+        "department": "chassis",
+        "role": "konstruktor form",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "adam",
+    "surname": "tokarski",
+    "roles": [
+      {
+        "department": "chassis",
+        "role": "konstruktor struktur spawanych",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "filip",
+    "surname": "stach",
+    "roles": [
+      {
+        "department": "chassis",
+        "role": "konstruktor inser\u00f3w i rdzeni",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "micha\u0142",
+    "surname": "dowgia\u0142\u0142o",
+    "roles": [
+      {
+        "department": "aero",
+        "role": "lider dzia\u0142u aerodynamiki",
+        "bolidName": "RT12e"
+      },
+      {
+        "department": "aero",
+        "role": "konstruktor sekcji bocznych",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "aero",
+        "role": "konstruktor uk\u0142adu ch\u0142odzenia hamulc\u00f3w",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "marek",
+    "surname": "sawicki",
+    "roles": [
+      {
+        "department": "aero",
+        "role": "in\u017cynier aerodynamiki",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "jakub",
+    "surname": "kope\u0107",
+    "roles": [
+      {
+        "department": "aero",
+        "role": "in\u017cynier aerodynamiki",
+        "bolidName": "RT12e"
+      },
+      {
+        "department": "aero",
+        "role": "konstruktor przedniego skrzyd\u0142a",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "aero",
+        "role": "konstruktor przedniego skrzyd\u0142a",
+        "bolidName": "RT11"
+      },
+      {
+        "department": "aero",
+        "role": "konstruktor paneli bocznych",
+        "bolidName": "RTX"
+      }
+    ]
+  },
+  {
+    "name": "bartosz",
+    "surname": "warcaba",
+    "roles": [
+      {
+        "department": "aero",
+        "role": "in\u017cynier aerodynamiki",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "szymon",
+    "surname": "zajda",
+    "roles": [
+      {
+        "department": "electronics",
+        "role": "lider dzia\u0142u elektroniki",
+        "bolidName": "RT12e"
+      },
+      {
+        "department": "electronics",
+        "role": "lider dzia\u0142u elektroniki",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "electronics",
+        "role": "projektant elektroniki",
+        "bolidName": "RT11"
+      },
+      {
+        "department": "electronics",
+        "role": "projektant elektroniki",
+        "bolidName": "RTX"
+      }
+    ]
+  },
+  {
+    "name": "kacper",
+    "surname": "lichtarowicz",
+    "roles": [
+      {
+        "department": "electronics",
+        "role": "programista",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "adam",
+    "surname": "orczykowski",
+    "roles": [
+      {
+        "department": "electronics",
+        "role": "projektant uk\u0142ad\u00f3w elektronicznych",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "adam",
+    "surname": "moskot",
+    "roles": [
+      {
+        "department": "electronics",
+        "role": "programista",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "maciej",
+    "surname": "strzelczyk",
+    "roles": [
+      {
+        "department": "electronics",
+        "role": "cz\u0142onek dzia\u0142u elektroniki",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "marcel",
+    "surname": "dudek",
+    "roles": [
+      {
+        "department": "autonomous",
+        "role": "lider dzia\u0142u autonomii",
+        "bolidName": "RT12e"
+      },
+      {
+        "department": "autonomous",
+        "role": "lider dzia\u0142u autonomii",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "electronics",
+        "role": "programista",
+        "bolidName": "RT11"
+      },
+      {
+        "department": "autonomous",
+        "role": "projektant systemu autonomii",
+        "bolidName": "RT11"
+      },
+      {
+        "department": "electronics",
+        "role": "programista",
+        "bolidName": "RTX"
+      },
+      {
+        "department": "electronics",
+        "role": "gps",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "kamil",
+    "surname": "\u015bmigielski",
+    "roles": [
+      {
+        "department": "autonomous",
+        "role": "architekt systemu autonomicznego",
+        "bolidName": "RT12e"
+      },
+      {
+        "department": "autonomous",
+        "role": "symulacja pojazdu i sensoryki",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "autonomous",
+        "role": "programista",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "maciej",
+    "surname": "hajdamowicz",
+    "roles": [
+      {
+        "department": "autonomous",
+        "role": "konstruktor autonomicznego uk\u0142adu kierowniczego",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "tomasz",
+    "surname": "pietkun",
+    "roles": [
+      {
+        "department": "autonomous",
+        "role": "programista system\u00f3w percepcji",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "piotr",
+    "surname": "\u0142\u0105pierz",
+    "roles": [
+      {
+        "department": "autonomous",
+        "role": "programista system\u00f3w percepcji",
+        "bolidName": "RT12e"
+      }
+    ]
+  },
+  {
+    "name": "karolina",
+    "surname": "nowak",
+    "roles": [
+      {
+        "department": "vehicle performance",
+        "role": "dynamika pojazdu",
+        "bolidName": "RT12e"
+      },
+      {
+        "department": "suspension",
+        "role": "in\u017cynier ds. dynamiki pojazdu",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "suspension",
+        "role": "specjalista ds. oblicze\u0144 dynamiki i kinematyki pojazdu",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "marcel",
+    "surname": "byndas",
+    "roles": [
+      {
+        "department": "vehicle performance",
+        "role": "dynamika pojazdu",
+        "bolidName": "RT12e"
+      },
+      {
+        "department": "management",
+        "role": "lider techniczny",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "powertrain",
+        "role": "konstruktor uk\u0142adu smarowania",
+        "bolidName": "RT11"
+      },
+      {
+        "department": "powertrain",
+        "role": "in\u017cynier rozwoju silnika",
+        "bolidName": "RTX"
+      }
+    ]
+  },
+  {
+    "name": "micha\u0142",
+    "surname": "amborski",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "prezentacja biznesowa",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "management",
+        "role": "lider dzia\u0142u marketingu",
+        "bolidName": "RT11"
+      },
+      {
+        "department": "marketing",
+        "role": "lider dzia\u0142u marketingu",
+        "bolidName": "RT11"
+      },
+      {
+        "department": "marketing",
+        "role": "menad\u017cer prezentacji biznesowej",
+        "bolidName": "RTX"
+      }
+    ]
+  },
+  {
+    "name": "patryk",
+    "surname": "rubin",
+    "roles": [
+      {
+        "department": "powertrain",
+        "role": "konstruktor uk\u0142adu ch\u0142odzenia",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "powertrain",
+        "role": "lider dzia\u0142u nap\u0119du",
+        "bolidName": "RT11"
+      },
+      {
+        "department": "autonomous",
+        "role": "lider dzia\u0142u autonomii",
+        "bolidName": "RT11"
+      },
+      {
+        "department": "powertrain",
+        "role": "konstruktor uk\u0142adu sterowania silnikiem",
+        "bolidName": "RTX"
+      }
+    ]
+  },
+  {
+    "name": "krzysztodf",
+    "surname": "gajewski",
+    "roles": [
+      {
+        "department": "powertrain",
+        "role": "konstruktor uk\u0142adu ch\u0142odzenia",
+        "bolidName": "RT11b"
+      }
+    ]
+  },
+  {
+    "name": "dominik",
+    "surname": "dziu\u0142ka",
+    "roles": [
+      {
+        "department": "powertrain",
+        "role": "konstruktor obudowy akumulatora",
+        "bolidName": "RT11b"
+      }
+    ]
+  },
+  {
+    "name": "remigiusz",
+    "surname": "wojew\u00f3dzki",
+    "roles": [
+      {
+        "department": "powertrain",
+        "role": "in\u017cynier systemu bezpiecze\u0144stwa akumulatora",
+        "bolidName": "RT11b"
+      }
+    ]
+  },
+  {
+    "name": "tomasz",
+    "surname": "pier\u00f3g",
+    "roles": [
+      {
+        "department": "powertrain",
+        "role": "konstruktor przek\u0142adni planetarnej",
+        "bolidName": "RT11b"
+      }
+    ]
+  },
+  {
+    "name": "bartosz",
+    "surname": "wojciechowski",
+    "roles": [
+      {
+        "department": "suspension",
+        "role": "konstruktor piast i zwrotnic",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "suspension",
+        "role": "konstruktor zwrotnic",
+        "bolidName": "RTX"
+      }
+    ]
+  },
+  {
+    "name": "\u0142ukasz",
+    "surname": "kostrzewski",
+    "roles": [
+      {
+        "department": "suspension",
+        "role": "in\u017cynier ds. dynamiki pojazdu",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "management",
+        "role": "lider dzia\u0142u technicznego",
+        "bolidName": "RT11"
+      },
+      {
+        "department": "suspension",
+        "role": "konstruktor piast i rotor\u00f3w",
+        "bolidName": "RTX"
+      },
+      {
+        "department": "suspension",
+        "role": "pushrod system constructor",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "adrian",
+    "surname": "srebrny",
+    "roles": [
+      {
+        "department": "suspension",
+        "role": "konstruktor stabilizator\u00f3w poprzecznych",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "suspension",
+        "role": "konstruktor stabilizatora poprzecznego",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "kajetan",
+    "surname": "rodziewicz",
+    "roles": [
+      {
+        "department": "suspension",
+        "role": "konstruktor wahaczy",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "suspension",
+        "role": "konstruktor wahaczy i \u0142\u0105cznik\u00f3w zawieszenia",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "jakub",
+    "surname": "grygiel",
+    "roles": [
+      {
+        "department": "suspension",
+        "role": "konstruktor uk\u0142adu kierowniczego",
+        "bolidName": "RT11b"
+      }
+    ]
+  },
+  {
+    "name": "julian",
+    "surname": "jarowicz",
+    "roles": [
+      {
+        "department": "suspension",
+        "role": "konstruktor uk\u0142adu kierowniczego",
+        "bolidName": "RT11b"
+      }
+    ]
+  },
+  {
+    "name": "mateusz",
+    "surname": "lepianka",
+    "roles": [
+      {
+        "department": "chassis",
+        "role": "konstruktor monocoque",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "chassis",
+        "role": "konstruktor monocoque",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "andrzej",
+    "surname": "biler",
+    "roles": [
+      {
+        "department": "chassis",
+        "role": "konstruktor in\u017cynier ergonomii",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "chassis",
+        "role": "konstruktor ergonomii kierowcy",
+        "bolidName": "RT11"
+      },
+      {
+        "department": "chassis",
+        "role": "konstruktor ergonomii kierowcy",
+        "bolidName": "RTX"
+      }
+    ]
+  },
+  {
+    "name": "jakub",
+    "surname": "pisiewicz",
+    "roles": [
+      {
+        "department": "chassis",
+        "role": "konstruktor ergonomii kierowcy",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "chassis",
+        "role": "konstruktor monocoque",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "pawe\u0142",
+    "surname": "miazga",
+    "roles": [
+      {
+        "department": "chassis",
+        "role": "specjalista ds. struktur spawanych",
+        "bolidName": "RT11b"
+      }
+    ]
+  },
+  {
+    "name": "kacper",
+    "surname": "karbowski",
+    "roles": [
+      {
+        "department": "aero",
+        "role": "lider dzia\u0142u aerodynamiki",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "aero",
+        "role": "konstruktor sekcji bocznych",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "oskar",
+    "surname": "wengrzyn",
+    "roles": [
+      {
+        "department": "aero",
+        "role": "in\u017cynier rozwoju",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "aero",
+        "role": "lider dzia\u0142u aerodynamiki",
+        "bolidName": "RT11"
+      },
+      {
+        "department": "aero",
+        "role": "konstruktor przedniego skrzyd\u0142a",
+        "bolidName": "RTX"
+      },
+      {
+        "department": "aero",
+        "role": "brake cooling constructor",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "jakub",
+    "surname": "kubera",
+    "roles": [
+      {
+        "department": "aero",
+        "role": "konstruktor tylnego skrzyd\u0142a",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "aero",
+        "role": "konstruktor tylnego skrzyd\u0142a",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "mi\u0142osz",
+    "surname": "zdun",
+    "roles": [
+      {
+        "department": "electronics",
+        "role": "projektant elektroniki",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "electronics",
+        "role": "lider dzia\u0142u elektroniki",
+        "bolidName": "RT11"
+      },
+      {
+        "department": "electronics",
+        "role": "projektant wi\u0105zki elektrycznej",
+        "bolidName": "RTX"
+      }
+    ]
+  },
+  {
+    "name": "micha\u0142",
+    "surname": "badurczyk",
+    "roles": [
+      {
+        "department": "electronics",
+        "role": "programista",
+        "bolidName": "RT11b"
+      }
+    ]
+  },
+  {
+    "name": "oliwia",
+    "surname": "bogdanowicz",
+    "roles": [
+      {
+        "department": "electronics",
+        "role": "specjalista ds. wiazki elektrycznej",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "electronics",
+        "role": "specjalista ds. wiazki elektrycznej",
+        "bolidName": "RT11"
+      },
+      {
+        "department": "electronics",
+        "role": "projektant wi\u0105zki elektrycznej",
+        "bolidName": "RTX"
+      }
+    ]
+  },
+  {
+    "name": "kacper",
+    "surname": "har\u0119zga",
+    "roles": [
+      {
+        "department": "electronics",
+        "role": "programista",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "electronics",
+        "role": "programista",
+        "bolidName": "RT11"
+      },
+      {
+        "department": "electronics",
+        "role": "projektant elektroniki",
+        "bolidName": "RTX"
+      }
+    ]
+  },
+  {
+    "name": "adrian",
+    "surname": "cinal",
+    "roles": [
+      {
+        "department": "electronics",
+        "role": "programista",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "electronics",
+        "role": "programista",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "jacek",
+    "surname": "duszenko",
+    "roles": [
+      {
+        "department": "autonomous",
+        "role": "rozpoznawanie obrazu",
+        "bolidName": "RT11b"
+      }
+    ]
+  },
+  {
+    "name": "andrzej",
+    "surname": "olszewski",
+    "roles": [
+      {
+        "department": "autonomous",
+        "role": "programista",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "autonomous",
+        "role": "programista",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "piotr",
+    "surname": "kasprowicz",
+    "roles": [
+      {
+        "department": "autonomous",
+        "role": "programista",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "autonomous",
+        "role": "programista",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "przemys\u0142aw",
+    "surname": "w\u00f3jcik",
+    "roles": [
+      {
+        "department": "autonomous",
+        "role": "konstruktor automatycznego uk\u0142adu hamulcowego",
+        "bolidName": "RT11b"
+      }
+    ]
+  },
+  {
+    "name": "piotr",
+    "surname": "fr\u0105szczak",
+    "roles": [
+      {
+        "department": "autonomous",
+        "role": "przetwarzanie danych",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "autonomous",
+        "role": "programista",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "piotr",
+    "surname": "\u017cuk",
+    "roles": [
+      {
+        "department": "autonomous",
+        "role": "konstruktor automatycznego uk\u0142adu kierowniczego",
+        "bolidName": "RT11b"
+      },
+      {
+        "department": "autonomous",
+        "role": "konstruktor autonomicznego uk\u0142adu hamulcowego",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "julian",
+    "surname": "kasznia",
+    "roles": [
+      {
+        "department": "management",
+        "role": "lider zespo\u0142u",
+        "bolidName": "RT11"
+      },
+      {
+        "department": "suspension",
+        "role": "lider dzia\u0142u suspension",
+        "bolidName": "RTX"
+      },
+      {
+        "department": "suspension",
+        "role": "hubs constructor",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "b\u0142a\u017cej",
+    "surname": "pawluk",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "social media",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "wiktoria",
+    "surname": "budziar",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "grafik",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "dawid",
+    "surname": "skalny",
+    "roles": [
+      {
+        "department": "powertrain",
+        "role": "analityk fmea",
+        "bolidName": "RT11"
+      },
+      {
+        "department": "powertrain",
+        "role": "lider dzia\u0142u powertrain",
+        "bolidName": "RTX"
+      },
+      {
+        "department": "powertrain",
+        "role": "exhaust system constructor",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "lucca",
+    "surname": "martinelli",
+    "roles": [
+      {
+        "department": "powertrain",
+        "role": "konstruktor uk\u0142adu ch\u0142odzenia",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "klaudia",
+    "surname": "sobota",
+    "roles": [
+      {
+        "department": "suspension",
+        "role": "lider dzia\u0142u zawieszenia",
+        "bolidName": "RT11"
+      },
+      {
+        "department": "suspension",
+        "role": "konstruktor uk\u0142adu kierowniczego",
+        "bolidName": "RTX"
+      }
+    ]
+  },
+  {
+    "name": "dominika",
+    "surname": "szymczyk",
+    "roles": [
+      {
+        "department": "suspension",
+        "role": "konstruktor uk\u0142adu hamulcowego i pedaliery",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "christopher",
+    "surname": "welter",
+    "roles": [
+      {
+        "department": "suspension",
+        "role": "specjalista ds. oblicze\u0144 dynamiki i kinematyki pojazdu",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "jakub",
+    "surname": "bara\u0144ski",
+    "roles": [
+      {
+        "department": "suspension",
+        "role": "konstruktor uk\u0142adu kierowniczego",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "tomasz",
+    "surname": "gybej",
+    "roles": [
+      {
+        "department": "chassis",
+        "role": "lider dzia\u0142u struktury no\u015bnej",
+        "bolidName": "RT11"
+      },
+      {
+        "department": "chassis",
+        "role": "konstruktor konstrukcji spawanych",
+        "bolidName": "RTX"
+      },
+      {
+        "department": "chassis",
+        "role": "frame constructor",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "grzegorz",
+    "surname": "kubiak",
+    "roles": [
+      {
+        "department": "chassis",
+        "role": "konstruktor monocoque",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "jan",
+    "surname": "gajdzica",
+    "roles": [
+      {
+        "department": "chassis",
+        "role": "konstruktor ramy",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "eryk",
+    "surname": "szymendera",
+    "roles": [
+      {
+        "department": "aero",
+        "role": "konstruktor tuneli ch\u0142odnicy",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "jan",
+    "surname": "wielgus",
+    "roles": [
+      {
+        "department": "electronics",
+        "role": "programista",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "karola",
+    "surname": "kurczewska",
+    "roles": [
+      {
+        "department": "autonomous",
+        "role": "specjalistka ds. automatyki",
+        "bolidName": "RT11"
+      },
+      {
+        "department": "powertrain",
+        "role": "konstruktor uk\u0142adu ch\u0142odzenia",
+        "bolidName": "RTX"
+      },
+      {
+        "department": "powertrain",
+        "role": "konstruktor uk\u0142adu ch\u0142odzenia",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "miko\u0142aj",
+    "surname": "szymczyk",
+    "roles": [
+      {
+        "department": "autonomous",
+        "role": "programista",
+        "bolidName": "RT11"
+      }
+    ]
+  },
+  {
+    "name": "kamil",
+    "surname": "kot\u00f3w",
+    "roles": [
+      {
+        "department": "suspension",
+        "role": "konstruktor stabilizator\u00f3w / dynamika pojazdu",
+        "bolidName": "RTX"
+      },
+      {
+        "department": "suspension",
+        "role": "vehicle dynamics",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "jakub",
+    "surname": "koperski",
+    "roles": [
+      {
+        "department": "suspension",
+        "role": "hubs constructor",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "tomasz",
+    "surname": "lejczak",
+    "roles": [
+      {
+        "department": "management",
+        "role": "lider zespo\u0142u",
+        "bolidName": "RTX"
+      },
+      {
+        "department": "powertrain",
+        "role": "powertrain team leader",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "anna",
+    "surname": "mycek",
+    "roles": [
+      {
+        "department": "management",
+        "role": "lider dzia\u0142u marketingu i zarz\u0105dzania",
+        "bolidName": "RTX"
+      },
+      {
+        "department": "marketing",
+        "role": "lider dzia\u0142u marketingu i zarz\u0105dzania",
+        "bolidName": "RTX"
+      },
+      {
+        "department": "management",
+        "role": "lider dzia\u0142u marketingu i zarz\u0105dzania",
+        "bolidName": "RT09"
+      },
+      {
+        "department": "marketing",
+        "role": "lider dzia\u0142u marketing&management",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "piotr",
+    "surname": "czech",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "specjalista ds. logistyki",
+        "bolidName": "RTX"
+      }
+    ]
+  },
+  {
+    "name": "iga",
+    "surname": "jab\u0142o\u0144ska",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "specjalista ds. wizerunku",
+        "bolidName": "RTX"
+      }
+    ]
+  },
+  {
+    "name": "miko\u0142aj",
+    "surname": "kami\u0144ski",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "menad\u017cer prezentacji biznesowej",
+        "bolidName": "RTX"
+      },
+      {
+        "department": "marketing",
+        "role": "business presentation manager",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "jakub",
+    "surname": "czaplicki",
+    "roles": [
+      {
+        "department": "powertrain",
+        "role": "konstruktor uk\u0142adu wydechowego",
+        "bolidName": "RTX"
+      }
+    ]
+  },
+  {
+    "name": "rafa\u0142",
+    "surname": "pyszny",
+    "roles": [
+      {
+        "department": "powertrain",
+        "role": "konstruktor uk\u0142adu przeniesienia nap\u0119du",
+        "bolidName": "RTX"
+      }
+    ]
+  },
+  {
+    "name": "kuba",
+    "surname": "\u0142opacki",
+    "roles": [
+      {
+        "department": "powertrain",
+        "role": "in\u017cynier rozwoju silnika",
+        "bolidName": "RTX"
+      }
+    ]
+  },
+  {
+    "name": "micha\u0142",
+    "surname": "cie\u015blak",
+    "roles": [
+      {
+        "department": "suspension",
+        "role": "in\u017cynier wy\u015bcigowy / dynamika pojazdu",
+        "bolidName": "RTX"
+      },
+      {
+        "department": "suspension",
+        "role": "vehicle kinematics",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "krystian",
+    "surname": "wiaderek",
+    "roles": [
+      {
+        "department": "suspension",
+        "role": "konstruktor zwrotnic / dynamika pojazdu",
+        "bolidName": "RTX"
+      },
+      {
+        "department": "suspension",
+        "role": "steering system constructor",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "kuba",
+    "surname": "koperski",
+    "roles": [
+      {
+        "department": "suspension",
+        "role": "konstruktor wahaczy",
+        "bolidName": "RTX"
+      }
+    ]
+  },
+  {
+    "name": "adam",
+    "surname": "grabias",
+    "roles": [
+      {
+        "department": "suspension",
+        "role": "konstruktor pedaliery",
+        "bolidName": "RTX"
+      },
+      {
+        "department": "suspension",
+        "role": "pedalbox constructor",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "tomasz",
+    "surname": "badowski",
+    "roles": [
+      {
+        "department": "suspension",
+        "role": "konstruktor uk\u0142adu hamulcowego",
+        "bolidName": "RTX"
+      }
+    ]
+  },
+  {
+    "name": "wojciech",
+    "surname": "pli\u0144ski",
+    "roles": [
+      {
+        "department": "suspension",
+        "role": "konstruktor uk\u0142adu pushrod&rocker",
+        "bolidName": "RTX"
+      }
+    ]
+  },
+  {
+    "name": "micha\u0142",
+    "surname": "rossa",
+    "roles": [
+      {
+        "department": "chassis",
+        "role": "lider dzia\u0142u chassis",
+        "bolidName": "RTX"
+      },
+      {
+        "department": "chassis",
+        "role": "frame constructor",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "adrianna",
+    "surname": "jasku\u0142a",
+    "roles": [
+      {
+        "department": "chassis",
+        "role": "konstruktor ergonomii kierowcy",
+        "bolidName": "RTX"
+      },
+      {
+        "department": "chassis",
+        "role": "driver\u2019s ergonomics",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "marcin",
+    "surname": "lech",
+    "roles": [
+      {
+        "department": "chassis",
+        "role": "konstruktor konstrukcji no\u015bnej",
+        "bolidName": "RTX"
+      },
+      {
+        "department": "chassis",
+        "role": "monocoque constructor",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "aleksander",
+    "surname": "piechowiak",
+    "roles": [
+      {
+        "department": "chassis",
+        "role": "konstruktor monokoku",
+        "bolidName": "RTX"
+      },
+      {
+        "department": "chassis",
+        "role": "monocoque constructor",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "filip",
+    "surname": "\u017cytkiewicz",
+    "roles": [
+      {
+        "department": "chassis",
+        "role": "konstruktor monokoku",
+        "bolidName": "RTX"
+      }
+    ]
+  },
+  {
+    "name": "jakub",
+    "surname": "miros\u0142awski",
+    "roles": [
+      {
+        "department": "aero",
+        "role": "lider dzia\u0142u aerodynamics",
+        "bolidName": "RTX"
+      },
+      {
+        "department": "aero",
+        "role": "lider dzia\u0142u aerodynamics",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "kuba",
+    "surname": "kubera",
+    "roles": [
+      {
+        "department": "aero",
+        "role": "konstruktor ch\u0142odzenia hamulc\u00f3w",
+        "bolidName": "RTX"
+      }
+    ]
+  },
+  {
+    "name": "mateusz",
+    "surname": "bry\u0142kowski",
+    "roles": [
+      {
+        "department": "aero",
+        "role": "konstruktor tuneli ch\u0142odnicy",
+        "bolidName": "RTX"
+      }
+    ]
+  },
+  {
+    "name": "marek",
+    "surname": "rych\u0142owski",
+    "roles": [
+      {
+        "department": "electronics",
+        "role": "lider dzia\u0142u electronics",
+        "bolidName": "RTX"
+      },
+      {
+        "department": "electronics",
+        "role": "electronics engineer",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "micha\u0142",
+    "surname": "skupie\u0144",
+    "roles": [
+      {
+        "department": "electronics",
+        "role": "projektant elektroniki",
+        "bolidName": "RTX"
+      },
+      {
+        "department": "electronics",
+        "role": "electronics engineer",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "jan",
+    "surname": "w\u0142adyka",
+    "roles": [
+      {
+        "department": "electronics",
+        "role": "projektant wi\u0105zki elektrycznej",
+        "bolidName": "RTX"
+      },
+      {
+        "department": "electronics",
+        "role": "harness and pneumatics designer",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "tomasz",
+    "surname": "grzesik",
+    "roles": [
+      {
+        "department": "electronics",
+        "role": "programista",
+        "bolidName": "RTX"
+      }
+    ]
+  },
+  {
+    "name": "j\u0119drzej",
+    "surname": "piasecki",
+    "roles": [
+      {
+        "department": "management",
+        "role": "lider zespo\u0142u",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "joanna",
+    "surname": "d\u0105browska",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "business presentation manager",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "kamil",
+    "surname": "gorzelak",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "photographer",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "pawe\u0142",
+    "surname": "ledwig",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "camera operator",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "bartosz",
+    "surname": "tuczapski",
+    "roles": [
+      {
+        "department": "marketing",
+        "role": "graphic designer",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "mariusz",
+    "surname": "budkiewicz",
+    "roles": [
+      {
+        "department": "powertrain",
+        "role": "engine analysis specialist",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "mateusz",
+    "surname": "gandyk",
+    "roles": [
+      {
+        "department": "powertrain",
+        "role": "engine analysis specialist",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "wojciech",
+    "surname": "ludziak",
+    "roles": [
+      {
+        "department": "powertrain",
+        "role": "transmission constructor",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "piotr",
+    "surname": "nowotniak",
+    "roles": [
+      {
+        "department": "powertrain",
+        "role": "lubrication system constructor",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "micha\u0142",
+    "surname": "krasowski",
+    "roles": [
+      {
+        "department": "suspension",
+        "role": "suspension team leader",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "marcin",
+    "surname": "tujek",
+    "roles": [
+      {
+        "department": "suspension",
+        "role": "fem analysis specialist",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "mariusz",
+    "surname": "weso\u0142owski",
+    "roles": [
+      {
+        "department": "suspension",
+        "role": "brake system constructor",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "adrian",
+    "surname": "tarnowski",
+    "roles": [
+      {
+        "department": "suspension",
+        "role": "wishbones constructor",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "miko\u0142aj",
+    "surname": "popiel",
+    "roles": [
+      {
+        "department": "suspension",
+        "role": "vehicle kinematics",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "magdalena",
+    "surname": "mi\u015b",
+    "roles": [
+      {
+        "department": "chassis",
+        "role": "chassis team leader",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "zuzanna",
+    "surname": "jamroz",
+    "roles": [
+      {
+        "department": "chassis",
+        "role": "driver\u2019s ergonomics",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "wiktoria",
+    "surname": "wyschka",
+    "roles": [
+      {
+        "department": "chassis",
+        "role": "fem analysis specialist",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "konrad",
+    "surname": "\u017co\u0142y\u0144ski",
+    "roles": [
+      {
+        "department": "chassis",
+        "role": "monocoque constructor",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "arkadiusz",
+    "surname": "wilczy\u0144ski",
+    "roles": [
+      {
+        "department": "chassis",
+        "role": "fem analysis specialist",
+        "bolidName": "RT09"
+      },
+      {
+        "department": "chassis",
+        "role": "fem analysis specialist",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "rui",
+    "surname": "fernandes",
+    "roles": [
+      {
+        "department": "chassis",
+        "role": "executive specialist",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "kamil",
+    "surname": "chalasiewicz",
+    "roles": [
+      {
+        "department": "chassis",
+        "role": "driver\u2019s ergonomics",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "filip",
+    "surname": "szwedo",
+    "roles": [
+      {
+        "department": "aero",
+        "role": "lead aerodynamics engineer",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "maciej",
+    "surname": "repelowski",
+    "roles": [
+      {
+        "department": "aero",
+        "role": "rear wing constructor",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "przemys\u0142aw",
+    "surname": "ka\u0142u\u017ca",
+    "roles": [
+      {
+        "department": "aero",
+        "role": "front wing constructor",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "\u0142ukasz",
+    "surname": "spyt",
+    "roles": [
+      {
+        "department": "aero",
+        "role": "side wings constructor",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "robert",
+    "surname": "rauch",
+    "roles": [
+      {
+        "department": "aero",
+        "role": "cooling duct constructor",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "daniel",
+    "surname": "cero\u0144",
+    "roles": [
+      {
+        "department": "aero",
+        "role": "cfd engineer",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "grzegorz",
+    "surname": "jaworecki",
+    "roles": [
+      {
+        "department": "electronics",
+        "role": "electronics team leader",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "aleksandra",
+    "surname": "jamroz",
+    "roles": [
+      {
+        "department": "electronics",
+        "role": "software developer",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "pawe\u0142",
+    "surname": "cyprys",
+    "roles": [
+      {
+        "department": "electronics",
+        "role": "telemetry developer",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "ma\u0142gorzata",
+    "surname": "roszak",
+    "roles": [
+      {
+        "department": "electronics",
+        "role": "racetrack electronics developer",
+        "bolidName": "RT09"
+      }
+    ]
+  },
+  {
+    "name": "jakub",
+    "surname": "orasi\u0144ski",
+    "roles": []
+  }
+]

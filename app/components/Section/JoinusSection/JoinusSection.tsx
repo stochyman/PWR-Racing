@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Image from "next/image";
 import Container from "../../Container";
@@ -11,7 +11,7 @@ const JoinusSection = () => {
       <div
         className="absolute inset-0 z-10"
         style={{
-          background: `linear-gradient(0deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.16)), radial-gradient(75% 75% at 50% 50%, #000000 0%, rgba(0, 0, 0, 0) 100%)`
+          background: `linear-gradient(0deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.16)), radial-gradient(75% 75% at 50% 50%, #000000 0%, rgba(0, 0, 0, 0) 100%)`,
         }}
       ></div>
       <div className="grid h-full grid-cols-[25%_40%_35%] relative">
@@ -77,20 +77,15 @@ const JoinusSection = () => {
       </div>
       <div className="absolute inset-0 z-10">
         <Container>
-          <div className="">
+          <div className=" flex flex-col justify-center">
             <div className=" uppercase text-center">
-              <Title>Chcesz zostać częścią <br/> pwr racing team?</Title>
+              <Title>
+                Chcesz zostać częścią <br /> pwr racing team?
+              </Title>
             </div>
             <div className="flex gap-4 mt-8">
-              <Button
-                label='Rekrutacja'
-                onClick={() => {}}
-              />
-              <Button
-                outline
-                label='Zostań Partnerem'
-                onClick={() => {}}
-              />
+              <Button label="Rekrutacja" onClick={() => {}} />
+              <Button outline label="Zostań Partnerem" onClick={() => {}} />
             </div>
           </div>
         </Container>

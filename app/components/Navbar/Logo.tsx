@@ -1,9 +1,7 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { useRouter } from 'next/navigation';
-
-
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 interface LogoProps {
   width: number;
@@ -11,17 +9,11 @@ interface LogoProps {
 }
 
 const Logo: React.FC<LogoProps> = ({ width, height }) => {
-  return(
+  return (
     <div className=" relative py-7">
-      <Image
-          alt='Logo'
-          height={height}
-          width={width}
-          objectFit='contain'
-          src='/images/logo.png'
-        />
+      <Image alt="Logo" height={height} width={width} src="/images/logo.png" />
     </div>
-  )
-}
+  );
+};
 
 export default Logo;

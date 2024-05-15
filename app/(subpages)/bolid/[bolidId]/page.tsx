@@ -183,9 +183,9 @@ const BolidPage = async ({ params }: { params: Iparams }) => {
               <div
                 className={`${
                   depIndex % 2 === 0 ? "" : "flex-row-reverse"
-                } flex gap-16 my-20`}
+                } flex gap-16`}
               >
-                <div className=" my-auto w-2/3">
+                <div className=" my-20 w-2/3">
                   <div className=" uppercase">
                     <Title size="big" color="black">
                       {part.partName}
@@ -199,10 +199,13 @@ const BolidPage = async ({ params }: { params: Iparams }) => {
                   <Image
                     src={`/images/bolid/RT12e/parts/${part.partName}.png`}
                     alt={`Zdjęcie ${part.partName}`}
-                    layout="responsive"
                     width={300} // Używaj rzeczywistych proporcji obrazu
                     height={400} // Używaj rzeczywistych proporcji obrazu
-                    objectFit="cover"
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                    }}
+                    sizes="(max-width: 768px) 100vw, 25vw"
                   />
                 </div>
               </div>

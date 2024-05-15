@@ -79,7 +79,7 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
 
   return (
     <div className="relative bg-neutral-950 pt-32 pb-12">
-      <div className="relative">
+      <div className="relative overflow-hidden">
         <ClientSlider teamId={teamId} />
 
         {/* Renderowanie sekcji dla każdego działu aktualnego bolidu */}
@@ -117,33 +117,52 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
                           : "grid-cols-4"
                       } grid my-4 gap-6`}
                     >
-                      {membersByDepartment[department].map((member, index) => (
-                        <div className="relative group" key={index}>
-                          <div className="absolute inset-0 z-0 w-full h-full rounded-full blur-3xl bg-white opacity-10"></div>
+                      {membersByDepartment[department]
+                        .sort((a, b) => {
+                          // Sprawdzamy, czy rola zawiera słowo "lider"
+                          const isLeaderA = a.currentRole
+                            .toLowerCase()
+                            .includes("lider");
+                          const isLeaderB = b.currentRole
+                            .toLowerCase()
+                            .includes("lider");
+                          if (isLeaderA && !isLeaderB) return -1; // A jest liderem, B nie
+                          if (!isLeaderA && isLeaderB) return 1; // B jest liderem, A nie
 
-                          <div className="relative rounded-xl overflow-hidden bg-black pb-14">
-                            <div className="relative h-[350px]">
-                              <Image
-                                src={`https://storage.googleapis.com/pwr-rt/${teamId}/${encodeURIComponent(
-                                  member.name[0].toUpperCase() +
-                                    member.name.slice(1)
-                                )}%20${encodeURIComponent(
-                                  member.surname[0].toUpperCase() +
-                                    member.surname.slice(1)
-                                )}.jpg`}
-                                alt={`Zdjęcie ${member.name} ${member.surname}`}
-                                layout="fill" // Ustawia obraz na wypełnienie kontenera
-                                objectFit="cover"
-                                objectPosition="center"
+                          // Jeśli obaj są liderami, zachowujemy kolejność jak w oryginalnej tablicy
+                          if (isLeaderA && isLeaderB) return 0;
+
+                          // Jeśli obaj nie są liderami, sortujemy alfabetycznie po imieniu
+                          return a.name.localeCompare(b.name);
+                        })
+                        .map((member, index) => (
+                          <div className="relative group" key={index}>
+                            <div className="absolute inset-0 z-0 w-full h-full rounded-full blur-3xl bg-white opacity-10"></div>
+
+                            <div className="relative rounded-xl overflow-hidden bg-black pb-14">
+                              <div className="relative h-[350px]">
+                                <Image
+                                  src={`https://storage.googleapis.com/pwr-rt/${
+                                    teamId === "RT11b" ? "RT11" : teamId
+                                  }/${encodeURIComponent(
+                                    member.name[0].toUpperCase() +
+                                      member.name.slice(1)
+                                  )}%20${encodeURIComponent(
+                                    member.surname[0].toUpperCase() +
+                                      member.surname.slice(1)
+                                  )}.jpg`}
+                                  alt={`Zdjęcie ${member.name} ${member.surname}`}
+                                  fill
+                                  style={{ objectFit: "cover" }}
+                                />
+                              </div>
+                              <TileHeading
+                                member={member}
+                                roleHistory={roleHistory}
                               />
                             </div>
-                            <TileHeading
-                              member={member}
-                              roleHistory={roleHistory}
-                            />
                           </div>
-                        </div>
-                      ))}
+                        ))}
                     </div>
                   </div>
                   {department === "management" && (
