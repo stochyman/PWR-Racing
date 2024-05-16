@@ -79,7 +79,7 @@ const BolidSection = ({ presetBolid = "RT13e" }) => {
 
   useEffect(() => {
     fetchBolidData(currentBolidData.name);
-  }, [currentBolidData.name, fetchBolidData]);
+  }, []);
 
   const handleChangeBolid = (bolidName: string) => {
     fetchBolidData(bolidName);
