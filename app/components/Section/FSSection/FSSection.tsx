@@ -51,7 +51,9 @@ const FSSection: React.FC<FSSectionProps> = ({ aboutUs }) => {
                   purus faucibus blandit. Quisque venenatis eleifend molestie.
                 </Text>
               </div>
-              {!aboutUs && <SecondaryButton buttonText="Dowiedz się więcej" />}
+              {!aboutUs && (
+                <SecondaryButton to="/" buttonText="Dowiedz się więcej" />
+              )}
             </div>
             <div className=" relative ">
               <Image

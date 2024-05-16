@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import React, { useEffect, useState, useRef } from 'react';
-import Title, { TitleProps } from '../../Title';
+import React, { useEffect, useState, useRef } from "react";
+import Title, { TitleProps } from "../../Title";
 
 interface CounterProps extends TitleProps {
   targetNumber: number;
@@ -31,7 +31,9 @@ const Counter: React.FC<CounterProps> = ({ targetNumber, ...props }) => {
                 if (start === targetNumber) clearInterval(interval);
               }, intervalTime);
 
-              observer.unobserve(currentRef);
+              if (observer) {
+                observer.unobserve(currentRef);
+              }
             }
           });
         },
@@ -50,7 +52,11 @@ const Counter: React.FC<CounterProps> = ({ targetNumber, ...props }) => {
     };
   }, [targetNumber]);
 
-  return <div ref={counterRef}><Title {...props}>{count}</Title></div>;
+  return (
+    <div ref={counterRef}>
+      <Title {...props}>{count}</Title>
+    </div>
+  );
 };
 
 export default Counter;

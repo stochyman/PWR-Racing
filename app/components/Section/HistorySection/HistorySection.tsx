@@ -42,39 +42,33 @@ const HistorySection: React.FC<HistorySectionProps> = ({ aboutUs }) => {
                     0
                   </Counter>
                   <div className=" text-lg">
-                    <Text noblock center bold color="red" wide>
+                    <Text center bold color="red" wide>
                       CZŁONKÓW
                     </Text>
                   </div>
-                  <Text color="gray" noblock>
-                    Których łączy jedna pasja
-                  </Text>
+                  <Text color="gray">Których łączy jedna pasja</Text>
                 </div>
                 <div className="flex flex-col">
                   <Counter targetNumber={14} size="bigger" color="red">
                     0
                   </Counter>
                   <div className=" text-lg">
-                    <Text noblock center bold color="red" wide>
+                    <Text center bold color="red" wide>
                       PROJEKTÓW
                     </Text>
                   </div>
-                  <Text color="gray" noblock>
-                    Ukończonych bolidów{" "}
-                  </Text>
+                  <Text color="gray">Ukończonych bolidów </Text>
                 </div>
                 <div className="flex flex-col">
                   <Counter targetNumber={21} size="bigger" color="red">
                     0
                   </Counter>
                   <div className=" text-lg">
-                    <Text noblock center bold color="red" wide>
+                    <Text center bold color="red" wide>
                       OSIĄGNIĘĆ
                     </Text>
                   </div>
-                  <Text color="gray" noblock>
-                    W międzynarodowych zawodach
-                  </Text>
+                  <Text color="gray">W międzynarodowych zawodach</Text>
                 </div>
               </div>
               <div className="">
@@ -103,7 +97,7 @@ const HistorySection: React.FC<HistorySectionProps> = ({ aboutUs }) => {
                   </Text>
                 </div>
                 {!aboutUs && (
-                  <SecondaryButton buttonText="Dowiedz się więcej" />
+                  <SecondaryButton to="/" buttonText="Dowiedz się więcej" />
                 )}
               </div>
             </div>

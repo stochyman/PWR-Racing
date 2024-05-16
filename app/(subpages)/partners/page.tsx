@@ -125,15 +125,15 @@ interface SponsorGridProps {
   sponsorRank: string;
   gridCols: string;
   height: string;
-  gap: string;
+  gap?: string;
   sponsors: Array<{ name: string; url: string }>;
 }
 
 const SponsorList: React.FC<SponsorGridProps> = ({
   sponsorRank,
+  gridCols,
   height,
   sponsors,
-  gridCols,
 }) => (
   <div className={`grid ${gridCols} h-min w-1/2`}>
     {sponsors.map((sponsor) => (

@@ -176,7 +176,7 @@ const BolidPage = async ({ params }: { params: Iparams }) => {
       <div className="w-full">
         {bolid.parts.map((part, depIndex) => (
           <div
-            key={part.id}
+            key={part.partName}
             className={`${depIndex % 2 === 0 ? "bg-neutral-200" : "bg-white"}`}
           >
             <Container>
