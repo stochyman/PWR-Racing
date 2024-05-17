@@ -38,7 +38,7 @@ const Text: React.FC<TextProps> = ({
   const sizeClass = () => {
     if (small) return "text-xl";
     if (medium) return "text-3xl";
-    return "text-sm sm:text-base";
+    return "text-xs sm:text-base";
   };
 
   return (
