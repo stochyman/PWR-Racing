@@ -21,7 +21,7 @@ const FirstSection = () => {
               </Title>
               <Title>PWR RACING TEAM</Title>
               <div className=" my-6">
-                <Text>
+                <Text color="white">
                   W każdym sezonie tworzymy nowy bolid wyścigowy. Na swoim
                   koncie mamy aż dwanaście niepowtarzalnych modeli bolidów
                   spalinowych, z czego każdy kolejny jest w stanie z łatwością

@@ -29,7 +29,7 @@ const TeamSection = () => {
             </Title>
             <Title size="big">Razem możemy wszystko</Title>
             <div className=" my-6">
-              <Text>
+              <Text color="white">
                 Młodzi, ambitni, zaangażowani, odważni. Te słowa
                 opisują studentów Politechniki Wrocławskiej, a w szczególności
                 członków PWR Racing Team. Nasz zespół posiada strukturę niczym

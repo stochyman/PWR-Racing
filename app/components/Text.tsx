@@ -19,7 +19,7 @@ const Text: React.FC<TextProps> = ({
   bold,
   center,
   opacity1,
-  color = "white",
+  color,
 }) => {
   const colorClass = () => {
     switch (color) {
@@ -29,8 +29,10 @@ const Text: React.FC<TextProps> = ({
         return "text-customRed";
       case "gray":
         return "text-gray-700";
-      default:
+      case "white":
         return "text-white";
+      default:
+        return "";
     }
   };
 

@@ -13,7 +13,7 @@ interface FSSectionProps {
 
 const FSSection: React.FC<FSSectionProps> = ({ aboutUs }) => {
   return (
-    <div className="py-20">
+    <div id="formulastudent-section" className="py-20">
       <Container>
         <div className="">
           {aboutUs && (

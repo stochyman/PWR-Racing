@@ -12,26 +12,16 @@ const NavAbout = () => {
           <div className="w-full">
             <div className="bg-white w-full flex justify-start">
               <ul className="flex justify-start">
-                <li className=" p-8">
-                  <Text bold color="black">
-                    Garaż
-                  </Text>
-                </li>
-                <li className=" p-8">
-                  <Text bold color="black">
-                    Historia zespołu
-                  </Text>
-                </li>
-                <li className=" p-8">
-                  <Text bold color="black">
-                    Nasze działy
-                  </Text>
-                </li>
-                <li className=" p-8">
-                  <Text bold color="black">
-                    Formula Student
-                  </Text>
-                </li>
+                <NavAboutItem scrollToId="garage-section">Garaż</NavAboutItem>
+                <NavAboutItem scrollToId="history-section">
+                  Historia Zespołu
+                </NavAboutItem>
+                <NavAboutItem scrollToId="department-section">
+                  Nasze działy
+                </NavAboutItem>
+                <NavAboutItem scrollToId="formulastudent-section">
+                  Formula Student
+                </NavAboutItem>
               </ul>
             </div>
             <div className="flex gap-20 mt-12">
@@ -89,3 +79,29 @@ const NavAbout = () => {
 };
 
 export default NavAbout;
+
+interface NavAboutItemProps {
+  children: React.ReactNode;
+  scrollToId: string;
+}
+
+const NavAboutItem: React.FC<NavAboutItemProps> = ({
+  children,
+  scrollToId,
+}) => {
+  const handleScroll = () => {
+    const element = document.getElementById(scrollToId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  return (
+    <li
+      className="first:pl-0 p-8 hover:text-customRed cursor-pointer duration-300 ease-in-out"
+      onClick={handleScroll}
+    >
+      <Text bold>{children}</Text>
+    </li>
+  );
+};

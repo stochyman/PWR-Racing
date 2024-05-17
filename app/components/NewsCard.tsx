@@ -6,14 +6,14 @@ type NewsCardProps = {
   title: string;
   short_description: string;
   length_time?: number;
-  logo?: string;
+  logo: string;
   main_image: string;
 };
 const NewsCard: React.FC<NewsCardProps> = ({
   title,
   short_description,
   length_time,
-  logo = "/images/logo.png",
+  logo,
   main_image,
 }) => {
   return (

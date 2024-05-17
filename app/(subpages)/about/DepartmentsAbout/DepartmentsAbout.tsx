@@ -15,7 +15,7 @@ const DepartmentsAbout: React.FC = () => {
   ];
 
   return (
-    <div className="relative bg-white">
+    <div id="department-section" className="relative bg-white">
       <div className="ml-[calc((100vw-var(--container-width))/2)] mb-6">
         <Title color="black">NASZE DZIAŁY</Title>
       </div>

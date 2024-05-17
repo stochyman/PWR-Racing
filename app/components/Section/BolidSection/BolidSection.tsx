@@ -43,7 +43,11 @@ const BolidSection = ({ presetBolid = "RT13e" }) => {
     }
 
     const data = await response.json();
-    if (currentBolidData.year < data.year) {
+
+    if (
+      currentBolidData.year < data.year ||
+      (currentBolidData.name === "RT11b" && bolidName === "RT13e")
+    ) {
       if (sameDirection == "left") {
         setsameDirectionShift("0");
 
@@ -57,7 +61,10 @@ const BolidSection = ({ presetBolid = "RT13e" }) => {
         setDisplayRight(false);
         setIsAnimating("translate-x-[0]"); // Rozpoczęcie animacji
       }
-    } else {
+    } else if (
+      currentBolidData.year > data.year ||
+      (currentBolidData.name === "RT13e" && bolidName === "RT11b")
+    ) {
       if (sameDirection == "right") {
         setsameDirectionShift("");
 

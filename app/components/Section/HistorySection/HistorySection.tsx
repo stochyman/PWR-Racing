@@ -12,7 +12,7 @@ type HistorySectionProps = {
 };
 const HistorySection: React.FC<HistorySectionProps> = ({ aboutUs }) => {
   return (
-    <div className="relative bg-white">
+    <div id="history-section" className="relative bg-white">
       <Container>
         <div className="my-28">
           <div className="mb-8">

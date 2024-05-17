@@ -13,7 +13,10 @@ const DepartmentElement: React.FC<DepartmentElementProps> = ({
   index,
 }) => {
   return (
-    <div className={index % 2 === 0 ? "bg-black" : "bg-neutral-700"}>
+    <div
+      id={department}
+      className={index % 2 === 0 ? "bg-black" : "bg-neutral-700"}
+    >
       <Container paddingType={index % 2 === 0 ? "l" : "r"}>
         <div
           className={`  ${
@@ -24,7 +27,7 @@ const DepartmentElement: React.FC<DepartmentElementProps> = ({
             <div className=" uppercase mb-4">
               <Title size="big">{department}</Title>
             </div>
-            <Text>
+            <Text color="white">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
               gravida placerat purus eu congue. Donec a nulla id augue
               condimentum gravida. Nunc sollicitudin vulputate mi vitae blandit.
@@ -36,7 +39,9 @@ const DepartmentElement: React.FC<DepartmentElementProps> = ({
               justo vel consectetur.
             </Text>
             <div className="flex flex-col gap-4 mt-10">
-              <Text bold>W naszym dziale zajmiesz się:</Text>
+              <Text color="white" bold>
+                W naszym dziale zajmiesz się:
+              </Text>
               <div className="flex flex-col gap-2">
                 <div className="flex gap-3">
                   <svg
@@ -53,7 +58,7 @@ const DepartmentElement: React.FC<DepartmentElementProps> = ({
                       fill="#D41E3E"
                     />
                   </svg>
-                  <Text>
+                  <Text color="white">
                     Projektowaniem elementów w oprogramowaniu Siemens NX
                   </Text>
                 </div>
@@ -70,7 +75,9 @@ const DepartmentElement: React.FC<DepartmentElementProps> = ({
                       fill="#D41E3E"
                     />
                   </svg>
-                  <Text>Lorem ipsum dolor sit amet consectetur.</Text>
+                  <Text color="white">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </Text>
                 </div>
                 <div className="flex gap-3">
                   <svg
@@ -85,7 +92,7 @@ const DepartmentElement: React.FC<DepartmentElementProps> = ({
                       fill="#D41E3E"
                     />
                   </svg>
-                  <Text>
+                  <Text color="white">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   </Text>
                 </div>
@@ -110,7 +117,7 @@ const DepartmentElement: React.FC<DepartmentElementProps> = ({
                       fill="#D41E3E"
                     />
                   </svg>
-                  <Text>
+                  <Text color="white">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Nihil, minus.
                   </Text>

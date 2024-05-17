@@ -5,7 +5,6 @@ import { fetchNews } from "@/app/actions/getNews";
 
 const AboutUs = async () => {
   const news = await fetchNews();
-  console.log(news);
   return (
     <div className="pt-[120px] bg-neutral-900">
       <Container>
@@ -16,7 +15,7 @@ const AboutUs = async () => {
               title={item.title}
               short_description={item.short_description}
               length_time={item.length_time}
-              logo={item.logo || "/images/logo.png"}
+              logo={item.logo || "/images/logo-czarne.svg"}
               main_image={item.main_image}
             />
           ))}

@@ -19,7 +19,7 @@ const GarageAbout: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="relative bg-white pt-20">
+    <div id="garage-section" className="relative bg-white pt-20">
       <Container>
         <div className="w-full">
           <Title color="black">GARAŻ</Title>
