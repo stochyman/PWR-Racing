@@ -1,25 +1,30 @@
 "use client";
+import { useMemo } from "react";
 
 interface TextProps {
   children: React.ReactNode;
   small?: boolean;
   medium?: boolean;
+  extrasmall?: boolean;
   wide?: boolean;
   bold?: boolean;
   center?: boolean;
   opacity1?: boolean;
   color?: "white" | "black" | "red" | "gray";
+  hoverColor?: "white" | "black" | "red" | "gray";
 }
 
 const Text: React.FC<TextProps> = ({
   children,
   small,
   medium,
+  extrasmall,
   wide,
   bold,
   center,
   opacity1,
   color,
+  hoverColor,
 }) => {
   const colorClass = () => {
     switch (color) {
@@ -40,18 +45,35 @@ const Text: React.FC<TextProps> = ({
   const sizeClass = () => {
     if (small) return "text-xl";
     if (medium) return "text-3xl";
+    if (extrasmall) return "text-xs";
     return "text-xs sm:text-base";
   };
+
+  const hoverColorClass = useMemo(() => {
+    if (!hoverColor) return ""; // Jeśli hoverColor nie jest podany, nie dodajemy klasy
+    switch (hoverColor) {
+      case "black":
+        return "group-hover:text-black";
+      case "red":
+        return "group-hover:text-customRed";
+      case "gray":
+        return "group-hover:text-gray-500";
+      default:
+        return "group-hover:text-white";
+    }
+  }, [hoverColor]);
 
   return (
     <h1
       className={`
-      font-openSans tracking-tighter
+      font-openSans
+      duration-300 ease-in-out
+      ${hoverColorClass}
       ${colorClass()}
       ${sizeClass()}
       ${opacity1 ? "text-opacity-100" : "text-opacity-70"}
       ${center ? "justify-center" : "text-justify"}
-      ${wide ? "" : ""}
+      ${wide ? "" : "tracking-tighter"}
       ${bold ? "font-bold" : "font-normal"}
     `}
     >

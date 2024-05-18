@@ -49,7 +49,7 @@ const Title: React.FC<TitleProps> = ({
   const sizeClass = useMemo(() => {
     switch (size) {
       case "small":
-        return "text-md sm:text-xl";
+        return "text-md sm:text-md";
       case "medium":
         return "text-xl sm:text-2xl";
       case "big":
@@ -79,7 +79,7 @@ const Title: React.FC<TitleProps> = ({
     <h1
       className={` ${
         wrap ? "" : "whitespace-nowrap"
-      } font-akiraExpanded font-extrabold ${colorClass} ${sizeClass} ${hoverSizeClass} leading-tight transition-colors duration-300 ${hoverColorClass}`}
+      } font-syncopate font-extrabold ${colorClass} ${sizeClass} ${hoverSizeClass} leading-tight transition-colors duration-300 ${hoverColorClass}`}
     >
       {children}
     </h1>

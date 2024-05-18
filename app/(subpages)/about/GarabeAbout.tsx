@@ -64,9 +64,9 @@ const GarageAbout: React.FC = () => {
                       className="transition-fill"
                     />
                   </svg>
-                  <Title color="red" hoverColor="black" size="medium">
+                  <Text hoverColor="black" color="red" small bold opacity1>
                     ul. Sopocka 16, Wrocław
-                  </Title>
+                  </Text>
                 </div>
                 <div className="w-1/3">
                   <Button outline label="Kontakt" onClick={handleMapClick} />

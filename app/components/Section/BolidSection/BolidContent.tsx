@@ -25,6 +25,7 @@ const BolidContent: React.FC<BolidData> = ({
   power,
 }) => {
   const router = useRouter();
+
   const teamRedirect = (bolid: string) => {
     router.push(`/team/${bolid}`);
   };
@@ -43,7 +44,9 @@ const BolidContent: React.FC<BolidData> = ({
               <Title size="subtitle" color="gray">
                 {year}
               </Title>
-              <Title color="red">{name}</Title>
+              <div className=" uppercase">
+                <Title color="red">{name}</Title>
+              </div>
               <div className="my-2 sm:my-6">
                 <Text color="gray">{short_description}</Text>
               </div>

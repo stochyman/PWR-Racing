@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
+import { Open_Sans, Syncopate } from "next/font/google";
 
 import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
@@ -11,10 +11,13 @@ import ToasterProvider from "./providers/ToasterProvider";
 import FooterSection from "./components/Section/FooterSection/FooterSection";
 import ClosestSectionProvider from "./components/Navbar/ClosestSectionContext";
 
-const font = Nunito({ subsets: ['latin']})
+const font = Open_Sans({ subsets: ["latin"] });
+const syncopate = Syncopate({ subsets: ["latin"], weight: ["400", "700"] });
+
 export const metadata: Metadata = {
   title: "PWR Racing",
-  description: "Koło naukowe Politechniki Wrocławskiej zajmujące się budową bolidów",
+  description:
+    "Koło naukowe Politechniki Wrocławskiej zajmujące się budową bolidów",
 };
 
 export default function RootLayout({
@@ -22,25 +25,24 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-return (
-  <html lang="pl">
-    <body className={font.className}>
-      <ClientOnly>
-        <ClosestSectionProvider>
-          <ToasterProvider/>
-          <LoginModal/>
-          <RegisterModal/>
-          <Navbar/>
-          <SideBar/>
-          {children}
-          <FooterSection/>
-        </ClosestSectionProvider>
-      </ClientOnly>
-    </body>
-  </html>
-);
+  return (
+    <html lang="pl">
+      <body className={font.className}>
+        <ClientOnly>
+          <ClosestSectionProvider>
+            <ToasterProvider />
+            <LoginModal />
+            <RegisterModal />
+            <Navbar />
+            <SideBar />
+            {children}
+            <FooterSection />
+          </ClosestSectionProvider>
+        </ClientOnly>
+      </body>
+    </html>
+  );
 }
-
 
 //? page.tsx
 // import Image from 'next/image';

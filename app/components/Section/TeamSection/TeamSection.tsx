@@ -27,7 +27,7 @@ const TeamSection = () => {
             <Title size="subtitle" color="gray">
               ZESPÓŁ
             </Title>
-            <Title size="big">Razem możemy wszystko</Title>
+            <Title size="big">RAZEM MOŻEMY WSZYSTKO</Title>
             <div className=" my-6">
               <Text color="white">
                 Młodzi, ambitni, zaangażowani, odważni. Te słowa

@@ -41,7 +41,7 @@ const BolidPage = async ({ params }: { params: Iparams }) => {
             </Title>
 
             <div className="flex">
-              <div className="w-full grid grid-cols-3 gap-8 pt-6 h-60">
+              <div className="w-full grid grid-cols-3 gap-8 pt-6 h-60 text-white">
                 <div className="relative rounded overflow-hidden">
                   <Image
                     src="/images/bolid/RT12e/images/zawody/1.jpg"
@@ -50,28 +50,16 @@ const BolidPage = async ({ params }: { params: Iparams }) => {
                     objectFit="cover"
                   />
                   <div className=" absolute inset-0 bg-black opacity-50"></div>
-                  <div className=" absolute inset-0 p-4 flex flex-col justify-between">
+                  <div className=" absolute inset-0 p-4 flex flex-col justify-between ">
                     <Title size="small">FORMULA STUDENT ALPE ADRIA</Title>
-                    <div className=" flex justify-between items-end">
-                      <div className="">
-                        <div className=" text-xs">
-                          <Text>6th Overall</Text>
-                        </div>
-                        <div className=" text-xs">
-                          <Text>8th Skidpad</Text>
-                        </div>
-                        <div className=" text-xs">
-                          <Text>11th Acceleration</Text>
-                        </div>
-                        <div className=" text-xs">
-                          <Text>2nd Engineering Design</Text>
-                        </div>
-                        <div className=" text-xs">
-                          <Text>4th Business Plan Presentation</Text>
-                        </div>
-                        <div className=" text-xs">
-                          <Text>7th Endurance </Text>
-                        </div>
+                    <div className=" flex justify-between items-end ">
+                      <div className=" ">
+                        <Text extrasmall>6th Overall</Text>
+                        <Text extrasmall>8th Skidpad</Text>
+                        <Text extrasmall>11th Acceleration</Text>
+                        <Text extrasmall>2nd Engineering Design</Text>
+                        <Text extrasmall>4th Business Plan Presentation</Text>
+                        <Text extrasmall>7th Endurance </Text>
                       </div>
                       <div className="">
                         <Image
@@ -96,24 +84,12 @@ const BolidPage = async ({ params }: { params: Iparams }) => {
                     <Title size="small">FORMULA STUDENT ALPE ADRIA</Title>
                     <div className=" flex justify-between items-end">
                       <div className="">
-                        <div className=" text-xs">
-                          <Text>6th Overall</Text>
-                        </div>
-                        <div className=" text-xs">
-                          <Text>8th Skidpad</Text>
-                        </div>
-                        <div className=" text-xs">
-                          <Text>11th Acceleration</Text>
-                        </div>
-                        <div className=" text-xs">
-                          <Text>2nd Engineering Design</Text>
-                        </div>
-                        <div className=" text-xs">
-                          <Text>4th Business Plan Presentation</Text>
-                        </div>
-                        <div className=" text-xs">
-                          <Text>7th Endurance </Text>
-                        </div>
+                        <Text extrasmall>6th Overall</Text>
+                        <Text extrasmall>8th Skidpad</Text>
+                        <Text extrasmall>11th Acceleration</Text>
+                        <Text extrasmall>2nd Engineering Design</Text>
+                        <Text extrasmall>4th Business Plan Presentation</Text>
+                        <Text extrasmall>7th Endurance </Text>
                       </div>
                       <div className="">
                         <Image
@@ -138,24 +114,12 @@ const BolidPage = async ({ params }: { params: Iparams }) => {
                     <Title size="small">FORMULA STUDENT ALPE ADRIA</Title>
                     <div className=" flex justify-between items-end">
                       <div className="">
-                        <div className=" text-xs">
-                          <Text>6th Overall</Text>
-                        </div>
-                        <div className=" text-xs">
-                          <Text>8th Skidpad</Text>
-                        </div>
-                        <div className=" text-xs">
-                          <Text>11th Acceleration</Text>
-                        </div>
-                        <div className=" text-xs">
-                          <Text>2nd Engineering Design</Text>
-                        </div>
-                        <div className=" text-xs">
-                          <Text>4th Business Plan Presentation</Text>
-                        </div>
-                        <div className=" text-xs">
-                          <Text>7th Endurance </Text>
-                        </div>
+                        <Text extrasmall>6th Overall</Text>
+                        <Text extrasmall>8th Skidpad</Text>
+                        <Text extrasmall>11th Acceleration</Text>
+                        <Text extrasmall>2nd Engineering Design</Text>
+                        <Text extrasmall>4th Business Plan Presentation</Text>
+                        <Text extrasmall>7th Endurance </Text>
                       </div>
                       <div className="">
                         <Image

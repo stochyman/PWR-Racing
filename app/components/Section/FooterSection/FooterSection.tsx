@@ -74,9 +74,9 @@ const FooterSection = () => {
                   </Title>
                 </div>
                 <div className=" font-black ">
-                  <Title hoverColor="red" size="medium">
+                  <Text color="white" opacity1 hoverColor="red" small bold wide>
                     +48 123 456 789
-                  </Title>
+                  </Text>
                 </div>
               </div>
               <div
@@ -103,9 +103,9 @@ const FooterSection = () => {
                     Napisz do nas
                   </Title>
                 </div>
-                <Title hoverColor="red" size="medium">
+                <Text color="white" opacity1 hoverColor="red" small bold wide>
                   racing@gmial.com
-                </Title>
+                </Text>
               </div>
               <div
                 className="flex flex-col cursor-pointer group"
@@ -128,9 +128,9 @@ const FooterSection = () => {
                     Gdzie nas znaleźć?
                   </Title>
                 </div>
-                <Title hoverColor="red" size="medium">
+                <Text color="white" opacity1 hoverColor="red" small bold wide>
                   ul. Sopocka 16, Wrocław
-                </Title>
+                </Text>
               </div>
             </div>
           </div>
@@ -143,8 +143,10 @@ const FooterSection = () => {
               elektryczny z systemami jazdy autonomicznej – RT12e. Aktualnie
               zajmujemy się budową naszej czternastej konstrukcji.
             </Text>
-            <div className="">
-              <Title size="small">Nawigacja</Title>
+            <div className=" whitespace-nowrap">
+              <Text small bold>
+                Nawigacja
+              </Text>
               <ul className="mt-2">
                 <FooterLink>Strona Główna</FooterLink>
                 <FooterLink>Bolid</FooterLink>
@@ -153,8 +155,10 @@ const FooterSection = () => {
                 <FooterLink>Partnerzy</FooterLink>
               </ul>
             </div>
-            <div className="">
-              <Title size="small">Siedziba</Title>
+            <div className=" whitespace-nowrap">
+              <Text small bold>
+                Siedziba
+              </Text>
               <ul className="mt-2">
                 <FooterLink>ul. Słopocka 16</FooterLink>
                 <FooterLink>50-349 Wrocław</FooterLink>
@@ -162,15 +166,19 @@ const FooterSection = () => {
                 <FooterLink>mail@mail.com</FooterLink>
               </ul>
             </div>
-            <div className="">
-              <Title size="small">PWR Racing Team</Title>
+            <div className=" whitespace-nowrap">
+              <Text small bold>
+                PWR Racing Team
+              </Text>
               <ul className="mt-2">
                 <FooterLink>Zostań członkiem</FooterLink>
                 <FooterLink>Zostań partnerem</FooterLink>
               </ul>
             </div>
-            <div className="">
-              <Title size="small">Informacje Ogólne</Title>
+            <div className=" whitespace-nowrap">
+              <Text small bold>
+                Informacje Ogólne
+              </Text>
               <ul className="mt-2">
                 <FooterLink>Polityka prywatności</FooterLink>
                 <FooterLink>Pliki Cookies</FooterLink>

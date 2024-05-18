@@ -39,7 +39,7 @@ const SliderElement: React.FC<SliderElementProps> = ({
       <div
         className={`${
           isActive ? "opacity-100" : "opacity-70"
-        } mt-2 flex flex-col text-center select-none`}
+        } mt-2 flex flex-col text-center select-none uppercase`}
       >
         <Title size="small" color="red">
           {date}
