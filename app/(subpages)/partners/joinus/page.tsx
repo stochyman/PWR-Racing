@@ -8,7 +8,18 @@ import SponsorsOfer from "./sponsorsOfer";
 import UserCard from "../../team/[teamId]/UserCard";
 import { getTeamByFullName } from "@/app/actions/getTeamByName";
 
-const getMembersData = async (names) => {
+interface Role {
+  department: string;
+  role: string;
+  bolidName: string;
+}
+interface TeamMember {
+  name: string;
+  surname: string;
+  roles: Role[];
+  currentRole: string;
+}
+const getMembersData = async (names: string[]): Promise<TeamMember[]> => {
   const teamMembers = [];
 
   for (const member of names) {

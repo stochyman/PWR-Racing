@@ -5,7 +5,18 @@ import UserCard from "../team/[teamId]/UserCard";
 import GoogleMapComponent from "./map";
 import Text from "@/app/components/Text";
 
-const getMembersData = async (names) => {
+interface Role {
+  department: string;
+  role: string;
+  bolidName: string;
+}
+interface TeamMember {
+  name: string;
+  surname: string;
+  roles: Role[];
+  currentRole: string;
+}
+const getMembersData = async (names: string[]): Promise<TeamMember[]> => {
   const teamMembers = [];
 
   for (const member of names) {

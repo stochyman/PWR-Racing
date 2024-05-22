@@ -2,6 +2,12 @@
 
 import { useEffect } from "react";
 
+declare global {
+  interface Window {
+    initMap: () => void;
+  }
+}
+
 const GoogleMapComponent = () => {
   useEffect(() => {
     const script = document.createElement("script");
