@@ -5,8 +5,10 @@ import Container from "../../Container";
 import Text from "../../Text";
 import Button from "../../Button";
 import Title from "../../Title";
+import { useRouter } from "next/navigation";
 
 const TeamSection = () => {
+  const router = useRouter();
   return (
     <div id="section-team" className=" relative">
       <div className="absolute inset-0 z-0">
@@ -42,7 +44,10 @@ const TeamSection = () => {
               </Text>
             </div>
             <div className="flex gap-4 mt-8">
-              <Button label="Więcej o bolidzie" onClick={() => {}} />
+              <Button
+                label="Więcej o bolidzie"
+                onClick={() => router.push(`/bolid`)}
+              />
             </div>
           </div>
           <div className="flex gap-4">

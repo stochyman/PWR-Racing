@@ -5,8 +5,10 @@ import NewsSeubsection from "./NewsSubsection";
 import Container from "../../Container";
 import Title from "../../Title";
 import Button from "../../Button";
+import { useRouter } from "next/navigation";
 
 const NewsSection = () => {
+  const router = useRouter();
   return (
     <div id="section-news" className=" flex flex-col">
       <Container>
@@ -14,8 +16,15 @@ const NewsSection = () => {
           <div className=" flex justify-between">
             <Title color="black">AKTUALNOŚCI</Title>
             <div className="flex gap-4 w-2/5">
-              <Button label="Zostań partnerem" onClick={() => {}} />
-              <Button outline label="Kontakt" onClick={() => {}} />
+              <Button
+                label="Zostań partnerem"
+                onClick={() => router.push(`/partners/joinus`)}
+              />
+              <Button
+                outline
+                label="Kontakt"
+                onClick={() => router.push(`/kontakt`)}
+              />
             </div>
           </div>
           <div className="grid grid-cols-2 gap-8 my-10 relative border-none">

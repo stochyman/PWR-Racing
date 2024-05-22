@@ -4,7 +4,7 @@ import SecondaryButton from "@/app/components/SecondaryButton";
 import Title from "@/app/components/Title";
 import Image from "next/image";
 import ClientSlider from "./ClientSlider";
-import TileHeading from "./TileHeading";
+import UserCard from "./UserCard";
 
 interface Iparams {
   teamId?: string;
@@ -136,32 +136,12 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
                           return a.name.localeCompare(b.name);
                         })
                         .map((member, index) => (
-                          <div className="relative group" key={index}>
-                            <div className="absolute inset-0 z-0 w-full h-full rounded-full blur-3xl bg-white opacity-10"></div>
-
-                            <div className="relative rounded-xl overflow-hidden bg-black pb-14">
-                              <div className="relative h-[350px]">
-                                <Image
-                                  src={`https://storage.googleapis.com/pwr-rt/${
-                                    teamId === "RT11b" ? "RT11" : teamId
-                                  }/${encodeURIComponent(
-                                    member.name[0].toUpperCase() +
-                                      member.name.slice(1)
-                                  )}%20${encodeURIComponent(
-                                    member.surname[0].toUpperCase() +
-                                      member.surname.slice(1)
-                                  )}.jpg`}
-                                  alt={`Zdjęcie ${member.name} ${member.surname}`}
-                                  fill
-                                  style={{ objectFit: "cover" }}
-                                />
-                              </div>
-                              <TileHeading
-                                member={member}
-                                roleHistory={roleHistory}
-                              />
-                            </div>
-                          </div>
+                          <UserCard
+                            key={index}
+                            member={member}
+                            teamId={teamId}
+                            roleHistory={roleHistory}
+                          />
                         ))}
                     </div>
                   </div>

@@ -4,8 +4,10 @@ import Image from "next/image";
 import Container from "../../Container";
 import Button from "../../Button";
 import Title from "../../Title";
+import { useRouter } from "next/navigation";
 
 const JoinusSection = () => {
+  const router = useRouter();
   return (
     <div id="joinus" className="relative h-[633px]">
       <div
@@ -84,8 +86,15 @@ const JoinusSection = () => {
               </Title>
             </div>
             <div className="flex gap-4 mt-8">
-              <Button label="Rekrutacja" onClick={() => {}} />
-              <Button outline label="Zostań Partnerem" onClick={() => {}} />
+              <Button
+                label="Rekrutacja"
+                onClick={() => router.push(`/joinus`)}
+              />
+              <Button
+                outline
+                label="Zostań Partnerem"
+                onClick={() => router.push(`/partners/joinus`)}
+              />
             </div>
           </div>
         </Container>

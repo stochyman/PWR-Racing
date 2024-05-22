@@ -4,6 +4,7 @@ import Container from "@/app/components/Container";
 import Title from "@/app/components/Title";
 import Button from "@/app/components/Button";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 // Tablica sponsorów strategicznych
 const strategicSponsors = [
@@ -191,7 +192,8 @@ const SponsorGrid: React.FC<SponsorGridProps> = ({
   );
 };
 
-const AboutUs = () => {
+const Partners = () => {
+  const router = useRouter();
   return (
     <div className="pt-[120px] mb-12">
       <div className="absolute opacity-5 right-0">
@@ -205,8 +207,15 @@ const AboutUs = () => {
             <Title color="black">PARTNERZY</Title>
           </div>
           <div className="my-8 flex gap-4 w-1/3">
-            <Button label="Zostań Partnerem" onClick={() => {}} />
-            <Button outline label="Kontakt" onClick={() => {}} />
+            <Button
+              label="Zostań Partnerem"
+              onClick={() => router.push(`/partners/joinus`)}
+            />
+            <Button
+              outline
+              label="Kontakt"
+              onClick={() => router.push(`/kontakt`)}
+            />
           </div>
 
           <SponsorGrid
@@ -254,4 +263,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default Partners;

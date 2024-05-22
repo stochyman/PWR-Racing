@@ -9,8 +9,12 @@ interface LogoProps {
 }
 
 const Logo: React.FC<LogoProps> = ({ width, height }) => {
+  const router = useRouter();
   return (
-    <div className=" relative py-7">
+    <div
+      onClick={() => router.push(`/`)}
+      className=" relative py-7 cursor-pointer"
+    >
       <Image alt="Logo" height={height} width={width} src="/images/logo.png" />
     </div>
   );

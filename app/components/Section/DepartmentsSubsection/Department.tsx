@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 type DepartmentProps = {
   department: string;
@@ -9,8 +10,17 @@ type DepartmentProps = {
 const Department: React.FC<DepartmentProps> = ({ department }) => {
   const imagePath = `/images/departments/${department}.png`;
 
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push(`/about#${department}`);
+  };
+
   return (
-    <div className="relative border-0 m-0 cursor-pointer group overflow-hidden">
+    <div
+      onClick={handleClick}
+      className="relative border-0 m-0 cursor-pointer group overflow-hidden"
+    >
       <div className="h-[6rem] md:h-[16rem] transition-transform duration-700 ease-in-out group-hover:scale-110">
         <Image
           src={imagePath}

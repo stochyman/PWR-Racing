@@ -7,8 +7,11 @@ import Text from "@/app/components/Text";
 import Image from "next/image";
 import { useState } from "react";
 import Button from "@/app/components/Button";
+import { useRouter } from "next/navigation";
 
 const GarageAbout: React.FC = () => {
+  const router = useRouter();
+
   const handleMapClick = () => {
     window.open(
       "https://www.google.com/maps/place/Sopocka+16,+50-344+Wroc%C5%82aw/data=!4m2!3m1!1s0x470fe82d5f41f4fd:0xa5be6508736bb57b?sa=X&ved=1t:242&ictx=1",
@@ -69,7 +72,11 @@ const GarageAbout: React.FC = () => {
                   </Text>
                 </div>
                 <div className="w-1/3">
-                  <Button outline label="Kontakt" onClick={handleMapClick} />
+                  <Button
+                    outline
+                    label="Kontakt"
+                    onClick={() => router.push(`/kontakt`)}
+                  />
                 </div>
               </div>
             </div>

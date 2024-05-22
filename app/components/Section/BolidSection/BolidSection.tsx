@@ -12,7 +12,7 @@ type BolidData = {
   mass: string;
   power: string;
 };
-const BolidSection = ({ presetBolid = "RT13e" }) => {
+const BolidSection = ({ presetBolid = "RT14e" }) => {
   const [currentBolidData, setCurrentBolidData] = useState<BolidData>({
     name: presetBolid,
     year: "2023",

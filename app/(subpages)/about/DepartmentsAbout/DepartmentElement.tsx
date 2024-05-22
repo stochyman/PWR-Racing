@@ -6,28 +6,39 @@ import Text from "@/app/components/Text";
 interface DepartmentElementProps {
   department: string;
   index: number;
+  lightMode?: boolean;
 }
 
 const DepartmentElement: React.FC<DepartmentElementProps> = ({
   department,
   index,
+  lightMode,
 }) => {
+  const bgColor = lightMode
+    ? index % 2 === 0
+      ? "bg-neutral-300"
+      : "bg-white"
+    : index % 2 === 0
+    ? "bg-black"
+    : "bg-neutral-700";
+
+  const textColor = lightMode ? "black" : "white";
+
   return (
-    <div
-      id={department}
-      className={index % 2 === 0 ? "bg-black" : "bg-neutral-700"}
-    >
+    <div id={department} className={bgColor}>
       <Container paddingType={index % 2 === 0 ? "l" : "r"}>
         <div
-          className={`  ${
-            index % 2 === 0 ? "" : " flex-row-reverse"
+          className={`${
+            index % 2 === 0 ? "" : "flex-row-reverse"
           } flex w-full justify-between gap-20`}
         >
           <div className="flex flex-col w-5/12 py-20">
-            <div className=" uppercase mb-4">
-              <Title size="big">{department}</Title>
+            <div className="uppercase mb-4">
+              <Title color={textColor} size="big">
+                {department}
+              </Title>
             </div>
-            <Text color="white">
+            <Text color={textColor}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
               gravida placerat purus eu congue. Donec a nulla id augue
               condimentum gravida. Nunc sollicitudin vulputate mi vitae blandit.
@@ -39,7 +50,7 @@ const DepartmentElement: React.FC<DepartmentElementProps> = ({
               justo vel consectetur.
             </Text>
             <div className="flex flex-col gap-4 mt-10">
-              <Text color="white" bold>
+              <Text color={textColor} bold>
                 W naszym dziale zajmiesz się:
               </Text>
               <div className="flex flex-col gap-2">
@@ -52,13 +63,13 @@ const DepartmentElement: React.FC<DepartmentElementProps> = ({
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M11.5093 0L19 4.2804V15.5014L7.4907 19.1634L0 14.883V3.66205L11.5093 0ZM11.344 11.5226L8.55 12.4117V16.8324L16.3134 14.3616L11.344 11.5226ZM6.64999 13.0163L2.74077 14.2603L6.64999 16.4946V13.0163ZM17.1 6.13088L11.875 7.79341V10.7311L17.1 13.7168V6.13088ZM1.89997 5.99368V13.531L6.64999 12.0196V8.708L1.89997 5.99368ZM10.925 8.09565L8.55 8.85134V11.4151L10.925 10.6594V8.09565ZM10.925 2.17851L3.29923 4.60498L7.70925 7.12501L10.925 6.10181V2.17851ZM11.875 2.39694V5.79953L15.699 4.5828L11.875 2.39694Z"
                       fill="#D41E3E"
                     />
                   </svg>
-                  <Text color="white">
+                  <Text color={textColor}>
                     Projektowaniem elementów w oprogramowaniu Siemens NX
                   </Text>
                 </div>
@@ -75,7 +86,7 @@ const DepartmentElement: React.FC<DepartmentElementProps> = ({
                       fill="#D41E3E"
                     />
                   </svg>
-                  <Text color="white">
+                  <Text color={textColor}>
                     Lorem ipsum dolor sit amet consectetur.
                   </Text>
                 </div>
@@ -92,7 +103,7 @@ const DepartmentElement: React.FC<DepartmentElementProps> = ({
                       fill="#D41E3E"
                     />
                   </svg>
-                  <Text color="white">
+                  <Text color={textColor}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   </Text>
                 </div>
@@ -105,19 +116,19 @@ const DepartmentElement: React.FC<DepartmentElementProps> = ({
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M9.80645 0V5.29286H15.0993V17.9957H0.279297V0H9.80645ZM7.69036 12.7029H3.45501V13.7625H7.69036V12.7029ZM10.865 10.5857H3.45501V11.6443H10.865V10.5857ZM9.80645 8.46857H3.45501V9.52714H9.80645V8.46857ZM11.9236 6.35143H3.45501V7.41H11.9236V6.35143ZM7.69036 4.23535H3.45501V5.29392H7.69036V4.23535Z"
                       fill="#D41E3E"
                     />
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M14.3268 3.23922C14.6115 3.52291 14.8127 3.86377 14.9418 4.23427H10.8652V0.157715C11.2357 0.286862 11.5766 0.489042 11.8614 0.772747L14.3268 3.23922Z"
                       fill="#D41E3E"
                     />
                   </svg>
-                  <Text color="white">
+                  <Text color={textColor}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Nihil, minus.
                   </Text>
@@ -125,7 +136,7 @@ const DepartmentElement: React.FC<DepartmentElementProps> = ({
               </div>
             </div>
           </div>
-          <div className=" relative w-[40rem]">
+          <div className="relative w-[40rem]">
             <Image
               src={`/images/departments/${department}.png`}
               alt="bolid"

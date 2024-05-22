@@ -9,6 +9,7 @@ export interface TitleProps {
   hoverColor?: "white" | "black" | "red" | "gray";
   cardHover?: boolean;
   wrap?: boolean;
+  lower?: boolean;
 }
 
 const Title: React.FC<TitleProps> = ({
@@ -18,6 +19,7 @@ const Title: React.FC<TitleProps> = ({
   hoverColor,
   cardHover = false,
   wrap = false,
+  lower = false,
 }) => {
   const colorClass = useMemo(() => {
     switch (color) {
@@ -79,7 +81,9 @@ const Title: React.FC<TitleProps> = ({
     <h1
       className={` ${
         wrap ? "" : "whitespace-nowrap"
-      } font-syncopate font-extrabold ${colorClass} ${sizeClass} ${hoverSizeClass} leading-tight transition-colors duration-300 ${hoverColorClass}`}
+      } font-syncopate font-extrabold ${colorClass} ${sizeClass} ${hoverSizeClass} ${
+        lower ? "leading-none" : "leading-tight"
+      } transition-colors duration-300 ${hoverColorClass}`}
     >
       {children}
     </h1>

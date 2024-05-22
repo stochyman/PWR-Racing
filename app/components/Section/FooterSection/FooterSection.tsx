@@ -14,6 +14,7 @@ import SocialIcons from "../../Navbar/UserMenu/SocialIcons";
 import Text from "../../Text";
 import Title from "../../Title";
 import FooterLink from "./FooterLink";
+import { useRouter } from "next/navigation";
 
 const FooterSection = () => {
   const handlePhoneClick = () => {
@@ -32,6 +33,8 @@ const FooterSection = () => {
       "_blank"
     );
   };
+
+  const router = useRouter();
 
   return (
     <div id="section-contact" className="relative pt-6">
@@ -210,8 +213,15 @@ const FooterSection = () => {
               />
             </div>
             <div className="flex gap-4 w-1/3">
-              <Button label="Rekrutacja" onClick={() => {}} />
-              <Button outline label="Zostań Partnerem" onClick={() => {}} />
+              <Button
+                label="Rekrutacja"
+                onClick={() => router.push(`/joinus`)}
+              />
+              <Button
+                outline
+                label="Zostań Partnerem"
+                onClick={() => router.push(`/partners/joinus`)}
+              />
             </div>
           </div>
           <div
