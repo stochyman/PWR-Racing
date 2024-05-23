@@ -37,7 +37,7 @@ const FooterSection = () => {
   const router = useRouter();
 
   return (
-    <div id="section-contact" className="relative pt-6">
+    <div id="section-contact" className="relative md:pt-6">
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/joinus/photo5.jpeg"
@@ -52,11 +52,11 @@ const FooterSection = () => {
       </div>
       <Container>
         <div className="flex flex-col w-full">
-          <div className="w-full px-12 flex justify-between items-center">
+          <div className="w-full md:px-12 flex flex-col md:flex-row justify-between items-center">
             <Logo width={200} height={180} />
-            <div className="flex justify-between gap-12">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-12">
               <div
-                className="flex flex-col cursor-pointer group"
+                className="flex flex-col items-center cursor-pointer group"
                 onClick={handlePhoneClick}
               >
                 <div className="flex items-center gap-3 pb-1 uppercase">
@@ -76,14 +76,14 @@ const FooterSection = () => {
                     Zadzwoń do nas
                   </Title>
                 </div>
-                <div className=" font-black ">
+                <div className="font-black ">
                   <Text color="white" opacity1 hoverColor="red" small bold wide>
                     +48 123 456 789
                   </Text>
                 </div>
               </div>
               <div
-                className="flex flex-col cursor-pointer group"
+                className="flex flex-col items-center cursor-pointer group"
                 onClick={handleEmailClick}
               >
                 <div className="flex items-center gap-3 pb-1 uppercase">
@@ -111,7 +111,7 @@ const FooterSection = () => {
                 </Text>
               </div>
               <div
-                className="flex flex-col cursor-pointer group"
+                className="flex flex-col items-center cursor-pointer group"
                 onClick={handleMapClick}
               >
                 <div className="flex items-center gap-3 pb-1 uppercase">
@@ -137,20 +137,22 @@ const FooterSection = () => {
               </div>
             </div>
           </div>
-          <div className="px-12 text-white flex gap-12 mt-4">
-            <Text wide>
-              W każdym sezonie tworzymy nowy bolid wyścigowy. Na swoim koncie
-              mamy aż dwanaście niepowtarzalnych modeli bolidów spalinowych, z
-              czego każdy kolejny jest w stanie z łatwością pokonać poprzedni. W
-              zeszłym sezonie powstał pierwszy w historii Zespołu bolid
-              elektryczny z systemami jazdy autonomicznej – RT12e. Aktualnie
-              zajmujemy się budową naszej czternastej konstrukcji.
-            </Text>
+          <div className="md:px-12 text-white flex-col md:flex-row flex items-center text-center md:gap-12 gap-4 mt-4">
+            <div className="hidden md:block">
+              <Text wide>
+                W każdym sezonie tworzymy nowy bolid wyścigowy. Na swoim koncie
+                mamy aż dwanaście niepowtarzalnych modeli bolidów spalinowych, z
+                czego każdy kolejny jest w stanie z łatwością pokonać poprzedni.
+                W zeszłym sezonie powstał pierwszy w historii Zespołu bolid
+                elektryczny z systemami jazdy autonomicznej – RT12e. Aktualnie
+                zajmujemy się budową naszej czternastej konstrukcji.
+              </Text>
+            </div>
             <div className=" whitespace-nowrap">
-              <Text small bold>
+              <Text small bold center>
                 Nawigacja
               </Text>
-              <ul className="mt-2">
+              <ul className="mt-1 md:mt-2">
                 <FooterLink>Strona Główna</FooterLink>
                 <FooterLink>Bolid</FooterLink>
                 <FooterLink>Zespół</FooterLink>
@@ -159,10 +161,10 @@ const FooterSection = () => {
               </ul>
             </div>
             <div className=" whitespace-nowrap">
-              <Text small bold>
+              <Text center small bold>
                 Siedziba
               </Text>
-              <ul className="mt-2">
+              <ul className="mt-1 md:mt-2">
                 <FooterLink>ul. Słopocka 16</FooterLink>
                 <FooterLink>50-349 Wrocław</FooterLink>
                 <FooterLink>+48 123 123 123</FooterLink>
@@ -170,26 +172,26 @@ const FooterSection = () => {
               </ul>
             </div>
             <div className=" whitespace-nowrap">
-              <Text small bold>
+              <Text center small bold>
                 PWR Racing Team
               </Text>
-              <ul className="mt-2">
+              <ul className="mt-1 md:mt-2">
                 <FooterLink>Zostań członkiem</FooterLink>
                 <FooterLink>Zostań partnerem</FooterLink>
               </ul>
             </div>
             <div className=" whitespace-nowrap">
-              <Text small bold>
+              <Text center small bold>
                 Informacje Ogólne
               </Text>
-              <ul className="mt-2">
+              <ul className="mt-1 md:mt-2">
                 <FooterLink>Polityka prywatności</FooterLink>
                 <FooterLink>Pliki Cookies</FooterLink>
                 <FooterLink>RODO</FooterLink>
               </ul>
             </div>
           </div>
-          <div className="w-full flex justify-between px-12 py-8">
+          <div className="w-full flex-col md:flex-row items-center gap-4 flex justify-between md:px-12 py-4 md:py-8">
             <div className="flex items-center gap-4">
               <SocialIcons
                 href="https://www.facebook.com"
@@ -212,7 +214,7 @@ const FooterSection = () => {
                 ariaLabel="YouTube"
               />
             </div>
-            <div className="flex gap-4 w-1/3">
+            <div className="flex gap-4 w-full md:w-1/3">
               <Button
                 label="Rekrutacja"
                 onClick={() => router.push(`/joinus`)}
@@ -227,14 +229,18 @@ const FooterSection = () => {
           <div
             className="
             w-full
-            flex
+            flex flex-col md:flex-row
             border-t-[1px]
             border-white
-            px-12 py-6 justify-between
+            md:px-12 md:py-6 py-3 justify-between items-center gap-2
           "
           >
-            <Text>Projekt & Wykonanie: Maria Kanczewska & Dawid Chmal</Text>
-            <Text>© 2024 Wszelkie prawa zastrzeżone</Text>
+            <Text color="white" center>
+              Projekt & Wykonanie: Maria Kanczewska & Dawid Chmal
+            </Text>
+            <Text color="white" center>
+              © 2024 Wszelkie prawa zastrzeżone
+            </Text>
           </div>
         </div>
       </Container>
