@@ -34,7 +34,7 @@ const SliderElement: React.FC<SliderElementProps> = ({
       <div
         className={`${
           isActive ? "bg-customRed opacity-100" : `${dotColor} opacity-90`
-        } h-6 w-6 rounded-full z-10 group-hover:bg-customRed duration-300 ease-in-out`}
+        } h-4 w-4 md:h-6 md:w-6 rounded-full z-10 group-hover:bg-customRed duration-300 ease-in-out`}
       ></div>
       <div
         className={`${

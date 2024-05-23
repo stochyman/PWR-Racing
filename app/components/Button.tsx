@@ -34,15 +34,15 @@ const Button: React.FC<ButtonProps> = ({
         rounded-lg
         hover:opacity-80
         transition duration-300 ease-in-out
-        w-full min-w-fit
+        w-full min-w-fit px-2
         ${black ? "bg-black" : outline ? "bg-white" : "bg-customRed"}
         ${black ? "px-20" : ""}
         ${
           black ? "border-black" : outline ? "border-black" : "border-customRed"
         }
         ${outline ? "text-black" : "text-white"}
-        ${small ? "py-1" : "py-3"}
-        ${small ? "text-sm" : "text-md"}
+        ${small ? "py-1" : "py-2 md:py-3"}
+        ${small ? "text-sm" : "text-sm md:text-md"}
         ${small ? " font-light" : "font-semibold"}
         ${small ? " border-[1px]" : " border-2"}
       `}

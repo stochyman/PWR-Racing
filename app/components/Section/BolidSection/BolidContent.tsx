@@ -74,7 +74,7 @@ const BolidContent: React.FC<BolidData> = ({
               height={300}
             />
           </div>
-          <div className="gap-4 flex lg:hidden ">
+          <div className="gap-2 md:gap-4 flex lg:hidden ">
             <Button
               label="Więcej o bolidzie"
               onClick={() => bolidRedirect(name)}

@@ -20,7 +20,7 @@ const FirstSection = () => {
                 POLITECHNIKA WROCŁAWSKA
               </Title>
               <Title>PWR RACING TEAM</Title>
-              <div className=" my-6">
+              <div className="my-2 md:my-6">
                 <Text color="white">
                   W każdym sezonie tworzymy nowy bolid wyścigowy. Na swoim
                   koncie mamy aż dwanaście niepowtarzalnych modeli bolidów
@@ -31,9 +31,9 @@ const FirstSection = () => {
                   czternastej konstrukcji.
                 </Text>
               </div>
-              <p className="text-xl mb-4 font-bold text-customRed">
+              <Text color="red" opacity1 wide bold small>
                 WE TAKE IT TO THE NEXT LEVEL
-              </p>
+              </Text>
               <button className="flex items-center py-2 text-white rounded hover:pl-8 transition-all duration-300 group">
                 <span>Dowiedz się więcej</span>
                 <FaArrowRight className="ml-2 transition-all duration-300 group-hover:text-customRed" />

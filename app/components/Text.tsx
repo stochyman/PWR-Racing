@@ -43,8 +43,8 @@ const Text: React.FC<TextProps> = ({
 
   // Określanie klasy rozmiaru tekstu
   const sizeClass = () => {
-    if (small) return "text-xl";
-    if (medium) return "text-3xl";
+    if (small) return "text-md md:text-xl";
+    if (medium) return "text-xl md:text-3xl";
     if (extrasmall) return "text-xs";
     return "text-xs sm:text-base";
   };
