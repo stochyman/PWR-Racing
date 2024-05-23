@@ -11,10 +11,10 @@ import ClientOnly from "../../ClientOnly";
 const FirstSection = () => {
   return (
     <ClientOnly>
-      <div className="relative h-screen">
+      <div className="relative md:h-screen">
         <BackgroundVideo />
         <Container>
-          <div className="relative z-10 grid lg:grid-cols-2 lg:gap-24">
+          <div className="relative z-10 grid lg:grid-cols-2 gap-8 lg:gap-24">
             <div className=" pt-[100px]">
               <Title size="subtitle" color="red">
                 POLITECHNIKA WROCŁAWSKA
@@ -39,7 +39,7 @@ const FirstSection = () => {
                 <FaArrowRight className="ml-2 transition-all duration-300 group-hover:text-customRed" />
               </button>
             </div>
-            <div className="flex justify-center my-2 sm:my-0 items-center">
+            <div className="flex justify-center mb-8 sm:mb-0 items-center">
               <Image
                 src="/images/bolid_main.png"
                 alt="bolid"

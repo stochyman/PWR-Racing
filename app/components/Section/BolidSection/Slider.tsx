@@ -61,10 +61,10 @@ const Slider: React.FC<SliderProps> = ({
       <div
         className={`${
           darkMode ? "bg-neutral-500" : "bg-neutral-300"
-        } absolute inset-0 mt-9 w-full h-2 md:h-3 opacity-50`}
+        } absolute inset-0 mt-5 md:mt-9 w-full h-2 md:h-3 opacity-50`}
       ></div>
       <div
-        className={` w-[99vw] h-full relative pt-8 overflow-x-scroll animation-container ${
+        className={` w-[99vw] h-full relative pt-4 md:pt-8 overflow-x-scroll animation-container ${
           isDragging ? "cursor-grabbing" : "cursor-grab"
         }`}
         ref={scrollContainerRef}

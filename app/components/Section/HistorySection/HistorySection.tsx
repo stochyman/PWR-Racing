@@ -14,12 +14,12 @@ const HistorySection: React.FC<HistorySectionProps> = ({ aboutUs }) => {
   return (
     <div id="history-section" className="relative bg-white">
       <Container>
-        <div className="my-28">
-          <div className="mb-8">
+        <div className="my-8 md:my-28">
+          <div className="md:mb-8">
             {aboutUs && <Title color="black">HISTORIA ZESPOŁU</Title>}
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 ">
-            <div className=" relative flex justify-center items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 ">
+            <div className="h-[22rem] relative flex justify-center items-center order-2 md:order-1">
               <Image
                 className=""
                 src="/images/history.jpg"
@@ -34,7 +34,7 @@ const HistorySection: React.FC<HistorySectionProps> = ({ aboutUs }) => {
             >
               <div
                 className={`${
-                  aboutUs ? "" : "mb-12"
+                  aboutUs ? "" : "mb-8 md:mb-12"
                 } flex justify-between text-center w-auto`}
               >
                 <div className="flex flex-col">

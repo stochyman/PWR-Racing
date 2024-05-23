@@ -13,7 +13,7 @@ interface FSSectionProps {
 
 const FSSection: React.FC<FSSectionProps> = ({ aboutUs }) => {
   return (
-    <div id="formulastudent-section" className="py-20">
+    <div id="formulastudent-section" className="py-8 md:py-20">
       <Container>
         <div className="">
           {aboutUs && (
@@ -23,14 +23,14 @@ const FSSection: React.FC<FSSectionProps> = ({ aboutUs }) => {
               </Title>
             </div>
           )}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 ">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-20 ">
             <div className="">
               {!aboutUs && (
                 <Title size="big" color="black">
                   ZAWODY FORMULA STUDENT
                 </Title>
               )}
-              <div className={`${aboutUs ? "" : "my-6"}`}>
+              <div className={`${aboutUs ? "" : "my-2 md:my-6"}`}>
                 <Text color="gray">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Curabitur posuere, velit vitae lacinia tincidunt, tellus enim
@@ -55,7 +55,7 @@ const FSSection: React.FC<FSSectionProps> = ({ aboutUs }) => {
                 <SecondaryButton to="/" buttonText="Dowiedz się więcej" />
               )}
             </div>
-            <div className=" relative ">
+            <div className=" relative h-[22rem] lg:h-auto">
               <Image
                 className=""
                 src="/images/bolidFS.jpeg"

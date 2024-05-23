@@ -36,7 +36,7 @@ const BolidContent: React.FC<BolidData> = ({
   return (
     <div className="relative flex flex-col">
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-12 py-4 sm:py-12 transition-all ease-out duration-500">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-12 py-4 sm:py-12 transition-all ease-out duration-500">
           <div
             className={`flex justify-center items-center transition-all ease-out duration-500`}
           >

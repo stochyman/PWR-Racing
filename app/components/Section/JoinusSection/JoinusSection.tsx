@@ -18,7 +18,7 @@ const JoinusSection = () => {
       ></div>
       <div className="grid h-full grid-cols-[25%_40%_35%] relative">
         {/* Pierwsza kolumna */}
-        <div className="relative h-full">
+        <div className="relative h-full col-span-3 md:col-span-1">
           <Image
             src="/images/joinus/photo1.png"
             alt="Photo 1"
@@ -29,7 +29,7 @@ const JoinusSection = () => {
         </div>
 
         {/* Druga kolumna, podzielona na dwa wiersze */}
-        <div className="relative h-full flex flex-col">
+        <div className=" relative h-full hidden md:flex flex-col">
           {/* Pierwszy wiersz w drugiej kolumnie */}
           <div className="relative flex-1">
             <Image
@@ -67,7 +67,7 @@ const JoinusSection = () => {
         </div>
 
         {/* Trzecia kolumna */}
-        <div className="relative h-full">
+        <div className="relative h-full hidden md:block">
           <Image
             src="/images/joinus/photo5.jpeg"
             alt="Photo 5"
