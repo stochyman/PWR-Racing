@@ -13,9 +13,9 @@ const NewsSection = () => {
     <div id="section-news" className=" flex flex-col">
       <Container>
         <div className="w-[75rem] pt-12">
-          <div className=" flex justify-between">
+          <div className=" flex flex-col md:flex-row items-center gap-4 justify-between">
             <Title color="black">AKTUALNOŚCI</Title>
-            <div className="flex gap-4 w-2/5">
+            <div className="flex gap-4 w-full md:w-2/5">
               <Button
                 label="Zostań partnerem"
                 onClick={() => router.push(`/partners/joinus`)}
@@ -27,7 +27,7 @@ const NewsSection = () => {
               />
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-8 my-10 relative border-none">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-10 relative border-none">
             <News
               article="1"
               category="Współpraca"

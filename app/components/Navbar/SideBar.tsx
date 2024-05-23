@@ -36,7 +36,7 @@ const SideBar = () => {
     <div
       className={`${
         isScrolled ? "gap-4 bottom-1/2" : "gap-48 bottom-1/3"
-      } fixed flex flex-col right-0 z-20 transform duration-700`}
+      } fixed hidden md:flex flex-col right-0 z-20 transform duration-700`}
     >
       <div
         className={`${
