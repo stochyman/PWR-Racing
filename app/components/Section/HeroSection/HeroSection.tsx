@@ -9,13 +9,20 @@ import Title from "../../Title";
 import ClientOnly from "../../ClientOnly";
 
 const FirstSection = () => {
+  const handleScroll = () => {
+    const element = document.getElementById("bolid");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <ClientOnly>
       <div className="relative md:h-screen">
         <BackgroundVideo />
         <Container>
-          <div className="relative z-10 grid lg:grid-cols-2 gap-8 lg:gap-24">
-            <div className=" pt-[100px]">
+          <div className="pt-[100px] lg:pt-0 relative z-10 grid items-center lg:grid-cols-2 gap-8 lg:gap-24">
+            <div className="">
               <Title size="subtitle" color="red">
                 POLITECHNIKA WROCŁAWSKA
               </Title>
@@ -34,7 +41,10 @@ const FirstSection = () => {
               <Text color="red" opacity1 wide bold small>
                 WE TAKE IT TO THE NEXT LEVEL
               </Text>
-              <button className="flex items-center py-2 text-white rounded hover:pl-8 transition-all duration-300 group">
+              <button
+                onClick={handleScroll}
+                className="flex items-center py-2 text-white rounded hover:pl-8 transition-all duration-300 group"
+              >
                 <span>Dowiedz się więcej</span>
                 <FaArrowRight className="ml-2 transition-all duration-300 group-hover:text-customRed" />
               </button>

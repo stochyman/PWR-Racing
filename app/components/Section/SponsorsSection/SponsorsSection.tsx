@@ -113,22 +113,19 @@ const SponsorsSection = () => {
       onMouseLeave={onMouseLeave}
       onMouseUp={onMouseUp}
       onMouseMove={onMouseMove}
-      className=" animation-container relative bg-neutral-200 overflow-hidden flex items-center w-full h-[200px] animation-container"
+      className="  relative bg-neutral-200 overflow-hidden flex items-center w-full h-[100px] md:h-[200px]"
       style={{ overflowX: "auto", cursor: isDragging ? "grabbing" : "grab" }}
     >
-      <div className="relative">
-        <div className="flex gap-8 select-none">
+      {/* <div className="relative h-full"> */}
+      <div className="relative h-full ">
+        <div className="flex gap-8 select-none h-full">
           {sponsors.map((src, index) => (
-            <div
-              key={index}
-              className="min-w-max flex-shrink-0 flex items-center"
-            >
+            <div key={index} className="relative h-full w-36 md:w-60">
               <Image
                 src={src}
                 alt={`Sponsor ${index + 1}`}
-                width={300}
-                height={100}
-                layout="intrinsic"
+                fill
+                className=" object-contain"
               />
             </div>
           ))}
@@ -136,19 +133,15 @@ const SponsorsSection = () => {
         <div className="absolute top-0 left-0 w-full h-full z-20"></div>
       </div>
       {/* Kopia w celu stworzenia iluzji braku przeskoku międzye końcem animacji */}
-      <div className="relative">
-        <div className="flex gap-8 select-none">
+      <div className="relative h-full ">
+        <div className="flex gap-8 select-none h-full">
           {sponsors.map((src, index) => (
-            <div
-              key={index}
-              className="min-w-max flex-shrink-0 flex items-center"
-            >
+            <div key={index} className="relative h-full w-60">
               <Image
                 src={src}
                 alt={`Sponsor ${index + 1}`}
-                width={300}
-                height={100}
-                layout="intrinsic"
+                fill
+                className=" object-contain"
               />
             </div>
           ))}

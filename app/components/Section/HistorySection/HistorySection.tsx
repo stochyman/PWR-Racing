@@ -15,11 +15,11 @@ const HistorySection: React.FC<HistorySectionProps> = ({ aboutUs }) => {
     <div id="history-section" className="relative bg-white">
       <Container>
         <div className="my-8 md:my-28">
-          <div className="md:mb-8">
+          <div className="md:mb-8 hidden md:block">
             {aboutUs && <Title color="black">HISTORIA ZESPOŁU</Title>}
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 ">
-            <div className="h-[22rem] relative flex justify-center items-center order-2 md:order-1">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 ">
+            <div className="h-[22rem] md:h-full relative flex justify-center items-center order-3 md:order-1">
               <Image
                 className=""
                 src="/images/history.jpg"
@@ -30,7 +30,9 @@ const HistorySection: React.FC<HistorySectionProps> = ({ aboutUs }) => {
               />
             </div>
             <div
-              className={`${aboutUs ? "flex-col-reverse" : "flex-col"} flex`}
+              className={`${
+                aboutUs ? "flex-col-reverse" : "flex-col"
+              } flex order-2`}
             >
               <div
                 className={`${
@@ -46,7 +48,9 @@ const HistorySection: React.FC<HistorySectionProps> = ({ aboutUs }) => {
                       CZŁONKÓW
                     </Text>
                   </div>
-                  <Text color="gray">Których łączy jedna pasja</Text>
+                  <Text center color="gray">
+                    Których łączy jedna pasja
+                  </Text>
                 </div>
                 <div className="flex flex-col">
                   <Counter targetNumber={14} size="bigger" color="red">
@@ -57,7 +61,9 @@ const HistorySection: React.FC<HistorySectionProps> = ({ aboutUs }) => {
                       PROJEKTÓW
                     </Text>
                   </div>
-                  <Text color="gray">Ukończonych bolidów </Text>
+                  <Text center color="gray">
+                    Ukończonych bolidów{" "}
+                  </Text>
                 </div>
                 <div className="flex flex-col">
                   <Counter targetNumber={21} size="bigger" color="red">
@@ -68,14 +74,16 @@ const HistorySection: React.FC<HistorySectionProps> = ({ aboutUs }) => {
                       OSIĄGNIĘĆ
                     </Text>
                   </div>
-                  <Text color="gray">W międzynarodowych zawodach</Text>
+                  <Text center color="gray">
+                    W międzynarodowych zawodach
+                  </Text>
                 </div>
               </div>
               <div className="">
                 <Title size="big" color="black">
                   HISTORIA NASZEGO ZESPOŁU
                 </Title>
-                <div className=" my-6">
+                <div className=" my-2">
                   <Text color="gray">
                     Studenci Politechniki Wrocławskiej od zawsze byli jednymi z
                     najzdolniejszych w całej Polsce, a co za tym idzie ich chęć
@@ -97,7 +105,10 @@ const HistorySection: React.FC<HistorySectionProps> = ({ aboutUs }) => {
                   </Text>
                 </div>
                 {!aboutUs && (
-                  <SecondaryButton to="/" buttonText="Dowiedz się więcej" />
+                  <SecondaryButton
+                    to="/about#history-section"
+                    buttonText="Dowiedz się więcej"
+                  />
                 )}
               </div>
             </div>

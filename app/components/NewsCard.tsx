@@ -17,7 +17,7 @@ const NewsCard: React.FC<NewsCardProps> = ({
   main_image,
 }) => {
   return (
-    <div className=" group h-[34rem] rounded-md flex flex-col overflow-hidden cursor-pointer">
+    <div className=" group h-[26rem] md:h-[34rem] rounded-md flex flex-col overflow-hidden cursor-pointer">
       <div className="bg-red-500 h-full relative overflow-hidden">
         <Image
           src={main_image}
@@ -27,11 +27,11 @@ const NewsCard: React.FC<NewsCardProps> = ({
           className="group-hover:scale-105 duration-500 ease-in-out"
         />
       </div>
-      <div className=" bg-white w-full px-5 py-4 flex flex-col">
-        <Title color="black" size="medium">
+      <div className=" bg-white w-full px-3 py-2 md:px-5 md:py-4 flex flex-col">
+        <Text color="black" small wide bold opacity1 center>
           {title}
-        </Title>
-        <div className="mb-4 mt-2">
+        </Text>
+        <div className="mb-3 mt-1 md:mb-4 md:mt-2">
           <Text color="black">{short_description}</Text>
         </div>
         <div className="flex justify-between">

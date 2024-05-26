@@ -6,9 +6,9 @@ import { fetchNews } from "@/app/actions/getNews";
 const AboutUs = async () => {
   const news = await fetchNews();
   return (
-    <div className="pt-[120px] bg-neutral-900">
+    <div className=" pt-[100px] md:pt-[120px] bg-neutral-900">
       <Container>
-        <div className="my-6 grid grid-cols-3 gap-6 w-full">
+        <div className="my-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
           {news.map((item, index) => (
             <NewsCard
               key={index}

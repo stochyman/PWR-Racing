@@ -35,15 +35,13 @@ const SecondaryButton: React.FC<IconLinkProps> = ({
       <span
         className={`${
           darkMode ? "text-white" : "text-black"
-        } transition-colors duration-300 relative z-10 group-hover:text-customRed text-sm md:text-base`}
+        } transition-colors duration-300 relative z-10 group-hover:text-customRed text-xs md:text-lg`}
       >
         {buttonText}
         <div className="absolute left-0 bottom-0 w-0 h-0.5 bg-customRed group-hover:w-full transition-all duration-300 ease-in-out"></div>
       </span>
       <svg
-        className="absolute right-0 bottom-[-1] transition-all duration-300 ease-in-out rotate-0 group-hover:translate-x-4 group-hover:opacity-0"
-        width="35"
-        height="35"
+        className="absolute right-4 md:right-0 bottom-[-1] transition-all duration-300 ease-in-out rotate-0 group-hover:translate-x-4 group-hover:opacity-0 w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10"
         viewBox="0 0 35 35"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

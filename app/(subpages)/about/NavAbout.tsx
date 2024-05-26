@@ -10,22 +10,20 @@ const NavAbout = () => {
       <div className=" relative bg-white">
         <Container>
           <div className="w-full">
-            <div className="bg-white w-full flex justify-start">
-              <ul className="flex justify-start">
-                <NavAboutItem scrollToId="garage-section">Garaż</NavAboutItem>
-                <NavAboutItem scrollToId="history-section">
-                  Historia Zespołu
-                </NavAboutItem>
-                <NavAboutItem scrollToId="department-section">
-                  Nasze działy
-                </NavAboutItem>
-                <NavAboutItem scrollToId="formulastudent-section">
-                  Formula Student
-                </NavAboutItem>
-              </ul>
-            </div>
-            <div className="flex gap-20 mt-12">
-              <div className=" relative w-2/5">
+            <ul className="flex justify-center md:justify-start my-4 mb-8">
+              <NavAboutItem scrollToId="garage-section">Garaż</NavAboutItem>
+              <NavAboutItem scrollToId="history-section">
+                Historia Zespołu
+              </NavAboutItem>
+              <NavAboutItem scrollToId="department-section">
+                Nasze działy
+              </NavAboutItem>
+              <NavAboutItem scrollToId="formulastudent-section">
+                Formula Student
+              </NavAboutItem>
+            </ul>
+            <div className="flex flex-col-reverse md:flex-row gap-8 md:gap-20 mt-0 md:mt-12">
+              <div className=" relative md:w-2/5 h-[20rem] md:h-auto">
                 <Image
                   className=""
                   src="/images/joinus/photo1.png"
@@ -35,7 +33,7 @@ const NavAbout = () => {
                   objectPosition="center 20%"
                 />
               </div>
-              <div className="w-3/5 flex flex-col gap-8">
+              <div className="md:w-3/5 flex flex-col gap-8">
                 <Text color="black" bold>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
                   gravida placerat purus eu congue. Donec a nulla id augue
@@ -98,7 +96,7 @@ const NavAboutItem: React.FC<NavAboutItemProps> = ({
 
   return (
     <li
-      className="first:pl-0 p-8 hover:text-customRed cursor-pointer duration-300 ease-in-out"
+      className="first:pl-0 p-2 md:p-8 min-w-fit hover:text-customRed cursor-pointer duration-300 ease-in-out"
       onClick={handleScroll}
     >
       <Text bold>{children}</Text>

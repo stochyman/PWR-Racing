@@ -98,10 +98,12 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
               <Container>
                 <div
                   className={`${
-                    department === "management" ? "grid-cols-2" : "grid-cols-1"
-                  } grid my-8 align-middle justify-center gap-16 w-full`}
+                    department === "management"
+                      ? " grid-cols-1 lg:grid-cols-2"
+                      : "grid-cols-1"
+                  } grid my-8 align-middle justify-center gap-8 lg:gap-16 w-full`}
                 >
-                  <div className="">
+                  <div className=" order-2 lg:order-1">
                     <div className="flex flex-col items-center">
                       <div className="uppercase text-center my-6 p-2 px-20 border-white border-b-2">
                         <Title color="white">
@@ -113,8 +115,8 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
                       key={department}
                       className={`${
                         department === "management"
-                          ? "grid-cols-2"
-                          : "grid-cols-4"
+                          ? " grid-cols-1 sm:grid-cols-2"
+                          : " grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"
                       } grid my-4 gap-6`}
                     >
                       {membersByDepartment[department]
@@ -146,7 +148,7 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
                     </div>
                   </div>
                   {department === "management" && (
-                    <div className="flex flex-col justify-center">
+                    <div className="flex flex-col justify-center order-1">
                       <div className="relative">
                         <div className=" absolute">
                           <SecondaryButton

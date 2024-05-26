@@ -16,10 +16,10 @@ const HeroAbout = () => {
 
   return (
     <div
-      className=" fixed w-full grid grid-cols-2 h-[40rem]"
+      className=" fixed w-full grid-cols-1 grid md:grid-cols-2 h-[40rem]"
       style={{ transform: `translateY(${offsetY * -0.1}px)` }}
     >
-      <div className="pt-[100px] bg-neutral-900">
+      <div className="pt-[100px] opacity-90 md:opacity-100 bg-neutral-900 z-10">
         <div className="h-full p-20">
           <div className="flex flex-col justify-between h-full max-w-[400px]">
             <Title wrap color="white">
@@ -61,7 +61,7 @@ const HeroAbout = () => {
           </div>
         </div>
       </div>
-      <div className=" relative">
+      <div className=" absolute md:relative h-[40rem] w-screen md:w-full z-0">
         <Image
           className=""
           src="/images/history.jpg"

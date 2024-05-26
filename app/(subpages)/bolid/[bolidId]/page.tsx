@@ -18,11 +18,11 @@ const BolidPage = async ({ params }: { params: Iparams }) => {
   }
 
   return (
-    <div className="flex flex-col pt-32">
+    <div className="flex flex-col pt-[100px]">
       <BolidSection presetBolid={bolidId} />
       <div className="flex overflow-x-auto">
         {[1, 2, 3, 4, 5, 6].map((num) => (
-          <div key={num} className="flex-shrink-0 w-[400px]">
+          <div key={num} className="flex-shrink-0 w-[300px] md:w-[400px]">
             <Image
               src={`/images/bolid/${bolidId}/images/slider/${num}.jpg`}
               alt={`Bolid ${num}`}
@@ -35,14 +35,14 @@ const BolidPage = async ({ params }: { params: Iparams }) => {
       </div>
       <div className=" w-full" id="achievements">
         <Container>
-          <div className="flex flex-col w-full  py-16">
+          <div className="flex flex-col w-full py-8 md:py-16">
             <Title size="big" color="black">
               OSIĄGNIECIA ZA SEZON 2022
             </Title>
 
             <div className="flex">
-              <div className="w-full grid grid-cols-3 gap-8 pt-6 h-60 text-white">
-                <div className="relative rounded overflow-hidden">
+              <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 pt-6 text-white">
+                <div className="relative rounded overflow-hidden h-52 md:h-60">
                   <Image
                     src="/images/bolid/RT12e/images/zawody/1.jpg"
                     alt="Zdjęcie 2"
@@ -72,7 +72,7 @@ const BolidPage = async ({ params }: { params: Iparams }) => {
                     </div>
                   </div>
                 </div>
-                <div className="relative rounded overflow-hidden">
+                <div className="relative rounded overflow-hidden h-52 md:h-60">
                   <Image
                     src="/images/bolid/RT12e/images/zawody/2.jpg"
                     alt="Zdjęcie 2"
@@ -102,7 +102,7 @@ const BolidPage = async ({ params }: { params: Iparams }) => {
                     </div>
                   </div>
                 </div>
-                <div className="relative rounded overflow-hidden">
+                <div className="relative rounded overflow-hidden h-52 md:h-60">
                   <Image
                     src="/images/bolid/RT12e/images/zawody/3.jpg"
                     alt="Zdjęcie 2"
@@ -146,20 +146,20 @@ const BolidPage = async ({ params }: { params: Iparams }) => {
             <Container>
               <div
                 className={`${
-                  depIndex % 2 === 0 ? "" : "flex-row-reverse"
-                } flex gap-16`}
+                  depIndex % 2 === 0 ? "" : " md:flex-row-reverse"
+                } flex md:flex-row flex-col gap-0 md:gap-16 my-8 `}
               >
-                <div className=" my-20 w-2/3">
+                <div className=" my-0 md:my-20 md:w-2/3">
                   <div className=" uppercase">
                     <Title size="big" color="black">
                       {part.partName}
                     </Title>
                   </div>
-                  <div className="my-6">
+                  <div className=" my-4 md:my-6">
                     <Text color="black">{part.description}</Text>
                   </div>
                 </div>
-                <div className=" my-auto w-1/3">
+                <div className=" my-auto md:w-1/3">
                   <Image
                     src={`/images/bolid/RT12e/parts/${part.partName}.png`}
                     alt={`Zdjęcie ${part.partName}`}

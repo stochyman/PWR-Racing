@@ -24,7 +24,7 @@ const TeamSection = () => {
         <div className="absolute inset-0 bg-black bg-opacity-80"></div>
       </div>
       <Container paddingType="l">
-        <div className=" flex items-center gap-20 py-16 w-auto overflow-hidden">
+        <div className=" flex flex-col lg:flex-row items-center gap-8 md:gap-20 py-8 md:py-16 w-auto overflow-hidden">
           <div className="">
             <Title size="subtitle" color="gray">
               ZESPÓŁ
@@ -51,7 +51,7 @@ const TeamSection = () => {
             </div>
           </div>
           <div className="flex gap-4">
-            <div className=" w-[400px] h-[400px] relative">
+            <div className=" w-[400px] h-[300px] md:h-[400px] relative">
               <Image
                 src="/images/team/team1.jpeg"
                 alt="bolid"
@@ -59,7 +59,7 @@ const TeamSection = () => {
                 objectFit="cover"
               />
             </div>
-            <div className="w-[400px] h-[400px] relative">
+            <div className=" hidden sm:block w-[400px] h-[300px] md:h-[400px] relative">
               <Image
                 src="/images/team/team2.jpeg"
                 alt="bolid"
@@ -67,7 +67,7 @@ const TeamSection = () => {
                 objectFit="cover"
               />
             </div>
-            <div className="w-[200px] h-[400px] relative">
+            <div className=" hidden lg:block w-[200px] h-[400px] relative">
               <Image
                 src="/images/team/team3.jpeg"
                 alt="bolid"

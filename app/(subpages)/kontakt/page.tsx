@@ -56,7 +56,7 @@ const ContactUs = async () => {
   ]);
 
   return (
-    <div className="pt-[120px]">
+    <div className=" pt-[100px] md:pt-[120px]">
       <div className="absolute opacity-5 right-0">
         <h1 className="text-[15rem] font-extrabold text-black uppercase leading-none">
           KONTAKT
@@ -72,7 +72,7 @@ const ContactUs = async () => {
               Oni odpowiedzą na Twoje pytania:
             </Text>
           </div>
-          <div className="grid grid-cols-3 w-3/4 gap-6 ">
+          <div className="grid grid-cols-1 md:grid-cols-3 md:w-3/4 w-full gap-6 ">
             {mainMembers.map((member, index) => (
               <UserCard
                 key={index}
@@ -92,19 +92,19 @@ const ContactUs = async () => {
           </div>
         </div>
       </Container>
-      <div className=" text-center mt-12 mb-6">
+      <div className=" text-center mt-4 md:mt-12 mb-6">
         <Title color="black" size="medium">
           GDZIE NAS ZNAJDZIESZ?
         </Title>
       </div>
       <GoogleMapComponent />
       <Container>
-        <div className="grid grid-cols-2 w-full my-12 gap-20">
-          <div className=" flex flex-col items-center gap-6">
-            <Text bold small>
+        <div className="grid grid-cols-1 md:grid-cols-2 w-full my-8 md:my-12 gap-12 md:gap-20">
+          <div className=" flex flex-col items-start md:items-center gap-4 md:gap-6">
+            <Text bold medium>
               Opiekunowie projektu:
             </Text>
-            <div className="grid grid-cols-2 w-full gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-6">
               {projectSupervisors.map((member, index) => (
                 <UserCard
                   key={index}
@@ -123,11 +123,11 @@ const ContactUs = async () => {
               ))}
             </div>
           </div>
-          <div className=" flex flex-col items-center gap-6">
-            <Text bold small>
+          <div className=" flex flex-col items-start md:items-center gap-4 md:gap-6">
+            <Text bold medium>
               Administracja strony:
             </Text>
-            <div className="grid grid-cols-2 w-full gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-6">
               {siteAdministration.map((member, index) => (
                 <UserCard
                   key={index}

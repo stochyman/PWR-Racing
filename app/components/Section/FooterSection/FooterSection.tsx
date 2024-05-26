@@ -56,7 +56,7 @@ const FooterSection = () => {
             <Logo width={200} height={180} />
             <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-12">
               <div
-                className="flex flex-col items-center cursor-pointer group"
+                className="flex flex-col items-center md:items-start cursor-pointer group"
                 onClick={handlePhoneClick}
               >
                 <div className="flex items-center gap-3 pb-1 uppercase">
@@ -137,7 +137,7 @@ const FooterSection = () => {
               </div>
             </div>
           </div>
-          <div className="md:px-12 text-white flex-col md:flex-row flex items-center text-center md:gap-12 gap-4 mt-4">
+          <div className="md:px-12 text-white flex-col md:flex-row flex items-center md:items-start md:text-start text-center md:gap-12 gap-4 mt-4">
             <div className="hidden md:block">
               <Text wide>
                 W każdym sezonie tworzymy nowy bolid wyścigowy. Na swoim koncie

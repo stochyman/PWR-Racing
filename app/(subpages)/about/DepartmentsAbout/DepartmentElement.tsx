@@ -29,10 +29,10 @@ const DepartmentElement: React.FC<DepartmentElementProps> = ({
       <Container paddingType={index % 2 === 0 ? "l" : "r"}>
         <div
           className={`${
-            index % 2 === 0 ? "" : "flex-row-reverse"
-          } flex w-full justify-between gap-20`}
+            index % 2 === 0 ? "" : "md:flex-row-reverse"
+          } flex flex-col md:flex-row w-full justify-between gap-8 md:gap-20 my-8 md:my-0`}
         >
-          <div className="flex flex-col w-5/12 py-20">
+          <div className="flex flex-col md:w-5/12 md:py-20">
             <div className="uppercase mb-4">
               <Title color={textColor} size="big">
                 {department}
@@ -136,7 +136,7 @@ const DepartmentElement: React.FC<DepartmentElementProps> = ({
               </div>
             </div>
           </div>
-          <div className="relative w-[40rem]">
+          <div className="relative md:w-[40rem] h-[20rem] md:h-auto">
             <Image
               src={`/images/departments/${department}.png`}
               alt="bolid"

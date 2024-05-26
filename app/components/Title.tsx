@@ -53,7 +53,7 @@ const Title: React.FC<TitleProps> = ({
       case "small":
         return "text-md sm:text-md";
       case "medium":
-        return "text-xl sm:text-2xl";
+        return "text-lg sm:text-2xl";
       case "big":
         return "text-sm sm:text-3xl";
       case "bigger":
@@ -61,7 +61,7 @@ const Title: React.FC<TitleProps> = ({
       case "subtitle":
         return "text-xs md:text-sm tracking-wider";
       case "normal":
-        return "text-xl sm:text-5xl";
+        return "text-xl sm:text-3xl lg:text-5xl";
     }
   }, [size]);
 

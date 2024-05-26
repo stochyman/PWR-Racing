@@ -73,7 +73,7 @@ const Slider: React.FC<SliderProps> = ({
         onMouseLeave={stopDragging}
         onMouseUp={stopDragging}
       >
-        <div className="flex relative gap-12 sm:gap-24 ml-[calc((100vw-var(--container-width))/2)]">
+        <div className="flex relative gap-12 sm:gap-24 mx-8 md:ml-[calc((100vw-var(--container-width))/2)]">
           <SliderElement
             darkMode={darkMode}
             date={2024}
@@ -179,7 +179,7 @@ const Slider: React.FC<SliderProps> = ({
             onClick={onChangeBolid}
             currentBolid={currentBolid}
           />
-          <div className="flex-shrink-0 w-[calc((85vw-var(--container-width))/2)]"></div>
+          <div className="flex-shrink-0 w-1 md:w-[calc((85vw-var(--container-width))/2)]"></div>
         </div>
       </div>
     </div>

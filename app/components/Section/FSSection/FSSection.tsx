@@ -52,7 +52,10 @@ const FSSection: React.FC<FSSectionProps> = ({ aboutUs }) => {
                 </Text>
               </div>
               {!aboutUs && (
-                <SecondaryButton to="/" buttonText="Dowiedz się więcej" />
+                <SecondaryButton
+                  to="/about#formulastudent-section"
+                  buttonText="Dowiedz się więcej"
+                />
               )}
             </div>
             <div className=" relative h-[22rem] lg:h-auto">

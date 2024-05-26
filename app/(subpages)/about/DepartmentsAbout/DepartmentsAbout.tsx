@@ -36,7 +36,7 @@ const DepartmentsAbout: React.FC<DepartmentsAboutProps> = ({ lightMode }) => {
   return (
     <div id="department-section" className="relative bg-white">
       {!lightMode ? (
-        <div className="ml-[calc((100vw-var(--container-width))/2)] mb-6">
+        <div className="ml-8 md:ml-[calc((100vw-var(--container-width))/2)] mb-4 md:mb-6">
           <Title color="black">NASZE DZIAŁY</Title>
         </div>
       ) : (

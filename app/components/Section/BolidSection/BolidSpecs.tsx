@@ -15,42 +15,40 @@ const BolidSpecs: React.FC<BolidSpecsProps> = ({
   return (
     <div className="">
       <div
-        className={`${animate} relative w-[100vw] hidden md:flex justify-center bg-neutral-700 transition duration-200 ease-out`}
+        className={`${animate} relative w-[100vw] flex items-center justify-center bg-neutral-700 transition duration-200 ease-out px-8`}
       >
-        <div className="absolute bg-neutral-800 z-0 w-64 h-46 inset-0"></div>
-        <div className="bg-neutral-800 z-10 flex justify-center items-center pr-8">
+        <div className="absolute hidden md:block bg-neutral-800 z-0 w-64 h-46 inset-0"></div>
+        <div className="bg-neutral-800 z-10 hidden md:flex justify-between items-center pr-8">
           <h1
-            className={` text-white py-12 text-right font-akiraExpanded text-3xl font-extrabold leading-tight`}
+            className={`text-white py-12 text-right font-akiraExpanded text-3xl font-extrabold leading-tight`}
           >
             Specyfikacja <br /> Bolidu
           </h1>
           <svg
-            width="130"
-            height="60"
+            className="w-16 h-8 lg:w-36 lg:h-36"
             viewBox="0 0 89 38"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M23.2096 2.07734C24.715 0.612594 27.1229 0.645578 28.5876 2.15101L44.8595 18.8749L28.5876 35.5988C27.1229 37.1043 24.715 37.1373 23.2096 35.6725C21.7042 34.2078 21.6712 31.7999 23.1359 30.2945L34.2469 18.8749L23.1359 7.45534C21.6712 5.9499 21.7042 3.54209 23.2096 2.07734Z"
               fill="white"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M45.2682 2.07734C46.7736 0.612594 49.1814 0.645578 50.6462 2.15101L66.9181 18.8749L50.6462 35.5988C49.1814 37.1043 46.7736 37.1373 45.2682 35.6725C43.7628 34.2078 43.7298 31.7999 45.1945 30.2945L56.3055 18.8749L45.1945 7.45534C43.7298 5.9499 43.7628 3.54209 45.2682 2.07734Z"
               stroke="white"
-              stroke-linecap="round"
+              strokeLinecap="round"
             />
           </svg>
         </div>
-        <div className="flex gap-20 pl-16">
+        <div className="mx-8 my-4 flex gap-8 md:gap-20 justify-between md:pl-12">
           <div className="flex justify-center items-center gap-4">
             <svg
-              width="74"
-              height="73"
+              className="w-10 h-10 md:w-20 md:h-20"
               viewBox="0 0 74 73"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -62,12 +60,12 @@ const BolidSpecs: React.FC<BolidSpecsProps> = ({
             </svg>
             <div className="flex flex-col justify-center max-w-52">
               <h1
-                className={` text-white font-akiraExpanded text-3xl font-extrabold leading-tight`}
+                className={`text-white font-akiraExpanded text-md md:text-3xl font-extrabold leading-tight`}
               >
                 {acceleration}
               </h1>
               <h2
-                className={` text-customRed font-akiraExpanded text-2xl font-extrabold leading-tight`}
+                className={`hidden md:block text-customRed font-akiraExpanded text-2xl font-extrabold leading-tight`}
               >
                 PRZYŚPIESZENIE 0-100 KM/H
               </h2>
@@ -75,8 +73,7 @@ const BolidSpecs: React.FC<BolidSpecsProps> = ({
           </div>
           <div className="flex justify-center items-center gap-4">
             <svg
-              width="88"
-              height="88"
+              className="w-14 h-14 md:w-24 md:h-20"
               viewBox="0 0 88 88"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -98,14 +95,14 @@ const BolidSpecs: React.FC<BolidSpecsProps> = ({
                 fill="white"
               />
             </svg>
-            <div className="flex flex-col justify-center  max-w-52">
+            <div className="flex flex-col justify-center max-w-52">
               <h1
-                className={` text-white font-akiraExpanded text-3xl font-extrabold leading-tight`}
+                className={`text-white font-akiraExpanded text-md md:text-3xl font-extrabold leading-tight`}
               >
                 {power}
               </h1>
               <h2
-                className={` text-customRed font-akiraExpanded text-2xl font-extrabold leading-tight`}
+                className={`hidden min-w-fit md:block text-customRed font-akiraExpanded text-2xl font-extrabold leading-tight`}
               >
                 MOC SILNIKÓW
               </h2>
@@ -113,8 +110,7 @@ const BolidSpecs: React.FC<BolidSpecsProps> = ({
           </div>
           <div className="flex justify-center items-center gap-4">
             <svg
-              width="76"
-              height="83"
+              className="w-12 h-12 md:w-20 md:h-20"
               viewBox="0 0 76 83"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -142,12 +138,12 @@ const BolidSpecs: React.FC<BolidSpecsProps> = ({
             </svg>
             <div className="flex flex-col justify-center max-w-52">
               <h1
-                className={` text-white font-akiraExpanded text-3xl font-extrabold leading-tight`}
+                className={`text-white font-akiraExpanded text-md md:text-3xl font-extrabold leading-tight`}
               >
                 {mass}
               </h1>
               <h2
-                className={` text-customRed font-akiraExpanded text-2xl font-extrabold leading-tight`}
+                className={`hidden md:block text-customRed font-akiraExpanded text-2xl font-extrabold leading-tight`}
               >
                 MASA POJAZDU
               </h2>

@@ -136,7 +136,7 @@ const SponsorList: React.FC<SponsorGridProps> = ({
   height,
   sponsors,
 }) => (
-  <div className={`grid ${gridCols} h-min w-1/2`}>
+  <div className={`grid ${gridCols} gap-2 h-min md:w-1/2`}>
     {sponsors.map((sponsor) => (
       <a
         key={sponsor.name}
@@ -150,7 +150,7 @@ const SponsorList: React.FC<SponsorGridProps> = ({
           alt={sponsor.name}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-          style={{ objectFit: "contain" }}
+          className="object-scale-down"
         />
       </a>
     ))}
@@ -171,10 +171,10 @@ const SponsorGrid: React.FC<SponsorGridProps> = ({
 
   return (
     <div className="w-full flex flex-col items-center text-center">
-      <div className="py-4 my-12 mt-14 border-y-2 w-3/5 border-customRed uppercase">
+      <div className="py-4 my-4 md:my-12 md:mt-14 border-y-2 md:w-3/5 border-customRed uppercase">
         <Title color="black">PARTNERZY {sponsorRank}</Title>
       </div>
-      <div className={`flex ${gap} w-full`}>
+      <div className={`flex ${gap} flex-col md:flex-row w-full`}>
         <SponsorList
           sponsors={firstHalfSponsors}
           height={height}
@@ -195,7 +195,7 @@ const SponsorGrid: React.FC<SponsorGridProps> = ({
 const Partners = () => {
   const router = useRouter();
   return (
-    <div className="pt-[120px] mb-12">
+    <div className=" pt-[100px] md:pt-[120px] mb-6 md:mb-12">
       <div className="absolute opacity-5 right-0">
         <h1 className="text-[15rem] font-extrabold text-black uppercase leading-none">
           PARTNERZY
@@ -203,10 +203,10 @@ const Partners = () => {
       </div>
       <Container>
         <div className="flex flex-col items-center text-center w-full">
-          <div className="py-4 my-4 border-b-2 w-3/5 border-black">
+          <div className="py-4 my-4 border-b-2 md:w-3/5 border-black">
             <Title color="black">PARTNERZY</Title>
           </div>
-          <div className="my-8 flex gap-4 w-1/3">
+          <div className="my-8 flex gap-4 md:w-1/3">
             <Button
               label="Zostań Partnerem"
               onClick={() => router.push(`/partners/joinus`)}
@@ -221,41 +221,41 @@ const Partners = () => {
           <SponsorGrid
             sponsorRank="strategiczni"
             sponsors={strategicSponsors}
-            height="h-40"
-            gap=""
+            height="h-20 md:h-40"
+            gap="gap-0"
             gridCols="grid-cols-2"
           />
 
           <SponsorGrid
             sponsorRank="platynowi"
             sponsors={platinumSponsors}
-            height="h-40"
-            gap="gap-20"
+            height="h-20 md:h-40"
+            gap="md:gap-20"
             gridCols="grid-cols-2"
           />
 
           <SponsorGrid
             sponsorRank="złoci"
             sponsors={goldSponsors}
-            height="h-36"
-            gap="gap-20"
+            height="h-16 md:h-36"
+            gap="md:gap-20"
             gridCols="grid-cols-3"
           />
 
           <SponsorGrid
             sponsorRank="srebrni"
             sponsors={silverSponsors}
-            height="h-32"
-            gap="gap-16"
-            gridCols="grid-cols-4"
+            height="h-16 md:h-32"
+            gap="md:gap-16"
+            gridCols="grid-cols-3 md:grid-cols-4"
           />
 
           <SponsorGrid
             sponsorRank="brązowi"
             sponsors={bronzeSponsors}
-            height="h-32"
-            gap="gap-16"
-            gridCols="grid-cols-4"
+            height="h-16 md:h-32"
+            gap="md:gap-16"
+            gridCols="grid-cols-3 md:grid-cols-4"
           />
         </div>
       </Container>

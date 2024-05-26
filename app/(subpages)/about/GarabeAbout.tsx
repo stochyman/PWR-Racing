@@ -22,13 +22,13 @@ const GarageAbout: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div id="garage-section" className="relative bg-white pt-20">
+    <div id="garage-section" className="relative bg-white pt-12 md:pt-20">
       <Container>
         <div className="w-full">
           <Title color="black">GARAŻ</Title>
-          <div className="grid grid-cols-5 gap-20 mt-8">
-            <div className=" col-span-3 flex flex-col gap-8">
-              <div className="relative h-2/3">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-6 md:gap-20 mt-4">
+            <div className=" col-span-3 flex flex-col gap-6 md:gap-8">
+              <div className=" hidden md:block relative h-2/3">
                 <Image
                   src="/images/garage/1.jpg"
                   alt="bolid"
@@ -47,7 +47,7 @@ const GarageAbout: React.FC = () => {
                 bibendum sit amet diam quis venenatis. Quisque vulputate arcu
                 velit, et hendrerit est dignissim luctus. Cras a luctus leo.
               </Text>
-              <div className="flex justify-between ">
+              <div className="flex flex-col md:flex-row gap-6 md:gap-0 justify-between items-center">
                 <div
                   onClick={handleMapClick}
                   onMouseEnter={() => setIsHovered(true)}
@@ -67,11 +67,18 @@ const GarageAbout: React.FC = () => {
                       className="transition-fill"
                     />
                   </svg>
-                  <Text hoverColor="black" color="red" small bold opacity1>
+                  <Text
+                    center
+                    hoverColor="black"
+                    color="red"
+                    small
+                    bold
+                    opacity1
+                  >
                     ul. Sopocka 16, Wrocław
                   </Text>
                 </div>
-                <div className="w-1/3">
+                <div className="w-full md:w-1/3">
                   <Button
                     outline
                     label="Kontakt"
@@ -80,7 +87,7 @@ const GarageAbout: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className=" col-span-2 relative h-[36rem]">
+            <div className=" col-span-3 md:col-span-2 relative h-[20rem] md:h-[36rem]">
               <Image
                 className="scale-x-[-1]"
                 src="/images/garage/2.jpg"

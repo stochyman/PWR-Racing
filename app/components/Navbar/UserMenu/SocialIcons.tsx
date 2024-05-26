@@ -1,17 +1,29 @@
-'use client';
+"use client";
 
-import { IconType } from 'react-icons';
+import { IconType } from "react-icons";
 
 interface IconLinkProps {
   href: string;
   icon: IconType;
   ariaLabel: string;
+  black?: boolean;
 }
 
-const SocialIcons: React.FC<IconLinkProps> = ({ href, icon: Icon, ariaLabel }) => {
+const SocialIcons: React.FC<IconLinkProps> = ({
+  href,
+  icon: Icon,
+  ariaLabel,
+  black = false,
+}) => {
   return (
-    <a href={href} aria-label={ariaLabel} target="_blank" rel="noopener noreferrer">
-      <div className="
+    <a
+      href={href}
+      aria-label={ariaLabel}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <div
+        className={`
         flex
         items-center
         justify-center
@@ -19,14 +31,13 @@ const SocialIcons: React.FC<IconLinkProps> = ({ href, icon: Icon, ariaLabel }) =
         h-8
         rounded-full
         border-[1px]
-      border-white
-      text-white
+        ${black ? "border-black text-black" : "border-white text-white"}
         transition
         duration-300
-      hover:border-customRed
-      hover:bg-customRed"
+        hover:border-customRed
+        hover:bg-customRed`}
       >
-        <Icon size={16}/>
+        <Icon size={16} />
       </div>
     </a>
   );

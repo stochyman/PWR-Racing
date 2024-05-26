@@ -93,7 +93,7 @@ const BolidSection = ({ presetBolid = "RT14e" }) => {
   };
 
   return (
-    <div className=" overflow-hidden">
+    <div id="bolid" className=" overflow-hidden">
       <div className="relative flex flex-col w-[200vw]">
         <Slider
           currentBolid={currentBolidData.name}

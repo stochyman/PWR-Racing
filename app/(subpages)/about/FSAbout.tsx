@@ -7,10 +7,10 @@ const FSAbout: React.FC = () => {
     <Container>
       <div className="w-full">
         <div className="">
-          <Title size="medium" color="black">
+          <Title wrap size="medium" color="black">
             CZTERY KATEGORIE DYNAMICZNE
           </Title>
-          <div className=" grid grid-cols-4 gap-6 my-6">
+          <div className=" grid grid-cols-1 md:grid-cols-4 gap-6 my-6">
             <div className=" relative h-60 rounded-md overflow-hidden">
               <Image
                 src="/images/FS/acceleration.png"
@@ -29,11 +29,11 @@ const FSAbout: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="my-12">
-          <Title size="medium" color="black">
+        <div className=" my-8 md:my-12">
+          <Title wrap size="medium" color="black">
             TRZY KATEGORIE STATYCZNE
           </Title>
-          <div className=" grid grid-cols-3 gap-6 my-6">
+          <div className=" grid grid-cols-1 md:grid-cols-3 gap-6 my-6">
             <div className=" relative h-80 rounded-md overflow-hidden">
               <Image src="/images/FS/cost.png" alt="skidpad" fill />
             </div>
