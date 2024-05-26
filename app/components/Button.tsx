@@ -36,7 +36,7 @@ const Button: React.FC<ButtonProps> = ({
         transition duration-300 ease-in-out
         w-full min-w-fit px-2
         ${black ? "bg-black" : outline ? "bg-white" : "bg-customRed"}
-        ${black ? "px-20" : ""}
+        ${black ? "px-16" : ""}
         ${
           black ? "border-black" : outline ? "border-black" : "border-customRed"
         }
@@ -47,7 +47,12 @@ const Button: React.FC<ButtonProps> = ({
         ${small ? " border-[1px]" : " border-2"}
       `}
     >
-      {Icon && <Icon size={24} className="absolute left-4 top-3" />}
+      {Icon && (
+        <Icon
+          size={24}
+          className="absolute left-2 top-[6px] md:left-4 md:top-3"
+        />
+      )}
       {label}
     </button>
   );

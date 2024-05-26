@@ -44,7 +44,7 @@ const DepartmentsAbout: React.FC<DepartmentsAboutProps> = ({ lightMode }) => {
           <Title color="black">JAKI DZIAŁ CIĘ INTERESUJE?</Title>
           <div className="w-full">
             <Container>
-              <div className="flex gap-4 w-full flex-wrap justify-center">
+              <div className="flex flex-col md:flex-row gap-4 w-full flex-wrap justify-center">
                 <div>
                   <Button
                     black
