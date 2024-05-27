@@ -7,6 +7,7 @@ import Text from "../../Text";
 import BackgroundVideo from "./BackgroundVideo";
 import Title from "../../Title";
 import ClientOnly from "../../ClientOnly";
+import { motion } from "framer-motion";
 
 const FirstSection = () => {
   const handleScroll = () => {
@@ -14,6 +15,23 @@ const FirstSection = () => {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const imageVariants = {
+    hidden: {
+      scale: 0,
+      y: -100,
+      opacity: 1,
+    },
+    visible: {
+      scale: 1,
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 1,
+        ease: "easeOut",
+      },
+    },
   };
 
   return (
@@ -49,7 +67,12 @@ const FirstSection = () => {
                 <FaArrowRight className="ml-2 transition-all duration-300 group-hover:text-customRed" />
               </button>
             </div>
-            <div className="flex justify-center mb-8 sm:mb-0 items-center">
+            <motion.div
+              className="flex justify-center mb-8 sm:mb-0 items-center"
+              initial="hidden"
+              animate="visible"
+              variants={imageVariants}
+            >
               <Image
                 src="/images/bolid_main.png"
                 alt="bolid"
@@ -57,7 +80,7 @@ const FirstSection = () => {
                 width={700}
                 height={551}
               />
-            </div>
+            </motion.div>
           </div>
         </Container>
       </div>
