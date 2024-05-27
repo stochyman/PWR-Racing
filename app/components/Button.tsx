@@ -34,9 +34,9 @@ const Button: React.FC<ButtonProps> = ({
         rounded-lg
         hover:opacity-80
         transition duration-300 ease-in-out
-        w-full min-w-fit px-2
+        w-full min-w-fit
         ${black ? "bg-black" : outline ? "bg-white" : "bg-customRed"}
-        ${black ? "px-16" : ""}
+        ${black ? "px-16" : "px-2"}
         ${
           black ? "border-black" : outline ? "border-black" : "border-customRed"
         }

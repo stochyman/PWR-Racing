@@ -27,7 +27,7 @@ const NewsCard: React.FC<NewsCardProps> = ({
           className="group-hover:scale-105 duration-500 ease-in-out"
         />
       </div>
-      <div className=" bg-white w-full px-3 py-2 md:px-5 md:py-4 flex flex-col">
+      <div className=" bg-white w-full px-5 py-4 flex flex-col">
         <Text color="black" small wide bold opacity1 center>
           {title}
         </Text>
