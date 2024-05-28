@@ -101,7 +101,7 @@ const PartnersJoin: React.FC<Props> = async () => {
                 Współpraca z nami to:
               </Text>
               <div className="grid grid-cols-5 gap-4">
-                <div className="flex flex-col items-center text-center">
+                <div className="flex flex-col gap-2 items-center text-center">
                   <svg
                     width="80"
                     height="80"
@@ -114,9 +114,9 @@ const PartnersJoin: React.FC<Props> = async () => {
                       fill="#D41E3E"
                     />
                   </svg>
-                  <Text center>Oryginalny sposób na reklamęspos</Text>
+                  <Text center>Oryginalny sposób międzynarodowej promocji</Text>
                 </div>
-                <div className="flex flex-col items-center text-center">
+                <div className="flex flex-col gap-2 items-center text-center">
                   <svg
                     width="80"
                     height="80"
@@ -129,9 +129,9 @@ const PartnersJoin: React.FC<Props> = async () => {
                       fill="#D41E3E"
                     />
                   </svg>
-                  <Text>Oryginalny sposób na reklamę</Text>
+                  <Text center>Skuteczny employeer branding</Text>
                 </div>
-                <div className="flex flex-col items-center text-center">
+                <div className="flex flex-col gap-2 items-center text-center">
                   <svg
                     width="80"
                     height="80"
@@ -144,9 +144,11 @@ const PartnersJoin: React.FC<Props> = async () => {
                       fill="#D41E3E"
                     />
                   </svg>
-                  <Text>Oryginalny sposób na reklamę</Text>
+                  <Text center>
+                    Regularna obecność w mediach społecznościowych
+                  </Text>
                 </div>
-                <div className="flex flex-col items-center text-center">
+                <div className="flex flex-col gap-2 items-center text-center">
                   <svg
                     width="80"
                     height="80"
@@ -159,9 +161,9 @@ const PartnersJoin: React.FC<Props> = async () => {
                       fill="#D41E3E"
                     />
                   </svg>
-                  <Text>Oryginalny sposób na reklamę</Text>
+                  <Text center>Zwiększenie widoczności firmy</Text>
                 </div>
-                <div className="flex flex-col items-center text-center">
+                <div className="flex flex-col gap-2 items-center text-center">
                   <svg
                     width="80"
                     height="80"
@@ -174,7 +176,7 @@ const PartnersJoin: React.FC<Props> = async () => {
                       fill="#D41E3E"
                     />
                   </svg>
-                  <Text>Oryginalny sposób na reklamę</Text>
+                  <Text center>Bycie częścią innowacyjnego projektu</Text>
                 </div>
               </div>
             </div>

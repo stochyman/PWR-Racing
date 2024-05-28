@@ -35,37 +35,40 @@ const NavAbout = () => {
               </div>
               <div className="md:w-3/5 flex flex-col gap-8">
                 <Text color="black" bold>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                  gravida placerat purus eu congue. Donec a nulla id augue
-                  condimentum gravida. Nunc sollicitudin vulputate mi vitae
-                  blandit. Integer iaculis laoreet pulvinar.
+                  PWR Racing Team to Strategiczne Koło Naukowe Politechniki
+                  Wrocławskiej, a zarazem najstarszy i najbardziej utytułowany
+                  Zespół wyścigowy Formuły Student w Polsce. Od 2009 roku grupa
+                  ok. 80 studentów i studentek wrocławskich uczelni co roku
+                  konstruuje bolidy i startuje nimi w prestiżowych zawodach
+                  inżynierskich odbywających się na całym świecie. Największym
+                  sukcesem PWR Racing Teamu jest wygranie całej edycji zawodów,
+                  co miało miejsce Formula SAE Italy w 2017 roku. Było to
+                  pierwsze zwycięstwo polskiego Zespołu Formuły Student w
+                  historii.
                 </Text>
                 <Text color="black">
-                  Nunc id porttitor velit. Aenean lectus elit, porta ut feugiat
-                  id, venenatis et dolor. Etiam aliquam at felis et consectetur.
-                  Cras venenatis sapien nunc, et malesuada orci pellentesque
-                  non. Vivamus congue metus eu lacus mollis, ut mollis ligula
-                  volutpat.
+                  Na przestrzeni swojej działalności Zespół skonstruował 12
+                  bolidów spalinowych, które zdobywały czołowe miejsca w
+                  zawodach Formuły Student w całej Europie i na świecie.
+                  Podążając za zmianami w branży motoryzacyjnej, PWR Racing Team
+                  podjął nowe wyzwanie i rozpoczął budowę konstrukcji
+                  napędzanych elektrycznych. Członkowie Zespołu dokonali zmiany
+                  napędu w zaledwie jeden rok. Ponadto w tym samym czasie
+                  stworzono zestaw rozwiązań pozwalający na jazdę autonomiczną.
+                  Rozpoczynając nową erę, w 2022 roku powstał pierwszy bolid
+                  elektryczny z systemami jazdy autonomicznej — RT12e. Obecnie
+                  Zespół pracuje nad 3 konstrukcją tego typu — RT14e.
                 </Text>
                 <Text color="black">
-                  Pellentesque sollicitudin at justo vel consectetur.
-                  Pellentesque habitant morbi tristique senectus et netus et
-                  malesuada fames ac turpis egestas. Cras finibus nibh dui, eu
-                  pellentesque odio dictum a. Quisque scelerisque, lorem quis
-                  venenatis ultrices, tortor lectus aliquam lectus, sed aliquam
-                  lorem sem sit amet metus. In efficitur metus eget justo
-                  imperdiet pretium. Cras bibendum sit amet diam quis venenatis.
-                  Quisque vulputate arcu velit, et hendrerit est dignissim
-                  luctus. Cras a luctus leo.
-                </Text>
-                <Text color="black">
-                  Nullam tempus, orci sed ornare vulputate, nibh orci hendrerit
-                  mauris, id laoreet lorem mi in dui. Sed feugiat elit ac luctus
-                  imperdiet. Vestibulum nisi dolor, molestie et molestie non,
-                  fringilla in tellus. Duis sit amet malesuada arcu. Suspendisse
-                  id finibus turpis. Sed placerat feugiat nibh, fringilla
-                  suscipit sem rutrum vel. Proin felis nisl, porttitor eget
-                  sapien ac, accumsan sodales nisi.
+                  Zaprojektowanie i konstrukcja bolidu klasy Formuła Student to
+                  zaawansowany, interdyscyplinarny projekt inżynierski,
+                  pozwalający rozwinąć się młodym inżynierom i menedżerom.
+                  Wymaga ogromu zaangażowania ze strony Zespołu, co przekłada
+                  się na tysiące godzin, które Członkowie spędzają w warsztacie,
+                  rozwijając projekt oraz wykonując swoje części. Konstrukcja
+                  pojazdu jest możliwa dzięki wsparciu Politechniki
+                  Wrocławskiej, Miasta Wrocław, Fundacji Manus, a także ponad
+                  120 partnerów — firm i instytucji z całej Europy.
                 </Text>
               </div>
             </div>

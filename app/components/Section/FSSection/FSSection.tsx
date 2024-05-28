@@ -16,15 +16,15 @@ const FSSection: React.FC<FSSectionProps> = ({ aboutUs }) => {
     <div id="formulastudent-section" className="py-8 md:py-20">
       <Container>
         <div className="">
-          {aboutUs && (
-            <div className="my-6">
-              <Title wrap color="black">
-                FORMULA STUDENT
-              </Title>
-            </div>
-          )}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-20 ">
             <div className="">
+              {aboutUs && (
+                <div className="my-6">
+                  <Title size="big" color="black">
+                    ZAWODY FORMULA STUDENT
+                  </Title>
+                </div>
+              )}
               {!aboutUs && (
                 <Title size="big" color="black">
                   ZAWODY FORMULA STUDENT
@@ -32,23 +32,17 @@ const FSSection: React.FC<FSSectionProps> = ({ aboutUs }) => {
               )}
               <div className={`${aboutUs ? "" : "my-2 md:my-6"}`}>
                 <Text color="gray">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur posuere, velit vitae lacinia tincidunt, tellus enim
-                  faucibus dolor, non sodales ante dolor nec est. In pretium
-                  semper justo nec dignissim. Curabitur aliquam nec sapien vel
-                  elementum. Morbi at risus non purus faucibus blandit. Quisque
-                  venenatis eleifend molestie. Morbi porttitor vitae metus sed
-                  tristique. Ut ultrices tellus massa, at lacinia orci
-                  ullamcorper eget. Nunc eu nibh porttitor, dapibus quam et,
-                  aliquet felis. Quisque venenatis eleifend molestie. Morbi
-                  porttitor vitae metus sed tristique. Ut ultrices tellus massa,
-                  at lacinia orci ullamcorper eget. Nunc eu nibh porttitor,
-                  dapibus quam et, aliquet felis. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Curabitur posuere, velit vitae
-                  lacinia tincidunt, tellus enim faucibus dolor, non sodales
-                  ante dolor nec est. In pretium semper justo nec dignissim.
-                  Curabitur aliquam nec sapien vel elementum. Morbi at risus non
-                  purus faucibus blandit. Quisque venenatis eleifend molestie.
+                  Zawody Formuły Student sprawdzają nie tylko osiągi bolidu, ale
+                  również wiedzę inżynierską oraz umiejętności zarządzania.
+                  Uczestnicy podzieleni są na klasy w zależności od rodzaju
+                  bolidu — elektryczną (EV) lub spalinową (CV). Na niektórych
+                  edycjach istnieje też możliwość startowania w opcjonalnej
+                  kategorii autonomicznej (DV). Rywalizacja odbywa się na
+                  przestrzeni kilku punktowanych konkurencji, które dzielą się
+                  na statyczne i dynamiczne. Zespół z największą ilością punktów
+                  na tysiąc możliwych, zostaje ogłoszony zwycięzcą swojej klasy.
+                  Sposób ich przyznawania różni się w niewielkim stopniu
+                  pomiędzy edycjami.
                 </Text>
               </div>
               {!aboutUs && (

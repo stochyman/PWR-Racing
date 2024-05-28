@@ -47,13 +47,18 @@ const FirstSection = () => {
               <Title>PWR RACING TEAM</Title>
               <div className="my-2 md:my-6">
                 <Text color="white">
-                  W każdym sezonie tworzymy nowy bolid wyścigowy. Na swoim
-                  koncie mamy aż dwanaście niepowtarzalnych modeli bolidów
-                  spalinowych, z czego każdy kolejny jest w stanie z łatwością
-                  pokonać poprzedni. W zeszłym sezonie powstał pierwszy w
-                  historii Zespołu bolid elektryczny z systemami jazdy
-                  autonomicznej – RT12e. Aktualnie zajmujemy się budową naszej
-                  czternastej konstrukcji.
+                  PWR Racing Team to Strategiczne Koło Naukowe Politechniki
+                  Wrocławskiej, a zarazem najstarszy i najbardziej utytułowany
+                  Zespół wyścigowy Formuły Student w Polsce. Od 2009 roku grupa
+                  ok. 80 studentów i studentek wrocławskich uczelni co roku
+                  konstruuje bolidy i startuje nimi w prestiżowych zawodach
+                  inżynierskich odbywających się na całym świecie. W swojej
+                  historii Zespół stworzył 12 bolidów spalinowych oraz 2
+                  elektryczne z systemami jazdy autonomicznej. Obecnie Zespół
+                  pracuje nad trzecią tego typu konstrukcją — RT14e. PWR Racing
+                  Team jest pierwszym polskim Zespołem Formuły Student, który
+                  zwyciężył całą edycję zawodów, co miało miejsce podczas
+                  zawodów Formula SAE Italy w 2017 roku.
                 </Text>
               </div>
               <Text color="red" opacity1 wide bold small>

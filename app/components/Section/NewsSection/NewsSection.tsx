@@ -27,34 +27,7 @@ const NewsSection = () => {
               />
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-10 relative border-none">
-            <News
-              article="1"
-              category="Współpraca"
-              title="Premiera RT13E"
-            ></News>
-            <News
-              article="2"
-              category="WSPÓŁPRACA"
-              title="Współpraca z Kafuland"
-            ></News>
-            <News
-              article="3"
-              category="Współpraca"
-              title="Współpraca z Mitutoyo"
-            ></News>
-            <News
-              article="4"
-              category="Materiały"
-              title="Laminowanie RT12E"
-            ></News>
-            <News article="5" category="Kategoria 5" title="Tytuł 5"></News>
-            <News
-              article="6"
-              category="WYDZARZENIA"
-              title="PWR RACING TEAM - 11. ZESPOŁEM NA ŚWIECIE"
-            ></News>
-          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-10 relative border-none"></div>
         </div>
       </Container>
       <NewsSeubsection />
