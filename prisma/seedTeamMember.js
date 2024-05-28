@@ -9,7 +9,7 @@ async function main() {
       roles: [
         {
           department: "marketing",
-          role: "sprytny fotograf",
+          role: "Fotograf",
           bolidName: "RT14e",
         },
       ],
