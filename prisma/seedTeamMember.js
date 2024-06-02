@@ -4,13 +4,23 @@ const prisma = new PrismaClient();
 async function main() {
   const teamMembersData = [
     {
-      name: "michał",
-      surname: "sroka",
+      name: "dr",
+      surname: "hab. inż. Damian Derlukiewicz",
       roles: [
         {
-          department: "marketing",
-          role: "Fotograf",
+          department: "opiekun naukowy",
+          role: "Opiekun Naukowy",
           bolidName: "RT14e",
+        },
+        {
+          department: "opiekun naukowy",
+          role: "Opiekun Naukowy",
+          bolidName: "RT13e",
+        },
+        {
+          department: "opiekun naukowy",
+          role: "Opiekun Naukowy",
+          bolidName: "RT11b",
         },
       ],
     },

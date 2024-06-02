@@ -13,10 +13,13 @@ interface Iparams {
 const TeamPage = async ({ params }: { params: Iparams }) => {
   const teamId = params.teamId ?? "RT13e";
   const team = await getTeamByBolid(teamId);
+
   interface Member {
     name: string;
     surname: string;
     currentRole: string;
+    phoneNumber?: string;
+    email?: string;
   }
 
   interface RoleHistoryItem {
@@ -37,10 +40,9 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
   const roleHistory: RoleHistory = {};
 
   team.forEach((member) => {
-    const memberFullName = `${member.name} ${member.surname}`; // Połącz imię i nazwisko
+    const memberFullName = `${member.name} ${member.surname}`;
 
     member.roles.forEach((role) => {
-      // Budujemy historię ról dla każdego członka
       if (!roleHistory[memberFullName]) {
         roleHistory[memberFullName] = [];
       }
@@ -50,7 +52,6 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
         department: role.department,
       });
 
-      // Dodajemy członka do działu tylko jeśli jego rola jest związana z bieżącym bolidem
       if (role.bolidName === teamId) {
         if (!membersByDepartment[role.department]) {
           membersByDepartment[role.department] = [];
@@ -62,15 +63,16 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
           departmentMember = {
             name: member.name,
             surname: member.surname,
+            phoneNumber: member.phoneNumber ?? "", // Default value for phoneNumber
+            email: member.email ?? "", // Default value for email
             currentRole: role.role,
-          };
+          } as Member;
           membersByDepartment[role.department].push(departmentMember);
         }
       }
     });
   });
 
-  // Sort departments such that 'management' comes first
   const sortedDepartments = Object.keys(membersByDepartment).sort((a, b) => {
     if (a === "management") return -1;
     if (b === "management") return 1;
@@ -82,7 +84,6 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
       <div className="relative overflow-hidden">
         <ClientSlider teamId={teamId} />
 
-        {/* Renderowanie sekcji dla każdego działu aktualnego bolidu */}
         <div className="pt-10">
           {sortedDepartments.map((department, depIndex) => (
             <div key={department} className="">
@@ -121,20 +122,15 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
                     >
                       {membersByDepartment[department]
                         .sort((a, b) => {
-                          // Sprawdzamy, czy rola zawiera słowo "lider"
                           const isLeaderA = a.currentRole
                             .toLowerCase()
                             .includes("lider");
                           const isLeaderB = b.currentRole
                             .toLowerCase()
                             .includes("lider");
-                          if (isLeaderA && !isLeaderB) return -1; // A jest liderem, B nie
-                          if (!isLeaderA && isLeaderB) return 1; // B jest liderem, A nie
-
-                          // Jeśli obaj są liderami, zachowujemy kolejność jak w oryginalnej tablicy
+                          if (isLeaderA && !isLeaderB) return -1;
+                          if (!isLeaderA && isLeaderB) return 1;
                           if (isLeaderA && isLeaderB) return 0;
-
-                          // Jeśli obaj nie są liderami, sortujemy alfabetycznie po imieniu
                           return a.name.localeCompare(b.name);
                         })
                         .map((member, index) => (

@@ -153,11 +153,11 @@ const FooterSection = () => {
                 Nawigacja
               </Text>
               <ul className="mt-1 md:mt-2">
-                <FooterLink>Strona Główna</FooterLink>
-                <FooterLink>Bolid</FooterLink>
-                <FooterLink>Zespół</FooterLink>
-                <FooterLink>O nas</FooterLink>
-                <FooterLink>Partnerzy</FooterLink>
+                <FooterLink href="/">Strona Główna</FooterLink>
+                <FooterLink href="/bolid">Bolid</FooterLink>
+                <FooterLink href="/team">Zespół</FooterLink>
+                <FooterLink href="/about">O nas</FooterLink>
+                <FooterLink href="/partners">Partnerzy</FooterLink>
               </ul>
             </div>
             <div className=" whitespace-nowrap">
@@ -165,10 +165,16 @@ const FooterSection = () => {
                 Siedziba
               </Text>
               <ul className="mt-1 md:mt-2">
-                <FooterLink>ul. Słopocka 16</FooterLink>
-                <FooterLink>50-349 Wrocław</FooterLink>
-                <FooterLink>+48 123 123 123</FooterLink>
-                <FooterLink>mail@mail.com</FooterLink>
+                <FooterLink onClick={handleMapClick}>
+                  ul. Słopocka 16
+                </FooterLink>
+                <FooterLink onClick={handleMapClick}>50-349 Wrocław</FooterLink>
+                <FooterLink onClick={handlePhoneClick}>
+                  +48 123 123 123
+                </FooterLink>
+                <FooterLink onClick={handleEmailClick}>
+                  mail@mail.com
+                </FooterLink>
               </ul>
             </div>
             <div className=" whitespace-nowrap">
@@ -176,8 +182,10 @@ const FooterSection = () => {
                 PWR Racing Team
               </Text>
               <ul className="mt-1 md:mt-2">
-                <FooterLink>Zostań członkiem</FooterLink>
-                <FooterLink>Zostań partnerem</FooterLink>
+                <FooterLink href="/joinus">Zostań członkiem</FooterLink>
+                <FooterLink href="/partners/joinus">
+                  Zostań partnerem
+                </FooterLink>
               </ul>
             </div>
             <div className=" whitespace-nowrap">
@@ -185,31 +193,31 @@ const FooterSection = () => {
                 Informacje Ogólne
               </Text>
               <ul className="mt-1 md:mt-2">
-                <FooterLink>Polityka prywatności</FooterLink>
-                <FooterLink>Pliki Cookies</FooterLink>
-                <FooterLink>RODO</FooterLink>
+                <FooterLink href="/">Polityka prywatności</FooterLink>
+                <FooterLink href="/">Pliki Cookies</FooterLink>
+                <FooterLink href="/">RODO</FooterLink>
               </ul>
             </div>
           </div>
           <div className="w-full flex-col md:flex-row items-center gap-4 flex justify-between md:px-12 py-4 md:py-8">
             <div className="flex items-center gap-4">
               <SocialIcons
-                href="https://www.facebook.com"
+                href="https://www.facebook.com/PWRRacingTeam"
                 icon={FaFacebookF}
                 ariaLabel="Facebook"
               />
               <SocialIcons
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/pwrracingteam/"
                 icon={FaInstagram}
                 ariaLabel="Instagram"
               />
               <SocialIcons
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/company/pwr-racing-team/posts/?feedView=all"
                 icon={FaLinkedinIn}
                 ariaLabel="LinkedIn"
               />
               <SocialIcons
-                href="https://www.youtube.com"
+                href="https://www.youtube.com/@PWRRacingTeam"
                 icon={FaYoutube}
                 ariaLabel="YouTube"
               />

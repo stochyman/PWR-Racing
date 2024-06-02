@@ -3,10 +3,13 @@ import Image from "next/image";
 import TileHeading from "./TileHeading";
 
 interface UserCardProps {
+  opiekun?: boolean;
   member: {
     name: string;
     surname: string;
     currentRole: string;
+    phoneNumber?: string;
+    email?: string;
   };
   teamId: string;
   roleHistory: {
@@ -18,7 +21,14 @@ interface UserCardProps {
   };
 }
 
-const UserCard: React.FC<UserCardProps> = ({ member, teamId, roleHistory }) => {
+const UserCard: React.FC<UserCardProps> = ({
+  opiekun,
+  member,
+  teamId,
+  roleHistory,
+}) => {
+  console.log(member.name[0].toUpperCase() + member.name.slice(1));
+  console.log(member.surname[0].toUpperCase() + member.surname.slice(1));
   return (
     <div className="relative group">
       <div className="absolute inset-0 z-0 w-full h-full rounded-full blur-3xl bg-white opacity-10"></div>
@@ -37,7 +47,13 @@ const UserCard: React.FC<UserCardProps> = ({ member, teamId, roleHistory }) => {
             style={{ objectFit: "cover" }}
           />
         </div>
-        <TileHeading member={member} roleHistory={roleHistory} />
+        <TileHeading
+          opiekun={opiekun}
+          member={member}
+          roleHistory={roleHistory}
+          phoneNumber={member.phoneNumber}
+          email={member.email}
+        />
       </div>
     </div>
   );

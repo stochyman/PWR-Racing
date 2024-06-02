@@ -8,6 +8,7 @@ type NewsCardProps = {
   length_time?: number;
   logo: string;
   main_image: string;
+  whiteMode?: boolean;
 };
 const NewsCard: React.FC<NewsCardProps> = ({
   title,
@@ -15,6 +16,7 @@ const NewsCard: React.FC<NewsCardProps> = ({
   length_time,
   logo,
   main_image,
+  whiteMode,
 }) => {
   return (
     <div className=" group h-[26rem] md:h-[34rem] rounded-md flex flex-col overflow-hidden cursor-pointer">
@@ -27,7 +29,11 @@ const NewsCard: React.FC<NewsCardProps> = ({
           className="group-hover:scale-105 duration-500 ease-in-out"
         />
       </div>
-      <div className=" bg-white w-full px-5 py-4 flex flex-col">
+      <div
+        className={` ${
+          whiteMode ? "bg-neutral-200" : "bg-white"
+        } w-full px-5 py-4 flex flex-col`}
+      >
         <Text color="black" small wide bold opacity1 center>
           {title}
         </Text>

@@ -9,6 +9,8 @@ export async function getTeamByFullName(name: string, surname: string) {
     select: {
       name: true,
       surname: true,
+      email: true,
+      phoneNumber: true,
       roles: {
         select: {
           department: true,

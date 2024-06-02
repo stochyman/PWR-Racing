@@ -2,16 +2,26 @@
 
 import { useRouter } from "next/navigation";
 import { IconType } from "react-icons";
+import { useState } from "react";
 
 interface ButtonProps {
   label: string;
-  onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   disabled?: boolean;
   outline?: boolean;
   small?: boolean;
   black?: boolean;
   icon?: IconType;
+  hoverText?: string; // Opcjonalny prop dla tekstu wyświetlanego podczas hovera
 }
+
+const formatPhoneNumber = (phoneNumber: string) => {
+  if (!phoneNumber) return "";
+  const countryCode = phoneNumber.slice(0, 3);
+  const restOfNumber = phoneNumber.slice(3);
+  const formattedNumber = restOfNumber.replace(/(\d{3})(?=\d)/g, "$1 ");
+  return `${countryCode} ${formattedNumber}`;
+};
 
 const Button: React.FC<ButtonProps> = ({
   label,
@@ -21,12 +31,28 @@ const Button: React.FC<ButtonProps> = ({
   small,
   black,
   icon: Icon,
+  hoverText,
 }) => {
-  const router = useRouter();
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    if (hoverText) {
+      if (hoverText.includes("@")) {
+        window.location.href = `mailto:${hoverText}`;
+      } else {
+        window.location.href = `tel:${hoverText}`;
+      }
+    } else if (onClick) {
+      onClick(e);
+    }
+  };
+
   return (
     <button
-      onClick={onClick}
+      onClick={handleClick}
       disabled={disabled}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
       className={`
         relative
         disabled:opacity-70
@@ -50,10 +76,25 @@ const Button: React.FC<ButtonProps> = ({
       {Icon && (
         <Icon
           size={24}
-          className="absolute left-2 top-[6px] md:left-4 md:top-3"
+          className="absolute left-2 top-[6px] md:left-3 md:top-[10px]"
         />
       )}
-      {label}
+      <span
+        className={`transition-opacity duration-300 ease-in-out ${
+          isHovered && hoverText ? "opacity-0" : "opacity-100"
+        }`}
+      >
+        {label}
+      </span>
+      {hoverText && (
+        <span
+          className={`transition-opacity duration-300 ease-in-out absolute inset-0 flex items-center justify-center ${
+            isHovered ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          {hoverText.includes("@") ? hoverText : formatPhoneNumber(hoverText)}
+        </span>
+      )}
     </button>
   );
 };

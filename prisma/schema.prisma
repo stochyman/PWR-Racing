@@ -51,6 +51,8 @@ model TeamMember {
   id      String @id @default(auto()) @map("_id") @db.ObjectId
   name    String
   surname String
+  phoneNumber String?
+  email       String?
   roles   Role[]
 }
 

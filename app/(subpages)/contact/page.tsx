@@ -20,7 +20,9 @@ const getMembersData = async (names: string[]): Promise<TeamMember[]> => {
   const teamMembers = [];
 
   for (const member of names) {
-    const [name, surname] = member.split(" ");
+    const [name, ...rest] = member.split(" ");
+    const surname = rest.join(" ");
+    console.log([name, surname]);
     const memberData = await getTeamByFullName(name, surname);
     if (memberData.length > 0) {
       teamMembers.push(memberData[0]);
@@ -46,8 +48,9 @@ const ContactUs = async () => {
   ]);
 
   const projectSupervisors = await getMembersData([
-    "paweł wójcik",
-    "paweł wójcik",
+    "dr hab. inż. Anna Janicka",
+    "dr hab. inż. Damian Derlukiewicz",
+    "dr inż. Gustaw Sierzputowski",
   ]);
 
   const siteAdministration = await getMembersData([
@@ -99,15 +102,16 @@ const ContactUs = async () => {
       </div>
       <GoogleMapComponent />
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-2 w-full my-8 md:my-12 gap-12 md:gap-20">
+        <div className="grid grid-cols-1 w-full my-8 md:my-12 gap-12 md:gap-20">
           <div className=" flex flex-col items-start md:items-center gap-4 md:gap-6">
             <Text bold medium>
               Opiekunowie projektu:
             </Text>
-            <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 w-full md:w-3/4 gap-6">
               {projectSupervisors.map((member, index) => (
                 <UserCard
                   key={index}
+                  opiekun={true}
                   member={member}
                   teamId="RT14e"
                   roleHistory={{
@@ -127,7 +131,7 @@ const ContactUs = async () => {
             <Text bold medium>
               Administracja strony:
             </Text>
-            <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 w-full md:w-1/2 gap-6">
               {siteAdministration.map((member, index) => (
                 <UserCard
                   key={index}

@@ -38,7 +38,31 @@ body,
   color: inherit; /* Zachowuje domyślny kolor tekstu */
 }
 
-/* Sponsors scroll */
+/* Custom scrollbar styles */
+.custom-scrollbar {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #888 transparent; /* For Firefox */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px; /* Width of the entire scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent; /* Make the track background transparent */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners on the thumb */
+  border: 2px solid transparent; /* Adds a little space around thumb */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color when hovering over the scrollbar thumb */
+}
+
+/*! Sponsors scroll */
 /* Ukryj pasek przewijania w przeglądarkach opartych na WebKit (np. Safari, nowsze wersje Chrome) */
 .animation-container::-webkit-scrollbar {
   display: none;

@@ -7,7 +7,7 @@ export async function fetchFiveNews() {
         date: "desc", // Sortuje wyniki malejąco, więc najnowsze newsy będą na górze
       },
     ],
-    take: 5, // Pobiera tylko 5 najnowszych wiadomości
+    take: 3, // Pobiera tylko 5 najnowszych wiadomości
   });
   return news;
 }

@@ -12,6 +12,8 @@ export async function getTeamByBolid(bolidName: string) {
     select: {
       name: true,
       surname: true,
+      email: true,
+      phoneNumber: true,
       roles: {
         select: {
           department: true,
