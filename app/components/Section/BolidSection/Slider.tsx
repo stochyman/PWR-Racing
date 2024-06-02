@@ -118,14 +118,14 @@ const Slider: React.FC<SliderProps> = ({
           />
           <SliderElement
             darkMode={darkMode}
-            date={2018}
+            date={2019}
             bolid="RT09"
             onClick={onChangeBolid}
             currentBolid={currentBolid}
           />
           <SliderElement
             darkMode={darkMode}
-            date={2019}
+            date={2018}
             bolid="RT08"
             onClick={onChangeBolid}
             currentBolid={currentBolid}

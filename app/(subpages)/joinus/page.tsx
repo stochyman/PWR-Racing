@@ -36,7 +36,7 @@ const JoinUs: React.FC<Props> = () => {
             <Button
               outline
               label="Kontakt"
-              onClick={() => router.push(`/kontakt`)}
+              onClick={() => router.push(`/contact`)}
             />
           </div>
         </div>

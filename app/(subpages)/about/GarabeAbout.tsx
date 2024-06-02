@@ -82,7 +82,7 @@ const GarageAbout: React.FC = () => {
                   <Button
                     outline
                     label="Kontakt"
-                    onClick={() => router.push(`/kontakt`)}
+                    onClick={() => router.push(`/contact`)}
                   />
                 </div>
               </div>

@@ -54,7 +54,7 @@ const FSAbout: React.FC = () => {
               </Text>
             </div>
           </div>
-          <div className=" grid grid-cols-1 md:grid-cols-4 gap-6 my-6">
+          <div className=" grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4 gap-6 my-6">
             <div className=" relative h-60 rounded-md overflow-hidden">
               <Image
                 src="/images/FS/acceleration.png"
@@ -106,7 +106,7 @@ const FSAbout: React.FC = () => {
               </Text>
             </div>
           </div>
-          <div className=" grid grid-cols-1 md:grid-cols-3 gap-6 my-6">
+          <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-6">
             <div className=" relative h-80 rounded-md overflow-hidden">
               <Image src="/images/FS/cost.png" alt="skidpad" fill />
             </div>

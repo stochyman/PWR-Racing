@@ -132,7 +132,7 @@ const UserMenu = () => {
               label="Aktualności"
             />
             <MenuItem
-              onClick={() => handleMenuItemClick(`/kontakt`)}
+              onClick={() => handleMenuItemClick(`/contact`)}
               label="Kontakt"
             />
             <div className="w-full h-[1px] bg-black"></div>

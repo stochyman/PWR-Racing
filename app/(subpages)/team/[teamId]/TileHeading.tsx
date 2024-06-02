@@ -29,7 +29,7 @@ const TileHeading: React.FC<ParamsTileHeading> = ({ member, roleHistory }) => {
   const router = useRouter();
 
   const handleRedirect = () => {
-    router.push("/kontakt");
+    router.push("/contact");
   };
 
   return (

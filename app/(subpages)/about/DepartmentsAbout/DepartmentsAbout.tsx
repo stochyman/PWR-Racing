@@ -22,8 +22,6 @@ const DepartmentsAbout: React.FC<DepartmentsAboutProps> = ({ lightMode }) => {
     "software",
     "electrical",
     "vehicle performance",
-    "infrastructure",
-    "drivers",
   ];
 
   const handleScrollToSection = (id: string) => {
@@ -83,22 +81,6 @@ const DepartmentsAbout: React.FC<DepartmentsAboutProps> = ({ lightMode }) => {
                     icon={FaBolt}
                     label="ELECTRICAL"
                     onClick={() => handleScrollToSection("electrical")}
-                  />
-                </div>
-                <div>
-                  <Button
-                    black
-                    icon={IoStatsChartOutline}
-                    label="VEHICLE PERFORMANCE"
-                    onClick={() => handleScrollToSection("vehicle performance")}
-                  />
-                </div>
-                <div>
-                  <Button
-                    black
-                    icon={FaWrench}
-                    label="INFRASTRUCTURE"
-                    onClick={() => handleScrollToSection("infrastructure")}
                   />
                 </div>
               </div>

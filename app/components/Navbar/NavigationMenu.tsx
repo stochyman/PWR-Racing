@@ -12,7 +12,7 @@ const NavigationMenu = () => {
         <NavItem to="/about">O nas</NavItem>
         <NavItem to="/partners">Partnerzy</NavItem>
         <NavItem to="/news">Aktualności</NavItem>
-        <NavItem to="/kontakt">Kontakt</NavItem>
+        <NavItem to="/contact">Kontakt</NavItem>
       </ul>
     </nav>
   );
