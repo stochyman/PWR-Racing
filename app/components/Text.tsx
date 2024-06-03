@@ -5,6 +5,7 @@ interface TextProps {
   children: React.ReactNode;
   small?: boolean;
   medium?: boolean;
+  main?: boolean;
   extrasmall?: boolean;
   wide?: boolean;
   bold?: boolean;
@@ -18,6 +19,7 @@ const Text: React.FC<TextProps> = ({
   children,
   small,
   medium,
+  main,
   extrasmall,
   wide,
   bold,
@@ -45,8 +47,9 @@ const Text: React.FC<TextProps> = ({
   const sizeClass = () => {
     if (small) return "text-md md:text-xl";
     if (medium) return "text-xl md:text-3xl";
+    if (main) return "text-[14px] md:text-[14px]";
     if (extrasmall) return "text-xs";
-    return "text-xs sm:text-[14px] sm:leading-5";
+    return "text-xs sm:text-base sm:leading-5";
   };
 
   const hoverColorClass = useMemo(() => {

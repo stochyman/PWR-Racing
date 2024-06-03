@@ -46,7 +46,7 @@ const FirstSection = () => {
               </Title>
               <Title>PWR RACING TEAM</Title>
               <div className="my-2 md:my-6">
-                <Text color="white">
+                <Text color="white" main>
                   PWR Racing Team to Strategiczne Koło Naukowe Politechniki
                   Wrocławskiej, a zarazem najstarszy i najbardziej utytułowany
                   Zespół wyścigowy Formuły Student w Polsce. Od 2009 roku grupa

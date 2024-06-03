@@ -4,36 +4,36 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 const sponsors = [
-  "/images/sponsors/strategiczni/innowacje.png",
-  "/images/sponsors/strategiczni/pwr.png",
-  "/images/sponsors/strategiczni/manus.png",
-  "/images/sponsors/strategiczni/wydzial_mechaniczny.png",
-  "/images/sponsors/platynowi/3d expert.jpg",
-  "/images/sponsors/platynowi/3designlab.png",
-  "/images/sponsors/platynowi/3m.png",
-  "/images/sponsors/platynowi/apex one.png",
-  "/images/sponsors/platynowi/astromal.png",
-  "/images/sponsors/platynowi/betis.png",
-  "/images/sponsors/platynowi/content.jpg",
-  "/images/sponsors/platynowi/ellagro.png",
-  "/images/sponsors/platynowi/endego.jpg",
-  "/images/sponsors/platynowi/fanuc.jpg",
-  "/images/sponsors/platynowi/hexlogo_black_png.png",
-  "/images/sponsors/platynowi/kisssoft.jpg",
-  "/images/sponsors/platynowi/logo tor krzywa.png",
-  "/images/sponsors/platynowi/logo_amkmotion rgb.png",
-  "/images/sponsors/platynowi/mahle.png",
-  "/images/sponsors/platynowi/mibm.png",
-  "/images/sponsors/platynowi/ntn-snr.png",
-  "/images/sponsors/platynowi/premium solutions.png",
-  "/images/sponsors/platynowi/pts waś_logo2023.jpg",
-  "/images/sponsors/platynowi/radiotechnika marketing.png",
-  "/images/sponsors/platynowi/schaeffler.png",
-  "/images/sponsors/platynowi/siemens.png",
-  "/images/sponsors/platynowi/staubli.png",
-  "/images/sponsors/platynowi/top1karting_logo_rgb.svg",
-  "/images/sponsors/platynowi/wolften.jpg",
-  "/images/sponsors/platynowi/zkz gears.png",
+  "/images/sponsors/innowacje.png",
+  "/images/sponsors/pwr.png",
+  "/images/sponsors/manus.png",
+  "/images/sponsors/wydzial_mechaniczny.png",
+  "/images/sponsors/3d expert.jpg",
+  "/images/sponsors/3designlab.png",
+  "/images/sponsors/3m.png",
+  "/images/sponsors/apex one.png",
+  "/images/sponsors/astromal.png",
+  "/images/sponsors/betis.png",
+  "/images/sponsors/content.jpg",
+  "/images/sponsors/ellagro.png",
+  "/images/sponsors/endego.jpg",
+  "/images/sponsors/fanuc.jpg",
+  "/images/sponsors/hexlogo_black_png.png",
+  "/images/sponsors/kisssoft.jpg",
+  "/images/sponsors/logo tor krzywa.png",
+  "/images/sponsors/logo_amkmotion rgb.png",
+  "/images/sponsors/mahle.png",
+  "/images/sponsors/mibm.png",
+  "/images/sponsors/ntn-snr.png",
+  "/images/sponsors/premium solutions.png",
+  "/images/sponsors/pts waś_logo2023.jpg",
+  "/images/sponsors/radiotechnika marketing.png",
+  "/images/sponsors/schaeffler.png",
+  "/images/sponsors/siemens.png",
+  "/images/sponsors/staubli.png",
+  "/images/sponsors/top1karting_logo_rgb.svg",
+  "/images/sponsors/wolften.jpg",
+  "/images/sponsors/zkz gears.png",
 ];
 
 const SponsorsSection = () => {
@@ -113,12 +113,12 @@ const SponsorsSection = () => {
       onMouseLeave={onMouseLeave}
       onMouseUp={onMouseUp}
       onMouseMove={onMouseMove}
-      className="  relative bg-neutral-200 overflow-hidden flex items-center w-full h-[100px] md:h-[200px]"
+      className="  relative bg-white overflow-hidden flex items-center w-full h-[100px] md:h-[200px]"
       style={{ overflowX: "auto", cursor: isDragging ? "grabbing" : "grab" }}
     >
       {/* <div className="relative h-full"> */}
       <div className="relative h-full ">
-        <div className="flex gap-8 select-none h-full">
+        <div className="flex gap-20 select-none h-full">
           {sponsors.map((src, index) => (
             <div key={index} className="relative h-full w-36 md:w-60">
               <Image
