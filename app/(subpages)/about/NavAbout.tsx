@@ -3,6 +3,7 @@
 import Container from "@/app/components/Container";
 import Text from "@/app/components/Text";
 import Image from "next/image";
+import Link from "next/link";
 
 const NavAbout = () => {
   return (
@@ -90,23 +91,13 @@ const NavAboutItem: React.FC<NavAboutItemProps> = ({
   children,
   scrollToId,
 }) => {
-  const handleScroll = (event: React.MouseEvent<HTMLButtonElement>) => {
-    event.preventDefault();
-    const element = document.getElementById(scrollToId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <li className="first:pl-0 p-2 md:p-8 min-w-fit">
-      <button
-        type="button"
-        className="w-full text-left hover:text-customRed cursor-pointer duration-300 ease-in-out"
-        onClick={handleScroll}
-      >
-        <Text bold>{children}</Text>
-      </button>
+      <Link href={`#${scrollToId}`} passHref scroll>
+        <div className="w-full text-left hover:text-customRed cursor-pointer duration-300 ease-in-out">
+          <Text bold>{children}</Text>
+        </div>
+      </Link>
     </li>
   );
 };
