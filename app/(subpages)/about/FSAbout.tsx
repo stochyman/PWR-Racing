@@ -2,6 +2,7 @@ import Container from "@/app/components/Container";
 import Title from "@/app/components/Title";
 import Image from "next/image";
 import Text from "@/app/components/Text";
+import Heading from "@/app/components/Heading";
 
 const FSAbout: React.FC = () => {
   return (
@@ -11,114 +12,69 @@ const FSAbout: React.FC = () => {
           <Title wrap size="medium" color="black">
             CZTERY KATEGORIE DYNAMICZNE
           </Title>
-          <div className="flex flex-col gap-2 mt-2">
-            <div>
-              <Text>
-                • Skid Pad — konkurencja polegająca na jeździe po “ósemce”.
-                Każdy Zespół ma do dyspozycji dwie próby, z których przy
-                punktowaniu brana jest pod uwagę lepsza z nich.
-              </Text>
-            </div>
-            <div>
-              <Text>
-                • Acceleration — konkurencja, która polega na jak najszybszym
+          <div className=" grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4 gap-6 my-6">
+            <FlipCard
+              height={"h-60"}
+              src="/images/FS/acceleration.png"
+              title="Acceleration"
+              text="Konkurencja, która polega na jak najszybszym
                 pokonaniu 75 metrów, dzięki czemu możliwe jest ocenienie
                 przyspieszenia bolidu. Zespoły mają do dyspozycji dwie próby i
-                lepsza z nich jest oceniana.
-              </Text>
-            </div>
-            <div>
-              <Text>
-                • Autocross — konkurencja, podczas której uczestnicy mają za
+                lepsza z nich jest oceniana."
+            />
+            <FlipCard
+              height={"h-60"}
+              src="/images/FS/skipad.png"
+              title="Skid Pad"
+              text="Konkurencja polegająca na jeździe po “ósemce”.
+                Każdy Zespół ma do dyspozycji dwie próby, z których przy
+                punktowaniu brana jest pod uwagę lepsza z nich."
+            />
+            <FlipCard
+              height={"h-60"}
+              src="/images/FS/autocross.png"
+              title="Autocross"
+              text="Konkurencja, podczas której uczestnicy mają za
                 zadanie pokonać jedno okrążenie na torze w jak najkrótszym
                 czasie. W konkurencji może wziąć udział dwóch kierowców z danego
                 Zespołu, a każdy z nich ma do dyspozycji dwa przejazdy. Pod
-                uwagę brany jest najlepszy czas z czterech.
-              </Text>
-            </div>
-            <div>
-              <Text>
-                • Endurance — konkurencja polegająca na wyścigu na około 22
+                uwagę brany jest najlepszy czas z czterech."
+            />
+            <FlipCard
+              height={"h-60"}
+              src="/images/FS/endurance.png"
+              title="Endurance"
+              text="Konkurencja polegająca na wyścigu na około 22
                 kilometry. Po przejechaniu 11 kilometrów następuje zmiana
                 kierowcy, na którą Zespół ma 3 minuty. Jest to najwyżej
                 punktowana konkurencja, ale punkty otrzymują tylko Zespoły,
-                które ukończyły przejazd.
-              </Text>
-            </div>
-            <div>
-              <Text>
-                • Efficiency — efektywność — to konkurencja, która ocenia
-                zużycie paliwa lub energii. Jedynie Zespoły, które ukończyły
-                Endurance są brane pod uwagę przy przyznawaniu punktów za tę
-                konkurencję.
-              </Text>
-            </div>
-          </div>
-          <div className=" grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4 gap-6 my-6">
-            <div className=" relative h-60 rounded-md overflow-hidden">
-              <Image
-                src="/images/FS/acceleration.png"
-                alt="acceleration"
-                fill
-              />
-            </div>
-            <div className=" relative h-60 rounded-md overflow-hidden">
-              <Image src="/images/FS/skipad.png" alt="skidpad" fill />
-            </div>
-            <div className=" relative h-60 rounded-md overflow-hidden">
-              <Image src="/images/FS/autocross.png" alt="autocross" fill />
-            </div>
-            <div className=" relative h-60 rounded-md overflow-hidden">
-              <Image src="/images/FS/endurance.png" alt="endurance" fill />
-            </div>
+                które ukończyły przejazd."
+            />
           </div>
         </div>
         <div className=" my-8 md:my-12">
           <Title wrap size="medium" color="black">
             TRZY KATEGORIE STATYCZNE
           </Title>
-          <div className="flex flex-col gap-2 mt-2">
-            <div className="">
-              <Text>
-                • Business Plan Presentation — konkurencja, podczas której
-                Członkowie Zespołu wcielają się w rolę zarządu start-upu,
-                przykładowo tworzonych na zamówienie hamulców. Za pomocą
-                dziesięciominutowej prezentacji mają za zadanie przekonać
-                sędziów odgrywających inwestorów do wsparcia ich modelu
-                biznesowego.
-              </Text>
-            </div>
-            <div className="">
-              <Text>
-                • Cost and Manufacturing — konkurencja oceniają skrupulatność, z
-                jaką przygotowano kosztorys projektu oraz wiedzę Członków
-                Zespołu na temat kosztów materiałów oraz wytworzenia bolidu.
-              </Text>
-            </div>
-            <div className="">
-              <Text>
-                • Engineering Design — konkurencja polegająca na prezentacji
-                projektu bolidu. Sędziowie oceniają umiejętności inżynierskie
-                oraz pomysłowość Członków Zespołów przy projektowaniu zarówno
-                całokształtu, jak i poszczególnych systemów pojazdu. Jest to
-                najwyżej punktowana konkurencja statyczna, którą oceniają
-                eksperci z branży motoryzacyjnej.
-              </Text>
-            </div>
-          </div>
           <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-6">
-            <div className=" group relative h-80 rounded-md overflow-hidden">
-              <div className=" bg-white absolute w-0 group-hover:w-full hidden group-hover:block h-full z-20">
-                Test
-              </div>
-              <Image src="/images/FS/cost.png" alt="skidpad" fill />
-            </div>
-            <div className=" relative h-80 rounded-md overflow-hidden">
-              <Image src="/images/FS/engineering.png" alt="autocross" fill />
-            </div>
-            <div className=" relative h-80 rounded-md overflow-hidden">
-              <Image src="/images/FS/business.png" alt="endurance" fill />
-            </div>
+            <FlipCard
+              height={"h-80"}
+              src="/images/FS/cost.png"
+              title="Cost and Manufacturing"
+              text="Konkurencja oceniają skrupulatność, z jaką przygotowano kosztorys projektu oraz wiedzę Członków Zespołu na temat kosztów materiałów oraz wytworzenia bolidu."
+            />
+            <FlipCard
+              height={"h-80"}
+              src="/images/FS/engineering.png"
+              title="Engineering Design"
+              text="Konkurencja polegająca na prezentacji projektu bolidu. Sędziowie oceniają umiejętności inżynierskie oraz pomysłowość Członków Zespołów przy projektowaniu zarówno całokształtu, jak i poszczególnych systemów pojazdu. Jest to najwyżej punktowana konkurencja statyczna, którą oceniają eksperci z branży motoryzacyjnej."
+            />
+            <FlipCard
+              height={"h-80"}
+              src="/images/FS/business.png"
+              title="Business Plan Presentation"
+              text="Konkurencja, podczas której Członkowie Zespołu wcielają się w rolę zarządu start-upu, przykładowo tworzonych na zamówienie hamulców. Za pomocą dziesięciominutowej prezentacji mają za zadanie przekonać sędziów odgrywających inwestorów do wsparcia ich modelu biznesowego."
+            />
           </div>
         </div>
       </div>
@@ -127,3 +83,49 @@ const FSAbout: React.FC = () => {
 };
 
 export default FSAbout;
+
+interface FlipCardProps {
+  text: string;
+  src: string;
+  title: string;
+  height: string;
+}
+
+const FlipCard: React.FC<FlipCardProps> = ({ text, src, title, height }) => {
+  return (
+    <div className={`flip-card ${height} relative rounded-md overflow-hidden`}>
+      <div className="flip-card-inner">
+        <div className="flip-card-front relative w-full h-full">
+          <Image src={src} alt={title} layout="fill" objectFit="cover" />
+        </div>
+        <div className="flip-card-back absolute inset-0 z-20 flex flex-col justify-center items-center gap-4 p-8 bg-neutral-200">
+          <Title color="black" size="small">
+            {title}
+          </Title>
+          <Text>{text}</Text>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+{
+  /* <div className=" group relative h-80 rounded-md overflow-hidden">
+  <Image src="/images/FS/cost.png" alt="skidpad" fill />
+
+  <div className="absolute inset-0 bg-neutral-700 opacity-0 group-hover:opacity-90 transition duration-300 ease-in-out"></div>
+  <div className="absolute scale-x-0 group-hover:scale-x-100 opacity-0 group-hover:opacity-100 flex inset-0 gap-8 flex-col justify-center items-center text-white transition-all duration-300 ease-in-out">
+    {/* <Title size="medium">Business Plan Presentation</Title>
+    <div className="relative py-4">
+      <span className=" h-[1px] bg-customRed scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left block absolute top-0 left-0 right-0"></span>
+      <Text>
+        Konkurencja, podczas której Członkowie Zespołu wcielają się w rolę
+        zarządu start-upu, przykładowo tworzonych na zamówienie hamulców. Za
+        pomocą dziesięciominutowej prezentacji mają za zadanie przekonać sędziów
+        odgrywających inwestorów do wsparcia ich modelu biznesowego.
+      </Text>
+      <span className=" h-[1px] bg-customRed scale-x-0 group-hover:scale-x-100 transition-transform duration-1000 origin-left block absolute bottom-0 left-0 right-0"></span>
+    </div>
+  </div>
+</div>; */
+}

@@ -35,7 +35,7 @@ const SecondaryButton: React.FC<IconLinkProps> = ({
       <span
         className={`${
           darkMode ? "text-white" : "text-black"
-        } transition-colors duration-300 relative z-10 group-hover:text-customRed text-xs md:text-lg`}
+        } transition-colors duration-300 relative z-10 group-hover:text-customRed text-xs md:text-base`}
       >
         {buttonText}
         <div className="absolute left-0 bottom-0 w-0 h-0.5 bg-customRed group-hover:w-full transition-all duration-300 ease-in-out"></div>
