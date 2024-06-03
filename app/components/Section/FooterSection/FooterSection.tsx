@@ -19,7 +19,7 @@ import { useRouter } from "next/navigation";
 const FooterSection = () => {
   const handlePhoneClick = () => {
     // Przekierowuje użytkownika do aplikacji do dzwonienia z podanym numerem telefonu
-    window.location.href = "tel:+48123456789";
+    window.location.href = "tel:+48517350915";
   };
 
   const handleEmailClick = () => {
@@ -78,15 +78,15 @@ const FooterSection = () => {
                 </div>
                 <div className="font-black ">
                   <Text color="white" opacity1 hoverColor="red" small bold wide>
-                    +48 123 456 789
+                    +48 517 350 915
                   </Text>
                 </div>
               </div>
               <div
-                className="flex flex-col items-center cursor-pointer group"
+                className="flex flex-col sm:items-left items-center cursor-pointer group"
                 onClick={handleEmailClick}
               >
-                <div className="flex items-center gap-3 pb-1 uppercase">
+                <div className="flex items-center justify-start gap-3 pb-1 uppercase">
                   <svg
                     width="22"
                     height="22"
@@ -107,7 +107,7 @@ const FooterSection = () => {
                   </Title>
                 </div>
                 <Text color="white" opacity1 hoverColor="red" small bold wide>
-                  racing@gmial.com
+                  racing.pwr@gmail.com
                 </Text>
               </div>
               <div

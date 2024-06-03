@@ -15,7 +15,7 @@ const NewsSection = async () => {
   return (
     <div id="section-news" className="flex flex-col">
       <Container>
-        <div className="w-[75rem] pt-12">
+        <div className="pt-12">
           <NewsControls />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 my-10 relative border-none">
             {news.map((item, index) => (
