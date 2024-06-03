@@ -18,7 +18,7 @@ const HistorySection: React.FC<HistorySectionProps> = ({ aboutUs }) => {
           <div className="md:mb-8 hidden md:block">
             {aboutUs && <Title color="black">HISTORIA ZESPOŁU</Title>}
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 ">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-20 ">
             <div className="h-[22rem] md:h-full relative flex justify-center items-center order-3 md:order-1">
               <Image
                 className=""

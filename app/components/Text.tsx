@@ -46,7 +46,7 @@ const Text: React.FC<TextProps> = ({
     if (small) return "text-md md:text-xl";
     if (medium) return "text-xl md:text-3xl";
     if (extrasmall) return "text-xs";
-    return "text-xs sm:text-base";
+    return "text-xs sm:text-[14px] sm:leading-5";
   };
 
   const hoverColorClass = useMemo(() => {

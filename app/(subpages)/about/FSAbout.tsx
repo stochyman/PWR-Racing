@@ -107,7 +107,10 @@ const FSAbout: React.FC = () => {
             </div>
           </div>
           <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-6">
-            <div className=" relative h-80 rounded-md overflow-hidden">
+            <div className=" group relative h-80 rounded-md overflow-hidden">
+              <div className=" bg-white absolute w-0 group-hover:w-full hidden group-hover:block h-full z-20">
+                Test
+              </div>
               <Image src="/images/FS/cost.png" alt="skidpad" fill />
             </div>
             <div className=" relative h-80 rounded-md overflow-hidden">

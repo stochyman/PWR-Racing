@@ -31,7 +31,7 @@ const NewsCard: React.FC<NewsCardProps> = ({
       </div>
       <div
         className={` ${
-          whiteMode ? "bg-neutral-200" : "bg-white"
+          whiteMode ? "bg-neutral-200" : "bg-neutral-200"
         } w-full px-5 py-4 flex flex-col`}
       >
         <Text color="black" small wide bold opacity1 center>

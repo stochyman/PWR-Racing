@@ -61,9 +61,9 @@ const FirstSection = () => {
                   zawodów Formula SAE Italy w 2017 roku.
                 </Text>
               </div>
-              <Text color="red" opacity1 wide bold small>
+              <Title color="red" size="small">
                 WE TAKE IT TO THE NEXT LEVEL
-              </Text>
+              </Title>
               <button
                 onClick={handleScroll}
                 className="flex items-center py-2 text-white rounded hover:pl-8 transition-all duration-300 group"
