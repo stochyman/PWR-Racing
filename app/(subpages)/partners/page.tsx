@@ -37,7 +37,6 @@ const platinumSponsors = [
     name: "radiotechnika marketing.png",
     url: "https://radiotechnika marketing.pl",
   },
-  { name: "schaeffler.png", url: "https://schaeffler.pl" },
   { name: "siemens.png", url: "https://siemens.pl" },
   { name: "staubli.png", url: "https://staubli.pl" },
   { name: "top1karting_logo_rgb.svg", url: "https://top1karting_logo_rgb.pl" },
@@ -71,6 +70,7 @@ const goldSponsors = [
   { name: "protoplastic.png", url: "https://protoplastic.pl" },
   { name: "rs.png", url: "https://rs.pl" },
   { name: "speedgoat.png", url: "https://speedgoat.pl" },
+  { name: "schaeffler.png", url: "https://schaeffler.pl" },
   {
     name: "tenneco logo finalrgb.png",
     url: "https://tenneco logo finalrgb.pl",
@@ -100,7 +100,7 @@ const bronzeSponsors = [
   { name: "bl elektronik.png", url: "https://bl elektronik.pl" },
   { name: "centrum przyczep.png", url: "https://centrum przyczep.pl" },
   { name: "logo_cnc71.png", url: "https://logo_cnc71.pl" },
-  { name: "daga.webp", url: "https://daga.pl" },
+  { name: "daga.png", url: "https://daga.com.pl" },
   { name: "ec engineering.png", url: "https://ec engineering.pl" },
   { name: "elesa+ganter.jpg", url: "https://elesa+ganter.pl" },
   { name: "hamaton.png", url: "https://hamaton.pl" },
@@ -146,7 +146,7 @@ const SponsorList: React.FC<SponsorGridProps> = ({
         className={`${height} relative mx-6 rounded-md overflow-hidden duration-300 ease-in-out hover:scale-110`}
       >
         <Image
-          src={`/images/sponsors/${sponsorRank}/${sponsor.name}`}
+          src={`/images/sponsors/${sponsor.name}`}
           alt={sponsor.name}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
