@@ -170,10 +170,10 @@ const FooterSection = () => {
                 </FooterLink>
                 <FooterLink onClick={handleMapClick}>50-349 Wrocław</FooterLink>
                 <FooterLink onClick={handlePhoneClick}>
-                  +48 123 123 123
+                  +48 517 350 915
                 </FooterLink>
                 <FooterLink onClick={handleEmailClick}>
-                  mail@mail.com
+                  racing.pwr@gmail.com
                 </FooterLink>
               </ul>
             </div>

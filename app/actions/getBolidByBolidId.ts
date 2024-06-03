@@ -8,6 +8,7 @@ export async function getBolidByBolidId(bolidId: string) {
     },
     select: {
       parts: true,
+      year: true,
     },
   });
 

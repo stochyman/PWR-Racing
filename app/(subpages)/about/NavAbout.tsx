@@ -26,11 +26,11 @@ const NavAbout = () => {
               <div className="relative md:w-2/5 h-[20rem] md:h-auto">
                 <Image
                   className=""
-                  src="/images/joinus/photo1.png"
+                  src="/images/poznaj_nas.jpg"
                   alt="bolid"
                   layout="fill"
                   objectFit="cover"
-                  objectPosition="center 20%"
+                  objectPosition="center 10%"
                 />
               </div>
               <div className="md:w-3/5 flex flex-col gap-8">

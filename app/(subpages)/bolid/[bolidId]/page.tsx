@@ -37,7 +37,7 @@ const BolidPage = async ({ params }: { params: Iparams }) => {
         <Container>
           <div className="flex flex-col w-full py-8 md:py-16">
             <Title size="big" color="black">
-              OSIĄGNIECIA ZA SEZON 2022
+              OSIĄGNIECIA ZA SEZON {bolid.year}
             </Title>
 
             <div className="flex">
@@ -51,7 +51,7 @@ const BolidPage = async ({ params }: { params: Iparams }) => {
                   />
                   <div className=" absolute inset-0 bg-black opacity-50"></div>
                   <div className=" absolute inset-0 p-4 flex flex-col justify-between ">
-                    <Title size="small">FORMULA STUDENT ALPE ADRIA</Title>
+                    <Title size="small">FORMULA STUDENT GERMANY</Title>
                     <div className=" flex justify-between items-end ">
                       <div className=" ">
                         <Text extrasmall>6th Overall</Text>
@@ -111,7 +111,7 @@ const BolidPage = async ({ params }: { params: Iparams }) => {
                   />
                   <div className=" absolute inset-0 bg-black opacity-50"></div>
                   <div className=" absolute inset-0 p-4 flex flex-col justify-between">
-                    <Title size="small">FORMULA STUDENT ALPE ADRIA</Title>
+                    <Title size="small">FORMULA STUDENT ITALY</Title>
                     <div className=" flex justify-between items-end">
                       <div className="">
                         <Text extrasmall>6th Overall</Text>

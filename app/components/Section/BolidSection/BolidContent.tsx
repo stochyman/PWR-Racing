@@ -16,6 +16,7 @@ interface BolidData {
   mass: string;
   power: string;
 }
+
 const BolidContent: React.FC<BolidData> = ({
   name,
   year,
@@ -33,6 +34,22 @@ const BolidContent: React.FC<BolidData> = ({
     router.push(`/bolid/${bolid}#achievements`);
   };
 
+  const renderName = (name: string) => {
+    const lastChar = name.slice(-1);
+    const isSpecialChar = lastChar === "e" || lastChar === "b";
+
+    return (
+      <div className="uppercase flex items-baseline">
+        <Title color="red">{isSpecialChar ? name.slice(0, -1) : name}</Title>
+        {isSpecialChar && (
+          <Title color="red" size="medium">
+            {lastChar}
+          </Title>
+        )}
+      </div>
+    );
+  };
+
   return (
     <div className="relative flex flex-col">
       <Container>
@@ -44,9 +61,7 @@ const BolidContent: React.FC<BolidData> = ({
               <Title size="subtitle" color="gray">
                 {year}
               </Title>
-              <div className=" uppercase">
-                <Title color="red">{name}</Title>
-              </div>
+              {renderName(name)}
               <div className="my-2 sm:my-6">
                 <Text color="gray">{short_description}</Text>
               </div>
@@ -74,7 +89,7 @@ const BolidContent: React.FC<BolidData> = ({
               height={300}
             />
           </div>
-          <div className="gap-2 md:gap-4 flex lg:hidden ">
+          <div className="gap-2 md:gap-4 flex lg:hidden">
             <Button
               label="Więcej o bolidzie"
               onClick={() => bolidRedirect(name)}
