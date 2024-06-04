@@ -11,7 +11,7 @@ const FSAbout: React.FC = () => {
         <div className="w-full">
           <div className="">
             <Title wrap size="medium" color="black">
-              CZTERY KATEGORIE DYNAMICZNE
+              CZTERY KONKURENCJE DYNAMICZNE
             </Title>
             <div className=" grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4 gap-6 my-6">
               <FlipCard
@@ -55,7 +55,7 @@ const FSAbout: React.FC = () => {
           </div>
           <div className=" my-8 md:my-12">
             <Title wrap size="medium" color="black">
-              TRZY KATEGORIE STATYCZNE
+              TRZY KONKURENCJE STATYCZNE
             </Title>
             <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-6">
               <FlipCard
@@ -104,7 +104,7 @@ const FlipCard: React.FC<FlipCardProps> = ({ text, src, title, height }) => {
           <Title color="black" size="small">
             {title}
           </Title>
-          <Text>{text}</Text>
+          <Text extrasmall>{text}</Text>
         </div>
       </div>
     </div>

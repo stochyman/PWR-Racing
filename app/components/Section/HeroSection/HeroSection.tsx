@@ -52,13 +52,7 @@ const FirstSection = () => {
                   Zespół wyścigowy Formuły Student w Polsce. Od 2009 roku grupa
                   ok. 80 studentów i studentek wrocławskich uczelni co roku
                   konstruuje bolidy i startuje nimi w prestiżowych zawodach
-                  inżynierskich odbywających się na całym świecie. W swojej
-                  historii Zespół stworzył 12 bolidów spalinowych oraz 2
-                  elektryczne z systemami jazdy autonomicznej. Obecnie Zespół
-                  pracuje nad trzecią tego typu konstrukcją — RT14e. PWR Racing
-                  Team jest pierwszym polskim Zespołem Formuły Student, który
-                  zwyciężył całą edycję zawodów, co miało miejsce podczas
-                  zawodów Formula SAE Italy w 2017 roku.
+                  inżynierskich odbywających się na całym świecie.
                 </Text>
               </div>
               <Title color="red" size="small">

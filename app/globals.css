@@ -116,6 +116,12 @@ body,
   }
 }
 
+@media (max-width: 1024px) {
+  .footer_bug {
+    align-items: center;
+  }
+}
+
 .flip-card {
   perspective: 1000px;
 }

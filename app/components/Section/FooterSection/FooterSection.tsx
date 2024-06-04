@@ -83,10 +83,10 @@ const FooterSection = () => {
                 </div>
               </div>
               <div
-                className="flex flex-col sm:items-left items-center cursor-pointer group"
+                className="flex flex-col cursor-pointer group footer_bug"
                 onClick={handleEmailClick}
               >
-                <div className="flex items-center justify-start gap-3 pb-1 uppercase">
+                <div className="flex items-center gap-3 pb-1 uppercase ">
                   <svg
                     width="22"
                     height="22"
@@ -165,9 +165,7 @@ const FooterSection = () => {
                 Siedziba
               </Text>
               <ul className="mt-1 md:mt-2">
-                <FooterLink onClick={handleMapClick}>
-                  ul. Słopocka 16
-                </FooterLink>
+                <FooterLink onClick={handleMapClick}>ul. Sopocka 16</FooterLink>
                 <FooterLink onClick={handleMapClick}>50-349 Wrocław</FooterLink>
                 <FooterLink onClick={handlePhoneClick}>
                   +48 517 350 915

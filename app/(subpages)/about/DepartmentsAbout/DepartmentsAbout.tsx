@@ -16,12 +16,113 @@ type DepartmentsAboutProps = {
 
 const DepartmentsAbout: React.FC<DepartmentsAboutProps> = ({ lightMode }) => {
   const departments = [
-    "mechanical",
-    "composites",
-    "marketing",
-    "software",
-    "electrical",
-    "vehicle performance",
+    {
+      name: "mechanical",
+      description:
+        "Dział zajmuje się projektowaniem i budową układu zawieszenia. Odpowiada również za elementy autonomicznego układu kierowniczego, hamulcowego, części mocowania czy struktury metalowe w monocoque.",
+      responsibilities: [
+        {
+          text: "projektowaniem i budową układu zawieszenia",
+          icon: "plik.svg",
+        },
+        {
+          text: "projektowaniem i budową elementów autonomicznego układu kierowniczego",
+          icon: "kolo.svg",
+        },
+        {
+          text: "projektowaniem i budową układu hamulcowego",
+          icon: "klucz.svg",
+        },
+        {
+          text: "projektowaniem części mocowania i struktury metalowej w monocoque",
+          icon: "box.svg",
+        },
+      ],
+    },
+    {
+      name: "composites",
+      description:
+        "Dział odpowiada za własnoręczne wykonanie wszystkich elementów kompozytowych obecnych na bolidzie. Poczynając od największego elementu, czyli struktury nośnej, poprzez pakiet aerodynamiczny kończąc na ergonomii kierowcy oraz struktury ochronnej na baterię wysokiego napięcia.",
+      responsibilities: [
+        {
+          text: "modelowaniem elementów kompozytowych w programach CAD",
+          icon: "plik.svg",
+        },
+        {
+          text: "symulacjami wytrzymałościowymi oraz optymalizacją struktur kompozytowych",
+          icon: "kolo.svg",
+        },
+        { text: "symulacjami CFD pakietu aerodynamicznego", icon: "klucz.svg" },
+        {
+          text: "wykonaniem oraz badaniami wytrzymałościowymi elementów kompozytowych",
+          icon: "box.svg",
+        },
+      ],
+    },
+    {
+      name: "marketing",
+      description:
+        "Dział zajmujący się wizerunkiem, promocją Zespołu, a także logistyką i organizacją wydarzeń. Ponadto odpowiada za przygotowanie konkurencji statycznych na zawody Formuły Student, takich jak prezentacja biznesowa.",
+      responsibilities: [
+        { text: "tworzeniem materiałów promocyjnych", icon: "plik.svg" },
+        { text: "przygotowaniem prezentacji biznesowych", icon: "kolo.svg" },
+        {
+          text: "koordynacją zamówień, analizą danych, optymalizacją pracy Zespołu",
+          icon: "klucz.svg",
+        },
+        { text: "organizacją wydarzeń", icon: "box.svg" },
+      ],
+    },
+    {
+      name: "software",
+      description:
+        "Dział zajmujący się rozwojem systemu autonomicznego oraz programowaniem mikroprocesorów sterujących interfejsem kierowcy, hamowaniem lub skręcaniem pojazdu. Odpowiada za działanie systemów planowania trasy, kontroli pojazdu czy percepcji, gdy w bolidzie nie znajduje się kierowca. Oprogramowanie pisane jest w takich językach programowania, jak C, C++, czy Python.",
+      responsibilities: [
+        {
+          text: "opracowywaniem algorytmów usprawniających jazdę autonomiczną",
+          icon: "plik.svg",
+        },
+        { text: "rozwojem systemów embedded", icon: "kolo.svg" },
+      ],
+    },
+    {
+      name: "electrical",
+      description:
+        "Dział zajmujący się projektowaniem płytek PCB, tworzeniem wiązek wysokiego i niskiego napięcia oraz budową autorskiej baterii wysokiego napięcia.",
+      responsibilities: [
+        { text: "projektowaniem i wykonawstwem płytek PCB", icon: "plik.svg" },
+        {
+          text: "projektowaniem w programach CAD oraz wykonawstwem wiązki niskiego oraz wysokiego napięcia zgodnych ze standardami motor sportowymi",
+          icon: "kolo.svg",
+        },
+        {
+          text: "modelowaniem obudów na elektronikę w programach CAD",
+          icon: "klucz.svg",
+        },
+        {
+          text: "projektowaniem oraz wykonawstwem baterii wysokiego napięcia",
+          icon: "box.svg",
+        },
+        {
+          text: "symulacjami termicznymi elektroniki oraz baterii",
+          icon: "plik.svg",
+        },
+        { text: "projektowaniem magistrali CAN", icon: "kolo.svg" },
+      ],
+    },
+    {
+      name: "vehicle performance",
+      description:
+        "Dział zajmujący się maksymalizacją osiągów pojazdu, kinematyką i dynamiką pojazdu, akwizycją danych, układem napędowym oraz organizacją testów.",
+      responsibilities: [
+        { text: "Symulacjami dynamiki pojazdu", icon: "plik.svg" },
+        {
+          text: "Projektowaniem oraz rozwojem układu napędowego",
+          icon: "kolo.svg",
+        },
+        { text: "Analizą danych z przejazdów", icon: "klucz.svg" },
+      ],
+    },
   ];
 
   const handleScrollToSection = (id: string) => {
@@ -92,8 +193,10 @@ const DepartmentsAbout: React.FC<DepartmentsAboutProps> = ({ lightMode }) => {
         <div className="flex flex-col">
           {departments.map((department, index) => (
             <DepartmentElement
-              key={department}
-              department={department}
+              key={department.name}
+              department={department.name}
+              responsibilities={department.responsibilities}
+              text={department.description}
               index={index}
               lightMode={lightMode}
             />

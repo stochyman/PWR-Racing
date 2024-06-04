@@ -22,7 +22,6 @@ const getMembersData = async (names: string[]): Promise<TeamMember[]> => {
   for (const member of names) {
     const [name, ...rest] = member.split(" ");
     const surname = rest.join(" ");
-    console.log([name, surname]);
     const memberData = await getTeamByFullName(name, surname);
     if (memberData.length > 0) {
       teamMembers.push(memberData[0]);

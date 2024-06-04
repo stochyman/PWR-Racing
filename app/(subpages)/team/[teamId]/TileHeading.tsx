@@ -7,6 +7,7 @@ import { useRouter } from "next/navigation";
 import { FaEnvelope } from "react-icons/fa";
 import Button from "../../../components/Button";
 import { FiPhone } from "react-icons/fi";
+import { opendir } from "fs";
 
 interface Member {
   name: string;
@@ -53,12 +54,22 @@ const TileHeading: React.FC<ParamsTileHeading> = ({
     >
       <div
         className={`${
-          opiekun ? "" : "capitalize"
-        } p-3 absolute inset-0 flex flex-col justify-between bg-black translate-y-[82%] group-hover:opacity-[98%] group-hover:translate-y-0 group-hover:p-6 transition duration-300 ease-in-out`}
+          opiekun
+            ? "bottom-0"
+            : "capitalize absolute inset-0 translate-y-[82%] group-hover:opacity-[98%] group-hover:translate-y-0 group-hover:p-6 transition duration-300 ease-in-out"
+        } absolute p-3 flex flex-col justify-between bg-black`}
       >
         <div className="absolute inset-0 z-0 w-full h-full rounded-full blur-3xl bg-white opacity-15"></div>
-        <div className="flex flex-col group-hover:my-1 transition-all duration-300 ease-in-out z-30">
-          <div className="group-hover:text-center w-full duration-300 ease-in-out">
+        <div
+          className={` ${
+            opiekun ? "" : "group-hover:my-1"
+          }flex flex-col transition-all duration-300 ease-in-out z-30`}
+        >
+          <div
+            className={` ${
+              opiekun ? "" : "group-hover:text-center"
+            } w-full duration-300 ease-in-out`}
+          >
             <Text color="white" opacity1 small wide bold center>
               {member.name} {member.surname}
             </Text>
@@ -74,7 +85,11 @@ const TileHeading: React.FC<ParamsTileHeading> = ({
           </div>
         </div>
 
-        <div className=" relative flex py-4 my-4 items-center">
+        <div
+          className={`${
+            opiekun ? "hidden" : "flex"
+          } relative py-4 my-4 items-center`}
+        >
           <div className="absolute ml-[3px] h-full w-[2px] bg-neutral-400 rounded-lg"></div>
           <div className="flex flex-col gap-2 z-30 text-white max-h-28 w-full overflow-scroll overflow-x-hidden custom-scrollbar">
             {roleHistory[`${member.name} ${member.surname}`]?.map(

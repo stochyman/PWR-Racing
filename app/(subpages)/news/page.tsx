@@ -12,6 +12,7 @@ const AboutUs = async () => {
           {news.map((item, index) => (
             <NewsCard
               key={index}
+              id={item.id}
               title={item.title}
               short_description={item.short_description}
               length_time={item.length_time}

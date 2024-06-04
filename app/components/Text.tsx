@@ -13,6 +13,7 @@ interface TextProps {
   opacity1?: boolean;
   color?: "white" | "black" | "red" | "gray";
   hoverColor?: "white" | "black" | "red" | "gray";
+  alignCenter?: boolean;
 }
 
 const Text: React.FC<TextProps> = ({
@@ -27,6 +28,7 @@ const Text: React.FC<TextProps> = ({
   opacity1,
   color,
   hoverColor,
+  alignCenter,
 }) => {
   const colorClass = () => {
     switch (color) {
@@ -78,6 +80,7 @@ const Text: React.FC<TextProps> = ({
       ${center ? "justify-center" : "text-justify"}
       ${wide ? "" : "tracking-tighter"}
       ${bold ? "font-bold" : "font-normal"}
+      ${alignCenter ? "text-center" : ""}
     `}
     >
       {children}

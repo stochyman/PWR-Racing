@@ -27,8 +27,6 @@ const UserCard: React.FC<UserCardProps> = ({
   teamId,
   roleHistory,
 }) => {
-  console.log(member.name[0].toUpperCase() + member.name.slice(1));
-  console.log(member.surname[0].toUpperCase() + member.surname.slice(1));
   return (
     <div className="relative group">
       <div className="absolute inset-0 z-0 w-full h-full rounded-full blur-3xl bg-white opacity-10"></div>

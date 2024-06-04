@@ -20,10 +20,12 @@ const NewsSection = async () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 my-10 relative border-none">
             {news.map((item, index) => (
               <NewsCard
+                id={item.id}
                 whiteMode
                 key={index}
                 title={item.title}
                 short_description={item.short_description}
+                long_description={item.long_description}
                 length_time={item.length_time}
                 logo={item.logo || "/images/logo-czarne.svg"}
                 main_image={item.main_image}
