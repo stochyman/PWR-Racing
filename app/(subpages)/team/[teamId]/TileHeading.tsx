@@ -74,7 +74,11 @@ const TileHeading: React.FC<ParamsTileHeading> = ({
               {member.name} {member.surname}
             </Text>
           </div>
-          <div className="group-hover:text-center w-full transition-all duration-300 ease-in-out capitalize">
+          <div
+            className={`${
+              opiekun ? "" : "group-hover:text-center "
+            }w-full transition-all duration-300 ease-in-out capitalize`}
+          >
             <Text color="red" opacity1 bold center>
               {isHovered
                 ? member.currentRole
