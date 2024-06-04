@@ -30,7 +30,7 @@ const NewsPage = async ({ params }: { params: Iparams }) => {
           <div className=" relative flex justify-end items-center">
             <div className="absolute z-20 inset-0 flex flex-col justify-center my-auto bg-neutral-200 rounded-md w-[30rem] h-[26rem] p-12 items-center gap-8">
               <div className="py-8 border-b-2 border-black px-4">
-                <Text color="black" medium bold opacity1 alignCenter>
+                <Text color="black" medium bold opacity1 alignCenter center>
                   {news.title}
                 </Text>
               </div>
