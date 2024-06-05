@@ -73,10 +73,31 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
     });
   });
 
+  const departmentOrder = [
+    "management",
+    "marketing",
+    "composites",
+    "software",
+    "electrical",
+    "mechanical",
+    "vehicle performance",
+    "workshop",
+    "drivers",
+    "opiekun naukowy",
+  ];
+
   const sortedDepartments = Object.keys(membersByDepartment).sort((a, b) => {
-    if (a === "management") return -1;
-    if (b === "management") return 1;
-    return 0;
+    const aIndex = departmentOrder.indexOf(a);
+    const bIndex = departmentOrder.indexOf(b);
+
+    if (a === "opiekun naukowy") return 1;
+    if (b === "opiekun naukowy") return -1;
+
+    if (aIndex === -1 && bIndex === -1) return a.localeCompare(b);
+    if (aIndex === -1) return 1;
+    if (bIndex === -1) return -1;
+
+    return aIndex - bIndex;
   });
 
   return (

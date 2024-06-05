@@ -10,6 +10,8 @@ import LoginModal from "./components/modals/LoginModal";
 import ToasterProvider from "./providers/ToasterProvider";
 import FooterSection from "./components/Section/FooterSection/FooterSection";
 import ClosestSectionProvider from "./components/Navbar/ClosestSectionContext";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const font = Open_Sans({ subsets: ["latin"] });
 const syncopate = Syncopate({ subsets: ["latin"], weight: ["400", "700"] });
@@ -38,6 +40,8 @@ export default function RootLayout({
             {children}
             <FooterSection />
           </ClosestSectionProvider>
+          <SpeedInsights />
+          <Analytics />
         </ClientOnly>
       </body>
     </html>

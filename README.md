@@ -1,15 +1,12 @@
 <!-- 6353 61,4GB -->
 
+<!--
+git add .
+git commit -m "analitics"
+git push github main
+-->
+
 <!--! loga sponsorów -->
-<!--! dociete bolidy -->
-<!--! dane o kazdym członku koła -->
-
-<!--TODO czy robimy animacje do zmiany bolidów? - TAK wjazd z lewej lub prawej -->
-<!--TODO odstepy miedzy sekcjami za male-->
-<!--TODO wrzucenie zdjec do bazy i czlonkwo z rolami-->
-<!--TODO przekierowanie dla stron bez podanego bolidu i sprobowac ogarnac jakby ktos wpisal np z malej literki-->
-
-<!--TODO roblemy z typami w sliderach(sprawdzić czy gdzieś indziej też nie ma) -->
 <!--TODO errory z img -->
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
