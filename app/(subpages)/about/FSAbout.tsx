@@ -59,19 +59,19 @@ const FSAbout: React.FC = () => {
             </Title>
             <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-6">
               <FlipCard
-                height={"h-80"}
+                height={"h-56 md:h-80"}
                 src="/images/FS/cost.png"
                 title="Cost and Manufacturing"
                 text="Konkurencja oceniają skrupulatność, z jaką przygotowano kosztorys projektu oraz wiedzę Członków Zespołu na temat kosztów materiałów oraz wytworzenia bolidu."
               />
               <FlipCard
-                height={"h-80"}
+                height={"h-56 md:h-80"}
                 src="/images/FS/engineering.png"
                 title="Engineering Design"
                 text="Konkurencja polegająca na prezentacji projektu bolidu. Sędziowie oceniają umiejętności inżynierskie oraz pomysłowość Członków Zespołów przy projektowaniu zarówno całokształtu, jak i poszczególnych systemów pojazdu. Jest to najwyżej punktowana konkurencja statyczna, którą oceniają eksperci z branży motoryzacyjnej."
               />
               <FlipCard
-                height={"h-80"}
+                height={"h-56 md:h-80"}
                 src="/images/FS/business.png"
                 title="Business Plan Presentation"
                 text="Konkurencja, podczas której Członkowie Zespołu wcielają się w rolę zarządu start-upu, przykładowo tworzonych na zamówienie hamulców. Za pomocą dziesięciominutowej prezentacji mają za zadanie przekonać sędziów odgrywających inwestorów do wsparcia ich modelu biznesowego."

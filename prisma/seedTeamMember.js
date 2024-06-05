@@ -2,42 +2,50 @@ const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 
 async function main() {
-  const membersToUpdate = [
-    { name: "Paweł", surname: "Wójcik" },
-    { name: "Igor", surname: "Wawrzyniak" },
-    { name: "Jakub", surname: "Drzewiecki" },
-    { name: "Jakub", surname: "Piętowski" },
-    { name: "Kacper", surname: "Śliwa" },
-    { name: "Maksymilian", surname: "Kamiński" },
-    { name: "Rafał", surname: "Dziki" },
-    { name: "Maksymilian", surname: "Musiał" },
-  ];
+  const memberToUpdate = { name: "Piotr", surname: "Osiński" };
 
-  for (const member of membersToUpdate) {
-    const existingMember = await prisma.teamMember.findFirst({
-      where: {
-        name: { equals: member.name, mode: "insensitive" },
-        surname: { equals: member.surname, mode: "insensitive" },
-      },
-    });
+  const existingMember = await prisma.teamMember.findFirst({
+    where: {
+      name: { equals: memberToUpdate.name, mode: "insensitive" },
+      surname: { equals: memberToUpdate.surname, mode: "insensitive" },
+    },
+  });
 
-    if (existingMember) {
-      await prisma.teamMember.update({
-        where: { id: existingMember.id },
-        data: {
-          roles: {
-            push: {
-              department: "drivers",
-              role: "kierowca",
-              bolidName: "RT14e",
-            },
+  if (existingMember) {
+    // Jeśli członek istnieje, dodaj nową rolę
+    await prisma.teamMember.update({
+      where: { id: existingMember.id },
+      data: {
+        roles: {
+          push: {
+            department: "Composites",
+            role: "Member",
+            bolidName: "RT14e",
           },
         },
-      });
-      console.log(`Updated roles for ${member.name} ${member.surname}`);
-    } else {
-      console.log(`Member ${member.name} ${member.surname} not found`);
-    }
+      },
+    });
+    console.log(
+      `Updated roles for ${memberToUpdate.name} ${memberToUpdate.surname}`
+    );
+  } else {
+    // Jeśli członek nie istnieje, dodaj nowego członka zespołu z odpowiednimi danymi
+    await prisma.teamMember.create({
+      data: {
+        name: memberToUpdate.name,
+        surname: memberToUpdate.surname,
+        roles: [
+          {
+            department: "Composites",
+            role: "Member",
+            bolidName: "RT14e",
+          },
+        ],
+      },
+    });
+    console.log(
+      `Created new team member ${memberToUpdate.name} ${memberToUpdate.surname}`
+    );
   }
 }
 

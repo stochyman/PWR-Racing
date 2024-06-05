@@ -113,11 +113,11 @@ const SponsorsSection = () => {
       onMouseLeave={onMouseLeave}
       onMouseUp={onMouseUp}
       onMouseMove={onMouseMove}
-      className="  relative bg-white overflow-hidden flex items-center w-full h-[100px] md:h-[200px]"
+      className="  relative bg-white overflow-hidden animation-container flex items-center w-full h-[100px] md:h-[200px]"
       style={{ overflowX: "auto", cursor: isDragging ? "grabbing" : "grab" }}
     >
       {/* <div className="relative h-full"> */}
-      <div className="relative h-full ">
+      <div className="relative h-full">
         <div className="flex gap-20 select-none h-full">
           {sponsors.map((src, index) => (
             <div key={index} className="relative h-full w-36 md:w-60">
