@@ -20,7 +20,7 @@ const BolidPage = async ({ params }: { params: Iparams }) => {
   return (
     <div className="flex flex-col pt-[100px]">
       <BolidSection presetBolid={bolidId} />
-      <div className="flex overflow-x-auto">
+      {/* <div className="flex overflow-x-auto">
         {[1, 2, 3, 4, 5, 6].map((num) => (
           <div key={num} className="flex-shrink-0 w-[300px] md:w-[400px]">
             <Image
@@ -32,7 +32,7 @@ const BolidPage = async ({ params }: { params: Iparams }) => {
             />
           </div>
         ))}
-      </div>
+      </div> */}
       <div className=" w-full" id="achievements">
         <Container>
           <div className="flex flex-col w-full py-8 md:py-16">
