@@ -38,14 +38,18 @@ const GarageAbout: React.FC = () => {
                 />
               </div>
               <Text color="black">
-                Pellentesque sollicitudin at justo vel consectetur. Pellentesque
-                habitant morbi tristique senectus et netus et malesuada fames ac
-                turpis egestas. Cras finibus nibh dui, eu pellentesque odio
-                dictum a. Quisque scelerisque, lorem quis venenatis ultrices,
-                tortor lectus aliquam lectus, sed aliquam lorem sem sit amet
-                metus. In efficitur metus eget justo imperdiet pretium. Cras
-                bibendum sit amet diam quis venenatis. Quisque vulputate arcu
-                velit, et hendrerit est dignissim luctus. Cras a luctus leo.
+                Przy ulicy Sopockiej 16, w spokojnej okolicy Wrocławia, znajdują
+                się nasze warsztaty – garaże, w których z pasją i zaangażowaniem
+                pracujemy nad naszymi bolidami. Te pięć przestronnych garaży to
+                nasza strefa kreatywności i innowacji, gdzie każdego dnia zespół
+                PWR Racing Team stawia czoła nowym wyzwaniom inżynieryjnym.
+                Każdy z garaży jest dostosowany do specyficznych potrzeb naszych
+                działów, zapewniając optymalne warunki do pracy nad
+                zawieszeniem, aerodynamiką, elektroniką czy systemami
+                autonomicznymi naszych bolidów. Przestrzeń ta nie tylko sprzyja
+                rozwojowi technologicznemu, ale również stanowi miejsce
+                integracji zespołu, wymiany wiedzy i wspólnego rozwiązywania
+                problemów.
               </Text>
               <div className="flex flex-col md:flex-row gap-6 md:gap-0 justify-between items-center">
                 <div

@@ -2,7 +2,7 @@
 
 <!--
 git add .
-git commit -m "analitics"
+git commit -m "tekst"
 git push github main
 -->
 
