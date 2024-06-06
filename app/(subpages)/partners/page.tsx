@@ -53,7 +53,6 @@ const platinumSponsors = [
 const goldSponsors = [
   { name: "adbl.png", url: "https://adbl.pl" },
   { name: "airtech.png", url: "https://airtech.pl" },
-  { name: "nc-tech.png", url: "https://airtech.pl" },
   { name: "filipowicz pawel.png", url: "https://hellermanntyton.pl" },
   { name: "avl.svg", url: "https://avl.pl" },
   { name: "ams świdnica.png", url: "https://ams świdnica.pl" },
@@ -137,6 +136,7 @@ const bronzeSponsors = [
   { name: "logo_igus.png", url: "https://logo_igus.pl" },
   { name: "milar.png", url: "https://milar.pl" },
   { name: "miwa.png", url: "https://miwa.pl" },
+  { name: "nc-tech.png", url: "https://airtech.pl" },
   { name: "N-POL cutting tools.png", url: "https://miwa.pl" },
   { name: "metalpol.png", url: "https://miwa.pl" },
   { name: "oberon.png", url: "https://oberon.pl" },
