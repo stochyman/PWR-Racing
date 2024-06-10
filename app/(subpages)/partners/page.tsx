@@ -36,7 +36,7 @@ const platinumSponsors = [
   { name: "logo_amkmotion rgb.png", url: "https://logo_amkmotion rgb.pl" },
   { name: "mahle.png", url: "https://mahle.pl" },
   { name: "mibm.png", url: "https://mibm.pl" },
-  { name: "premium solutions.png", url: "https://premium solutions.pl" },
+  { name: "premium solutions.png", url: "https://premiumsolutions.pl/" },
   { name: "pts waś_logo2023.jpg", url: "https://pts waś_logo2023.pl" },
   {
     name: "radiotechnika marketing.png",
