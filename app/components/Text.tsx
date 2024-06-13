@@ -69,7 +69,7 @@ const Text: React.FC<TextProps> = ({
   }, [hoverColor]);
 
   return (
-    <h1
+    <p
       className={`
       font-openSans
       duration-300 ease-in-out
@@ -84,7 +84,7 @@ const Text: React.FC<TextProps> = ({
     `}
     >
       {children}
-    </h1>
+    </p>
   );
 };
 // ??? leading-4 wide
