@@ -42,8 +42,7 @@ const Department: React.FC<DepartmentProps> = ({ department }) => {
               />
               <path
                 id="Vector 2"
-                d="M15.771
-                5 13.0408L19.356 16.301L15.7715 19.5611"
+                d="M15.7715 13.0408L19.356 16.301L15.7715 19.5611"
                 stroke="white"
               />
             </g>
