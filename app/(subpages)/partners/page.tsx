@@ -88,7 +88,7 @@ const goldSponsors = [
     url: "https://tenneco logo finalrgb.pl",
   },
   { name: "vector.png", url: "https://vector.pl" },
-  { name: "Wolfratech_Logo.png", url: "https://adbl.pl" },
+  { name: "Wolfratech_Logo.png", url: "http://www.wolfratech.pl/" },
   { name: "WAMTECHNIK_Logo_NeutralBlack-1.png", url: "https://adbl.pl" },
 ];
 

@@ -2,7 +2,7 @@
 
 <!--
 git add .
-git commit -m "tekst"
+git commit -m "link"
 git push github main
 -->
 
