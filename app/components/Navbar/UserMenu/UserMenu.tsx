@@ -138,21 +138,25 @@ const UserMenu = () => {
             <div className="w-full h-[1px] bg-black"></div>
             <div className="social-responsive flex items-center gap-4 my-2 mx-3 ">
               <SocialIcons
+                black
                 href="https://www.facebook.com/PWRRacingTeam"
                 icon={FaFacebookF}
                 ariaLabel="Facebook"
               />
               <SocialIcons
+                black
                 href="https://www.instagram.com/pwrracingteam/"
                 icon={FaInstagram}
                 ariaLabel="Instagram"
               />
               <SocialIcons
+                black
                 href="https://www.linkedin.com/company/pwr-racing-team/posts/?feedView=all"
                 icon={FaLinkedinIn}
                 ariaLabel="LinkedIn"
               />
               <SocialIcons
+                black
                 href="https://www.youtube.com/@PWRRacingTeam"
                 icon={FaYoutube}
                 ariaLabel="YouTube"

@@ -98,12 +98,6 @@ body,
   transition: fill 0.3s ease-in-out;
 }
 
-@media (max-width: 1620px) {
-  .social-responsive {
-    display: none;
-  }
-}
-
 @media (max-width: 1410px) {
   .nav-responsive {
     display: none;
