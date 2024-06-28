@@ -35,21 +35,9 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   const [isHovered, setIsHovered] = useState(false);
 
-  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-    if (hoverText) {
-      if (hoverText.includes("@")) {
-        window.location.href = `mailto:${hoverText}`;
-      } else {
-        window.location.href = `tel:${hoverText}`;
-      }
-    } else if (onClick) {
-      onClick(e);
-    }
-  };
-
   return (
     <button
-      onClick={handleClick}
+      onClick={onClick}
       disabled={disabled}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -92,7 +80,7 @@ const Button: React.FC<ButtonProps> = ({
             isHovered ? "opacity-100" : "opacity-0"
           }`}
         >
-          {hoverText.includes("@") ? hoverText : formatPhoneNumber(hoverText)}
+          {hoverText.includes("+") ? formatPhoneNumber(hoverText) : hoverText}
         </span>
       )}
     </button>

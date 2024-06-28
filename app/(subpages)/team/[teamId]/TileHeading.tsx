@@ -40,14 +40,22 @@ const handlePhone = (phoneNumber: string) => {
 
 const handleMail = (email: string) => {
   return () => {
-    navigator.clipboard
-      .writeText(email)
-      .then(() => {
-        toast.success(`E-mail skopiowany do schowka!`);
-      })
-      .catch((err) => {
-        toast.error("Nie udało się skopiować maila.");
-      });
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      window.location.href = `mailto:${email}`;
+    } else {
+      navigator.clipboard
+        .writeText(email)
+        .then(() => {
+          toast.success(`E-mail skopiowany do schowka! ${email}`);
+        })
+        .catch((err) => {
+          toast.error("Nie udało się skopiować maila.");
+        });
+    }
   };
 };
 
