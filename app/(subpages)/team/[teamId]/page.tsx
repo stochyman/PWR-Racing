@@ -5,6 +5,7 @@ import Title from "@/app/components/Title";
 import Image from "next/image";
 import ClientSlider from "./ClientSlider";
 import UserCard from "./UserCard";
+import { parseBolidName, sortRoles } from "./utils";
 
 interface Iparams {
   teamId?: string;
@@ -38,20 +39,6 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
 
   const membersByDepartment: MembersByDepartment = {};
   const roleHistory: RoleHistory = {};
-
-  const parseBolidName = (bolidName: string) => {
-    if (bolidName === "RTX") return 10;
-    const match = bolidName.match(/RT(\d+)/);
-    return match ? parseInt(match[1], 10) : 0;
-  };
-
-  const sortRoles = (roles: RoleHistoryItem[]) => {
-    return roles.sort((a, b) => {
-      const aValue = parseBolidName(a.bolidName);
-      const bValue = parseBolidName(b.bolidName);
-      return bValue - aValue;
-    });
-  };
 
   team.forEach((member) => {
     const memberFullName = `${member.name} ${member.surname}`;
