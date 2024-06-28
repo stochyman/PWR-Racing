@@ -8,6 +8,7 @@ import { FaEnvelope } from "react-icons/fa";
 import Button from "../../../components/Button";
 import { FiPhone } from "react-icons/fi";
 import { opendir } from "fs";
+import { toast } from "react-hot-toast";
 
 interface Member {
   name: string;
@@ -31,6 +32,25 @@ interface ParamsTileHeading {
   email?: string;
 }
 
+const handlePhone = (phoneNumber: string) => {
+  return () => {
+    window.location.href = `tel:${phoneNumber}`;
+  };
+};
+
+const handleMail = (email: string) => {
+  return () => {
+    navigator.clipboard
+      .writeText(email)
+      .then(() => {
+        toast.success(`E-mail skopiowany do schowka!`);
+      })
+      .catch((err) => {
+        toast.error("Nie udało się skopiować maila.");
+      });
+  };
+};
+
 const TileHeading: React.FC<ParamsTileHeading> = ({
   opiekun,
   member,
@@ -39,12 +59,6 @@ const TileHeading: React.FC<ParamsTileHeading> = ({
   email,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
-
-  const router = useRouter();
-
-  const handleRedirect = () => {
-    router.push("/contact");
-  };
 
   return (
     <div
@@ -116,7 +130,7 @@ const TileHeading: React.FC<ParamsTileHeading> = ({
           {phoneNumber && (
             <Button
               label="Zadzwoń do mnie!"
-              onClick={handleRedirect}
+              onClick={handlePhone(phoneNumber)}
               outline
               icon={FiPhone}
               hoverText={phoneNumber}
@@ -125,9 +139,8 @@ const TileHeading: React.FC<ParamsTileHeading> = ({
           {email && (
             <Button
               label="Napisz do mnie!"
-              onClick={handleRedirect}
+              onClick={handleMail(email)}
               icon={FaEnvelope}
-              hoverText={email}
             />
           )}
         </div>

@@ -39,6 +39,20 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
   const membersByDepartment: MembersByDepartment = {};
   const roleHistory: RoleHistory = {};
 
+  const parseBolidName = (bolidName: string) => {
+    if (bolidName === "RTX") return 10;
+    const match = bolidName.match(/RT(\d+)/);
+    return match ? parseInt(match[1], 10) : 0;
+  };
+
+  const sortRoles = (roles: RoleHistoryItem[]) => {
+    return roles.sort((a, b) => {
+      const aValue = parseBolidName(a.bolidName);
+      const bValue = parseBolidName(b.bolidName);
+      return bValue - aValue;
+    });
+  };
+
   team.forEach((member) => {
     const memberFullName = `${member.name} ${member.surname}`;
 
@@ -72,6 +86,10 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
       }
     });
   });
+
+  for (const memberFullName in roleHistory) {
+    roleHistory[memberFullName] = sortRoles(roleHistory[memberFullName]);
+  }
 
   const departmentOrder = [
     "management",
@@ -145,10 +163,10 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
                         .sort((a, b) => {
                           const isLeaderA = a.currentRole
                             .toLowerCase()
-                            .includes("lider");
+                            .includes("leader");
                           const isLeaderB = b.currentRole
                             .toLowerCase()
-                            .includes("lider");
+                            .includes("leader");
                           if (isLeaderA && !isLeaderB) return -1;
                           if (!isLeaderA && isLeaderB) return 1;
                           if (isLeaderA && isLeaderB) return 0;

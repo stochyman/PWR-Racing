@@ -49,7 +49,7 @@ const NewsPage = async ({ params }: { params: Iparams }) => {
             </div>
           </div>
 
-          <div className=" flex flex-col gap-6 mt-12">
+          <div className=" flex flex-col gap-6 mt-12 w-2/3 mx-auto">
             {news.content.map((paragraph: { text: string }, index: number) => (
               <Text color="gray" key={index}>
                 {paragraph.text}
