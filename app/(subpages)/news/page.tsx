@@ -2,11 +2,15 @@
 import Container from "@/app/components/Container";
 import NewsCard from "@/app/components/NewsCard";
 import { fetchNews } from "@/app/actions/getNews";
+import Title from "@/app/components/Title";
 
 const AboutUs = async () => {
   const news = await fetchNews();
   return (
-    <div className=" pt-[100px] md:pt-[120px] bg-neutral-900">
+    <div className=" flex flex-col items-center pt-[100px] md:pt-[120px] bg-neutral-900">
+      <div className="py-4 my-4 md:my-12 border-b-2 md:w-fit px-8 border-white uppercase">
+        <Title>AKTUALNOŚCI</Title>
+      </div>
       <Container>
         <div className="my-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
           {news.map((item, index) => (
