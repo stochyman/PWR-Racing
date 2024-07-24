@@ -14,9 +14,16 @@ import useRegisterModal from "@/app/hooks/useRegisterModal";
 import useLoginModal from "@/app/hooks/useLoginModal";
 import SocialIcons from "./SocialIcons";
 import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
+import LangButton from "./LangButton";
 
-const UserMenu = () => {
+interface UserMenuProps {
+  lang: string;
+}
+
+const UserMenu: React.FC<UserMenuProps> = ({ lang }) => {
   const router = useRouter();
+  const pathname = usePathname();
   const registerModal = useRegisterModal();
   const loginModal = useLoginModal();
   const [isOpen, setIsOpen] = useState(false);
@@ -49,10 +56,12 @@ const UserMenu = () => {
 
   const handleMenuItemClick = useCallback(
     (path: string) => {
-      router.push(path);
+      const currentLocale = pathname!.split("/")[1];
+      const newPath = `/${currentLocale}${path}`;
+      router.push(newPath);
       setIsOpen(false);
     },
-    [router]
+    [router, pathname]
   );
 
   return (
@@ -80,6 +89,7 @@ const UserMenu = () => {
               icon={FaYoutube}
               ariaLabel="YouTube"
             />
+            <LangButton lang={lang} />
           </div>
         </div>
         <div
@@ -161,6 +171,7 @@ const UserMenu = () => {
                 icon={FaYoutube}
                 ariaLabel="YouTube"
               />
+              <LangButton lang={lang} />
             </div>
           </div>
         </div>

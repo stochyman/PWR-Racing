@@ -1,12 +1,25 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import Logo from "./Logo";
-import UserMenu from "./UserMenu/UserMenu";
-import NavigationMenu from "./NavigationMenu";
 import { usePathname } from "next/navigation";
+import React, { useEffect, useState } from "react";
+import Logo from "./Logo";
+import NavigationMenu from "./NavigationMenu";
+import UserMenu from "./UserMenu/UserMenu";
 
-const Navbar = () => {
+interface NavbarProps {
+  lang: string;
+  dict: {
+    home: string;
+    bolid: string;
+    team: string;
+    about: string;
+    partners: string;
+    news: string;
+    contact: string;
+  };
+}
+
+const Navbar: React.FC<NavbarProps> = ({ lang, dict }) => {
   const [atTop, setAtTop] = useState(true);
   const [isHome, setIsHome] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -15,7 +28,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   useEffect(() => {
-    setIsHome(pathname === "/");
+    setIsHome(pathname === "/pl" || pathname === "/en" || pathname === "/");
   }, [pathname]);
 
   useEffect(() => {
@@ -46,9 +59,9 @@ const Navbar = () => {
             >
               <Logo width={230} height={180} />
             </div>
-            <NavigationMenu />
+            <NavigationMenu dict={dict} />
           </div>
-          <UserMenu />
+          <UserMenu lang={lang} />
         </div>
       </div>
     </header>

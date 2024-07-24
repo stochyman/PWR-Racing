@@ -9,7 +9,18 @@ import Title from "../../Title";
 import ClientOnly from "../../ClientOnly";
 import { motion } from "framer-motion";
 
-const FirstSection = () => {
+type Locale = "pl" | "en";
+
+interface HeroSectionProps {
+  dict: {
+    title1: string;
+    title2: string;
+    description: string;
+    subtitle: string;
+    button: string;
+  };
+}
+const HeroSection: React.FC<HeroSectionProps> = ({ dict }) => {
   const handleScroll = () => {
     const element = document.getElementById("bolid");
     if (element) {
@@ -34,6 +45,8 @@ const FirstSection = () => {
     },
   };
 
+  if (!dict) return <div>Loading...</div>;
+
   return (
     <ClientOnly>
       <div className="relative md:h-screen">
@@ -42,27 +55,22 @@ const FirstSection = () => {
           <div className="pt-[100px] lg:pt-0 relative z-10 grid items-center lg:grid-cols-2 gap-8 lg:gap-24">
             <div className="">
               <Title size="subtitle" color="red">
-                POLITECHNIKA WROCŁAWSKA
+                {dict.title1}
               </Title>
-              <Title>PWR RACING TEAM</Title>
+              <Title>{dict.title2}</Title>
               <div className="my-2 md:my-6">
                 <Text color="white" main>
-                  PWR Racing Team to Strategiczne Koło Naukowe Politechniki
-                  Wrocławskiej, a zarazem najstarszy i najbardziej utytułowany
-                  Zespół wyścigowy Formuły Student w Polsce. Od 2009 roku grupa
-                  ok. 80 studentów i studentek wrocławskich uczelni co roku
-                  konstruuje bolidy i startuje nimi w prestiżowych zawodach
-                  inżynierskich odbywających się na całym świecie.
+                  {dict.description}
                 </Text>
               </div>
               <Title color="red" size="small">
-                WE TAKE IT TO THE NEXT LEVEL
+                {dict.subtitle}
               </Title>
               <button
                 onClick={handleScroll}
                 className="flex items-center py-2 text-white rounded hover:pl-8 transition-all duration-300 group"
               >
-                <span>Dowiedz się więcej</span>
+                <span>{dict.button}</span>
                 <FaArrowRight className="ml-2 transition-all duration-300 group-hover:text-customRed" />
               </button>
             </div>
@@ -75,7 +83,7 @@ const FirstSection = () => {
               <Image
                 src="/images/bolid_main.png"
                 alt="bolid"
-                layout="intrinsic" // Obraz zachowa oryginalny aspekt przy ustalonej szerokości
+                layout="intrinsic"
                 width={700}
                 height={551}
               />
@@ -87,4 +95,4 @@ const FirstSection = () => {
   );
 };
 
-export default FirstSection;
+export default HeroSection;

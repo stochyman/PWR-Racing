@@ -6,7 +6,15 @@ import Button from "../../Button";
 import Title from "../../Title";
 import { useRouter } from "next/navigation";
 
-const JoinusSection = () => {
+interface JoinusSectionProps {
+  dict: {
+    title: string;
+    buttonRecruitment: string;
+    buttonPartner: string;
+  };
+}
+
+const JoinusSection: React.FC<JoinusSectionProps> = ({ dict }) => {
   const router = useRouter();
   return (
     <div id="joinus" className="relative h-[633px]">
@@ -24,12 +32,12 @@ const JoinusSection = () => {
             alt="Photo 1"
             layout="fill"
             objectFit="cover"
-            objectPosition="left center" // Pozostawia całość zdjęcia w osi X i przycina w osi Y
+            objectPosition="left center"
           />
         </div>
 
         {/* Druga kolumna, podzielona na dwa wiersze */}
-        <div className=" relative h-full hidden md:flex flex-col">
+        <div className="relative h-full hidden md:flex flex-col">
           {/* Pierwszy wiersz w drugiej kolumnie */}
           <div className="relative flex-1">
             <Image
@@ -37,7 +45,7 @@ const JoinusSection = () => {
               alt="Photo 2"
               layout="fill"
               objectFit="cover"
-              objectPosition="left 80%" // Pozostawia całość zdjęcia w osi X i przycina w osi Y
+              objectPosition="left 80%"
             />
           </div>
 
@@ -50,7 +58,7 @@ const JoinusSection = () => {
                 alt="Photo 3"
                 layout="fill"
                 objectFit="cover"
-                objectPosition="center center" // Pozostawia całość zdjęcia w osi X i przycina w osi Y
+                objectPosition="center center"
               />
             </div>
             {/* Druga kolumna w drugim wierszu */}
@@ -60,7 +68,7 @@ const JoinusSection = () => {
                 alt="Photo 4"
                 layout="fill"
                 objectFit="cover"
-                objectPosition="left center" // Pozostawia całość zdjęcia w osi X i przycina w osi Y
+                objectPosition="left center"
               />
             </div>
           </div>
@@ -73,26 +81,24 @@ const JoinusSection = () => {
             alt="Photo 5"
             layout="fill"
             objectFit="cover"
-            objectPosition="center center" // Pozostawia całość zdjęcia w osi X i przycina w osi Y
+            objectPosition="center center"
           />
         </div>
       </div>
       <div className="absolute inset-0 z-10">
         <Container>
-          <div className=" flex flex-col justify-center">
-            <div className=" uppercase text-center">
-              <Title>
-                Chcesz zostać częścią <br /> pwr racing team?
-              </Title>
+          <div className="flex flex-col justify-center max-w-4xl">
+            <div className="uppercase text-center">
+              <Title wrap>{dict.title}</Title>
             </div>
             <div className="flex gap-4 mt-8">
               <Button
-                label="Rekrutacja"
+                label={dict.buttonRecruitment}
                 onClick={() => router.push(`/joinus`)}
               />
               <Button
                 outline
-                label="Zostań Partnerem"
+                label={dict.buttonPartner}
                 onClick={() => router.push(`/partners/joinus`)}
               />
             </div>

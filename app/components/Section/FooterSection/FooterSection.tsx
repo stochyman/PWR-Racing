@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import {
   FaFacebookF,
   FaInstagram,
@@ -14,19 +15,44 @@ import SocialIcons from "../../Navbar/UserMenu/SocialIcons";
 import Text from "../../Text";
 import Title from "../../Title";
 import FooterLink from "./FooterLink";
-import { useRouter } from "next/navigation";
 
-const FooterSection = () => {
+interface FooterSectionProps {
+  dict: {
+    callUs: string;
+    writeUs: string;
+    findUs: string;
+    navigation: string;
+    home: string;
+    bolid: string;
+    team: string;
+    about: string;
+    partners: string;
+    headquarters: string;
+    address: string;
+    phone: string;
+    email: string;
+    joinUs: string;
+    becomePartner: string;
+    generalInfo: string;
+    privacyPolicy: string;
+    cookiesPolicy: string;
+    rodo: string;
+    recruitment: string;
+    createdBy: string;
+    allRightsReserved: string;
+    seasonDescription: string;
+  };
+}
+
+const FooterSection: React.FC<FooterSectionProps> = ({ dict }) => {
   const handlePhoneClick = () => {
-    // Przekierowuje użytkownika do aplikacji do dzwonienia z podanym numerem telefonu
     window.location.href = "tel:+48517350915";
   };
 
   const handleEmailClick = () => {
-    window.location.href = "mailto:racing@gmail.com"; // Popraw adres email na właściwy
+    window.location.href = "mailto:racing@gmail.com";
   };
 
-  // Funkcja przekierowująca do map Google
   const handleMapClick = () => {
     window.open(
       "https://www.google.com/maps/place/Sopocka+16,+50-344+Wroc%C5%82aw/data=!4m2!3m1!1s0x470fe82d5f41f4fd:0xa5be6508736bb57b?sa=X&ved=1t:242&ictx=1",
@@ -47,7 +73,6 @@ const FooterSection = () => {
           objectPosition="left 70%"
           quality={50}
         />
-        {/* Warstwa przyciemniająca */}
         <div className="absolute inset-0 bg-black bg-opacity-80"></div>
       </div>
       <Container>
@@ -73,7 +98,7 @@ const FooterSection = () => {
                     />
                   </svg>
                   <Title size="subtitle" color="red">
-                    Zadzwoń do nas
+                    {dict.callUs}
                   </Title>
                 </div>
                 <div className="font-black ">
@@ -103,7 +128,7 @@ const FooterSection = () => {
                     />
                   </svg>
                   <Title size="subtitle" color="red">
-                    Napisz do nas
+                    {dict.writeUs}
                   </Title>
                 </div>
                 <Text color="white" opacity1 hoverColor="red" small bold wide>
@@ -128,7 +153,7 @@ const FooterSection = () => {
                     />
                   </svg>
                   <Title size="subtitle" color="red">
-                    Gdzie nas znaleźć?
+                    {dict.findUs}
                   </Title>
                 </div>
                 <Text color="white" opacity1 hoverColor="red" small bold wide>
@@ -139,40 +164,29 @@ const FooterSection = () => {
           </div>
           <div className="md:px-12 text-white flex-col md:flex-row flex items-center md:items-start md:text-start text-center md:gap-12 gap-4 mt-4">
             <div className="hidden md:block">
-              <Text wide>
-                W każdym sezonie tworzymy nowy bolid wyścigowy. Na swoim koncie
-                mamy aż dwanaście niepowtarzalnych modeli bolidów spalinowych, z
-                czego każdy kolejny jest w stanie z łatwością pokonać poprzedni.
-                W zeszłym sezonie powstał pierwszy w historii Zespołu bolid
-                elektryczny z systemami jazdy autonomicznej – RT12e. Aktualnie
-                zajmujemy się budową naszej czternastej konstrukcji.
-              </Text>
+              <Text wide>{dict.seasonDescription}</Text>
             </div>
             <div className=" whitespace-nowrap">
               <Text small bold center>
-                Nawigacja
+                {dict.navigation}
               </Text>
               <ul className="mt-1 md:mt-2">
-                <FooterLink href="/">Strona Główna</FooterLink>
-                <FooterLink href="/bolid">Bolid</FooterLink>
-                <FooterLink href="/team">Zespół</FooterLink>
-                <FooterLink href="/about">O nas</FooterLink>
-                <FooterLink href="/partners">Partnerzy</FooterLink>
+                <FooterLink href="/">{dict.home}</FooterLink>
+                <FooterLink href="/bolid">{dict.bolid}</FooterLink>
+                <FooterLink href="/team">{dict.team}</FooterLink>
+                <FooterLink href="/about">{dict.about}</FooterLink>
+                <FooterLink href="/partners">{dict.partners}</FooterLink>
               </ul>
             </div>
             <div className=" whitespace-nowrap">
               <Text center small bold>
-                Siedziba
+                {dict.headquarters}
               </Text>
               <ul className="mt-1 md:mt-2">
-                <FooterLink onClick={handleMapClick}>ul. Sopocka 16</FooterLink>
+                <FooterLink onClick={handleMapClick}>{dict.address}</FooterLink>
                 <FooterLink onClick={handleMapClick}>50-349 Wrocław</FooterLink>
-                <FooterLink onClick={handlePhoneClick}>
-                  +48 517 350 915
-                </FooterLink>
-                <FooterLink onClick={handleEmailClick}>
-                  racing.pwr@gmail.com
-                </FooterLink>
+                <FooterLink onClick={handlePhoneClick}>{dict.phone}</FooterLink>
+                <FooterLink onClick={handleEmailClick}>{dict.email}</FooterLink>
               </ul>
             </div>
             <div className=" whitespace-nowrap">
@@ -180,20 +194,20 @@ const FooterSection = () => {
                 PWR Racing Team
               </Text>
               <ul className="mt-1 md:mt-2">
-                <FooterLink href="/joinus">Zostań członkiem</FooterLink>
+                <FooterLink href="/joinus">{dict.joinUs}</FooterLink>
                 <FooterLink href="/partners/joinus">
-                  Zostań partnerem
+                  {dict.becomePartner}
                 </FooterLink>
               </ul>
             </div>
             <div className=" whitespace-nowrap">
               <Text center small bold>
-                Informacje Ogólne
+                {dict.generalInfo}
               </Text>
               <ul className="mt-1 md:mt-2">
-                <FooterLink href="/">Polityka prywatności</FooterLink>
-                <FooterLink href="/">Pliki Cookies</FooterLink>
-                <FooterLink href="/">RODO</FooterLink>
+                <FooterLink href="/">{dict.privacyPolicy}</FooterLink>
+                <FooterLink href="/">{dict.cookiesPolicy}</FooterLink>
+                <FooterLink href="/">{dict.rodo}</FooterLink>
               </ul>
             </div>
           </div>
@@ -222,12 +236,12 @@ const FooterSection = () => {
             </div>
             <div className="flex gap-4 w-full md:w-1/3">
               <Button
-                label="Rekrutacja"
+                label={dict.recruitment}
                 onClick={() => router.push(`/joinus`)}
               />
               <Button
                 outline
-                label="Zostań Partnerem"
+                label={dict.becomePartner}
                 onClick={() => router.push(`/partners/joinus`)}
               />
             </div>
@@ -242,10 +256,10 @@ const FooterSection = () => {
           "
           >
             <Text color="white" center>
-              Projekt & Wykonanie: Maria Kanczewska & Dawid Chmal
+              {dict.createdBy}
             </Text>
             <Text color="white" center>
-              © 2024 Wszelkie prawa zastrzeżone
+              {dict.allRightsReserved}
             </Text>
           </div>
         </div>

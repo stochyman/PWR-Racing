@@ -9,14 +9,27 @@ import SecondaryButton from "../../SecondaryButton";
 
 type HistorySectionProps = {
   aboutUs?: boolean;
+  dict: {
+    title: string;
+    subtitle: string;
+    members: string;
+    membersDescription: string;
+    projects: string;
+    projectsDescription: string;
+    achievements: string;
+    achievementsDescription: string;
+    description: string;
+    buttonText: string;
+  };
 };
-const HistorySection: React.FC<HistorySectionProps> = ({ aboutUs }) => {
+
+const HistorySection: React.FC<HistorySectionProps> = ({ aboutUs, dict }) => {
   return (
     <div id="history-section" className="relative bg-white">
       <Container>
         <div className="my-8 md:my-28">
           <div className="md:mb-8 hidden md:block">
-            {aboutUs && <Title color="black">HISTORIA ZESPOŁU</Title>}
+            {aboutUs && <Title color="black">{dict.title}</Title>}
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-20 ">
             <div className="h-[22rem] md:h-full relative flex justify-center items-center order-3 md:order-1">
@@ -45,11 +58,11 @@ const HistorySection: React.FC<HistorySectionProps> = ({ aboutUs }) => {
                   </Counter>
                   <div className=" text-lg">
                     <Text center bold color="red" wide>
-                      CZŁONKÓW
+                      {dict.members}
                     </Text>
                   </div>
                   <Text center color="gray">
-                    Których łączy jedna pasja
+                    {dict.membersDescription}
                   </Text>
                 </div>
                 <div className="flex flex-col">
@@ -58,11 +71,11 @@ const HistorySection: React.FC<HistorySectionProps> = ({ aboutUs }) => {
                   </Counter>
                   <div className=" text-lg">
                     <Text center bold color="red" wide>
-                      PROJEKTÓW
+                      {dict.projects}
                     </Text>
                   </div>
                   <Text center color="gray">
-                    Ukończonych bolidów{" "}
+                    {dict.projectsDescription}
                   </Text>
                 </div>
                 <div className="flex flex-col">
@@ -71,43 +84,25 @@ const HistorySection: React.FC<HistorySectionProps> = ({ aboutUs }) => {
                   </Counter>
                   <div className=" text-lg">
                     <Text center bold color="red" wide>
-                      OSIĄGNIĘĆ
+                      {dict.achievements}
                     </Text>
                   </div>
                   <Text center color="gray">
-                    W międzynarodowych zawodach
+                    {dict.achievementsDescription}
                   </Text>
                 </div>
               </div>
               <div className="">
                 <Title size="big" color="black">
-                  HISTORIA NASZEGO ZESPOŁU
+                  {dict.subtitle}
                 </Title>
                 <div className=" my-2">
-                  <Text color="gray">
-                    Studenci Politechniki Wrocławskiej od zawsze byli jednymi z
-                    najzdolniejszych w całej Polsce, a co za tym idzie ich chęć
-                    zdobywania wiedzy i doświadczenia jest ponadprzeciętna. W
-                    celu zaspokojenia potrzeb młodych konstruktorów i menadżerów
-                    w 2009 roku powstał Zespół PWR Racing Team. W każdym
-                    sezonie tworzymy nowy bolid wyścigowy. Na swoim koncie mamy
-                    aż dwanaście niepowtarzalnych modeli bolidów spalinowych, z
-                    czego każdy kolejny jest w stanie z łatwością pokonać
-                    poprzedni. W zeszłym sezonie powstał pierwszy w historii
-                    Zespołu bolid elektryczny z systemami jazdy autonomicznej –
-                    RT12e. Aktualnie zajmujemy się budową naszej czternastej
-                    konstrukcji. Już w sezonie 2016/2017, pokazaliśmy co
-                    potrafią Polacy. Jako pierwszy polski zespół zwyciężyliśmy
-                    całą edycję zawodów Formula Student Italy. Od tego czasu
-                    utrzymujemy się wśród najlepszych zespołów w światowym
-                    rankingu i zajmujemy pierwsze miejsce w Polsce i 11 miejsce
-                    na świecie w sezonie 2021.
-                  </Text>
+                  <Text color="gray">{dict.description}</Text>
                 </div>
                 {!aboutUs && (
                   <SecondaryButton
                     to="/about#history-section"
-                    buttonText="Dowiedz się więcej"
+                    buttonText={dict.buttonText}
                   />
                 )}
               </div>

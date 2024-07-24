@@ -23,12 +23,15 @@ const Slider: React.FC<SliderProps> = ({
 
   const router = useRouter();
   const pathname = usePathname();
-  const teamRedirect = (bolid: string) => router.push(`/team/${bolid}`);
-  const bolidRedirect = (bolid: string) => router.push(`/bolid/${bolid}`);
+  const currentLocale = pathname!.split("/")[1];
+  const teamRedirect = (bolid: string) =>
+    router.push(`/${currentLocale}/team/${bolid}`);
+  const bolidRedirect = (bolid: string) =>
+    router.push(`/${currentLocale}/bolid/${bolid}`);
 
-  if (pathname && pathname.startsWith("/team/")) {
+  if (pathname && pathname.includes(`/team/`)) {
     onChangeBolid = teamRedirect;
-  } else if (pathname && pathname.startsWith("/bolid/")) {
+  } else if (pathname && pathname.includes(`/bolid/`)) {
     onChangeBolid = bolidRedirect;
   }
 

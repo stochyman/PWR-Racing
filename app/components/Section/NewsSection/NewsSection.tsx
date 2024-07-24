@@ -1,22 +1,24 @@
-import Container from "../../Container";
-import NewsCard from "@/app/components/NewsCard";
 import { fetchFiveNews } from "@/app/actions/getFiveNews";
-import dynamic from "next/dynamic";
+import NewsCard from "@/app/components/NewsCard";
+import Container from "../../Container";
 import NewsControls from "./NewsControls";
 
-// Dynamiczne importowanie komponentu NewsControls, ponieważ jest to komponent kliencki
-// const NewsControls = dynamic(() => import("./NewsControls"), {
-//   ssr: false,
-// });
+interface NewsSectionProps {
+  dict: {
+    title: string;
+    becomePartner: string;
+    contact: string;
+  };
+}
 
-const NewsSection = async () => {
+const NewsSection: React.FC<NewsSectionProps> = async ({ dict }) => {
   const news = await fetchFiveNews();
 
   return (
     <div id="section-news" className="flex flex-col">
       <Container>
         <div className="pt-12">
-          <NewsControls />
+          <NewsControls dict={dict} />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 my-10 relative border-none">
             {news.map((item, index) => (
               <NewsCard

@@ -33,7 +33,7 @@ const BolidSection = ({ presetBolid = "RT14e" }) => {
 
   const fetchBolidData = async (bolidName: string) => {
     // if (currentBolidData.name === bolidName) {
-    //   // Jeśli to ten sam bolid, nie aktualizuj
+    // Jeśli to ten sam bolid, nie aktualizuj
     //   return;
     // }
     const response = await fetch(`/api/bolid/${bolidName}`);

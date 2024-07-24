@@ -1,24 +1,29 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import Button from "../Button";
+import { useRouter } from "next/navigation";
+import React, { useEffect, useState } from "react";
 import { FaCamera } from "react-icons/fa";
 import { MdPerson } from "react-icons/md";
-import { useRouter } from "next/navigation";
+import Button from "../Button";
 
-const SideBar = () => {
+interface SideBarProps {
+  dict: {
+    media: string;
+    recruitment: string;
+  };
+}
+
+const SideBar: React.FC<SideBarProps> = ({ dict }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
-      // Ustaw stan na true/false w zależności od tego, czy strona została przescrollowana
       setIsScrolled(window.scrollY > 0);
     };
 
     window.addEventListener("scroll", handleScroll);
 
-    // Usuń nasłuchiwanie, aby uniknąć wycieków pamięci
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -52,7 +57,7 @@ const SideBar = () => {
         >
           <Button
             icon={FaCamera}
-            label="Media"
+            label={dict.media}
             onClick={() => router.push(`/partners/joinus`)}
           />
         </div>
@@ -72,7 +77,7 @@ const SideBar = () => {
           <Button
             icon={MdPerson}
             outline
-            label="Rekrutacja"
+            label={dict.recruitment}
             onClick={() => router.push("/joinus")}
           />
         </div>
@@ -82,13 +87,3 @@ const SideBar = () => {
 };
 
 export default SideBar;
-{
-  /* <div className="fixed bottom-1/2 flex flex-col gap-4 right-0 z-20 transform">
-      <div className={`w-56 transition-transform duration-300 ease-in-out ${isScrolled ? 'translate-x-3/4' : 'translate-x-1/4'} hover:translate-x-1/4`}>
-        <Button icon={FaCamera} label="Media" onClick={() => {}} />
-      </div>
-      <div className={`w-56 transition-transform duration-300 ease-in-out ${isScrolled ? 'translate-x-3/4' : 'translate-x-1/4'} hover:translate-x-1/4`}>
-        <Button icon={MdPerson} outline label="Rekrutacja" onClick={() => {}} />
-      </div>
-    </div> */
-}

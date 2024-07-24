@@ -5,17 +5,21 @@ import Container from "../../Container";
 import Text from "../../Text";
 import Title from "../../Title";
 import SecondaryButton from "../../SecondaryButton";
-import { AiOutlineAccountBook } from "react-icons/ai";
 
 interface FSSectionProps {
   aboutUs?: boolean;
+  dict: {
+    title: string;
+    description: string;
+    buttonText: string;
+  };
 }
 
-const FSSection: React.FC<FSSectionProps> = ({ aboutUs }) => {
+const FSSection: React.FC<FSSectionProps> = ({ aboutUs, dict }) => {
   return (
     <div
       id="formulastudent-section"
-      className=" relative py-8 md:py-20 bg-white"
+      className="relative py-8 md:py-20 bg-white"
     >
       <Container>
         <div className="">
@@ -24,38 +28,26 @@ const FSSection: React.FC<FSSectionProps> = ({ aboutUs }) => {
               {aboutUs && (
                 <div className="my-6">
                   <Title size="big" color="black">
-                    ZAWODY FORMULA STUDENT
+                    {dict.title}
                   </Title>
                 </div>
               )}
               {!aboutUs && (
                 <Title size="big" color="black">
-                  ZAWODY FORMULA STUDENT
+                  {dict.title}
                 </Title>
               )}
               <div className={`${aboutUs ? "" : "my-2 md:my-6"}`}>
-                <Text color="gray">
-                  Zawody Formuły Student sprawdzają nie tylko osiągi bolidu, ale
-                  również wiedzę inżynierską oraz umiejętności zarządzania.
-                  Uczestnicy podzieleni są na klasy w zależności od rodzaju
-                  bolidu — elektryczną (EV) lub spalinową (CV). Na niektórych
-                  edycjach istnieje też możliwość startowania w opcjonalnej
-                  kategorii autonomicznej (DV). Rywalizacja odbywa się na
-                  przestrzeni kilku punktowanych konkurencji, które dzielą się
-                  na statyczne i dynamiczne. Zespół z największą ilością punktów
-                  na tysiąc możliwych, zostaje ogłoszony zwycięzcą swojej klasy.
-                  Sposób ich przyznawania różni się w niewielkim stopniu
-                  pomiędzy edycjami.
-                </Text>
+                <Text color="gray">{dict.description}</Text>
               </div>
               {!aboutUs && (
                 <SecondaryButton
                   to="/about#formulastudent-section"
-                  buttonText="Dowiedz się więcej"
+                  buttonText={dict.buttonText}
                 />
               )}
             </div>
-            <div className=" relative h-[22rem] lg:h-auto">
+            <div className="relative h-[22rem] lg:h-auto">
               <Image
                 className=""
                 src="/images/bolidFS.jpeg"

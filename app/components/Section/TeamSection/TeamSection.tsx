@@ -7,7 +7,16 @@ import Button from "../../Button";
 import Title from "../../Title";
 import { useRouter } from "next/navigation";
 
-const TeamSection = () => {
+interface TeamSectionProps {
+  dict: {
+    title: string;
+    subtitle: string;
+    description: string;
+    buttonLabel: string;
+  };
+}
+
+const TeamSection: React.FC<TeamSectionProps> = ({ dict }) => {
   const router = useRouter();
   return (
     <div id="section-team" className=" relative">
@@ -27,25 +36,15 @@ const TeamSection = () => {
         <div className=" flex flex-col lg:flex-row items-center gap-8 md:gap-20 py-8 md:py-16 w-auto overflow-hidden">
           <div className="">
             <Title size="subtitle" color="gray">
-              ZESPÓŁ
+              {dict.title}
             </Title>
-            <Title size="big">RAZEM MOŻEMY WSZYSTKO</Title>
+            <Title size="big">{dict.subtitle}</Title>
             <div className=" my-6">
-              <Text color="white">
-                Młodzi, ambitni, zaangażowani, odważni. Te słowa
-                opisują studentów Politechniki Wrocławskiej, a w szczególności
-                członków PWR Racing Team. Nasz zespół posiada strukturę niczym
-                poważna firma. Na jego czele stoi lider zespołu. To właśnie na
-                nim spoczywa największa odpowiedzialność. Bezpośrednio podlega
-                mu lider techniczny, któremu z kolei podlegają liderzy
-                poszczególnych działów, wyłączając marketing, którego szef jest
-                podporządkowany liderowi zespołu. Dla reszty członków
-                przełożonym jest lider ich działu.
-              </Text>
+              <Text color="white">{dict.description}</Text>
             </div>
             <div className="flex gap-4 mt-8">
               <Button
-                label="Więcej o bolidzie"
+                label={dict.buttonLabel}
                 onClick={() => router.push(`/bolid`)}
               />
             </div>
