@@ -35,9 +35,9 @@ const BolidSection: React.FC<BolidSectionProps> = ({
     mass: "230 KG",
     power: "2 x 48 KW",
   });
+
   const [previousBolidData, setPreviousBolidData] =
     useState<BolidData>(currentBolidData);
-
   const [isAnimating, setIsAnimating] = useState("");
   const [displayRight, setDisplayRight] = useState(false);
   const [sameDirection, setsameDirection] = useState("");
@@ -56,9 +56,8 @@ const BolidSection: React.FC<BolidSectionProps> = ({
       currentBolidData.year < data.year ||
       (currentBolidData.name === "RT11b" && bolidName === "RT13e")
     ) {
-      if (sameDirection == "left") {
+      if (sameDirection === "left") {
         setsameDirectionShift("0");
-
         setIsAnimating("translate-x-[-50%]");
         setTimeout(() => {
           setIsAnimating("translate-x-[0]");
@@ -67,15 +66,14 @@ const BolidSection: React.FC<BolidSectionProps> = ({
       } else {
         setsameDirection("left");
         setDisplayRight(false);
-        setIsAnimating("translate-x-[0]"); // Rozpoczęcie animacji
+        setIsAnimating("translate-x-[0]");
       }
     } else if (
       currentBolidData.year > data.year ||
       (currentBolidData.name === "RT13e" && bolidName === "RT11b")
     ) {
-      if (sameDirection == "right") {
+      if (sameDirection === "right") {
         setsameDirectionShift("");
-
         setIsAnimating("translate-x-[0]");
         setTimeout(() => {
           setIsAnimating("translate-x-[-50%]");
@@ -84,7 +82,7 @@ const BolidSection: React.FC<BolidSectionProps> = ({
       } else {
         setsameDirection("right");
         setDisplayRight(true);
-        setIsAnimating("translate-x-[-50%]"); // Rozpoczęcie animacji
+        setIsAnimating("translate-x-[-50%]");
       }
     }
 
@@ -101,14 +99,14 @@ const BolidSection: React.FC<BolidSectionProps> = ({
   };
 
   return (
-    <div id="bolid" className=" overflow-hidden">
+    <div id="bolid" className="overflow-hidden">
       <div className="relative flex flex-col w-[200vw]">
         <Slider
           currentBolid={currentBolidData.name}
           onChangeBolid={handleChangeBolid}
         />
         <div
-          className={` flex ${sameDirectionShift} ${isAnimating} ${
+          className={`flex ${sameDirectionShift} ${isAnimating} ${
             displayRight ? "flex-row-reverse" : "flex-row"
           }`}
         >
