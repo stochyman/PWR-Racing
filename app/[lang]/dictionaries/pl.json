@@ -256,5 +256,16 @@
     "whereToFindUs": "GDZIE NAS ZNAJDZIESZ?",
     "projectSupervisors": "Opiekunowie projektu:",
     "siteAdministration": "Administracja strony:"
+  },
+  "joinUs": {
+    "pageTitle": "REKRUTACJA",
+    "becomeMember": "ZOSTAŃ CZŁONKIEM",
+    "nextRecruitmentStartsIn": "NASTĘPNA REKRUTACJA ROZPOCZNIE SIĘ ZA:",
+    "days": "DNI",
+    "hours": "GODZIN",
+    "minutes": "MINUT",
+    "seconds": "SEKUND",
+    "becomePartner": "Zostań Partnerem",
+    "contact": "Kontakt"
   }
 }

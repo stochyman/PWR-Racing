@@ -250,5 +250,16 @@
     "whereToFindUs": "WHERE TO FIND US?",
     "projectSupervisors": "Project Supervisors:",
     "siteAdministration": "Site Administration:"
+  },
+  "joinUs": {
+    "pageTitle": "RECRUITMENT",
+    "becomeMember": "BECOME A MEMBER",
+    "nextRecruitmentStartsIn": "THE NEXT RECRUITMENT STARTS IN:",
+    "days": "DAYS",
+    "hours": "HOURS",
+    "minutes": "MINUTES",
+    "seconds": "SECONDS",
+    "becomePartner": "Become a Partner",
+    "contact": "Contact"
   }
 }

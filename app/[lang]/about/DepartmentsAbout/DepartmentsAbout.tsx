@@ -1,3 +1,5 @@
+"use client";
+
 import Button from "@/app/components/Button";
 import Container from "@/app/components/Container";
 import Title from "@/app/components/Title";
