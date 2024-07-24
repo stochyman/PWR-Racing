@@ -76,5 +76,179 @@
   "sidebar": {
     "media": "Media",
     "recruitment": "Recruitment"
+  },
+  "bolidSection": {
+    "moreAboutBolid": "More about the bolid",
+    "meetTeam": "Meet the team",
+    "acceleration": "Acceleration",
+    "mass": "Mass",
+    "power": "Power",
+    "specyfikacja": "Specification",
+    "bolidu": "of the Bolid",
+    "TXTacceleration": "ACCELERATION 0-100 KM/H",
+    "TXTmass": "ENGINE POWER",
+    "TXTpower": "VEHICLE MASS"
+  },
+  "heroAbout": {
+    "title": "MEET OUR TEAM"
+  },
+  "navAbout": {
+    "garage": "Garage",
+    "teamHistory": "Team History",
+    "departments": "Our Departments",
+    "formulaStudent": "Formula Student",
+    "paragraph1": "PWR Racing Team is the Strategic Student Scientific Circle of the Wrocław University of Technology and the oldest and most titled Formula Student racing team in Poland. Since 2009, a group of about 80 students from Wrocław universities has been constructing bolids and competing in prestigious engineering competitions around the world every year. The greatest success of the PWR Racing Team is winning the entire edition of the competition, which took place at Formula SAE Italy in 2017. It was the first victory of a Polish Formula Student Team in history.",
+    "paragraph2": "Throughout its activity, the Team has constructed 12 combustion bolids, which have won top places in Formula Student competitions across Europe and the world. Following changes in the automotive industry, PWR Racing Team took on a new challenge and began building electric-powered constructions. Team members changed the drive in just one year. Moreover, at the same time, a set of solutions allowing for autonomous driving was created. Starting a new era, in 2022 the first electric bolid with autonomous driving systems — RT12e — was created. Currently, the Team is working on the third construction of this type — RT14e.",
+    "paragraph3": "Designing and constructing a Formula Student-class bolid is an advanced, interdisciplinary engineering project that allows young engineers and managers to develop. It requires enormous commitment from the Team, which translates into thousands of hours that members spend in the workshop, developing the project and making their parts. The construction of the vehicle is possible thanks to the support of the Wrocław University of Technology, the City of Wrocław, the Manus Foundation, and over 120 partners — companies and institutions from all over Europe."
+  },
+  "garage": {
+    "title": "Garage",
+    "paragraph": "At Sopocka Street 16, in a quiet area of Wrocław, you will find our workshops – garages where we work on our bolids with passion and commitment. These five spacious garages are our zone of creativity and innovation, where the PWR Racing Team faces new engineering challenges every day. Each garage is tailored to the specific needs of our departments, providing optimal conditions for working on the suspension, aerodynamics, electronics, and autonomous systems of our bolids. This space not only fosters technological development but also serves as a place for team integration, knowledge exchange, and problem-solving.",
+    "address": "Sopocka Street 16, Wrocław",
+    "contact": "Contact"
+  },
+  "departmentsAbout": {
+    "title": "OUR DEPARTMENTS",
+    "interestedIn": "WHICH DEPARTMENT ARE YOU INTERESTED IN?",
+    "mechanical": {
+      "description": "The department is responsible for designing and building the suspension system. It is also responsible for the elements of the autonomous steering and braking systems, mounting parts, and metal structures in the monocoque.",
+      "responsibilities": [
+        {
+          "text": "designing and building the suspension system",
+          "icon": "plik.svg"
+        },
+        {
+          "text": "designing and building elements of the autonomous steering system",
+          "icon": "kolo.svg"
+        },
+        {
+          "text": "designing and building the braking system",
+          "icon": "klucz.svg"
+        },
+        {
+          "text": "designing mounting parts and metal structures in the monocoque",
+          "icon": "box.svg"
+        }
+      ]
+    },
+    "composites": {
+      "description": "The department is responsible for the handmade production of all composite elements present in the bolid. Starting from the largest element, the load-bearing structure, through the aerodynamic package, to the driver's ergonomics and the protective structure for the high-voltage battery.",
+      "responsibilities": [
+        {
+          "text": "modeling composite elements in CAD programs",
+          "icon": "plik.svg"
+        },
+        {
+          "text": "strength simulations and optimization of composite structures",
+          "icon": "kolo.svg"
+        },
+        {
+          "text": "CFD simulations of the aerodynamic package",
+          "icon": "klucz.svg"
+        },
+        {
+          "text": "production and strength testing of composite elements",
+          "icon": "box.svg"
+        }
+      ]
+    },
+    "marketing": {
+      "description": "The department is responsible for the image, promotion of the Team, as well as logistics and event organization. It is also responsible for preparing static competitions for Formula Student events, such as the business presentation.",
+      "responsibilities": [
+        { "text": "creating promotional materials", "icon": "plik.svg" },
+        { "text": "preparing business presentations", "icon": "kolo.svg" },
+        {
+          "text": "coordinating orders, data analysis, optimizing Team's work",
+          "icon": "klucz.svg"
+        },
+        { "text": "organizing events", "icon": "box.svg" }
+      ]
+    },
+    "software": {
+      "description": "The department is responsible for developing the autonomous system and programming microprocessors that control the driver's interface, braking, or steering of the vehicle. It is responsible for the operation of path planning, vehicle control, and perception systems when the driver is not in the bolid. The software is written in programming languages such as C, C++, and Python.",
+      "responsibilities": [
+        {
+          "text": "developing algorithms that improve autonomous driving",
+          "icon": "plik.svg"
+        },
+        { "text": "developing embedded systems", "icon": "kolo.svg" }
+      ]
+    },
+    "electrical": {
+      "description": "The department is responsible for designing PCBs, creating high and low voltage harnesses, and building a custom high-voltage battery.",
+      "responsibilities": [
+        { "text": "designing and manufacturing PCBs", "icon": "plik.svg" },
+        {
+          "text": "designing in CAD programs and manufacturing high and low voltage harnesses compliant with motorsport standards",
+          "icon": "kolo.svg"
+        },
+        {
+          "text": "modeling housings for electronics in CAD programs",
+          "icon": "klucz.svg"
+        },
+        {
+          "text": "designing and manufacturing high-voltage batteries",
+          "icon": "box.svg"
+        },
+        {
+          "text": "thermal simulations of electronics and batteries",
+          "icon": "plik.svg"
+        },
+        { "text": "designing CAN bus", "icon": "kolo.svg" }
+      ]
+    },
+    "vehiclePerformance": {
+      "description": "The department is responsible for maximizing vehicle performance, vehicle kinematics and dynamics, data acquisition, powertrain, and test organization.",
+      "responsibilities": [
+        { "text": "Vehicle dynamics simulations", "icon": "plik.svg" },
+        {
+          "text": "Designing and developing the powertrain",
+          "icon": "kolo.svg"
+        },
+        { "text": "Analyzing data from runs", "icon": "klucz.svg" }
+      ]
+    }
+  },
+  "fsAbout": {
+    "dynamicCompetitions": "FOUR DYNAMIC COMPETITIONS",
+    "staticCompetitions": "THREE STATIC COMPETITIONS",
+    "competitions": {
+      "acceleration": {
+        "title": "Acceleration",
+        "text": "A competition that involves covering 75 meters as quickly as possible, thus assessing the acceleration of the car. Teams have two attempts, and the better one is evaluated."
+      },
+      "skidPad": {
+        "title": "Skid Pad",
+        "text": "A competition involving driving in a “figure-eight” pattern. Each team has two attempts, and the better one is considered for scoring."
+      },
+      "autocross": {
+        "title": "Autocross",
+        "text": "A competition where participants aim to complete one lap of the track in the shortest time possible. Two drivers from each team can participate, each having two runs. The best time from the four runs is considered."
+      },
+      "endurance": {
+        "title": "Endurance",
+        "text": "A competition involving a race of about 22 kilometers. After 11 kilometers, there is a driver change, which the team has 3 minutes to complete. This is the highest-scoring competition, but only teams that finish the race receive points."
+      },
+      "cost": {
+        "title": "Cost and Manufacturing",
+        "text": "A competition that evaluates the accuracy of the project cost estimate and the team members' knowledge of material and manufacturing costs of the car."
+      },
+      "engineering": {
+        "title": "Engineering Design",
+        "text": "A competition involving the presentation of the car design. Judges assess the engineering skills and ingenuity of the team members in designing both the overall vehicle and individual systems. This is the highest-scoring static competition, judged by automotive industry experts."
+      },
+      "business": {
+        "title": "Business Plan Presentation",
+        "text": "A competition where team members take on the role of a start-up board, for example, creating custom brake systems. Using a ten-minute presentation, they must convince judges acting as investors to support their business model."
+      }
+    }
+  },
+  "contactUs": {
+    "pageTitle": "CONTACT",
+    "writeToUs": "WRITE TO US",
+    "theyWillAnswer": "They will answer your questions:",
+    "whereToFindUs": "WHERE TO FIND US?",
+    "projectSupervisors": "Project Supervisors:",
+    "siteAdministration": "Site Administration:"
   }
 }

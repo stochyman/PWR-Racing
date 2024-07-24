@@ -1,10 +1,16 @@
 "use client";
 
-import Image from "next/image";
 import Title from "@/app/components/Title";
-import { useState, useEffect } from "react";
+import Image from "next/image";
+import { useEffect, useState } from "react";
 
-const HeroAbout = () => {
+interface HeroAboutProps {
+  dict: {
+    title: string;
+  };
+}
+
+const HeroAbout: React.FC<HeroAboutProps> = ({ dict }) => {
   const [offsetY, setOffsetY] = useState(0);
 
   const handleScroll = () => setOffsetY(window.pageYOffset);
@@ -23,7 +29,7 @@ const HeroAbout = () => {
         <div className="h-full p-20">
           <div className="flex flex-col justify-between h-full max-w-[400px]">
             <Title wrap color="white">
-              POZNAJ NASZ ZESPÓŁ
+              {dict.title}
             </Title>
             <svg
               width="49"

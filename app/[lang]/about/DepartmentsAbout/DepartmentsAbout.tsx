@@ -1,127 +1,76 @@
+import Button from "@/app/components/Button";
 import Container from "@/app/components/Container";
 import Title from "@/app/components/Title";
-import DepartmentElement from "./DepartmentElement";
-import Button from "@/app/components/Button";
+import { FaBolt, FaBullhorn, FaCube, FaLaptopCode } from "react-icons/fa";
 import { IoSettings } from "react-icons/io5";
-import { FaCube } from "react-icons/fa";
-import { FaBullhorn } from "react-icons/fa";
-import { FaLaptopCode } from "react-icons/fa";
-import { FaBolt } from "react-icons/fa";
-import { IoStatsChartOutline } from "react-icons/io5";
-import { FaWrench } from "react-icons/fa";
+import DepartmentElement from "./DepartmentElement";
 
 type DepartmentsAboutProps = {
   lightMode?: boolean;
+  dict: {
+    title: string;
+    interestedIn: string;
+    mechanical: {
+      description: string;
+      responsibilities: { text: string; icon: string }[];
+    };
+    composites: {
+      description: string;
+      responsibilities: { text: string; icon: string }[];
+    };
+    marketing: {
+      description: string;
+      responsibilities: { text: string; icon: string }[];
+    };
+    software: {
+      description: string;
+      responsibilities: { text: string; icon: string }[];
+    };
+    electrical: {
+      description: string;
+      responsibilities: { text: string; icon: string }[];
+    };
+    vehiclePerformance: {
+      description: string;
+      responsibilities: { text: string; icon: string }[];
+    };
+  };
 };
 
-const DepartmentsAbout: React.FC<DepartmentsAboutProps> = ({ lightMode }) => {
+const DepartmentsAbout: React.FC<DepartmentsAboutProps> = ({
+  lightMode,
+  dict,
+}) => {
   const departments = [
     {
       name: "mechanical",
-      description:
-        "Dział zajmuje się projektowaniem i budową układu zawieszenia. Odpowiada również za elementy autonomicznego układu kierowniczego, hamulcowego, części mocowania czy struktury metalowe w monocoque.",
-      responsibilities: [
-        {
-          text: "projektowaniem i budową układu zawieszenia",
-          icon: "plik.svg",
-        },
-        {
-          text: "projektowaniem i budową elementów autonomicznego układu kierowniczego",
-          icon: "kolo.svg",
-        },
-        {
-          text: "projektowaniem i budową układu hamulcowego",
-          icon: "klucz.svg",
-        },
-        {
-          text: "projektowaniem części mocowania i struktury metalowej w monocoque",
-          icon: "box.svg",
-        },
-      ],
+      description: dict.mechanical.description,
+      responsibilities: dict.mechanical.responsibilities,
     },
     {
       name: "composites",
-      description:
-        "Dział odpowiada za własnoręczne wykonanie wszystkich elementów kompozytowych obecnych na bolidzie. Poczynając od największego elementu, czyli struktury nośnej, poprzez pakiet aerodynamiczny kończąc na ergonomii kierowcy oraz struktury ochronnej na baterię wysokiego napięcia.",
-      responsibilities: [
-        {
-          text: "modelowaniem elementów kompozytowych w programach CAD",
-          icon: "plik.svg",
-        },
-        {
-          text: "symulacjami wytrzymałościowymi oraz optymalizacją struktur kompozytowych",
-          icon: "kolo.svg",
-        },
-        { text: "symulacjami CFD pakietu aerodynamicznego", icon: "klucz.svg" },
-        {
-          text: "wykonaniem oraz badaniami wytrzymałościowymi elementów kompozytowych",
-          icon: "box.svg",
-        },
-      ],
+      description: dict.composites.description,
+      responsibilities: dict.composites.responsibilities,
     },
     {
       name: "marketing",
-      description:
-        "Dział zajmujący się wizerunkiem, promocją Zespołu, a także logistyką i organizacją wydarzeń. Ponadto odpowiada za przygotowanie konkurencji statycznych na zawody Formuły Student, takich jak prezentacja biznesowa.",
-      responsibilities: [
-        { text: "tworzeniem materiałów promocyjnych", icon: "plik.svg" },
-        { text: "przygotowaniem prezentacji biznesowych", icon: "kolo.svg" },
-        {
-          text: "koordynacją zamówień, analizą danych, optymalizacją pracy Zespołu",
-          icon: "klucz.svg",
-        },
-        { text: "organizacją wydarzeń", icon: "box.svg" },
-      ],
+      description: dict.marketing.description,
+      responsibilities: dict.marketing.responsibilities,
     },
     {
       name: "software",
-      description:
-        "Dział zajmujący się rozwojem systemu autonomicznego oraz programowaniem mikroprocesorów sterujących interfejsem kierowcy, hamowaniem lub skręcaniem pojazdu. Odpowiada za działanie systemów planowania trasy, kontroli pojazdu czy percepcji, gdy w bolidzie nie znajduje się kierowca. Oprogramowanie pisane jest w takich językach programowania, jak C, C++, czy Python.",
-      responsibilities: [
-        {
-          text: "opracowywaniem algorytmów usprawniających jazdę autonomiczną",
-          icon: "plik.svg",
-        },
-        { text: "rozwojem systemów embedded", icon: "kolo.svg" },
-      ],
+      description: dict.software.description,
+      responsibilities: dict.software.responsibilities,
     },
     {
       name: "electrical",
-      description:
-        "Dział zajmujący się projektowaniem płytek PCB, tworzeniem wiązek wysokiego i niskiego napięcia oraz budową autorskiej baterii wysokiego napięcia.",
-      responsibilities: [
-        { text: "projektowaniem i wykonawstwem płytek PCB", icon: "plik.svg" },
-        {
-          text: "projektowaniem w programach CAD oraz wykonawstwem wiązki niskiego oraz wysokiego napięcia zgodnych ze standardami motor sportowymi",
-          icon: "kolo.svg",
-        },
-        {
-          text: "modelowaniem obudów na elektronikę w programach CAD",
-          icon: "klucz.svg",
-        },
-        {
-          text: "projektowaniem oraz wykonawstwem baterii wysokiego napięcia",
-          icon: "box.svg",
-        },
-        {
-          text: "symulacjami termicznymi elektroniki oraz baterii",
-          icon: "plik.svg",
-        },
-        { text: "projektowaniem magistrali CAN", icon: "kolo.svg" },
-      ],
+      description: dict.electrical.description,
+      responsibilities: dict.electrical.responsibilities,
     },
     {
       name: "vehicle performance",
-      description:
-        "Dział zajmujący się maksymalizacją osiągów pojazdu, kinematyką i dynamiką pojazdu, akwizycją danych, układem napędowym oraz organizacją testów.",
-      responsibilities: [
-        { text: "Symulacjami dynamiki pojazdu", icon: "plik.svg" },
-        {
-          text: "Projektowaniem oraz rozwojem układu napędowego",
-          icon: "kolo.svg",
-        },
-        { text: "Analizą danych z przejazdów", icon: "klucz.svg" },
-      ],
+      description: dict.vehiclePerformance.description,
+      responsibilities: dict.vehiclePerformance.responsibilities,
     },
   ];
 
@@ -136,11 +85,11 @@ const DepartmentsAbout: React.FC<DepartmentsAboutProps> = ({ lightMode }) => {
     <div id="department-section" className="relative bg-white">
       {!lightMode ? (
         <div className="ml-8 md:ml-[calc((100vw-var(--container-width))/2)] mb-4 md:mb-6">
-          <Title color="black">NASZE DZIAŁY</Title>
+          <Title color="black">{dict.title}</Title>
         </div>
       ) : (
         <div className="mt-12 mb-6 text-center flex flex-col gap-6 ">
-          <Title color="black">JAKI DZIAŁ CIĘ INTERESUJE?</Title>
+          <Title color="black">{dict.interestedIn}</Title>
           <div className="w-full">
             <Container>
               <div className="flex flex-row gap-4 w-full flex-wrap justify-center flex-1">

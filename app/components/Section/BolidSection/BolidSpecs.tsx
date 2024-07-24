@@ -1,16 +1,20 @@
 "use client";
 
+import Text from "../../Text";
+
 interface BolidSpecsProps {
   animate: string;
   acceleration: string;
   power: string;
   mass: string;
+  dict: any;
 }
 const BolidSpecs: React.FC<BolidSpecsProps> = ({
   animate,
   acceleration,
   power,
   mass,
+  dict,
 }) => {
   return (
     <div className="">
@@ -18,12 +22,15 @@ const BolidSpecs: React.FC<BolidSpecsProps> = ({
         className={`${animate} relative w-[100vw] flex items-center justify-center bg-neutral-700 transition duration-200 ease-out px-8`}
       >
         <div className="absolute hidden md:block bg-neutral-800 z-0 w-64 h-46 inset-0"></div>
-        <div className="bg-neutral-800 z-10 hidden md:flex justify-between items-center pr-8">
-          <h1
-            className={`text-white py-12 text-right font-akiraExpanded text-3xl font-extrabold leading-tight`}
-          >
-            Specyfikacja <br /> Bolidu
-          </h1>
+        <div className="bg-neutral-800 z-10 hidden md:flex justify-between items-center pr-8 ">
+          <div className=" flex flex-col">
+            <Text bold medium color="white" opacity1>
+              {dict.specyfikacja}
+            </Text>
+            <Text right center bold medium color="white" opacity1>
+              {dict.bolidu}
+            </Text>
+          </div>
           <svg
             className="w-16 h-8 lg:w-36 lg:h-36"
             viewBox="0 0 89 38"
@@ -67,7 +74,7 @@ const BolidSpecs: React.FC<BolidSpecsProps> = ({
               <h2
                 className={`hidden md:block text-customRed font-akiraExpanded text-2xl font-extrabold leading-tight`}
               >
-                PRZYŚPIESZENIE 0-100 KM/H
+                {dict.TXTacceleration}
               </h2>
             </div>
           </div>
@@ -104,7 +111,7 @@ const BolidSpecs: React.FC<BolidSpecsProps> = ({
               <h2
                 className={`hidden min-w-fit md:block text-customRed font-akiraExpanded text-2xl font-extrabold leading-tight`}
               >
-                MOC SILNIKÓW
+                {dict.TXTmass}
               </h2>
             </div>
           </div>
@@ -145,7 +152,7 @@ const BolidSpecs: React.FC<BolidSpecsProps> = ({
               <h2
                 className={`hidden md:block text-customRed font-akiraExpanded text-2xl font-extrabold leading-tight`}
               >
-                MASA POJAZDU
+                {dict.TXTmass}
               </h2>
             </div>
           </div>

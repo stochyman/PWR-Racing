@@ -4,14 +4,22 @@ import BolidSection from "@/app/components/Section/BolidSection/BolidSection";
 import Text from "@/app/components/Text";
 import Title from "@/app/components/Title";
 import Image from "next/image";
+import { getDictionary } from "../../dictionaries";
 
 interface Iparams {
+  lang: string;
   bolidId?: string;
 }
 
+type Locale = "pl" | "en";
+
 const BolidPage = async ({ params }: { params: Iparams }) => {
-  const bolidId = params.bolidId ?? "RT13e";
-  const bolid = await getBolidByBolidId(bolidId);
+  const { lang, bolidId } = params;
+  const currentLocale = lang === "pl" || lang === "en" ? lang : "en";
+
+  const dict = await getDictionary(currentLocale);
+  const bolidIdValue = bolidId ?? "RT13e";
+  const bolid = await getBolidByBolidId(bolidIdValue);
 
   if (!bolid) {
     return <p>Bolid not found</p>;
@@ -19,20 +27,11 @@ const BolidPage = async ({ params }: { params: Iparams }) => {
 
   return (
     <div className="flex flex-col pt-[100px]">
-      <BolidSection presetBolid={bolidId} />
-      {/* <div className="flex overflow-x-auto">
-        {[1, 2, 3, 4, 5, 6].map((num) => (
-          <div key={num} className="flex-shrink-0 w-[300px] md:w-[400px]">
-            <Image
-              src={`/images/bolid/${bolidId}/images/slider/${num}.jpg`}
-              alt={`Bolid ${num}`}
-              width={383}
-              height={200}
-              layout="responsive"
-            />
-          </div>
-        ))}
-      </div> */}
+      <BolidSection
+        dict={dict.bolidSection}
+        language={currentLocale}
+        presetBolid={bolidIdValue}
+      />
       <div className=" w-full" id="achievements">
         <Container>
           <div className="flex flex-col w-full py-8 md:py-16">

@@ -26,7 +26,7 @@ const Home: React.FC<PageProps> = async ({ params }) => {
       <div className="">
         <HeroSection dict={dict.heroSection} />
         <DepartmentsSubsection />
-        <BolidSection />
+        <BolidSection dict={dict.bolidSection} language={language} />
         <FSSection dict={dict.fsSection} />
         <TeamSection dict={dict.teamSection} />
         <HistorySection dict={dict.historySection} />
