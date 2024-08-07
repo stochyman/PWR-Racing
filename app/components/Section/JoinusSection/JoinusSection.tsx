@@ -5,6 +5,7 @@ import Container from "../../Container";
 import Button from "../../Button";
 import Title from "../../Title";
 import { useRouter } from "next/navigation";
+import useLoginModal from "@/app/hooks/useLoginModal";
 
 interface JoinusSectionProps {
   dict: {
@@ -12,12 +13,21 @@ interface JoinusSectionProps {
     buttonRecruitment: string;
     buttonPartner: string;
   };
+  sizeBig?: boolean;
 }
 
-const JoinusSection: React.FC<JoinusSectionProps> = ({ dict }) => {
+const JoinusSection: React.FC<JoinusSectionProps> = ({
+  dict,
+  sizeBig = false,
+}) => {
   const router = useRouter();
+  const loginModal = useLoginModal();
+
   return (
-    <div id="joinus" className="relative h-[633px]">
+    <div
+      id="joinus"
+      className={`${sizeBig ? "h-screen" : "h-[633px]"} relative`}
+    >
       <div
         className="absolute inset-0 z-10"
         style={{
@@ -94,12 +104,24 @@ const JoinusSection: React.FC<JoinusSectionProps> = ({ dict }) => {
             <div className="flex gap-4 mt-8">
               <Button
                 label={dict.buttonRecruitment}
-                onClick={() => router.push(`/joinus`)}
+                onClick={() => {
+                  if (sizeBig) {
+                    loginModal.onOpen();
+                  } else {
+                    router.push(`/joinus`);
+                  }
+                }}
               />
               <Button
                 outline
                 label={dict.buttonPartner}
-                onClick={() => router.push(`/partners/joinus`)}
+                onClick={() => {
+                  if (sizeBig) {
+                    router.push(`/`);
+                  } else {
+                    router.push(`/partners/joinus`);
+                  }
+                }}
               />
             </div>
           </div>

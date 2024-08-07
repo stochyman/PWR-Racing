@@ -52,8 +52,6 @@ export default async function RootLayout({
         <ClientOnly>
           <ClosestSectionProvider>
             <ToasterProvider />
-            <LoginModal />
-            <RegisterModal />
             <Navbar lang={params.lang} dict={dict.navigation} />
             <SideBar dict={dict.sidebar} />
             {children}

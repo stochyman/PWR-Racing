@@ -267,5 +267,10 @@
     "seconds": "SEKUND",
     "becomePartner": "Zostań Partnerem",
     "contact": "Kontakt"
+  },
+  "admin": {
+    "title": "Zaloguj się do panelu administratora",
+    "buttonRecruitment": "Zaloguj się",
+    "buttonPartner": "Wróć na stronę główną"
   }
 }

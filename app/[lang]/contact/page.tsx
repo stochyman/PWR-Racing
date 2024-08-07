@@ -5,7 +5,7 @@ import Title from "@/app/components/Title";
 import { getDictionary } from "../dictionaries";
 import UserCard from "../team/[teamId]/UserCard";
 import { sortRoles } from "../team/[teamId]/utils";
-import EmailAction from "./emailAction";
+import { EmailAction, Admin } from "./emailAction";
 import GoogleMapComponent from "./map";
 
 interface Role {
@@ -152,9 +152,7 @@ const ContactUs: React.FC<ContactUsProps> = async ({ params }) => {
             </div>
           </div>
           <div className="flex flex-col items-start md:items-center gap-4 md:gap-6">
-            <Text bold medium>
-              {dict.contactUs.siteAdministration}
-            </Text>
+            <Admin text={dict.contactUs.siteAdministration} />
             <div className="grid grid-cols-1 md:grid-cols-2 w-full md:w-1/2 gap-6">
               {siteAdministration.map((member, index) => (
                 <UserCard

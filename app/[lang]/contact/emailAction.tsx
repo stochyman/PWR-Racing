@@ -3,6 +3,7 @@
 import Text from "@/app/components/Text";
 import toast from "react-hot-toast";
 import { FaEnvelope } from "react-icons/fa";
+import { useHandleNavigation } from "@/app/components/NavigationHandler";
 
 interface EmailActionProps {
   email: string;
@@ -41,4 +42,19 @@ const EmailAction: React.FC<EmailActionProps> = ({ email }) => {
   );
 };
 
-export default EmailAction;
+interface AdmingProps {
+  text: string;
+}
+const Admin: React.FC<AdmingProps> = ({ text }) => {
+  const handleNavigation = useHandleNavigation("/admin");
+
+  return (
+    <div onClick={handleNavigation} className=" cursor-pointer">
+      <Text bold medium>
+        {text}
+      </Text>
+    </div>
+  );
+};
+
+export { EmailAction, Admin };

@@ -15,7 +15,6 @@ interface PageProps {
     lang: string;
   };
 }
-
 const Home: React.FC<PageProps> = async ({ params }) => {
   const language =
     params.lang === "pl" || params.lang === "en" ? params.lang : "en";

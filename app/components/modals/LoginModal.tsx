@@ -1,27 +1,27 @@
 "use client";
 
 import { signIn } from "next-auth/react";
-import axios from "axios";
 import { AiFillGithub } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
-import { useCallback, useState } from "react";
+import { useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
+import toast from "react-hot-toast";
+import { useRouter } from "next/navigation";
 
 import useRegisterModal from "@/app/hooks/useRegisterModal";
 import useLoginModal from "@/app/hooks/useLoginModal";
+import { useAuth } from "@/app/context/Auth/AuthContext";
 
 import Modal from "./Modal";
 import Heading from "../Heading";
 import Input from "../Inputs/Input";
-import { error } from "console";
-import toast from "react-hot-toast";
 import Button from "../Button";
-import { useRouter } from "next/navigation";
 
 const LoginModal = () => {
   const router = useRouter();
   const registerModal = useRegisterModal();
   const loginModal = useLoginModal();
+  const { login } = useAuth(); // Use the login function from the AuthContext
   const [isLoading, setIsLoading] = useState(false);
 
   const {
@@ -46,7 +46,8 @@ const LoginModal = () => {
 
       if (callback?.ok) {
         toast.success("Logged in");
-        router.refresh();
+        login(); // Call the login function to update the AuthContext
+        router.push("/admin/addNews"); // Redirect to the desired page
         loginModal.onClose();
       }
 
@@ -70,7 +71,7 @@ const LoginModal = () => {
       <Input
         id="password"
         type="password"
-        label="Passowrd"
+        label="Password"
         disabled={isLoading}
         register={register}
         errors={errors}
@@ -80,14 +81,7 @@ const LoginModal = () => {
   );
 
   const footerContent = (
-    <div
-      className="
-      flex
-      flex-col
-      gap-4
-      mt-3
-    "
-    >
+    <div className="flex flex-col gap-4 mt-3">
       <hr />
       <Button
         outline
@@ -101,33 +95,14 @@ const LoginModal = () => {
         icon={AiFillGithub}
         onClick={() => {}}
       />
-      <div
-        className="
-        text-neutral-500
-        text-center
-        mt-4
-        font-light
-      "
-      >
-        <div
-          className="
-          justify-center
-          flex
-          flex-row
-          items-center
-          gap-2
-        "
-        >
-          <div>Already have an account?</div>
+      <div className="text-neutral-500 text-center mt-4 font-light">
+        <div className="justify-center flex flex-row items-center gap-2">
+          <div>Don't have an account?</div>
           <div
-            onClick={registerModal.onClose}
-            className="
-            text-neutral-800
-            cursor-pointer
-            hover:underline
-          "
+            onClick={registerModal.onOpen}
+            className="text-neutral-800 cursor-pointer hover:underline"
           >
-            Log in
+            Register
           </div>
         </div>
       </div>
@@ -135,18 +110,16 @@ const LoginModal = () => {
   );
 
   return (
-    <div>
-      <Modal
-        disabled={isLoading}
-        isOpen={loginModal.isOpen}
-        title="Login"
-        actionLabel="Continue"
-        onClose={loginModal.onClose}
-        onSubmit={handleSubmit(onSubmit)}
-        body={bodyContent}
-        footer={footerContent}
-      />
-    </div>
+    <Modal
+      disabled={isLoading}
+      isOpen={loginModal.isOpen}
+      title="Login"
+      actionLabel="Continue"
+      onClose={loginModal.onClose}
+      onSubmit={handleSubmit(onSubmit)}
+      body={bodyContent}
+      footer={footerContent}
+    />
   );
 };
 
