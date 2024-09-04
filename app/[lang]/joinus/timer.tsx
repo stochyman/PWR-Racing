@@ -2,7 +2,7 @@
 
 import Text from "@/app/components/Text";
 import Title from "@/app/components/Title";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 
 interface TimerProps {
   targetDate: string;
@@ -10,7 +10,7 @@ interface TimerProps {
 }
 
 const Timer: React.FC<TimerProps> = ({ targetDate, dict }) => {
-  const calculateTimeLeft = () => {
+  const calculateTimeLeft = useCallback(() => {
     const difference = +new Date(targetDate) - +new Date();
     let timeLeft = {
       days: "00",
@@ -37,7 +37,7 @@ const Timer: React.FC<TimerProps> = ({ targetDate, dict }) => {
     }
 
     return timeLeft;
-  };
+  }, [targetDate]);
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
@@ -47,7 +47,7 @@ const Timer: React.FC<TimerProps> = ({ targetDate, dict }) => {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [targetDate]);
+  }, [calculateTimeLeft]);
 
   return (
     <div className="flex flex-col items-center gap-4">

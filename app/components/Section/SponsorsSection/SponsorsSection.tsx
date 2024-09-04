@@ -78,7 +78,7 @@ const SponsorsSection = () => {
         cancelAnimationFrame(animationFrameId);
       }
     };
-  }, []);
+  });
 
   const onMouseLeave = () => {
     setIsDragging(false);

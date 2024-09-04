@@ -92,7 +92,7 @@ const BolidSection: React.FC<BolidSectionProps> = ({
 
   useEffect(() => {
     fetchBolidData(currentBolidData.name);
-  }, []);
+  });
 
   const handleChangeBolid = (bolidName: string) => {
     fetchBolidData(bolidName);

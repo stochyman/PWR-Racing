@@ -15,7 +15,7 @@ const ResponsibilityItem: React.FC<ResponsibilityItemProps> = ({
   textColor,
 }) => (
   <div className="flex gap-3">
-    <img src={iconPath} alt="icon" width="24" height="24" />
+    <Image src={iconPath} alt="icon" width="22" height="22" />
     <Text color={textColor}>{text}</Text>
   </div>
 );
