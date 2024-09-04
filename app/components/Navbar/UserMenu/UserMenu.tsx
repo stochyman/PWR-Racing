@@ -122,11 +122,11 @@ const UserMenu: React.FC<UserMenuProps> = ({ lang }) => {
           <div className="flex flex-col cursor-pointer">
             <MenuItem onClick={() => handleMenuItemClick(`/`)} label="Home" />
             <MenuItem
-              onClick={() => handleMenuItemClick(`/bolid`)}
+              onClick={() => handleMenuItemClick(`/bolid/RT14e`)}
               label="Bolid"
             />
             <MenuItem
-              onClick={() => handleMenuItemClick(`/team`)}
+              onClick={() => handleMenuItemClick(`/team/RT14e`)}
               label="Zespoł"
             />
             <MenuItem
