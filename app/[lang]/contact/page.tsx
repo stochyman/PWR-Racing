@@ -62,8 +62,9 @@ const ContactUs: React.FC<ContactUsProps> = async ({ params }) => {
 
   const mainMembers = await getMembersData([
     "paweł wójcik",
-    "michał wieczorek",
-    "karolina wasiukiewicz",
+    "bartosz sobczak",
+    "zuzanna kochanowska",
+    "joanna popielewska",
   ]);
 
   const projectSupervisors = await getMembersData([
@@ -108,7 +109,7 @@ const ContactUs: React.FC<ContactUsProps> = async ({ params }) => {
               {dict.contactUs.theyWillAnswer}
             </Text>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 md:w-3/4 w-full gap-6">
+          <div className="grid grid-cols-1 xl:grid-cols-4 sm:grid-cols-2 w-full gap-6">
             {mainMembers.map((member, index) => (
               <div key={index} className="flex flex-col gap-6 ">
                 <UserCard
