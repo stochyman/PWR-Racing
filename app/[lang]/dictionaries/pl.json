@@ -8,13 +8,13 @@
   },
   "fsSection": {
     "title": "ZAWODY FORMULA STUDENT",
-    "description": "Zawody Formuły Student sprawdzają nie tylko osiągi bolidu, ale również wiedzę inżynierską oraz umiejętności zarządzania. Uczestnicy podzieleni są na klasy w zależności od rodzaju bolidu — elektryczną (EV) lub spalinową (CV). Na niektórych edycjach istnieje też możliwość startowania w opcjonalnej kategorii autonomicznej (DV). Rywalizacja odbywa się na przestrzeni kilku punktowanych konkurencji, które dzielą się na statyczne i dynamiczne. Zespół z największą ilością punktów na tysiąc możliwych, zostaje ogłoszony zwycięzcą swojej klasy. Sposób ich przyznawania różni się w niewielkim stopniu pomiędzy edycjami.",
+    "description": "Zawody Formuły Student sprawdzają nie tylko osiągi bolidu, ale również wiedzę inżynierską oraz umiejętności zarządzania. Rywalizajca odbywa się w ramach dwóch klas w zależności od rodzaju bolidu — elektrycznej (EV) lub spalinowej (CV). Na niektórych edycjach istnieje też możliwość startowania w opcjonalnej kategorii autonomicznej (DV). Zespoły walczą ze sobą na przestrzeni kilku punktowanych konkurencji, które dzielą się na statyczne i dynamiczne. Zespół z największą ilością punktów na tysiąc możliwych, zostaje ogłoszony zwycięzcą swojej klasy. Sposób ich przyznawania różni się w niewielkim stopniu pomiędzy edycjami.",
     "buttonText": "Dowiedz się więcej"
   },
   "teamSection": {
     "title": "ZESPÓŁ",
     "subtitle": "RAZEM MOŻEMY WSZYSTKO",
-    "description": "Młodzi, ambitni, zaangażowani, odważni. Te słowa opisują studentów Politechniki Wrocławskiej, a w szczególności członków PWR Racing Team. Nasz zespół posiada strukturę niczym poważna firma. Na jego czele stoi lider zespołu. To właśnie na nim spoczywa największa odpowiedzialność. Bezpośrednio podlega mu lider techniczny, któremu z kolei podlegają liderzy poszczególnych działów, wyłączając marketing, którego szef jest podporządkowany liderowi zespołu. Dla reszty członków przełożonym jest lider ich działu.",
+    "description": "Młodzi, ambitni, zaangażowani i odważni – tak najlepiej można opisać studentów Politechniki Wrocławskiej, a zwłaszcza członków PWR Racing Team. Nasza organizacja działa według struktury jak w dużych firmach. Na czele zespołu stoi lider, który ponosi największą odpowiedzialność. Bezpośrednio podlega mu lider techniczny, zarządzający liderami poszczególnych działów, z wyjątkiem marketingu – ten dział raportuje bezpośrednio do lidera zespołu. Każdy członek zespołu podlega swojemu liderowi działu.",
     "buttonLabel": "Więcej o bolidzie"
   },
   "historySection": {
@@ -254,13 +254,13 @@
     "writeToUs": "NAPISZ DO NAS",
     "theyWillAnswer": "Oni odpowiedzą na Twoje pytania:",
     "whereToFindUs": "GDZIE NAS ZNAJDZIESZ?",
-    "projectSupervisors": "Opiekunowie projektu:",
+    "projectSupervisors": "Opiekunowie zespołu:",
     "siteAdministration": "Administracja strony:"
   },
   "joinUs": {
     "pageTitle": "REKRUTACJA",
     "becomeMember": "ZOSTAŃ CZŁONKIEM",
-    "nextRecruitmentStartsIn": "NASTĘPNA REKRUTACJA ROZPOCZNIE SIĘ ZA:",
+    "nextRecruitmentStartsIn": "REKRUTACJA ZAMKNIE SIĘ ZA:",
     "days": "DNI",
     "hours": "GODZIN",
     "minutes": "MINUT",

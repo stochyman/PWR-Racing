@@ -51,6 +51,11 @@ const Timer: React.FC<TimerProps> = ({ targetDate, dict }) => {
 
   return (
     <div className="flex flex-col items-center gap-4">
+      <div className="mb-8">
+        <Text medium color="black">
+          Rekrutacja otwarta, dołącz do nas! 🚀
+        </Text>
+      </div>
       <Text wide small>
         {dict.nextRecruitmentStartsIn}
       </Text>
