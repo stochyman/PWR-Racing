@@ -54,7 +54,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ dict }) => {
         <Container>
           <div className="pt-[100px] lg:pt-0 relative z-10 grid items-center lg:grid-cols-2 gap-8 lg:gap-24">
             <div className="">
-              <Title size="subtitle" color="red">
+              <Title wrap size="subtitle" color="red">
                 {dict.title1}
               </Title>
               <Title>{dict.title2}</Title>

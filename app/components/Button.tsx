@@ -50,7 +50,7 @@ const Button: React.FC<ButtonProps> = ({
         transition duration-300 ease-in-out
         w-full min-w-fit
         ${black ? "bg-black" : outline ? "bg-white" : "bg-customRed"}
-        ${black ? "px-16" : "px-2"}
+        ${black ? "px-12" : "px-2"}
         ${
           black ? "border-black" : outline ? "border-black" : "border-customRed"
         }

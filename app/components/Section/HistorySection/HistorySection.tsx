@@ -53,7 +53,7 @@ const HistorySection: React.FC<HistorySectionProps> = ({ aboutUs, dict }) => {
                 } flex justify-between text-center w-auto`}
               >
                 <div className="flex flex-col">
-                  <Counter targetNumber={75} size="bigger" color="red">
+                  <Counter targetNumber={90} size="bigger" color="red">
                     0
                   </Counter>
                   <div className=" text-lg">
@@ -66,7 +66,7 @@ const HistorySection: React.FC<HistorySectionProps> = ({ aboutUs, dict }) => {
                   </Text>
                 </div>
                 <div className="flex flex-col">
-                  <Counter targetNumber={14} size="bigger" color="red">
+                  <Counter targetNumber={15} size="bigger" color="red">
                     0
                   </Counter>
                   <div className=" text-lg">

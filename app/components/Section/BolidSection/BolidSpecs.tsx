@@ -52,10 +52,10 @@ const BolidSpecs: React.FC<BolidSpecsProps> = ({
             />
           </svg>
         </div>
-        <div className="mx-8 my-4 flex gap-8 md:gap-20 justify-between md:pl-12">
-          <div className="flex justify-center items-center gap-4">
+        <div className="mx-8 my-4 flex gap-2 md:gap-20 justify-between md:pl-12">
+          <div className="flex justify-center items-center gap-2">
             <svg
-              className="w-10 h-10 md:w-20 md:h-20"
+              className="w-14 h-10 md:w-20 md:h-20"
               viewBox="0 0 74 73"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +78,7 @@ const BolidSpecs: React.FC<BolidSpecsProps> = ({
               </h2>
             </div>
           </div>
-          <div className="flex justify-center items-center gap-4">
+          <div className="flex justify-center items-center gap-2">
             <svg
               className="w-14 h-14 md:w-24 md:h-20"
               viewBox="0 0 88 88"
@@ -115,7 +115,7 @@ const BolidSpecs: React.FC<BolidSpecsProps> = ({
               </h2>
             </div>
           </div>
-          <div className="flex justify-center items-center gap-4">
+          <div className="flex justify-center items-center gap-2">
             <svg
               className="w-12 h-12 md:w-20 md:h-20"
               viewBox="0 0 76 83"
