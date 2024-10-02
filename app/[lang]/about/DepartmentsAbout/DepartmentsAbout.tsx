@@ -135,6 +135,14 @@ const DepartmentsAbout: React.FC<DepartmentsAboutProps> = ({
                     onClick={() => handleScrollToSection("electrical")}
                   />
                 </div>
+                <div>
+                  <Button
+                    black
+                    icon={FaBolt}
+                    label="VEHICLE PERFORMANCE"
+                    onClick={() => handleScrollToSection("electrical")}
+                  />
+                </div>
               </div>
             </Container>
           </div>
