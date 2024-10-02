@@ -99,23 +99,7 @@ const SponsorsOfer: React.FC<Props> = (props) => {
                 />
               </svg>
 
-              <Text color="gray">Co możemy zaoferować</Text>
-            </div>
-            <div className="flex gap-2 items-center ">
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.0859375 0V12.6603H3.06483V15.6392L9.39497 12.6603H15.7251V0H0.0859375ZM5.299 7.44723H3.06483V5.21306H5.299V7.44723ZM9.02261 7.44723H6.78844V5.21306H9.02261V7.44723ZM12.7462 7.44723H10.5121V5.21306H12.7462V7.44723Z"
-                  fill="#D41E3E"
-                />
-              </svg>
-
-              <Text color="gray">Propozycja działań wizerunkowych</Text>
+              <Text color="gray">Pakiety działań wizerunkowych</Text>
             </div>
             <div className="flex gap-2 items-center ">
               <svg

@@ -123,10 +123,10 @@ const FlipCard: React.FC<FlipCardProps> = ({ text, src, title, height }) => {
     <div className={`flip-card ${height} relative rounded-md`}>
       <div className="flip-card-inner">
         <div className="flip-card-front relative w-full h-full">
-          <Image src={src} alt={title} layout="fill" objectFit="cover" />
+          <Image src={src} alt={title} layout="fill" objectFit="fill" />
         </div>
-        <div className="flip-card-back absolute inset-0 z-20 flex flex-col justify-center items-center gap-4 rounded-md p-8 bg-neutral-200">
-          <Title color="black" size="small">
+        <div className=" text-center flip-card-back absolute inset-0 z-20 flex flex-col justify-center items-center gap-4 rounded-md p-8 bg-neutral-200">
+          <Title wrap color="black" size="small">
             {title}
           </Title>
           <Text extrasmall>{text}</Text>

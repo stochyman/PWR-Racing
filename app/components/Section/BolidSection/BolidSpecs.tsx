@@ -152,7 +152,7 @@ const BolidSpecs: React.FC<BolidSpecsProps> = ({
               <h2
                 className={`hidden md:block text-customRed font-akiraExpanded text-2xl font-extrabold leading-tight`}
               >
-                {dict.TXTmass}
+                {dict.TXTpower}
               </h2>
             </div>
           </div>

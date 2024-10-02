@@ -77,7 +77,7 @@ const PartnersJoin: React.FC<Props> = async () => {
               <Text medium wide bold>
                 Skontaktuj się z nami:
               </Text>
-              <div className="grid grid-cols-3 w-3/4 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 w-full md:w-3/4 gap-6">
                 {mainMembers.map((member, index) => (
                   <UserCard
                     key={index}

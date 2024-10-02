@@ -68,7 +68,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ dict }) => {
               </Title>
               <button
                 onClick={handleScroll}
-                className="flex items-center py-2 text-white rounded hover:pl-8 transition-all duration-300 group"
+                className="hidden md:flex items-center py-2 text-white rounded hover:pl-8 transition-all duration-300 group"
               >
                 <span>{dict.button}</span>
                 <FaArrowRight className="ml-2 transition-all duration-300 group-hover:text-customRed" />
