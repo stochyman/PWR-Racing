@@ -41,12 +41,12 @@ const SideBar: React.FC<SideBarProps> = ({ dict }) => {
     <div
       className={`${
         isScrolled ? "gap-4 bottom-1/2" : "gap-48 bottom-1/3"
-      } fixed hidden md:flex flex-col right-0 z-20 transform duration-700`}
+      } fixed flex flex-col right-0 z-20 transform duration-700`}
     >
       <div
         className={`${
           isScrolled ? "" : "-rotate-90 translate-x-1/2"
-        } duration-300`}
+        } duration-300 hidden md:block`}
       >
         <div
           className={`w-56 transition-transform duration-1000 ease-in-out ${

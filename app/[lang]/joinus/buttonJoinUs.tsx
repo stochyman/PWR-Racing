@@ -19,7 +19,7 @@ const ButtonsSection: React.FC<ButtonsSectionProps> = ({ dict }) => {
   };
 
   return (
-    <div className="my-16 flex gap-4 w-1/3">
+    <div className="my-16 flex gap-4 md:w-1/3">
       <Button label="Dołącz do nas" onClick={handleFormsClick} />
       <Button
         outline
