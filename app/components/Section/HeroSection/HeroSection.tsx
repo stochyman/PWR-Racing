@@ -20,6 +20,19 @@ interface HeroSectionProps {
     button: string;
   };
 }
+const textVariants = {
+  hidden: { x: -100, opacity: 0 },
+  visible: (delay: number) => ({
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.8,
+      delay,
+      ease: "easeOut",
+    },
+  }),
+};
+
 const HeroSection: React.FC<HeroSectionProps> = ({ dict }) => {
   const handleScroll = () => {
     const element = document.getElementById("bolid");
@@ -53,27 +66,68 @@ const HeroSection: React.FC<HeroSectionProps> = ({ dict }) => {
         <BackgroundVideo />
         <Container>
           <div className="pt-[100px] lg:pt-0 relative z-10 grid items-center lg:grid-cols-2 gap-8 lg:gap-24">
-            <div className="">
-              <Title wrap size="subtitle" color="red">
-                {dict.title1}
-              </Title>
-              <Title>{dict.title2}</Title>
-              <div className="my-2 md:my-6">
+            <div>
+              {/* Animated Titles */}
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                custom={0.4}
+                variants={textVariants}
+              >
+                <Title wrap size="subtitle" color="red">
+                  {dict.title1}
+                </Title>
+              </motion.div>
+
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                custom={0.2}
+                variants={textVariants}
+              >
+                <Title>{dict.title2}</Title>
+              </motion.div>
+
+              {/* Animated Description */}
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                custom={0.6}
+                variants={textVariants}
+                className="my-2 md:my-6"
+              >
                 <Text color="white" main>
                   {dict.description}
                 </Text>
-              </div>
-              <Title wrap color="red" size="small">
-                {dict.subtitle}
-              </Title>
-              <button
+              </motion.div>
+
+              {/* Animated Subtitle */}
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                custom={0.8}
+                variants={textVariants}
+              >
+                <Title wrap color="red" size="small">
+                  {dict.subtitle}
+                </Title>
+              </motion.div>
+
+              {/* Animated Button */}
+              <motion.button
+                initial="hidden"
+                animate="visible"
+                custom={1}
+                variants={textVariants}
                 onClick={handleScroll}
                 className="hidden md:flex items-center py-2 text-white rounded hover:pl-8 transition-all duration-300 group"
               >
                 <span>{dict.button}</span>
                 <FaArrowRight className="ml-2 transition-all duration-300 group-hover:text-customRed" />
-              </button>
+              </motion.button>
             </div>
+
+            {/* Animated Image */}
             <motion.div
               className="flex justify-center mb-8 sm:mb-0 items-center"
               initial="hidden"
