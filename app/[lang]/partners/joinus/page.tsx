@@ -55,19 +55,19 @@ const PartnersJoin: React.FC<Props> = async () => {
     <div className=" pt-[120px] bg-neutral-700 flex flex-col">
       <div className="fixed w-full z-0">
         <div className="absolute opacity-5 right-0">
-          <h1 className="text-[15rem] font-extrabold text-black uppercase leading-none">
+          <h1 className="text-[5rem] font-extrabold text-black uppercase leading-none">
             PARTNER
           </h1>
         </div>
         <Container>
           <div className="w-full flex flex-col items-center mt-16">
-            <div className="mb-24 py-4 my-4 border-b-2 w-3/5 border-white text-center">
+            <div className="mb-24 py-4 my-4 border-b-2 md:w-3/5 border-white text-center">
               <Title color="white">ZOSTAŃ PARTNEREM</Title>
             </div>
           </div>
         </Container>
       </div>
-      <div className="pt-[16rem] ">
+      <div className="pt-[12rem] md:pt-[16rem] ">
         <SponsorsOfer />
       </div>
       <div className=" relative bg-white mt-[-15rem] pt-[20rem] w-full">
@@ -96,11 +96,11 @@ const PartnersJoin: React.FC<Props> = async () => {
                 ))}
               </div>
             </div>
-            <div className="flex flex-col items-center mt-16 gap-12 mb-12">
+            <div className="flex flex-col items-center mt-16 gap-6 md:gap-12 mb-12">
               <Text medium wide bold>
                 Współpraca z nami to:
               </Text>
-              <div className="grid grid-cols-5 gap-4 items-start">
+              <div className="grid grid-cols-1 md:grid-cols-5 gap-10 md:gap-4 items-start">
                 <div className="flex flex-col gap-2 items-center text-center">
                   <svg
                     width="105"

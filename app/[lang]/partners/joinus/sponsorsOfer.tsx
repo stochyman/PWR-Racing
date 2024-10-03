@@ -14,7 +14,7 @@ interface Props {
 const SponsorsOfer: React.FC<Props> = (props) => {
   return (
     <Container>
-      <div className=" z-10 w-full bg-white grid grid-cols-2 p-12 gap-8 rounded-sm shadow-xl">
+      <div className=" z-10 w-full bg-white grid grid-cols-1 md:grid-cols-2 p-6 md:p-12 gap-8 rounded-sm shadow-xl">
         <div className="relative w-full">
           <Image
             src={`/images/partners.png`}

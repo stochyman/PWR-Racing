@@ -77,9 +77,9 @@ const FooterSection: React.FC<FooterSectionProps> = ({ dict }) => {
       </div>
       <Container>
         <div className="flex flex-col w-full">
-          <div className="w-full md:px-12 flex flex-col md:flex-row justify-between items-center">
+          <div className="w-full md:px-12 flex flex-wrap flex-col md:flex-row justify-center xl:justify-between items-center gap-x-12">
             <Logo width={200} height={180} />
-            <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-12">
+            <div className="flex flex-col flex-wrap md:flex-row justify-center lg:justify-between items-center gap-4 md:gap-12">
               <div
                 className="flex flex-col items-center md:items-start cursor-pointer group"
                 onClick={handlePhoneClick}
@@ -162,8 +162,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ dict }) => {
               </div>
             </div>
           </div>
-          <div className="md:px-12 text-white flex-col md:flex-row flex items-center md:items-start md:text-start text-center md:gap-12 gap-4 mt-4">
-            <div className="hidden md:block">
+          <div className="md:px-12 text-white flex-col md:flex-row flex-wrap justify-between flex items-center md:items-start md:text-start text-center md:gap-12 gap-4 mt-4">
+            <div className="hidden md:block max-w-80">
               <Text wide>{dict.seasonDescription}</Text>
             </div>
             <div className=" whitespace-nowrap">

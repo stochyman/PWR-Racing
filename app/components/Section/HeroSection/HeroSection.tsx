@@ -63,7 +63,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ dict }) => {
                   {dict.description}
                 </Text>
               </div>
-              <Title color="red" size="small">
+              <Title wrap color="red" size="small">
                 {dict.subtitle}
               </Title>
               <button
