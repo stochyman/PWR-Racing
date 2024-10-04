@@ -19,7 +19,7 @@ const BolidSpecs: React.FC<BolidSpecsProps> = ({
   return (
     <div className="">
       <div
-        className={`${animate} relative w-[100vw] flex justify-between bg-neutral-700 transition duration-200 ease-out`}
+        className={`${animate} py-2 relative w-[100vw] flex justify-between bg-neutral-700 transition duration-200 ease-out`}
       >
         <div className="bg-neutral-800 pl-[calc((100vw-var(--container-width))/3)] z-10 hidden lg:flex justify-between items-center pr-8 ">
           <div className=" flex flex-col">
@@ -160,5 +160,3 @@ const BolidSpecs: React.FC<BolidSpecsProps> = ({
 };
 
 export default BolidSpecs;
-
-// ml-[calc((100vw-var(--container-width))/2)]
