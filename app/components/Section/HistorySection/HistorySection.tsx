@@ -32,7 +32,7 @@ const HistorySection: React.FC<HistorySectionProps> = ({ aboutUs, dict }) => {
             {aboutUs && <Title color="black">{dict.title}</Title>}
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-20 ">
-            <div className="h-[22rem] md:h-full relative flex justify-center items-center order-3 md:order-1">
+            <div className="h-[22rem] lg:h-full relative flex justify-center items-center order-3 lg:order-1">
               <Image
                 className=""
                 src="/images/history.jpg"
@@ -93,7 +93,7 @@ const HistorySection: React.FC<HistorySectionProps> = ({ aboutUs, dict }) => {
                 </div>
               </div>
               <div className="">
-                <Title size="big" color="black">
+                <Title wrap size="big" color="black">
                   {dict.subtitle}
                 </Title>
                 <div className=" my-2">

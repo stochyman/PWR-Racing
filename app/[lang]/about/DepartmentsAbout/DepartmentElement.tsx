@@ -51,16 +51,16 @@ const DepartmentElement: React.FC<DepartmentElementProps> = ({
         <div
           className={`${
             index % 2 === 0 ? "" : "md:flex-row-reverse"
-          } flex flex-col md:flex-row w-full justify-between gap-8 md:gap-20 my-8 md:my-0`}
+          } relative flex flex-col md:flex-row gap-4 md:gap-12 lg:gap-20 w-full my-8 md:my-0`}
         >
-          <div className="flex flex-col md:w-5/12 md:py-20">
+          <div className=" md:py-20">
             <div className="uppercase mb-4">
-              <Title color={textColor} size="big">
+              <Title wrap color={textColor} size="big">
                 {department}
               </Title>
             </div>
             <Text color={textColor}>{text}</Text>
-            <div className="flex flex-col gap-4 mt-10">
+            <div className="flex flex-col gap-4 mt-4 md:mt-10">
               <Text color={textColor} bold>
                 W naszym dziale zajmiesz się:
               </Text>
@@ -76,12 +76,12 @@ const DepartmentElement: React.FC<DepartmentElementProps> = ({
               </div>
             </div>
           </div>
-          <div className="relative md:w-[40rem] h-[20rem] md:h-auto">
+          <div className=" relative flex-shrink-0 bg-red-900 w-auto md:w-[20rem] lg:w-[32rem] xl:w-[40rem]  md:h-auto sm:h-[25rem] h-[15rem]">
             <Image
               src={`/images/departments/${department}.png`}
               alt="department image"
-              layout="fill"
-              objectFit="cover"
+              fill
+              className=" object-cover"
               objectPosition="center 20%"
             />
           </div>

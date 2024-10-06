@@ -102,9 +102,11 @@ const DepartmentsAbout: React.FC<DepartmentsAboutProps> = ({
   return (
     <div id="department-section" className="relative bg-white">
       {!lightMode ? (
-        <div className="ml-8 md:ml-[calc((100vw-var(--container-width))/2)] mb-4 md:mb-6">
-          <Title color="black">{dict.title}</Title>
-        </div>
+        <Container>
+          <div className=" w-full mb-4 md:mb-6">
+            <Title color="black">{dict.title}</Title>
+          </div>
+        </Container>
       ) : (
         <div className="mt-12 mb-6 text-center flex flex-col gap-6 ">
           <Title wrap color="black">
@@ -112,8 +114,8 @@ const DepartmentsAbout: React.FC<DepartmentsAboutProps> = ({
           </Title>
           <div className="w-full">
             <Container>
-              <div className="flex gap-4 w-3/4 flex-wrap justify-center">
-                <div className=" flex-1">
+              <div className="flex gap-4 md:w-3/4 flex-wrap justify-center items-center">
+                <div className="sm:max-w-72 flex-1">
                   <Button
                     black
                     icon={IoSettings}
@@ -121,7 +123,7 @@ const DepartmentsAbout: React.FC<DepartmentsAboutProps> = ({
                     onClick={() => handleScrollToSection("mechanical")}
                   />
                 </div>
-                <div className=" flex-1">
+                <div className="sm:max-w-72 flex-1">
                   <Button
                     black
                     icon={FaCube}
@@ -129,7 +131,7 @@ const DepartmentsAbout: React.FC<DepartmentsAboutProps> = ({
                     onClick={() => handleScrollToSection("composites")}
                   />
                 </div>
-                <div className=" flex-1">
+                <div className="sm:max-w-72 flex-1">
                   <Button
                     black
                     icon={FaBullhorn}
@@ -137,7 +139,7 @@ const DepartmentsAbout: React.FC<DepartmentsAboutProps> = ({
                     onClick={() => handleScrollToSection("marketing")}
                   />
                 </div>
-                <div className=" flex-1">
+                <div className="sm:max-w-72 flex-1">
                   <Button
                     black
                     icon={FaLaptopCode}
@@ -145,7 +147,7 @@ const DepartmentsAbout: React.FC<DepartmentsAboutProps> = ({
                     onClick={() => handleScrollToSection("software")}
                   />
                 </div>
-                <div className=" flex-1">
+                <div className="sm:max-w-72 flex-1">
                   <Button
                     black
                     icon={FaBolt}
@@ -153,7 +155,7 @@ const DepartmentsAbout: React.FC<DepartmentsAboutProps> = ({
                     onClick={() => handleScrollToSection("electrical")}
                   />
                 </div>
-                <div className=" flex-1 whitespace-nowrap">
+                <div className="sm:max-w-72 flex-1 whitespace-nowrap">
                   <Button
                     black
                     icon={FaChartBar}
@@ -161,7 +163,7 @@ const DepartmentsAbout: React.FC<DepartmentsAboutProps> = ({
                     onClick={() => handleScrollToSection("vehicle performance")}
                   />
                 </div>
-                <div className=" flex-1">
+                <div className="sm:max-w-72 flex-1">
                   <Button
                     black
                     icon={FaDollarSign}

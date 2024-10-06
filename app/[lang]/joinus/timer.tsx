@@ -59,7 +59,7 @@ const Timer: React.FC<TimerProps> = ({ targetDate, dict }) => {
       <Text wide small>
         {dict.nextRecruitmentStartsIn}
       </Text>
-      <div className="flex gap-4">
+      <div className="flex gap-2 md:gap-4">
         <div className="flex flex-col text-center">
           <Title lower size="bigger" color="red">
             {timeLeft.days}
