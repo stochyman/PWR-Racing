@@ -213,6 +213,20 @@
         },
         { "text": "Analizą danych z przejazdów", "icon": "klucz.svg" }
       ]
+    },
+    "business": {
+      "description": "Dział odpowiadający za kontakt z partnerami, zarządzanie finansami Zespołu oraz przygotowywanie konkurencji statycznych na zawody Formula Student, takich jak prezentacja biznesowa.",
+      "responsibilities": [
+        {
+          "text": "Koordynacją zamówień, analizą danych, optymalizacją pracy Zespołu",
+          "icon": "plik.svg"
+        },
+        {
+          "text": "Przygotowaniem prezentacji biznesowych",
+          "icon": "kolo.svg"
+        },
+        { "text": "Kontaktem z partnerami", "icon": "klucz.svg" }
+      ]
     }
   },
   "fsAbout": {

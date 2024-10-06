@@ -3,7 +3,14 @@
 import Button from "@/app/components/Button";
 import Container from "@/app/components/Container";
 import Title from "@/app/components/Title";
-import { FaBolt, FaBullhorn, FaCube, FaLaptopCode } from "react-icons/fa";
+import {
+  FaBolt,
+  FaBullhorn,
+  FaChartBar,
+  FaCube,
+  FaDollarSign,
+  FaLaptopCode,
+} from "react-icons/fa";
 import { IoSettings } from "react-icons/io5";
 import DepartmentElement from "./DepartmentElement";
 
@@ -33,6 +40,10 @@ type DepartmentsAboutProps = {
       responsibilities: { text: string; icon: string }[];
     };
     vehiclePerformance: {
+      description: string;
+      responsibilities: { text: string; icon: string }[];
+    };
+    business: {
       description: string;
       responsibilities: { text: string; icon: string }[];
     };
@@ -74,6 +85,11 @@ const DepartmentsAbout: React.FC<DepartmentsAboutProps> = ({
       description: dict.vehiclePerformance.description,
       responsibilities: dict.vehiclePerformance.responsibilities,
     },
+    {
+      name: "business",
+      description: dict.business.description,
+      responsibilities: dict.business.responsibilities,
+    },
   ];
 
   const handleScrollToSection = (id: string) => {
@@ -96,8 +112,8 @@ const DepartmentsAbout: React.FC<DepartmentsAboutProps> = ({
           </Title>
           <div className="w-full">
             <Container>
-              <div className="flex flex-row gap-4 w-full flex-wrap justify-center flex-1">
-                <div>
+              <div className="flex gap-4 w-3/4 flex-wrap justify-center">
+                <div className=" flex-1">
                   <Button
                     black
                     icon={IoSettings}
@@ -105,7 +121,7 @@ const DepartmentsAbout: React.FC<DepartmentsAboutProps> = ({
                     onClick={() => handleScrollToSection("mechanical")}
                   />
                 </div>
-                <div>
+                <div className=" flex-1">
                   <Button
                     black
                     icon={FaCube}
@@ -113,7 +129,7 @@ const DepartmentsAbout: React.FC<DepartmentsAboutProps> = ({
                     onClick={() => handleScrollToSection("composites")}
                   />
                 </div>
-                <div>
+                <div className=" flex-1">
                   <Button
                     black
                     icon={FaBullhorn}
@@ -121,7 +137,7 @@ const DepartmentsAbout: React.FC<DepartmentsAboutProps> = ({
                     onClick={() => handleScrollToSection("marketing")}
                   />
                 </div>
-                <div>
+                <div className=" flex-1">
                   <Button
                     black
                     icon={FaLaptopCode}
@@ -129,7 +145,7 @@ const DepartmentsAbout: React.FC<DepartmentsAboutProps> = ({
                     onClick={() => handleScrollToSection("software")}
                   />
                 </div>
-                <div>
+                <div className=" flex-1">
                   <Button
                     black
                     icon={FaBolt}
@@ -137,12 +153,20 @@ const DepartmentsAbout: React.FC<DepartmentsAboutProps> = ({
                     onClick={() => handleScrollToSection("electrical")}
                   />
                 </div>
-                <div>
+                <div className=" flex-1 whitespace-nowrap">
                   <Button
                     black
-                    icon={FaBolt}
+                    icon={FaChartBar}
                     label="VEHICLE PERFORMANCE"
-                    onClick={() => handleScrollToSection("electrical")}
+                    onClick={() => handleScrollToSection("vehicle performance")}
+                  />
+                </div>
+                <div className=" flex-1">
+                  <Button
+                    black
+                    icon={FaDollarSign}
+                    label="BUSINESS"
+                    onClick={() => handleScrollToSection("business")}
                   />
                 </div>
               </div>

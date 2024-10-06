@@ -207,6 +207,23 @@
         },
         { "text": "Analyzing data from runs", "icon": "klucz.svg" }
       ]
+    },
+    "business": {
+      "description": "Department responsible for contact with partners, financial management of the Team, and preparation of static competition for Formula Student competitions, such as business presentation.",
+      "responsibilities": [
+        {
+          "text": "Coordination of orders, data analysis, optimization of the Team's work",
+          "icon": "plik.svg"
+        },
+        {
+          "text": "Preparation of business presentations",
+          "icon": "kolo.svg"
+        },
+        {
+          "text": "Contact with partners",
+          "icon": "klucz.svg"
+        }
+      ]
     }
   },
   "fsAbout": {
