@@ -153,17 +153,9 @@
       ]
     },
     "marketing": {
-      "description": "Dział zajmujący się wizerunkiem, promocją Zespołu, a także logistyką i organizacją wydarzeń. Ponadto odpowiada za przygotowanie konkurencji statycznych na zawody Formuły Student, takich jak prezentacja biznesowa.",
+      "description": "Dział zajumący się wizerunkiem Zespołu i promocją jego działań w mediach społecznościowych. Ponadto odpowiada za logistykę i organizację wydarzeń.",
       "responsibilities": [
         { "text": "tworzeniem materiałów promocyjnych", "icon": "plik.svg" },
-        {
-          "text": "przygotowaniem prezentacji biznesowych",
-          "icon": "kolo.svg"
-        },
-        {
-          "text": "koordynacją zamówień, analizą danych, optymalizacją pracy Zespołu",
-          "icon": "klucz.svg"
-        },
         { "text": "organizacją wydarzeń", "icon": "box.svg" }
       ]
     },
