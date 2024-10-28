@@ -92,6 +92,7 @@ const goldSponsors = [
     name: "computer controls.jpg",
     url: "https://www.ccontrols.pl/pl_pl/?utm_term=computer%20controls&utm_campaign=4P+-+Wyszukiwarka+-+Brand+-+PL&utm_source=adwords&utm_medium=ppc&hsa_acc=5776325502&hsa_cam=1748560941&hsa_grp=75287601584&hsa_ad=539317009618&hsa_src=g&hsa_tgt=kwd-311144365331&hsa_kw=computer%20controls&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQjwj9-zBhDyARIsAERjds0xUeQm0g1a8hBpirS6YIs2AOKA3sZHQDU7LeztdhwZMP-YO0y7vI8aAkPSEALw_wcB",
   },
+  { name: "altium.png", url: "https://www.altium.com/" },
   { name: "czekała.png", url: "https://wagi-czekala.pl/" },
   { name: "eurocircuits.jpg", url: "https://www.eurocircuits.com/" },
   { name: "ELMAR_logo_www_duze_red.png", url: "https://www.elmar-bhp.pl/" },
