@@ -115,7 +115,6 @@ const goldSponsors = [
 ];
 
 const silverSponsors = [
-  { name: "ataszek.png", url: "https://ataszek.pl/" },
   { name: "logo-AMA-PROFIL-COREL-_2_.png", url: "https://www.amaprofil.pl/" },
   { name: "auto zatoka.jpg", url: "https://www.auto-zatoka.pl/" },
   { name: "boellhoff-logo.svg", url: "https://www.boellhoff.com/pl-pl/" },
