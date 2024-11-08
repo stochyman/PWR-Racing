@@ -68,7 +68,7 @@ const platinumSponsors = [
   },
   {
     name: "zkz gears.png",
-    url: "https://wolften.pl/pl/?gad_source=1&gclid=Cj0KCQjwj9-zBhDyARIsAERjds1OzvDOFGnD4jQcjVa_iI1GWNkXZgQqFz5XU0IFdlc3ORePnVQGjRMaAmUEEALw_wcB",
+    url: "https://zkz.net.pl/",
   },
 ];
 
